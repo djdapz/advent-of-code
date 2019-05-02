@@ -105,7 +105,7 @@ class Day2KtTest {
         @Test
         fun shouldFindThatIsNotOffByOne() {
             val offByOne = isOffByOne("abcee", "abcdd")
-            assertThat(offByOne).isTrue()
+            assertThat(offByOne).isFalse()
         }
 
         @Test
