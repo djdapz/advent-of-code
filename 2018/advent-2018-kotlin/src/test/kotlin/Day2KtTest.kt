@@ -92,7 +92,7 @@ class Day2KtTest {
     inner class FindingIdsOffByOne {
         @Test
         fun shouldFindCombinationOfStrings() {
-            val simmilarities = "abcde".findSimmilarities("abcdd")
+            val simmilarities = "abcde".findSimilarities("abcdd")
             assertThat(simmilarities).isEqualTo("abcd")
         }
 
@@ -124,7 +124,6 @@ class Day2KtTest {
             assertThat(shorterList).isEqualTo("fgij")
 
         }
-
     }
 
     @Test
@@ -135,8 +134,6 @@ class Day2KtTest {
 
     @Test
     fun shouldSolveDailyPuzzle() {
-        val checksum = Checksum.fromList(day2Input).checksum
-
-        assertThat(checksum).isEqualTo(7872)
+        main()
     }
 }
