@@ -1,1 +1,0 @@
-val day2Input = FileReader("day2.txt").readAsList()

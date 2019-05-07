@@ -1,3 +1,4 @@
+import com.dapuzzo.devon.adventOfCode._2018.*
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Nested
 import org.junit.jupiter.api.Test
@@ -92,8 +93,8 @@ class Day2KtTest {
     inner class FindingIdsOffByOne {
         @Test
         fun shouldFindCombinationOfStrings() {
-            val simmilarities = "abcde".findSimilarities("abcdd")
-            assertThat(simmilarities).isEqualTo("abcd")
+            val similarities = "abcde".findSimilarities("abcdd")
+            assertThat(similarities).isEqualTo("abcd")
         }
 
         @Test
