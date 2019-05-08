@@ -2,14 +2,36 @@ package com.dapuzzo.devon.adventOfCode._2018
 
 import com.dapuzzo.devon.adventOfCode.AdventOfCodeDay
 
-class Day3(private val input: List<String>) : AdventOfCodeDay(3) {
-    override fun part1() = Fabric(1000)
-        .apply {
-            input
-                .map { Claim(it) }
-                .forEach { this.claim(it) }
-        }.numberOfDoubles
+class Day3(input: List<String>) : AdventOfCodeDay(3) {
+
+    private val claims = input
+        .map { Claim(it) }
+
+    private val overlappingSquares: List<List<Coordinate>> = claims
+        .flatMap { it.coordinates }
+        .groupingBy { it.location }
+        .foldTo(mutableMapOf(), emptyList()) { acc: List<Coordinate>, e: Coordinate -> acc + listOf(e) }
+        .values
+        .filter { it.size > 1 }
+
+    private val overlappingClaimIds: Set<Int> = overlappingSquares
+        .flatten()
+        .map { it.id }
+        .toSet()
+
+    private val nonOverlappingClaimIds: List<Int> = claims
+        .map { it.id }
+        .filter { !overlappingClaimIds.contains(it) }
+
+    override fun part1() = overlappingSquares.size
+    override fun part2() = nonOverlappingClaimIds
+
 }
+
+class Coordinate(x: Int, y: Int, val id: Int = 0) {
+    val location = x * 10000 + y
+}
+
 
 class Claim(ticket: String) {
     private val parameters = ticket
@@ -27,35 +49,9 @@ class Claim(ticket: String) {
     val width = parameters[3]
     val height = parameters[4]
 
-    val coordinates: List<Pair<Int, Int>> = (xOrigin until (xOrigin + width)).flatMap { x ->
+    val coordinates: List<Coordinate> = (xOrigin until (xOrigin + width)).flatMap { x ->
         (yOrigin until (yOrigin + height)).map { y ->
-            Pair(x, y)
+            Coordinate(x, y, id)
         }
     }
-}
-
-class Fabric(private val squares: List<MutableList<Int>>) {
-
-    constructor(dimension: Int) : this(
-        (0 until dimension).map {
-            (0 until dimension).map {
-                0
-            }.toMutableList()
-        })
-
-    val numberOfDoubles: Int
-        get() = squares.map { mutableList ->
-            mutableList.reduce { rowSum, i ->
-                if (i > 1) rowSum + 1 else rowSum
-            }
-        }.sum()
-
-    fun claim(claim: Claim): Fabric {
-        claim.coordinates.forEach {
-            squares[it.second][it.first]++
-        }
-        return this
-    }
-
-    override fun toString(): String = squares.joinToString("\n") { row -> row.joinToString("") }
 }
