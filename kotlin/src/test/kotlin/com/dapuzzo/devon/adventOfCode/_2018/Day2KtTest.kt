@@ -1,3 +1,5 @@
+package com.dapuzzo.devon.adventOfCode._2018
+
 import com.dapuzzo.devon.adventOfCode._2018.*
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Nested

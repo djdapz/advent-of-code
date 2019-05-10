@@ -1,3 +1,5 @@
+package com.dapuzzo.devon.adventOfCode._2018
+
 import com.dapuzzo.devon.adventOfCode._2018.Claim
 import com.dapuzzo.devon.adventOfCode._2018.Coordinate
 import com.dapuzzo.devon.adventOfCode._2018.Day3
