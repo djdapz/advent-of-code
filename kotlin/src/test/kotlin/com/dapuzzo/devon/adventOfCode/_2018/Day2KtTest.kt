@@ -1,9 +1,13 @@
 package com.dapuzzo.devon.adventOfCode._2018
 
 import com.dapuzzo.devon.adventOfCode._2018.*
+import findSimilarities
+import hasExactlyThreeLetters
+import hasExactlyTwoLetters
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Nested
 import org.junit.jupiter.api.Test
+import sorted
 
 class Day2KtTest {
 
@@ -97,18 +101,6 @@ class Day2KtTest {
         fun shouldFindCombinationOfStrings() {
             val similarities = "abcde".findSimilarities("abcdd")
             assertThat(similarities).isEqualTo("abcd")
-        }
-
-        @Test
-        fun shouldFindThatIsOffByOne() {
-            val offByOne = isOffByOne("abcde", "abcdd")
-            assertThat(offByOne).isTrue()
-        }
-
-        @Test
-        fun shouldFindThatIsNotOffByOne() {
-            val offByOne = isOffByOne("abcee", "abcdd")
-            assertThat(offByOne).isFalse()
         }
 
         @Test

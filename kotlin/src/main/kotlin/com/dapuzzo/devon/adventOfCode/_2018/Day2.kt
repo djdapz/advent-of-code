@@ -1,6 +1,9 @@
 package com.dapuzzo.devon.adventOfCode._2018
 
 import com.dapuzzo.devon.adventOfCode.AdventOfCodeDay
+import findSimilarities
+import hasExactlyThreeLetters
+import hasExactlyTwoLetters
 
 
 class Day2(private val input: List<String>) : AdventOfCodeDay(2) {
@@ -31,30 +34,6 @@ data class Checksum(val numberOfDoubles: Int, val numberOfTriples: Int) {
         if (s.hasExactlyTwoLetters()) this.numberOfDoubles + 1 else this.numberOfDoubles
 }
 
-private fun HashMap<Char, Int>.addOrIncrement(c: Char): HashMap<Char, Int> {
-    this[c] = this[c]?.plus(1) ?: 1
-    return this
-}
-
-private fun String.toMapOfLetterCount(): HashMap<Char, Int> =
-    this.sorted().fold(HashMap(), HashMap<Char, Int>::addOrIncrement)
-
-internal fun String.hasExactlyTwoLetters(): Boolean = this.toMapOfLetterCount().values.contains(2)
-internal fun String.hasExactlyThreeLetters(): Boolean = this.toMapOfLetterCount().values.contains(3)
-
-fun String.sorted(): String {
-    return toCharArray().sorted().joinToString("")
-}
-
-fun String.findSimilarities(other: String) = this.toCharArray()
-    .zip(other.toCharArray())
-    .fold("") { similarities, pair ->
-        if (pair.first == pair.second) similarities + pair.first else similarities
-    }
-
-fun isOffByOne(s: String, s1: String): Boolean {
-    return s.findSimilarities(s1).length == s.length - 1
-}
 
 fun findSimilaritiesOfFirstOffByOne(list: List<String>): String {
     for (string1 in list) {

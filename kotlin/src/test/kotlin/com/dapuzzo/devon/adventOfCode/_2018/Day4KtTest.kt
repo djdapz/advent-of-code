@@ -3,13 +3,14 @@ package com.dapuzzo.devon.adventOfCode._2018
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Nested
 import org.junit.jupiter.api.Test
+import java.time.LocalDate
 
 class Day4KtTest {
 
     @Nested
     inner class ReadingInBeginningOfShift {
 
-        val subject = Observation("[1518-11-01 00:00] Guard #10 begins shift")
+        private val subject = Observation("[1518-11-01 00:00] Guard #10 begins shift")
 
         @Test
         fun shouldReadInTime() {
@@ -24,21 +25,17 @@ class Day4KtTest {
         fun shouldReadGuardId() {
             assertThat(subject.guardId).isEqualTo(10)
         }
-    }
-
-    @Nested
-    inner class ReadingInGuardChangesState {
 
         @Test
-        fun shouldReadGuardSleeps() {
-            val subject = Observation("[1518-11-01 00:05] falls asleep")
-            assertThat(subject.action).isEqualTo(GuardAction.SLEEP)
+        fun shouldCaptureDateThatShiftHappensOnEvenIfStartsBeforeMidnight() {
+            val subject = Observation("[1518-11-01 12:58] Guard #10 begins shift")
+            assertThat(subject.date).isEqualTo(LocalDate.parse("1518-11-02"))
         }
 
         @Test
-        fun shouldReadGuardWakes() {
-            val subject = Observation("[1518-11-01 00:05] wakes up")
-            assertThat(subject.action).isEqualTo(GuardAction.WAKE)
+        fun shouldNotIncrementDateIfWorkerStartsAfterMidnight() {
+            val subject = Observation("[1518-11-01 00:00] Guard #10 begins shift")
+            assertThat(subject.date).isEqualTo(LocalDate.parse("1518-11-01"))
         }
     }
 
@@ -67,18 +64,23 @@ class Day4KtTest {
         )
 
         @Test
-        fun shouldTellMeWhichGuardsWorked() {
-            assertThat(subject.guardsThatWorked).isEqualTo(setOf(10, 99))
+        fun shouldTellMeHowManyMinutesGuard10SleptFor() {
+            assertThat(subject.minutesGuardSlept(10)).isEqualTo(50)
         }
 
         @Test
-        fun shouldTellMeHowManyDaysGuard10Worked() {
-            assertThat(subject.daysGuardWorked(10)).isEqualTo(2)
+        fun shouldTellMeWhichGuardSleptTheMost() {
+            assertThat(subject.sleepiestGuard).isEqualTo(10)
+        }
+
+        @Test
+        fun shouldTellMeWhichMinutesTheSleepiestGuardSleptForTheMost() {
+            assertThat(subject.sleepiestMinute).isEqualTo(24)
         }
     }
 
     @Nested
-    inner class CreatingNight {
+    inner class NightTest {
         private val subject = Night(
             listOf(
                 Observation("[1518-11-01 00:00] Guard #10 begins shift"),
@@ -90,8 +92,8 @@ class Day4KtTest {
         )
 
         @Test
-        fun shouldTellMeHowManyMinutesGuardSleptFor(){
-            assertThat(subject.numberOfMinutesAsleep).isEqualTo(35)
+        fun shouldTellMeHowManyMinutesGuardSleptFor() {
+            assertThat(subject.numberOfMinutesAsleep).isEqualTo(45)
         }
     }
 }
