@@ -37,6 +37,8 @@ class Day4KtTest {
             val subject = Observation("[1518-11-01 00:00] Guard #10 begins shift")
             assertThat(subject.date).isEqualTo(LocalDate.parse("1518-11-01"))
         }
+
+
     }
 
     @Nested
@@ -75,7 +77,18 @@ class Day4KtTest {
 
         @Test
         fun shouldTellMeWhichMinutesTheSleepiestGuardSleptForTheMost() {
-            assertThat(subject.sleepiestMinute).isEqualTo(24)
+            assertThat(subject.sleepiestGuardsSleepiestMinute).isEqualTo(24)
+        }
+
+        @Test
+        fun shouldTellMeAGuardsMostCommonlySleptMinutes(){
+            assertThat(subject.mostCommonMinute(99)).isEqualTo(45)
+        }
+
+        @Test
+        fun shouldTellMeTheGuardThatSleptTheMostAtAGivenMinute() {
+            assertThat(subject.mostCommonGuardMinute.guardId).isEqualTo(99)
+            assertThat(subject.mostCommonGuardMinute.sleepiestMinute.minute).isEqualTo(45)
         }
     }
 
