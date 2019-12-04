@@ -116,8 +116,8 @@ massesToFuel masses = sum (map massToFuel masses)
 
 recursiveMassToFuel ::  Integer -> Integer
 recursiveMassToFuel mass
-  | massToFuel mass > 0 = recursiveMassToFuel (massToFuel mass) + massToFuel mass
-  | otherwise = 0
-
+    | foundMass > 0 = recursiveMassToFuel foundMass + foundMass
+    | otherwise = 0
+   where foundMass = massToFuel mass
 
 
