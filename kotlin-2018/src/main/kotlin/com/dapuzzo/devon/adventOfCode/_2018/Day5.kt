@@ -27,7 +27,6 @@ internal fun String.react(): String {
     }
 
     return nextPolymer
-
 }
 
 fun reducePolymer(polymer: String): String {
