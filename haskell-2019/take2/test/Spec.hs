@@ -6,11 +6,13 @@ import           Test.Tasty.HUnit
 import           Lib
 import           MathLib
 import           Problem1Spec
+import           Problem2Specgst
+
 
 main = defaultMain tests
 
 tests :: TestTree
-tests = testGroup "Tests" [demoTests, problem1Tests]
+tests = testGroup "Tests" [demoTests, problem1Tests, problem2Tests]
 
 demoTests :: TestTree
 demoTests = testGroup "Demo Tests" [sayYoTest, add5Test]
