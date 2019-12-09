@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="580a2b85-2878-4a50-a364-84690f5c3ec6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/devondapuzzo.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Problem2.hs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/Problem2Spec.hs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Main.hs" beforeDir="false" afterPath="$PROJECT_DIR$/app/Main.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/take2/Problem2.hs" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/take2/Problem2.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/take2/Problem2Spec.hs" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/take2/Problem2Spec.hs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/take2/Spec.hs" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/take2/Spec.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Problem2.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Problem2.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Problem2Spec.hs" beforeDir="false" afterPath="$PROJECT_DIR$/test/Problem2Spec.hs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/Spec.hs" beforeDir="false" afterPath="$PROJECT_DIR$/test/Spec.hs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +59,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
-  <component name="RunManager" selected="Haskell Stack.test">
+  <component name="RunManager" selected="Haskell Stack.please do a thing">
     <configuration name="Interactive :)" type="HaskellStackConfigurationType" factoryName="Haskell Stack REPL" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="take2" />
       <option name="allowRunningInParallel" value="false" />
@@ -119,7 +121,7 @@
       <option name="presentableId" value="Default" />
       <updated>1575424412755</updated>
       <workItem from="1575424418314" duration="7473000" />
-      <workItem from="1575435096876" duration="5788000" />
+      <workItem from="1575435096876" duration="9355000" />
     </task>
     <servers />
   </component>
@@ -131,22 +133,22 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="304" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1575432600115" />
-    <state width="1638" height="437" key="GridCell.Tab.0.bottom" timestamp="1575528084505">
+    <state width="1638" height="71" key="GridCell.Tab.0.bottom" timestamp="1575863718738">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="437" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1575528084505" />
-    <state width="1638" height="437" key="GridCell.Tab.0.center" timestamp="1575528084504">
+    <state width="1638" height="71" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1575863718738" />
+    <state width="1638" height="71" key="GridCell.Tab.0.center" timestamp="1575863718737">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="437" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1575528084504" />
-    <state width="1638" height="437" key="GridCell.Tab.0.left" timestamp="1575528084503">
+    <state width="1638" height="71" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1575863718737" />
+    <state width="1638" height="71" key="GridCell.Tab.0.left" timestamp="1575863718737">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="437" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1575528084503" />
-    <state width="1638" height="437" key="GridCell.Tab.0.right" timestamp="1575528084504">
+    <state width="1638" height="71" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1575863718737" />
+    <state width="1638" height="71" key="GridCell.Tab.0.right" timestamp="1575863718738">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="437" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1575528084504" />
+    <state width="1638" height="71" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1575863718738" />
     <state x="493" y="174" key="SettingsEditor" timestamp="1575527891474">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
@@ -159,9 +161,9 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="678" y="248" key="run.anything.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1575523863563" />
-    <state x="505" y="260" width="670" height="676" key="search.everywhere.popup" timestamp="1575527749464">
+    <state x="505" y="260" width="670" height="676" key="search.everywhere.popup" timestamp="1575862332676">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="505" y="260" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1575527749464" />
+    <state x="505" y="260" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1575862332676" />
   </component>
 </project>

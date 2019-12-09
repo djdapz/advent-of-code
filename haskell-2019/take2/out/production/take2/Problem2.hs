@@ -7,8 +7,12 @@ module Problem2
   , replace
   ) where
 
-intcodeCompile :: [Int] -> [Int]
-intcodeCompile list = list
+intcodeCompile :: Int -> [Int] -> [Int]
+intcodeCompile wordNumber list
+  | key == 99 = list
+  | otherwise = intcodeCompile (wordNumber + 1) (processWordAt wordNumber list)
+  where
+    key = list !! (wordNumber * 4)
 
 processWordAt :: Int -> [Int] -> [Int]
 processWordAt wordNumber list
@@ -19,28 +23,31 @@ processWordAt wordNumber list
   where
     key = list !! (wordNumber * 4)
 
-selectOffset :: [Int] -> Int -> Int -> Int
-selectOffset list offset index = list !! (index + offset)
+selectWithOffset :: [Int] -> Int -> Int -> Int
+selectWithOffset list offset index = list !! (index + offset)
+
+getParameterFrom input offset param = input !! selectWithOffset input offset param
 
 addCommand :: Int -> [Int] -> [Int]
 addCommand wordNumber input =
   let offset = wordNumber * 4
-      select = selectOffset input offset
-   in replace input (select 3) (select 1 + select 2)
+      getParameter = getParameterFrom input offset
+   in replace input (selectWithOffset input offset 3) (getParameter 1 + getParameter 2)
 
 multiplyCommand :: Int -> [Int] -> [Int]
 multiplyCommand wordNumber input =
   let offset = wordNumber * 4
-      select = selectOffset input offset
-   in replace input (select 3) (select 1 * select 2)
+      getParameter = getParameterFrom input offset
+   in replace input (selectWithOffset input offset 3) (getParameter 1 * getParameter 2)
 
 replace :: [Int] -> Int -> Int -> [Int]
 replace list index value = take index list ++ [value] ++ drop (index + 1) list
 
+problem2Input :: [Int]
 problem2Input =
   [ 1
-  , 0
-  , 0
+  , 12
+  , 2
   , 3
   , 1
   , 1

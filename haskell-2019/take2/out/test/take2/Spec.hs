@@ -8,6 +8,7 @@ import           MathLib
 import           Problem1Spec
 import           Problem2Spec
 
+
 main = defaultMain tests
 
 tests :: TestTree

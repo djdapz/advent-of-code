@@ -6,7 +6,7 @@ import           Test.Tasty.HUnit
 import           Lib
 import           MathLib
 import           Problem1Spec
-import           Problem2Specgst
+import           Problem2Spec
 
 
 main = defaultMain tests

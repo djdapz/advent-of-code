@@ -3,44 +3,51 @@ module Problem2
   , addCommand
   , multiplyCommand
   , intcodeCompile
-  , processWordAt
+  , processInstruction
   , replace
   ) where
 
-intcodeCompile :: [Int] -> [Int]
-intcodeCompile list = list
-
-processWordAt :: Int -> [Int] -> [Int]
-processWordAt wordNumber list
+intcodeCompile :: Int -> [Int] -> [Int]
+intcodeCompile instructionPointer list
   | key == 99 = list
+  | otherwise = intcodeCompile (instructionPointer + 1) (processInstruction instructionPointer list)
+  where
+    key = list !! (instructionPointer * 4)
+
+processInstruction :: Int -> [Int] -> [Int]
+processInstruction wordNumber list
   | key == 1 = addCommand wordNumber list
   | key == 2 = multiplyCommand wordNumber list
   | otherwise = error "wrong optcode"
   where
     key = list !! (wordNumber * 4)
 
-selectOffset :: [Int] -> Int -> Int -> Int
-selectOffset list offset index = list !! (index + offset)
+selectFromInstruction :: [Int] -> Int -> Int -> Int
+selectFromInstruction list offset index = list !! (index + offset)
+
+getParameter :: [Int] -> Int -> Int -> Int
+getParameter input offset param = input !! selectFromInstruction input offset param
 
 addCommand :: Int -> [Int] -> [Int]
 addCommand wordNumber input =
   let offset = wordNumber * 4
-      select = selectOffset input offset
-   in replace input (select 3) (select 1 + select 2)
+      getParameterAt = getParameter input offset 
+   in replace input (selectFromInstruction input offset 3) (getParameterAt 1 + getParameterAt 2)
 
 multiplyCommand :: Int -> [Int] -> [Int]
 multiplyCommand wordNumber input =
   let offset = wordNumber * 4
-      select = selectOffset input offset
-   in replace input (select 3) (select 1 * select 2)
+      getParameterAt = getParameter input offset
+   in replace input (selectFromInstruction input offset 3) (getParameterAt 1 * getParameterAt 2)
 
 replace :: [Int] -> Int -> Int -> [Int]
 replace list index value = take index list ++ [value] ++ drop (index + 1) list
 
+problem2Input :: [Int]
 problem2Input =
   [ 1
-  , 0
-  , 0
+  , 12
+  , 2
   , 3
   , 1
   , 1
