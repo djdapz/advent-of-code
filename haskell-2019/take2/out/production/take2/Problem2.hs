@@ -1,53 +1,75 @@
 module Problem2
-  ( problem2Input
+  ( withVerb
+  , withNoun
+  , problem2Input
   , addCommand
   , multiplyCommand
   , intcodeCompile
-  , processWordAt
+  , processInstruction
   , replace
+  , runIntcode
+  , pairsToIntcode
+  , searchForValue
   ) where
 
-intcodeCompile :: Int -> [Int] -> [Int]
-intcodeCompile wordNumber list
-  | key == 99 = list
-  | otherwise = intcodeCompile (wordNumber + 1) (processWordAt wordNumber list)
-  where
-    key = list !! (wordNumber * 4)
+searchForValue :: [Int] -> Int -> Int -> Int
+searchForValue list numberOfPermutations target =
+  snd (filter ((== target) . fst) (pairsToIntcode list numberOfPermutations))
 
-processWordAt :: Int -> [Int] -> [Int]
-processWordAt wordNumber list
+pairsToIntcode :: [Int] -> Int -> [(Int, Int)]
+pairsToIntcode list size =
+  [(runIntcode (list `withNoun` noun `withVerb` verb), verb + (noun * 100)) | noun <- [1 .. size], verb <- [1 .. size]]
+
+runIntcode :: [Int] -> Int
+runIntcode list = head (intcodeCompile 0 list)
+
+intcodeCompile :: Int -> [Int] -> [Int]
+intcodeCompile instructionPointer list
   | key == 99 = list
+  | otherwise = intcodeCompile (instructionPointer + 1) (processInstruction instructionPointer list)
+  where
+    key = list !! (instructionPointer * 4)
+
+processInstruction :: Int -> [Int] -> [Int]
+processInstruction wordNumber list
   | key == 1 = addCommand wordNumber list
   | key == 2 = multiplyCommand wordNumber list
   | otherwise = error "wrong optcode"
   where
     key = list !! (wordNumber * 4)
 
-selectWithOffset :: [Int] -> Int -> Int -> Int
-selectWithOffset list offset index = list !! (index + offset)
+selectFromInstruction :: [Int] -> Int -> Int -> Int
+selectFromInstruction list offset index = list !! (index + offset)
 
-getParameterFrom input offset param = input !! selectWithOffset input offset param
+getParameter :: [Int] -> Int -> Int -> Int
+getParameter input offset param = input !! selectFromInstruction input offset param
 
 addCommand :: Int -> [Int] -> [Int]
 addCommand wordNumber input =
   let offset = wordNumber * 4
-      getParameter = getParameterFrom input offset
-   in replace input (selectWithOffset input offset 3) (getParameter 1 + getParameter 2)
+      getParameterAt = getParameter input offset
+   in replace input (selectFromInstruction input offset 3) (getParameterAt 1 + getParameterAt 2)
 
 multiplyCommand :: Int -> [Int] -> [Int]
 multiplyCommand wordNumber input =
   let offset = wordNumber * 4
-      getParameter = getParameterFrom input offset
-   in replace input (selectWithOffset input offset 3) (getParameter 1 * getParameter 2)
+      getParameterAt = getParameter input offset
+   in replace input (selectFromInstruction input offset 3) (getParameterAt 1 * getParameterAt 2)
 
 replace :: [Int] -> Int -> Int -> [Int]
 replace list index value = take index list ++ [value] ++ drop (index + 1) list
 
+withNoun :: [Int] -> Int -> [Int]
+list `withNoun` value = replace list 1 value
+
+withVerb :: [Int] -> Int -> [Int]
+list `withVerb` value = replace list 2 value
+
 problem2Input :: [Int]
 problem2Input =
   [ 1
-  , 12
-  , 2
+  , 0
+  , 0
   , 3
   , 1
   , 1
@@ -211,3 +233,5 @@ problem2Input =
   , 0
   , 0
   ]
+
+x = problem2Input `withNoun` 2
