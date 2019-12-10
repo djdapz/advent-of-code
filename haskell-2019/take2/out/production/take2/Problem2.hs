@@ -14,7 +14,7 @@ module Problem2
 
 searchForValue :: [Int] -> Int -> Int -> Int
 searchForValue list numberOfPermutations target =
-  snd (filter ((== target) . fst) (pairsToIntcode list numberOfPermutations))
+  snd (head (filter ((== target) . fst) (pairsToIntcode list numberOfPermutations)))
 
 pairsToIntcode :: [Int] -> Int -> [(Int, Int)]
 pairsToIntcode list size =
@@ -233,5 +233,3 @@ problem2Input =
   , 0
   , 0
   ]
-
-x = problem2Input `withNoun` 2

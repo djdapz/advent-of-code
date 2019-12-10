@@ -30,7 +30,7 @@ nounVerbFinderTest =
            (pairsToIntcode problem2Input 2))
     , testCase
         "should tell me which noun verb give me the desired output"
-        (assertEqual ":(" 102 (searchForValue problem2Input 100 1222685))
+        (assertEqual ":(" 201 (searchForValue problem2Input 100 1222685))
     ]
 
 intcodeCompileTest :: TestTree
