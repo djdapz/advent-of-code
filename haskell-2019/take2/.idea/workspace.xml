@@ -1,13 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="580a2b85-2878-4a50-a364-84690f5c3ec6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Problem3.hs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/Problem3Spec.hs" afterDir="false" />
+    <list default="true" id="580a2b85-2878-4a50-a364-84690f5c3ec6" name="Default Changelist" comment="x">
+      <change afterPath="$PROJECT_DIR$/src/Problem4.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Problem5.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/Assertions.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/Problem4Spec.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/Problem5Spec.hs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Main.hs" beforeDir="false" afterPath="$PROJECT_DIR$/app/Main.hs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/take2/Main.hs" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/take2/Main.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/take2/Problem2.hs" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/take2/Problem2.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/take2/Problem3.hs" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/take2/Problem3.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/take2/Problem1Spec.hs" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/take2/Problem1Spec.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/take2/Problem2Spec.hs" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/take2/Problem2Spec.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/take2/Problem3Spec.hs" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/take2/Problem3Spec.hs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/take2/Spec.hs" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/take2/Spec.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Problem2.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Problem2.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Problem3.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Problem3.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Problem1Spec.hs" beforeDir="false" afterPath="$PROJECT_DIR$/test/Problem1Spec.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Problem2Spec.hs" beforeDir="false" afterPath="$PROJECT_DIR$/test/Problem2Spec.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Problem3Spec.hs" beforeDir="false" afterPath="$PROJECT_DIR$/test/Problem3Spec.hs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/Spec.hs" beforeDir="false" afterPath="$PROJECT_DIR$/test/Spec.hs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,8 +48,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Haskell Module" />
         <option value="Haskell Test Module" />
+        <option value="Haskell Module" />
       </list>
     </option>
   </component>
@@ -55,12 +68,19 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
   </component>
   <component name="RunManager" selected="Haskell Stack.test">
     <configuration name="Interactive :)" type="HaskellStackConfigurationType" factoryName="Haskell Stack REPL" show_console_on_std_err="false" show_console_on_std_out="false">
@@ -126,7 +146,7 @@
       <updated>1575424412755</updated>
       <workItem from="1575424418314" duration="7473000" />
       <workItem from="1575435096876" duration="32257000" />
-      <workItem from="1576019957852" duration="4286000" />
+      <workItem from="1576019957852" duration="21495000" />
     </task>
     <task id="LOCAL-00001" summary="Problem 2a">
       <created>1575864108150</created>
@@ -142,50 +162,73 @@
       <option name="project" value="LOCAL" />
       <updated>1575936275757</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Problem 3 works!">
+      <created>1576024627728</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1576024627728</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Problem 2a" />
     <MESSAGE value="Problem 2b works!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Problem 2b works!" />
+    <MESSAGE value="Problem 3 works!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Problem 3 works!" />
   </component>
   <component name="WindowStateProjectService">
     <state x="304" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575937965613">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="304" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1575937965613" />
+    <state x="556" y="346" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576040024573">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="556" y="346" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.1027@0.23.1680.1027" timestamp="1576040024573" />
     <state x="704" y="483" key="#haskell.test.module.creation.dialog" timestamp="1576009915905">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="704" y="483" key="#haskell.test.module.creation.dialog/0.23.1680.1027@0.23.1680.1027" timestamp="1576009915905" />
-    <state x="418" y="137" key="CommitChangelistDialog2" timestamp="1576024627434">
+    <state x="418" y="137" key="CommitChangelistDialog2" timestamp="1576038280224">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="418" y="137" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1576024627434" />
-    <state width="1638" height="430" key="GridCell.Tab.0.bottom" timestamp="1576024615399">
+    <state x="418" y="137" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1576038280224" />
+    <state width="1025" height="356" key="GridCell.Tab.0.bottom" timestamp="1576041797376">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="430" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1576024615399" />
-    <state width="1638" height="430" key="GridCell.Tab.0.center" timestamp="1576024615399">
+    <state width="1025" height="356" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1576041797376" />
+    <state width="1025" height="356" key="GridCell.Tab.0.center" timestamp="1576041797376">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="430" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1576024615399" />
-    <state width="1638" height="430" key="GridCell.Tab.0.left" timestamp="1576024615398">
+    <state width="1025" height="356" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1576041797376" />
+    <state width="1025" height="356" key="GridCell.Tab.0.left" timestamp="1576041797375">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="430" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1576024615398" />
-    <state width="1638" height="430" key="GridCell.Tab.0.right" timestamp="1576024615399">
+    <state width="1025" height="356" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1576041797375" />
+    <state width="1025" height="356" key="GridCell.Tab.0.right" timestamp="1576041797376">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="430" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1576024615399" />
-    <state x="493" y="174" key="SettingsEditor" timestamp="1576022593941">
+    <state width="1025" height="356" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1576041797376" />
+    <state x="493" y="174" key="SettingsEditor" timestamp="1576041429881">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="493" y="174" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1576022593941" />
+    <state x="493" y="174" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1576041429881" />
     <state x="797" y="460" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576021195046">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
@@ -198,9 +241,9 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="678" y="248" key="run.anything.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1576017127872" />
-    <state x="505" y="260" width="670" height="676" key="search.everywhere.popup" timestamp="1576024085660">
+    <state x="505" y="260" width="670" height="676" key="search.everywhere.popup" timestamp="1576041097992">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="505" y="260" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1576024085660" />
+    <state x="505" y="260" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1576041097992" />
   </component>
 </project>

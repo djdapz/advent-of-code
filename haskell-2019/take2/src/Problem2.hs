@@ -36,7 +36,7 @@ processInstruction wordNumber list
   | key == 2 = multiplyCommand wordNumber list
   | otherwise = error "wrong optcode"
   where
-    key = list !! (wordNumber * 4)
+    key = mod (list !! (wordNumber * 4)) 100
 
 selectFromInstruction :: [Int] -> Int -> Int -> Int
 selectFromInstruction list offset index = list !! (index + offset)

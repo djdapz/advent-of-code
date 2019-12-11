@@ -8,12 +8,13 @@ import           MathLib
 import           Problem1Spec
 import           Problem2Spec
 import           Problem3Spec
-
+import           Problem4Spec
+import           Problem5Spec
 
 main = defaultMain tests
 
 tests :: TestTree
-tests = testGroup "Tests" [demoTests, problem1Tests, problem2Tests, problem3Tests]
+tests = testGroup "Tests" [demoTests, problem1Tests, problem2Tests, problem3Tests, problem4Tests, problem5Tests]
 
 demoTests :: TestTree
 demoTests = testGroup "Demo Tests" [sayYoTest, add5Test]

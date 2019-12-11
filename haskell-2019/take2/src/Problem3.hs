@@ -16,8 +16,8 @@ module Problem3
   , problem3Wire1
   , problem3Wire2
   , segmentLength
-  , zipIntersections,
-  closestIntersection 
+  , zipIntersections
+  , closestIntersection
   ) where
 
 type Point = (Int, Int)
@@ -47,7 +47,6 @@ segmentLength seg
   | isHorizontal seg = abs (fst (fst seg) - fst (snd seg))
   | isVertical seg = abs (snd (fst seg) - snd (snd seg))
 
---  | isHorizontal segment = snd point - snd (fst segment)
 closestCross :: [String] -> [String] -> Int
 closestCross wire1 wire2 = shortestManhattan (intersectionPoints (readWire wire1) (readWire wire2))
 
