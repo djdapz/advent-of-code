@@ -5,8 +5,9 @@ module Problem2Spec
 import           Test.Tasty
 import           Test.Tasty.HUnit
 
-import           Problem2
 import           Assertions
+import           Intcode
+import           Problem2
 
 problem2Tests :: TestTree
 problem2Tests =

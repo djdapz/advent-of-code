@@ -2,26 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="580a2b85-2878-4a50-a364-84690f5c3ec6" name="Default Changelist" comment="x">
-      <change afterPath="$PROJECT_DIR$/src/Problem4.hs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Problem5.hs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/Assertions.hs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/Problem4Spec.hs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/Problem5Spec.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Intcode.hs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Main.hs" beforeDir="false" afterPath="$PROJECT_DIR$/app/Main.hs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/take2/Main.hs" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/take2/Main.hs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/take2/Problem2.hs" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/take2/Problem2.hs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/take2/Problem3.hs" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/take2/Problem3.hs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/take2/Problem1Spec.hs" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/take2/Problem1Spec.hs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/take2/Problem2Spec.hs" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/take2/Problem2Spec.hs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/take2/Problem3Spec.hs" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/take2/Problem3Spec.hs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/take2/Spec.hs" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/take2/Spec.hs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Problem2.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Problem2.hs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Problem3.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Problem3.hs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Problem1Spec.hs" beforeDir="false" afterPath="$PROJECT_DIR$/test/Problem1Spec.hs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/Problem2Spec.hs" beforeDir="false" afterPath="$PROJECT_DIR$/test/Problem2Spec.hs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Problem3Spec.hs" beforeDir="false" afterPath="$PROJECT_DIR$/test/Problem3Spec.hs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Spec.hs" beforeDir="false" afterPath="$PROJECT_DIR$/test/Spec.hs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +130,7 @@
       <updated>1575424412755</updated>
       <workItem from="1575424418314" duration="7473000" />
       <workItem from="1575435096876" duration="32257000" />
-      <workItem from="1576019957852" duration="21495000" />
+      <workItem from="1576019957852" duration="21885000" />
     </task>
     <task id="LOCAL-00001" summary="Problem 2a">
       <created>1575864108150</created>
@@ -209,22 +193,22 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="418" y="137" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1576038280224" />
-    <state width="1025" height="356" key="GridCell.Tab.0.bottom" timestamp="1576041807336">
+    <state width="1024" height="356" key="GridCell.Tab.0.bottom" timestamp="1576041898619">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1025" height="356" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1576041807336" />
-    <state width="1025" height="356" key="GridCell.Tab.0.center" timestamp="1576041807335">
+    <state width="1024" height="356" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1576041898619" />
+    <state width="1024" height="356" key="GridCell.Tab.0.center" timestamp="1576041898618">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1025" height="356" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1576041807335" />
-    <state width="1025" height="356" key="GridCell.Tab.0.left" timestamp="1576041807335">
+    <state width="1024" height="356" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1576041898618" />
+    <state width="1024" height="356" key="GridCell.Tab.0.left" timestamp="1576041898618">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1025" height="356" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1576041807335" />
-    <state width="1025" height="356" key="GridCell.Tab.0.right" timestamp="1576041807336">
+    <state width="1024" height="356" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1576041898618" />
+    <state width="1024" height="356" key="GridCell.Tab.0.right" timestamp="1576041898618">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1025" height="356" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1576041807336" />
+    <state width="1024" height="356" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1576041898618" />
     <state x="493" y="174" key="SettingsEditor" timestamp="1576041429881">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
