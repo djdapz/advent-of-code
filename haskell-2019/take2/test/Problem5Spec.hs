@@ -4,6 +4,7 @@ import           Test.Tasty
 import           Test.Tasty.HUnit
 
 import           Assertions
+import           Intcode
 import           Problem2
 import           Problem5
 
@@ -16,21 +17,18 @@ modeTest =
     "mode"
     [ testGroup
         "command to modes"
-        [ testCase "convert normal to codes" ([0, 0, 0, 2] `assertEquals` instructionToModes 2)
-        , testCase "should convert 001 to codes" ([0, 0, 1, 2] `assertEquals` instructionToModes 102)
-        , testCase "should convert 010 to codes" ([0, 1, 0, 2] `assertEquals` instructionToModes 1002)
-        , testCase "should convert 100 to codes" ([1, 0, 0, 2] `assertEquals` instructionToModes 10002)
+        [ testCase "convert normal to codes" ((0, 0, 0) `assertEquals` instructionToModes 2)
+        , testCase "should convert 001 to codes" ((0, 0, 1) `assertEquals` instructionToModes 102)
+        , testCase "should convert 010 to codes" ((0, 1, 0) `assertEquals` instructionToModes 1002)
+        , testCase "should convert 100 to codes" ((1, 0, 0) `assertEquals` instructionToModes 10002)
         ]
     , testCase
         "should multiply with mode 000 "
-        ([10000, 4, 6, 0, 10, 100, 1000] `assertEquals` processInstruction 0 [2, 4, 6, 0, 10, 100, 1000])
-    , testCase
-        "should multiply with mode 001 (immediate write)"
-        ([102, 4, 6, 10000, 10, 100, 1000] `assertEquals` processInstruction 0 [102, 4, 6, 0, 10, 100, 1000])
+        ([2, 4, 6, 4, 15, 100, 5] `assertEquals` processInstruction 0 [2, 4, 6, 4, 3, 100, 5])
     , testCase
         "should multiply with mode 010 (immediate read)"
-        ([60, 4, 6, 0, 10, 100, 1000] `assertEquals` processInstruction 0 [1002, 4, 6, 0, 10, 100, 1000])
+        ([1002, 4, 6, 4, 18, 100, 5] `assertEquals` processInstruction 0 [1002, 4, 6, 4, 3, 100, 5])
     , testCase
         "should multiply with mode 100 (immediate read)"
-        ([400, 4, 6, 0, 10, 100, 1000] `assertEquals` processInstruction 0 [1002, 4, 6, 0, 10, 100, 1000])
+        ([10002, 4, 6, 4, 20, 100, 5] `assertEquals` processInstruction 0 [10002, 4, 6, 4, 3, 100, 5])
     ]

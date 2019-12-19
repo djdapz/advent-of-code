@@ -5,6 +5,7 @@ import           Test.Tasty.HUnit
 
 import           Lib
 import           MathLib
+import           IntcodeSpec
 import           Problem1Spec
 import           Problem2Spec
 import           Problem3Spec
@@ -14,13 +15,4 @@ import           Problem5Spec
 main = defaultMain tests
 
 tests :: TestTree
-tests = testGroup "Tests" [demoTests, problem1Tests, problem2Tests, problem3Tests, problem4Tests, problem5Tests]
-
-demoTests :: TestTree
-demoTests = testGroup "Demo Tests" [sayYoTest, add5Test]
-
-sayYoTest :: TestTree
-sayYoTest = testCase "Testing sayYo" (assertEqual "Should say Yo to Friend!" "hi! Friend!" (sayHI "Friend!"))
-
-add5Test :: TestTree
-add5Test = testCase "Testing add5" (assertEqual "Should add 5 to get 10" 10 (addTwo 9 1))
+tests = testGroup "ALL Tests" [problem1Tests, problem2Tests, problem3Tests, problem4Tests, problem5Tests,  intcodeTest]

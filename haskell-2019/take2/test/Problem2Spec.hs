@@ -44,6 +44,12 @@ intcodeCompileTest =
            [1, 2, 1, 101, 2, 2, 3, 2, 1, 1, 12, 3, 99]
            (intcodeCompile 0 [1, 1, 1, 1, 2, 2, 3, 2, 1, 1, 12, 3, 99]))
     , testCase "shouldComplieList2" (assertEquals [4, 0, 0, 0, 99] (intcodeCompile 0 [2, 0, 0, 0, 99]))
+    , testCase "shouldCompileExample" (assertEquals [2, 0, 0, 0, 99] (intcodeCompile 0 [1, 0, 0, 0, 99]))
+    , testCase "shouldCompileExample" (assertEquals [2, 3, 0, 6, 99] (intcodeCompile 0 [2, 3, 0, 3, 99]))
+    , testCase "shouldCompileExample" (assertEquals [2, 4, 4, 5, 99, 9801] (intcodeCompile 0 [2, 4, 4, 5, 99, 0]))
+    , testCase
+        "shouldCompileExample"
+        (assertEquals [30, 1, 1, 4, 2, 5, 6, 0, 99] (intcodeCompile 0 [1, 1, 1, 4, 99, 5, 6, 0, 99]))
     ]
 
 processWordAtTest :: TestTree
@@ -59,23 +65,23 @@ addCommandTests :: TestTree
 addCommandTests =
   testGroup
     "addCommand"
-    [ testCase "add in place" (assertEquals [1, 3, 2, 1] (addCommand 0 [1, 1, 2, 1]))
+    [ testCase "add in place" (assertEquals [1, 3, 2, 1] (processInstruction 0 [1, 1, 2, 1]))
     , testCase
         "add in place works for large arrays"
-        (assertEquals [1, 0, 4, 5, 0, 1, 0, 0] (addCommand 0 [1, 0, 4, 5, 0, 0, 0, 0]))
+        (assertEquals [1, 0, 4, 5, 0, 1, 0, 0] (processInstruction 0 [1, 0, 4, 5, 0, 0, 0, 0]))
     , testCase
         "add in place works for second word"
-        (assertEquals [1, 4, 4, 5, 1, 1, 1, 1] (addCommand 1 [1, 2, 4, 5, 1, 1, 1, 1]))
+        (assertEquals [1, 4, 4, 5, 1, 1, 1, 1] (processInstruction 1 [1, 2, 4, 5, 1, 1, 1, 1]))
     ]
 
 multiplyCommandTests :: TestTree
 multiplyCommandTests =
   testGroup
     "multiplyCommand"
-    [ testCase "multiply in place" (assertEquals [2, 3, 6, 2] (multiplyCommand 0 [2, 3, 1, 2]))
+    [ testCase "multiply in place" (assertEquals [2, 3, 6, 2] (processInstruction 0 [2, 3, 1, 2]))
     , testCase
         "multiply can happen as the second word"
-        (assertEquals [1, 5, 4, 5, 2, 5, 7, 1] (multiplyCommand 1 [1, 2, 4, 5, 2, 5, 7, 1]))
+        (assertEquals [1, 5, 4, 5, 2, 5, 7, 1] (processInstruction 1 [1, 2, 4, 5, 2, 5, 7, 1]))
     ]
 
 listUtilityTests :: TestTree
