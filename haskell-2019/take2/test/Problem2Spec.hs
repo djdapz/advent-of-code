@@ -74,7 +74,7 @@ addCommandTests =
         (assertEquals [1, 0, 4, 5, 0, 1, 0, 0] (processInstruction 0 [1, 0, 4, 5, 0, 0, 0, 0]))
     , testCase
         "add in place works for second word"
-        (assertEquals [1, 4, 4, 5, 1, 1, 1, 1] (processInstruction 1 [1, 2, 4, 5, 1, 1, 1, 1]))
+        (assertEquals [1, 4, 4, 5, 1, 1, 1, 1] (processInstruction 4 [1, 2, 4, 5, 1, 1, 1, 1]))
     ]
 
 multiplyCommandTests :: TestTree
@@ -84,7 +84,7 @@ multiplyCommandTests =
     [ testCase "multiply in place" (assertEquals [2, 3, 6, 2] (processInstruction 0 [2, 3, 1, 2]))
     , testCase
         "multiply can happen as the second word"
-        (assertEquals [1, 5, 4, 5, 2, 5, 7, 1] (processInstruction 1 [1, 2, 4, 5, 2, 5, 7, 1]))
+        (assertEquals [1, 5, 4, 5, 2, 5, 7, 1] (processInstruction 4 [1, 2, 4, 5, 2, 5, 7, 1]))
     ]
 
 listUtilityTests :: TestTree

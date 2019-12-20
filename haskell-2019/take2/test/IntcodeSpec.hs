@@ -36,7 +36,7 @@ intcodeTest =
             (assertEquals [1001, 1005, 4, 1, 9, 0, 0, 0] (processInstruction 0 [1001, 0, 4, 1, 9, 0, 0, 0]))
         , testCase
             "readWord figures out add command later on"
-            (assertEquals [18, 0, 4, 1, 1102, 9, 2, 0] (processInstruction 1 [3, 0, 4, 1, 1102, 9, 2, 0]))
+            (assertEquals [18, 0, 4, 1, 1102, 9, 2, 0] (processInstruction 4 [3, 0, 4, 1, 1102, 9, 2, 0]))
         ]
     , testGroup
         "readInstruction"
@@ -45,6 +45,6 @@ intcodeTest =
             (assertEquals (2, 0, 4, 1, (1, 1, 1)) (readInstruction 0 [11102, 0, 4, 1, 9, 0, 0, 0]))
         , testCase
             "readInstruction parses out wrod"
-            (assertEquals (9, 0, 0, 0, (0, 0, 1)) (readInstruction 1 [11102, 0, 4, 1, 109, 0, 0, 0]))
+            (assertEquals (9, 0, 0, 0, (0, 0, 1)) (readInstruction 4 [11102, 0, 4, 1, 109, 0, 0, 0]))
         ]
     ]
