@@ -48,6 +48,9 @@ intcodeCompileTest =
     , testCase "shouldCompileExample" (assertEquals [2, 3, 0, 6, 99] (intcodeCompile 0 [2, 3, 0, 3, 99]))
     , testCase "shouldCompileExample" (assertEquals [2, 4, 4, 5, 99, 9801] (intcodeCompile 0 [2, 4, 4, 5, 99, 0]))
     , testCase
+        "shouldCompileExampleWithNegatives"
+        (assertEquals [1101, 100, -1, 4, 99] (intcodeCompile 0 [1101, 100, -1, 4, 0]))
+    , testCase
         "shouldCompileExample"
         (assertEquals [30, 1, 1, 4, 2, 5, 6, 0, 99] (intcodeCompile 0 [1, 1, 1, 4, 99, 5, 6, 0, 99]))
     ]

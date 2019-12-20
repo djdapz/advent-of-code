@@ -57,7 +57,7 @@ getInstruction :: IntcodeWord -> Int
 getInstruction (instruction, _, _, _, _) = instruction
 
 get1 :: [Int] -> IntcodeWord -> Int
-get1 list (_, p, _, _, (m, _, _)) = readParameter list (p, m)
+get1 list (_, p, _, _, (_, _, m)) = readParameter list (p, m)
 
 get2 :: [Int] -> IntcodeWord -> Int
 get2 list (_, _, p, _, (_, m, _)) = readParameter list (p, m)

@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="580a2b85-2878-4a50-a364-84690f5c3ec6" name="Default Changelist" comment="x">
-      <change afterPath="$PROJECT_DIR$/test/IntcodeSpec.hs" afterDir="false" />
+    <list default="true" id="580a2b85-2878-4a50-a364-84690f5c3ec6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Main.hs" beforeDir="false" afterPath="$PROJECT_DIR$/app/Main.hs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Intcode.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Intcode.hs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Problem5.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Problem5.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/IntcodeSpec.hs" beforeDir="false" afterPath="$PROJECT_DIR$/test/IntcodeSpec.hs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/Problem2Spec.hs" beforeDir="false" afterPath="$PROJECT_DIR$/test/Problem2Spec.hs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/Problem5Spec.hs" beforeDir="false" afterPath="$PROJECT_DIR$/test/Problem5Spec.hs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Spec.hs" beforeDir="false" afterPath="$PROJECT_DIR$/test/Spec.hs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +147,8 @@
       <workItem from="1576119224841" duration="5938000" />
       <workItem from="1576632179208" duration="3900000" />
       <workItem from="1576694606104" duration="6102000" />
-      <workItem from="1576764679101" duration="9663000" />
+      <workItem from="1576764679101" duration="10232000" />
+      <workItem from="1576857370804" duration="2462000" />
     </task>
     <task id="LOCAL-00001" summary="Problem 2a">
       <created>1575864108150</created>
@@ -173,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576024627728</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Read Modes for Intcode in prep for p5">
+      <created>1576796705586</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1576796705586</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,7 +201,8 @@
     <MESSAGE value="Problem 2a" />
     <MESSAGE value="Problem 2b works!" />
     <MESSAGE value="Problem 3 works!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Problem 3 works!" />
+    <MESSAGE value="Read Modes for Intcode in prep for p5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Read Modes for Intcode in prep for p5" />
   </component>
   <component name="WindowStateProjectService">
     <state x="304" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576119371463">
@@ -211,30 +217,30 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="704" y="483" key="#haskell.test.module.creation.dialog/0.23.1680.1027@0.23.1680.1027" timestamp="1576120429407" />
-    <state x="418" y="137" key="CommitChangelistDialog2" timestamp="1576795790595">
+    <state x="418" y="137" key="CommitChangelistDialog2" timestamp="1576796704804">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="418" y="137" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1576795790595" />
-    <state x="100" y="123" width="1480" height="827" key="DiffContextDialog" timestamp="1576795086093">
+    <state x="418" y="137" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1576796704804" />
+    <state x="100" y="123" width="1480" height="827" key="DiffContextDialog" timestamp="1576796689385">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="100" y="123" width="1480" height="827" key="DiffContextDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1576795086093" />
-    <state width="1638" height="438" key="GridCell.Tab.0.bottom" timestamp="1576796585007">
+    <state x="100" y="123" width="1480" height="827" key="DiffContextDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1576796689385" />
+    <state width="1638" height="276" key="GridCell.Tab.0.bottom" timestamp="1576873916424">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="438" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1576796585007" />
-    <state width="1638" height="438" key="GridCell.Tab.0.center" timestamp="1576796585004">
+    <state width="1638" height="276" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1576873916424" />
+    <state width="1638" height="276" key="GridCell.Tab.0.center" timestamp="1576873916423">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="438" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1576796585004" />
-    <state width="1638" height="438" key="GridCell.Tab.0.left" timestamp="1576796585004">
+    <state width="1638" height="276" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1576873916423" />
+    <state width="1638" height="276" key="GridCell.Tab.0.left" timestamp="1576873916422">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="438" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1576796585004" />
-    <state width="1638" height="438" key="GridCell.Tab.0.right" timestamp="1576796585005">
+    <state width="1638" height="276" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1576873916422" />
+    <state width="1638" height="276" key="GridCell.Tab.0.right" timestamp="1576873916424">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="438" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1576796585005" />
+    <state width="1638" height="276" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1576873916424" />
     <state x="493" y="174" key="SettingsEditor" timestamp="1576790265359">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
@@ -243,17 +249,17 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="797" y="460" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1680.1027@0.23.1680.1027" timestamp="1576021195046" />
-    <state x="497" y="298" width="845" height="476" key="find.popup" timestamp="1576796439381">
+    <state x="497" y="298" width="845" height="476" key="find.popup" timestamp="1576873654213">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="497" y="298" width="845" height="476" key="find.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1576796439381" />
+    <state x="497" y="298" width="845" height="476" key="find.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1576873654213" />
     <state x="678" y="248" key="run.anything.popup" timestamp="1576017127872">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="678" y="248" key="run.anything.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1576017127872" />
-    <state x="505" y="260" width="670" height="676" key="search.everywhere.popup" timestamp="1576796603923">
+    <state x="505" y="260" width="670" height="676" key="search.everywhere.popup" timestamp="1576873652398">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="505" y="260" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1576796603923" />
+    <state x="505" y="260" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1576873652398" />
   </component>
 </project>
