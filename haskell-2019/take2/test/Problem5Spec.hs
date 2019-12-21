@@ -24,11 +24,11 @@ modeTest =
         ]
     , testCase
         "should multiply with mode 000 "
-        ([2, 4, 6, 4, 15, 100, 5] `assertEquals` processInstruction 0 [2, 4, 6, 4, 3, 100, 5])
+        ([2, 4, 6, 4, 15, 100, 5] `assertEquals` multiply [2, 4, 6, 4, 3, 100, 5] 0)
     , testCase
         "should multiply with mode 010 (immediate read)"
-        ([1002, 4, 6, 4, 18, 100, 5] `assertEquals` processInstruction 0 [1002, 4, 6, 4, 3, 100, 5])
+        ([1002, 4, 6, 4, 18, 100, 5] `assertEquals` multiply [1002, 4, 6, 4, 3, 100, 5] 0)
     , testCase
         "should multiply with mode 100 (immediate read)"
-        ([102, 4, 6, 4, 20, 100, 5] `assertEquals` processInstruction 0 [102, 4, 6, 4, 3, 100, 5])
+        ([102, 4, 6, 4, 20, 100, 5] `assertEquals` multiply [102, 4, 6, 4, 3, 100, 5] 0)
     ]

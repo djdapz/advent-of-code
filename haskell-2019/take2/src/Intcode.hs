@@ -7,60 +7,51 @@ type ParamAndMode = (Int, Int)
 type IntcodeWord = (Int, Int, Int, Int, Modes)
 
 runIntcode :: [Int] -> Int
-runIntcode list = head (intcodeCompile 0 list)
+runIntcode list = head (fst (intcodeCompile 0 (list, "")))
 
-intcodeCompile :: Int -> [Int] -> [Int]
-intcodeCompile instructionPointer list
-  | key == 99 = list
-  | otherwise = intcodeCompile (instructionPointer + 4) (processInstruction instructionPointer list)
+intcodeCompile :: Int -> ([Int], String) -> ([Int], String)
+intcodeCompile instructionPointer (list, output)
+  | key == 99 = (list, output)
+  | key == 4 = intcodeCompile (instructionPointer + 2) (list, output ++ show (read (instructionPointer + 1, m1)))
+  | key == 2 = intcodeCompile (instructionPointer + 4) (multiply list instructionPointer, output)
+  | key == 1 = intcodeCompile (instructionPointer + 4) (add list instructionPointer, output)
+  | otherwise =
+    error
+      ("Cannot find" ++
+       show key ++ " from " ++ show instruction ++ "list = " ++ show list ++ " pointer =" ++ show instructionPointer)
   where
-    key = list !! instructionPointer
+    instruction = list !! instructionPointer
+    key = instruction `mod` 100
+    read = readFromIndex list
+    (m3, m2, m1) = instructionToModes instruction
 
-processInstruction :: Int -> [Int] -> [Int]
-processInstruction instructionPointer list =
-  let word = readInstruction instructionPointer list
-      (instruction, _, _, destination, _) = word
-      p1 = get1 list word
-      p2 = get2 list word
-   in replace list destination (runCommand instruction p1 p2)
+fourArgCommand :: (Int -> Int -> Int) -> [Int] -> Int -> [Int]
+fourArgCommand transformation list ip =
+  let (_, m2, m1) = instructionToModes (list !! ip)
+      destination = readFromIndex list (ip + 3, 1)
+      p1 = readFromIndex list (ip + 1, m1)
+      p2 = readFromIndex list (ip + 2, m2)
+   in replace list destination (transformation p1 p2)
 
-selectFromInstruction :: [Int] -> Int -> Int -> Int
-selectFromInstruction list offset index = list !! (index + offset)
+plus a b = a + b
 
-getParameter :: [Int] -> Int -> Int -> Int
-getParameter input offset param = input !! selectFromInstruction input offset param
+times a b = a * b
 
-runCommand :: Int -> Int -> Int -> Int
-runCommand key p1 p2
-  | key == 1 = p1 + p2
-  | key == 2 = p1 * p2
-  | otherwise = error ("command (" ++ show key ++ ") not found")
+multiply :: [Int] -> Int -> [Int]
+multiply = fourArgCommand times
 
+add :: [Int] -> Int -> [Int]
+add = fourArgCommand plus
 
 replace :: [Int] -> Int -> Int -> [Int]
 replace list index value = take index list ++ [value] ++ drop (index + 1) list
 
-readInstruction :: Int -> [Int] -> IntcodeWord
-readInstruction instructionPointer input = arrayToWord (slice instructionPointer (instructionPointer + 3) input)
-
-readParameter :: [Int] -> ParamAndMode -> Int
-readParameter list (p, 0) = list !! p
-readParameter list (p, 1) = p
+readFromIndex :: [Int] -> (Int, Int) -> Int
+readFromIndex list (index, 0) = list !! (list !! index)
+readFromIndex list (index, 1) = list !! index
 
 instructionToModes :: Int -> Modes
 instructionToModes i = (mod (i `div` 10000) 10, mod (i `div` 1000) 10, mod (i `div` 100) 10)
-
-arrayToWord :: [Int] -> IntcodeWord
-arrayToWord [a, b, c, d] = (a `mod` 10, b, c, d, instructionToModes a)
-
-getInstruction :: IntcodeWord -> Int
-getInstruction (instruction, _, _, _, _) = instruction
-
-get1 :: [Int] -> IntcodeWord -> Int
-get1 list (_, p, _, _, (_, _, m)) = readParameter list (p, m)
-
-get2 :: [Int] -> IntcodeWord -> Int
-get2 list (_, _, p, _, (_, m, _)) = readParameter list (p, m)
 
 slice :: Int -> Int -> [a] -> [a]
 slice from to xs = take (to - from + 1) (drop from xs)
