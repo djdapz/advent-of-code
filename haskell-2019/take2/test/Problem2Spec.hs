@@ -55,9 +55,22 @@ intcodeCompileTest =
     , testCase
         "shouldCompileExample"
         (assertEquals ([30, 1, 1, 4, 2, 5, 6, 0, 99], "") (intcodeCompile 0 ([1, 1, 1, 4, 99, 5, 6, 0, 99], "")))
-    , testCase "shouldPutValuesInOutputWithOpcode4" ("99" `assertEquals` snd (intcodeCompile 0 ([4, 2, 99], "")))
-    , testCase "shouldPutValuesInOutputWithOpcode4" ("499" `assertEquals` snd (intcodeCompile 0 ([4, 2, 4, 4, 99], "")))
-    , testCase "shouldLetOpcode4WorkInDirectMode" ("299" `assertEquals` snd (intcodeCompile 0 ([104, 2, 4, 4, 99], "")))
+    , testGroup
+        "opcode 4"
+        [ testCase "shouldPutValuesInOutputWithOpcode4" ("99" `assertEquals` snd (intcodeCompile 0 ([4, 2, 99], "")))
+        , testCase
+            "shouldPutValuesInOutputWithOpcode4"
+            ("499" `assertEquals` snd (intcodeCompile 0 ([4, 2, 4, 4, 99], "")))
+        , testCase
+            "shouldLetOpcode4WorkInDirectMode"
+            ("299" `assertEquals` snd (intcodeCompile 0 ([104, 2, 4, 4, 99], "")))
+        ]
+    , testGroup
+        "opcode 4"
+        [ testCase
+            "shouldReadInOneForInputWithOpcode3"
+            ([1, 0, 99] `assertEquals` fst (intcodeCompile 0 ([3, 0, 99], "")))
+        ]
     ]
 
 addCommandTests :: TestTree

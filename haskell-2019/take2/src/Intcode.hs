@@ -13,6 +13,8 @@ intcodeCompile :: Int -> ([Int], String) -> ([Int], String)
 intcodeCompile instructionPointer (list, output)
   | key == 99 = (list, output)
   | key == 4 = intcodeCompile (instructionPointer + 2) (list, output ++ show (read (instructionPointer + 1, m1)))
+  | key == 3 =
+    intcodeCompile (instructionPointer + 2) (replace list (readFromIndex list (instructionPointer + 1, 1)) 1, output)
   | key == 2 = intcodeCompile (instructionPointer + 4) (multiply list instructionPointer, output)
   | key == 1 = intcodeCompile (instructionPointer + 4) (add list instructionPointer, output)
   | otherwise =
