@@ -9,9 +9,16 @@ type IntcodeWord = (Int, Int, Int, Int, Modes)
 runIntcode :: [Int] -> Int
 runIntcode list = head (fst (intcodeCompile 0 (list, "")))
 
+compile :: [Int] -> ([Int], String)
+compile list = intcodeCompile 0 (list, "")
+
 intcodeCompile :: Int -> ([Int], String) -> ([Int], String)
 intcodeCompile instructionPointer (list, output)
   | key == 99 = (list, output)
+  | key == 8 = intcodeCompile (instructionPointer + 4) (equals list instructionPointer, output)
+  | key == 7 = intcodeCompile (instructionPointer + 4) (lessThan list instructionPointer, output)
+  | key == 6 = intcodeCompile (jumpZero list instructionPointer) (list, output)
+  | key == 5 = intcodeCompile (jumpNonZero list instructionPointer) (list, output)
   | key == 4 = intcodeCompile (instructionPointer + 2) (list, output ++ show (read (instructionPointer + 1, m1)))
   | key == 3 =
     intcodeCompile (instructionPointer + 2) (replace list (readFromIndex list (instructionPointer + 1, 1)) 1, output)
@@ -35,15 +42,48 @@ fourArgCommand transformation list ip =
       p2 = readFromIndex list (ip + 2, m2)
    in replace list destination (transformation p1 p2)
 
-plus a b = a + b
+eq a b
+  | a == b = 1
+  | otherwise = 0
 
-times a b = a * b
+less a b
+  | a < b = 1
+  | otherwise = 0
 
 multiply :: [Int] -> Int -> [Int]
-multiply = fourArgCommand times
+multiply = fourArgCommand (*)
 
 add :: [Int] -> Int -> [Int]
-add = fourArgCommand plus
+add = fourArgCommand (+)
+
+equals :: [Int] -> Int -> [Int]
+equals = fourArgCommand eq
+
+lessThan :: [Int] -> Int -> [Int]
+lessThan = fourArgCommand less
+
+jumpNonZeroTransform :: Int -> Int -> Int -> Int
+jumpNonZeroTransform p1 p2 ip
+  | p1 == 0 = ip + 3
+  | otherwise = p2
+
+jumpZeroTransform :: Int -> Int -> Int -> Int
+jumpZeroTransform p1 p2 ip
+  | p1 == 0 = p2
+  | otherwise = ip + 3
+
+jumpCommand :: (Int -> Int -> Int -> Int) -> [Int] -> Int -> Int
+jumpCommand transform list ip =
+  let (_, m2, m1) = instructionToModes (list !! ip)
+      p1 = readFromIndex list (ip + 1, m1)
+      p2 = readFromIndex list (ip + 2, m2)
+   in transform p1 p2 ip
+
+jumpNonZero :: [Int] -> Int -> Int
+jumpNonZero = jumpCommand jumpNonZeroTransform
+
+jumpZero :: [Int] -> Int -> Int
+jumpZero = jumpCommand jumpZeroTransform
 
 replace :: [Int] -> Int -> Int -> [Int]
 replace list index value = take index list ++ [value] ++ drop (index + 1) list

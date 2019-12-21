@@ -71,6 +71,66 @@ intcodeCompileTest =
             "shouldReadInOneForInputWithOpcode3"
             ([1, 0, 99] `assertEquals` fst (intcodeCompile 0 ([3, 0, 99], "")))
         ]
+    , testGroup
+        "opcode 8 (Equals)"
+        [ testCase
+            "should assert  equal in direct mode"
+            ([1108, 1, 3, 1, 99] `assertEquals` fst (compile [1108, 3, 3, 1, 99]))
+        , testCase
+            "should assert not equal in direct mode"
+            ([1108, 0, 3, 1, 99] `assertEquals` fst (compile [1108, 2, 3, 1, 99]))
+        , testCase
+            "should assert equal in indirect mode"
+            ([8, 2, 3, 1, 99] `assertEquals` fst (compile [8, 2, 3, 3, 99]))
+        , testCase
+            "should assert equal in indirect mode"
+            ([8, 2, 0, 2, 99] `assertEquals` fst (compile [8, 2, 3, 2, 99]))
+        ]
+    , testGroup
+        "opcode 7 (less than)"
+        [ testCase
+            "should assert  less in direct mode"
+            ([1107, 1, 3, 1, 99] `assertEquals` fst (compile [1107, 2, 3, 1, 99]))
+        , testCase
+            "should assert not less in direct mode when greater"
+            ([1107, 0, 3, 1, 99] `assertEquals` fst (compile [1107, 4, 3, 1, 99]))
+        , testCase
+            "should assert not less in direct mode when equal"
+            ([1107, 0, 3, 1, 99] `assertEquals` fst (compile [1107, 3, 3, 1, 99]))
+        , testCase
+            "should assert less than in indirect mode"
+            ([7, 2, 3, 0, 99] `assertEquals` fst (compile [7, 2, 3, 3, 99]))
+        , testCase
+            "should assert less than in indirect mode"
+            ([7, 1, 4, 1, 99] `assertEquals` fst (compile [7, 1, 4, 3, 99]))
+        ]
+    , testGroup
+        "opcode 5 (jump if non zero)"
+        [ testCase
+            "should jump in direct mode"
+            ([8, 2, 5, 2, 2, 1101, 4, 4, 0, 99] `assertEquals` fst (compile [1105, 2, 5, 2, 2, 1101, 4, 4, 0, 99]))
+        , testCase
+            "should  not jump when false jump in indirect mode"
+            ([5, 2, 0, 1102, 2202, 1101, 4, 99] `assertEquals` fst (compile [5, 2, 0, 1102, 2, 1101, 4, 99]))
+        , testCase
+            "should jump when true in indirect mode"
+            ([38, 2, 4, 1102, 7, 3439393, 312341234, 1101, 5, 33, 0, 99] `assertEquals`
+             fst (compile [5, 2, 4, 1102, 7, 3439393, 312341234, 1101, 5, 33, 0, 99]))
+        ]
+    , testGroup
+        "opcode 5 (jump if zero)"
+        [ testCase
+            "should not jump in direct mode whe non zero"
+            ([1106, 2, 5, 1102, 2202, 1101, 4, 99] `assertEquals` fst (compile [1106, 2, 5, 1102, 2, 1101, 4, 99]))
+        , testCase
+            "should  jump in direct mode when zero"
+            ([1106, 103, 5, 1102, 2, 1101, 4, 99, 1, 99] `assertEquals`
+             fst (compile [1106, 0, 5, 1102, 2, 1101, 4, 99, 1, 99]))
+        , testCase
+            "should  jump in indirect mode when zero"
+            ([55, 4, 5, 1102, 0, 9, 4, 99, 1, 1101, 22, 33, 0, 99] `assertEquals`
+             fst (compile [6, 4, 5, 1102, 0, 9, 4, 99, 1, 1101, 22, 33, 0, 99]))
+        ]
     ]
 
 addCommandTests :: TestTree
