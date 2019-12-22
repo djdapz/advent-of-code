@@ -13,10 +13,7 @@ intcodeTest =
     "intcode"
     [ testGroup
         "newVersion"
-        [ testCase
-            "both versions should be equivalent"
-            (intcodeCompile 0 (problem2Input, "") `assertEquals` intcodeCompile 0 (problem2Input, ""))
-        ]
+        [testCase "both versions should be equivalent" (compile problem2Input `assertEquals` compile problem2Input)]
     , testCase "should read direct when in mode 1" (6 `assertEquals` readFromIndex [8, 4, 3, 5, 12, 6] (5, 1))
     , testGroup
         "command to modes"

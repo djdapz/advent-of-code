@@ -42,34 +42,34 @@ intcodeCompileTest =
         "shouldComplieList"
         (assertEquals
            ([1, 2, 1, 101, 2, 2, 3, 2, 1, 1, 12, 3, 99], "")
-           (intcodeCompile 0 ([1, 1, 1, 1, 2, 2, 3, 2, 1, 1, 12, 3, 99], "")))
-    , testCase "shouldComplieList2" (assertEquals ([4, 0, 0, 0, 99], "") (intcodeCompile 0 ([2, 0, 0, 0, 99], "")))
-    , testCase "shouldCompileExample" (assertEquals ([2, 0, 0, 0, 99], "") (intcodeCompile 0 ([1, 0, 0, 0, 99], "")))
-    , testCase "shouldCompileExample" (assertEquals ([2, 3, 0, 6, 99], "") (intcodeCompile 0 ([2, 3, 0, 3, 99], "")))
+           (compile [1, 1, 1, 1, 2, 2, 3, 2, 1, 1, 12, 3, 99]))
+    , testCase "shouldComplieList2" (assertEquals ([4, 0, 0, 0, 99], "") (compile [2, 0, 0, 0, 99]))
+    , testCase "shouldCompileExample" (assertEquals ([2, 0, 0, 0, 99], "") (compile [1, 0, 0, 0, 99]))
+    , testCase "shouldCompileExample" (assertEquals ([2, 3, 0, 6, 99], "") (compile [2, 3, 0, 3, 99]))
     , testCase
         "shouldCompileExample"
-        (assertEquals ([2, 4, 4, 5, 99, 9801], "") (intcodeCompile 0 ([2, 4, 4, 5, 99, 0], "")))
+        (assertEquals ([2, 4, 4, 5, 99, 9801], "") (compile [2, 4, 4, 5, 99, 0]))
     , testCase
         "shouldCompileExampleWithNegatives"
-        (assertEquals ([1101, 100, -1, 4, 99], "") (intcodeCompile 0 ([1101, 100, -1, 4, 0], "")))
+        (assertEquals ([1101, 100, -1, 4, 99], "") (compile [1101, 100, -1, 4, 0]))
     , testCase
         "shouldCompileExample"
-        (assertEquals ([30, 1, 1, 4, 2, 5, 6, 0, 99], "") (intcodeCompile 0 ([1, 1, 1, 4, 99, 5, 6, 0, 99], "")))
+        (assertEquals ([30, 1, 1, 4, 2, 5, 6, 0, 99], "") (compile [1, 1, 1, 4, 99, 5, 6, 0, 99]))
     , testGroup
         "opcode 4"
-        [ testCase "shouldPutValuesInOutputWithOpcode4" ("99" `assertEquals` snd (intcodeCompile 0 ([4, 2, 99], "")))
+        [ testCase "shouldPutValuesInOutputWithOpcode4" ("99" `assertEquals` snd (compile [4, 2, 99]))
         , testCase
             "shouldPutValuesInOutputWithOpcode4"
-            ("499" `assertEquals` snd (intcodeCompile 0 ([4, 2, 4, 4, 99], "")))
+            ("499" `assertEquals` snd (compile [4, 2, 4, 4, 99]))
         , testCase
             "shouldLetOpcode4WorkInDirectMode"
-            ("299" `assertEquals` snd (intcodeCompile 0 ([104, 2, 4, 4, 99], "")))
+            ("299" `assertEquals` snd (compile [104, 2, 4, 4, 99]))
         ]
     , testGroup
         "opcode 4"
         [ testCase
             "shouldReadInOneForInputWithOpcode3"
-            ([1, 0, 99] `assertEquals` fst (intcodeCompile 0 ([3, 0, 99], "")))
+            ([1, 0, 99] `assertEquals` fst (compile [3, 0, 99]))
         ]
     , testGroup
         "opcode 8 (Equals)"
@@ -131,7 +131,7 @@ intcodeCompileTest =
             ([55, 4, 5, 1102, 0, 9, 4, 99, 1, 1101, 22, 33, 0, 99] `assertEquals`
              fst (compile [6, 4, 5, 1102, 0, 9, 4, 99, 1, 1101, 22, 33, 0, 99]))
         ]
-    ]
+     ]
 
 addCommandTests :: TestTree
 addCommandTests =
