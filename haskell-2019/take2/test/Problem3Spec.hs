@@ -5,6 +5,7 @@ import           Test.Tasty.HUnit
 
 import           Problem3
 import           Assertions
+import           Lib
 
 problem3Tests :: TestTree
 problem3Tests = testGroup "Problem3" [wireReaderTest, wireIntersectionTest, manhattanDistanceTest, stepCalculatorTest]

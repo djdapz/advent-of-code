@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="580a2b85-2878-4a50-a364-84690f5c3ec6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Problem6.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/Problem6Spec.hs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Main.hs" beforeDir="false" afterPath="$PROJECT_DIR$/app/Main.hs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Intcode.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Intcode.hs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/IntcodeSpec.hs" beforeDir="false" afterPath="$PROJECT_DIR$/test/IntcodeSpec.hs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Problem2Spec.hs" beforeDir="false" afterPath="$PROJECT_DIR$/test/Problem2Spec.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/package.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lib.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lib.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Problem3.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Problem3.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Problem3Spec.hs" beforeDir="false" afterPath="$PROJECT_DIR$/test/Problem3Spec.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Spec.hs" beforeDir="false" afterPath="$PROJECT_DIR$/test/Spec.hs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +64,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -148,7 +152,7 @@
       <workItem from="1576632179208" duration="3900000" />
       <workItem from="1576694606104" duration="6102000" />
       <workItem from="1576764679101" duration="10232000" />
-      <workItem from="1576857370804" duration="15344000" />
+      <workItem from="1576857370804" duration="22648000" />
     </task>
     <task id="LOCAL-00001" summary="Problem 2a">
       <created>1575864108150</created>
@@ -178,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576796705586</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Problem5 (Intocde) Works!">
+      <created>1576981001309</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1576981001310</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,7 +213,8 @@
     <MESSAGE value="Problem 2b works!" />
     <MESSAGE value="Problem 3 works!" />
     <MESSAGE value="Read Modes for Intcode in prep for p5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Read Modes for Intcode in prep for p5" />
+    <MESSAGE value="Problem5 (Intocde) Works!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Problem5 (Intocde) Works!" />
   </component>
   <component name="WindowStateProjectService">
     <state x="304" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576119371463">
@@ -217,49 +229,49 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="704" y="483" key="#haskell.test.module.creation.dialog/0.23.1680.1027@0.23.1680.1027" timestamp="1576120429407" />
-    <state x="418" y="137" key="CommitChangelistDialog2" timestamp="1576796704804">
+    <state x="418" y="137" key="CommitChangelistDialog2" timestamp="1576981000777">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="418" y="137" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1576796704804" />
+    <state x="418" y="137" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1576981000777" />
     <state x="100" y="123" width="1480" height="827" key="DiffContextDialog" timestamp="1576893902101">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="100" y="123" width="1480" height="827" key="DiffContextDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1576893902101" />
-    <state width="1016" height="334" key="GridCell.Tab.0.bottom" timestamp="1576980985309">
+    <state width="1013" height="349" key="GridCell.Tab.0.bottom" timestamp="1577083793989">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1016" height="334" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1576980985309" />
-    <state width="1016" height="334" key="GridCell.Tab.0.center" timestamp="1576980985308">
+    <state width="1013" height="349" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1577083793989" />
+    <state width="1013" height="349" key="GridCell.Tab.0.center" timestamp="1577083793988">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1016" height="334" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1576980985308" />
-    <state width="1016" height="334" key="GridCell.Tab.0.left" timestamp="1576980985308">
+    <state width="1013" height="349" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1577083793988" />
+    <state width="1013" height="349" key="GridCell.Tab.0.left" timestamp="1577083793988">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1016" height="334" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1576980985308" />
-    <state width="1016" height="334" key="GridCell.Tab.0.right" timestamp="1576980985309">
+    <state width="1013" height="349" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1577083793988" />
+    <state width="1013" height="349" key="GridCell.Tab.0.right" timestamp="1577083793989">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1016" height="334" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1576980985309" />
-    <state x="493" y="174" key="SettingsEditor" timestamp="1576790265359">
+    <state width="1013" height="349" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1577083793989" />
+    <state x="493" y="174" key="SettingsEditor" timestamp="1577079593812">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="493" y="174" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1576790265359" />
+    <state x="493" y="174" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1577079593812" />
     <state x="797" y="460" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576021195046">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="797" y="460" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1680.1027@0.23.1680.1027" timestamp="1576021195046" />
-    <state x="497" y="298" width="845" height="476" key="find.popup" timestamp="1576893503703">
+    <state x="497" y="298" width="845" height="528" key="find.popup" timestamp="1577083701056">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="497" y="298" width="845" height="476" key="find.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1576893503703" />
+    <state x="497" y="298" width="845" height="528" key="find.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1577083701056" />
     <state x="678" y="248" key="run.anything.popup" timestamp="1576017127872">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="678" y="248" key="run.anything.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1576017127872" />
-    <state x="505" y="260" width="670" height="676" key="search.everywhere.popup" timestamp="1576912585469">
+    <state x="505" y="260" width="670" height="676" key="search.everywhere.popup" timestamp="1577082809261">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="505" y="260" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1576912585469" />
+    <state x="505" y="260" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1577082809261" />
   </component>
 </project>

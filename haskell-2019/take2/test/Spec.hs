@@ -11,8 +11,9 @@ import           Problem2Spec
 import           Problem3Spec
 import           Problem4Spec
 import           Problem5Spec
+import           Problem6Spec
 
 main = defaultMain tests
 
 tests :: TestTree
-tests = testGroup "ALL Tests" [problem1Tests, problem2Tests, problem3Tests, problem4Tests, problem5Tests,  intcodeTest]
+tests = testGroup "ALL Tests" [problem1Tests, problem2Tests, problem3Tests, problem4Tests, problem5Tests,  intcodeTest, problem6Tests]
