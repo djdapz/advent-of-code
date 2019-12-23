@@ -24,3 +24,4 @@ main = do
   print ("Problem5a: " ++ show (snd (compile problem5Input)))
   print ("Problem5a: " ++ show (snd (compileWithInput 5 problem5Input)))
   print ("Problem6a: " ++ show (totalOrbits (newOrbitalMap problem6Input)))
+  print ("Problem6a: " ++ show (distanceBetween "YOU" "SAN" (newOrbitalMap problem6Input)))

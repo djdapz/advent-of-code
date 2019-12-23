@@ -9,6 +9,10 @@ import           Problem6
 problem6Tests :: TestTree
 problem6Tests = testGroup "Problem6" [orbitReadingTest]
 
+websiteExample = ["COM)B", "B)C", "C)D", "D)E", "E)F", "B)G", "G)H", "D)I", "E)J", "J)K", "K)L"]
+
+websiteExampleWithMe = websiteExample ++ ["K)YOU", "I)SAN"]
+
 orbitReadingTest :: TestTree
 orbitReadingTest =
   testGroup
@@ -31,8 +35,11 @@ orbitReadingTest =
     , testCase
         "It knows that we have a total number of 3 + 2 + 1 orbits"
         (6 `assertEquals` totalOrbits (newOrbitalMap ["COM)A", "A)B", "B)D"]))
+    , testCase "It works on test case from website" (42 `assertEquals` totalOrbits (newOrbitalMap websiteExample))
     , testCase
-        "It works on test case from website"
-        (42 `assertEquals`
-         totalOrbits (newOrbitalMap ["COM)B", "B)C", "C)D", "D)E", "E)F", "B)G", "G)H", "D)I", "E)J", "J)K", "K)L"]))
+        "It works gets me an orbital path "
+        (["K", "J", "E", "D", "C", "B", "COM"] `assertEquals` pathToCom "YOU" (newOrbitalMap websiteExampleWithMe))
+    , testCase
+        "finds the distance between two orbitals"
+        (4 `assertEquals` distanceBetween "YOU" "SAN" (newOrbitalMap websiteExampleWithMe))
     ]

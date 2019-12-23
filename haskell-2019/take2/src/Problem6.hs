@@ -26,6 +26,24 @@ numberOfOrbits planet oMap
 totalOrbits :: OrbitalMap -> Int
 totalOrbits orbitalMap = sum [numberOfOrbits planet orbitalMap | planet <- keys orbitalMap]
 
+pathToCom :: String -> OrbitalMap -> [String]
+pathToCom planet oMap
+  | target == "COM" = ["COM"]
+  | otherwise = target : pathToCom target oMap
+  where
+    target = orbitsWhat planet oMap
+
+numberOfDifferences :: [String] -> [String] -> Int
+numberOfDifferences l1 l2
+  | l1 !! 1 == l2 !! 1 = numberOfDifferences (tail l1) (tail l2)
+  | otherwise = length l1 + length l2 - 2
+
+distanceBetween :: String -> String -> OrbitalMap -> Int
+distanceBetween first second oMap =
+  let firstPath = reverse (pathToCom first oMap)
+      secondPath = reverse (pathToCom second oMap)
+   in numberOfDifferences firstPath secondPath
+
 problem6Input :: [String]
 problem6Input =
   [ "BYZ)LMV"
