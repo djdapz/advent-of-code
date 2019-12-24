@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="580a2b85-2878-4a50-a364-84690f5c3ec6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Problem7.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/Problem7Spec.hs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Problem6.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Problem6.hs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Problem6Spec.hs" beforeDir="false" afterPath="$PROJECT_DIR$/test/Problem6Spec.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/IntcodeSpec.hs" beforeDir="false" afterPath="$PROJECT_DIR$/test/IntcodeSpec.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Spec.hs" beforeDir="false" afterPath="$PROJECT_DIR$/test/Spec.hs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +54,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -62,11 +64,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/test" />
       <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/test" />
     </key>
   </component>
-  <component name="RunManager" selected="Haskell Stack.please do a thing">
+  <component name="RunManager" selected="Haskell Stack.All Tests">
     <configuration name="All Tests" type="HaskellStackConfigurationType" factoryName="Haskell Stack Tester" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="take2" />
       <option name="allowRunningInParallel" value="false" />
@@ -146,7 +148,7 @@
       <workItem from="1576632179208" duration="3900000" />
       <workItem from="1576694606104" duration="6102000" />
       <workItem from="1576764679101" duration="10232000" />
-      <workItem from="1576857370804" duration="24195000" />
+      <workItem from="1576857370804" duration="24935000" />
     </task>
     <task id="LOCAL-00001" summary="Problem 2a">
       <created>1575864108150</created>
@@ -231,22 +233,22 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="100" y="123" width="1480" height="827" key="DiffContextDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1576893902101" />
-    <state width="1297" height="349" key="GridCell.Tab.0.bottom" timestamp="1577085476885">
+    <state width="1296" height="349" key="GridCell.Tab.0.bottom" timestamp="1577170712587">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1297" height="349" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1577085476885" />
-    <state width="1297" height="349" key="GridCell.Tab.0.center" timestamp="1577085476885">
+    <state width="1296" height="349" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1577170712587" />
+    <state width="1296" height="349" key="GridCell.Tab.0.center" timestamp="1577170712586">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1297" height="349" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1577085476885" />
-    <state width="1297" height="349" key="GridCell.Tab.0.left" timestamp="1577085476884">
+    <state width="1296" height="349" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1577170712586" />
+    <state width="1296" height="349" key="GridCell.Tab.0.left" timestamp="1577170712586">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1297" height="349" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1577085476884" />
-    <state width="1297" height="349" key="GridCell.Tab.0.right" timestamp="1577085476885">
+    <state width="1296" height="349" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1577170712586" />
+    <state width="1296" height="349" key="GridCell.Tab.0.right" timestamp="1577170712587">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1297" height="349" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1577085476885" />
+    <state width="1296" height="349" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1577170712587" />
     <state x="493" y="174" key="SettingsEditor" timestamp="1577079593812">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>

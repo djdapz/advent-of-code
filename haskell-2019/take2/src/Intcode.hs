@@ -7,28 +7,29 @@ type ParamAndMode = (Int, Int)
 type IntcodeWord = (Int, Int, Int, Int, Modes)
 
 runIntcode :: [Int] -> Int
-runIntcode list = head (fst (intcodeCompile 0 (list, "", 1)))
+runIntcode list = head (fst (compile list))
 
 compile :: [Int] -> ([Int], String)
 compile = compileWithInput 1
 
 compileWithInput :: Int -> [Int] -> ([Int], String)
-compileWithInput input list = intcodeCompile 0 (list, "", input)
+compileWithInput input list = intcodeCompile 0 (list, "", [input])
 
-intcodeCompile :: Int -> ([Int], String, Int) -> ([Int], String)
-intcodeCompile instructionPointer (list, output, input)
+intcodeCompile :: Int -> ([Int], String, [Int]) -> ([Int], String)
+intcodeCompile instructionPointer (list, output, inputs)
   | key == 99 = (list, output)
-  | key == 8 = intcodeCompile (instructionPointer + 4) (equals list instructionPointer, output, input)
-  | key == 7 = intcodeCompile (instructionPointer + 4) (lessThan list instructionPointer, output, input)
-  | key == 6 = intcodeCompile (jumpZero list instructionPointer) (list, output, input)
-  | key == 5 = intcodeCompile (jumpNonZero list instructionPointer) (list, output, input)
-  | key == 4 = intcodeCompile (instructionPointer + 2) (list, output ++ show (read (instructionPointer + 1, m1)), input)
+  | key == 8 = intcodeCompile (instructionPointer + 4) (equals list instructionPointer, output, inputs)
+  | key == 7 = intcodeCompile (instructionPointer + 4) (lessThan list instructionPointer, output, inputs)
+  | key == 6 = intcodeCompile (jumpZero list instructionPointer) (list, output, inputs)
+  | key == 5 = intcodeCompile (jumpNonZero list instructionPointer) (list, output, inputs)
+  | key == 4 =
+    intcodeCompile (instructionPointer + 2) (list, output ++ show (read (instructionPointer + 1, m1)), inputs)
   | key == 3 =
     intcodeCompile
       (instructionPointer + 2)
-      (replace list (readFromIndex list (instructionPointer + 1, 1)) input, output, input)
-  | key == 2 = intcodeCompile (instructionPointer + 4) (multiply list instructionPointer, output, input)
-  | key == 1 = intcodeCompile (instructionPointer + 4) (add list instructionPointer, output, input)
+      (replace list (readFromIndex list (instructionPointer + 1, 1)) (head inputs), output, tail inputs)
+  | key == 2 = intcodeCompile (instructionPointer + 4) (multiply list instructionPointer, output, inputs)
+  | key == 1 = intcodeCompile (instructionPointer + 4) (add list instructionPointer, output, inputs)
   | otherwise =
     error
       ("Cannot find" ++

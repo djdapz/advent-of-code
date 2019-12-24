@@ -31,4 +31,7 @@ intcodeTest =
     , testCase
         "should multiply with mode 100 (immediate read)"
         ([102, 4, 6, 4, 20, 100, 5] `assertEquals` multiply [102, 4, 6, 4, 3, 100, 5] 0)
+    , testCase
+        "should accept multiple inputs"
+        ([2, 111, 222, 0, 3, 1, 3, 2, 99] `assertEquals` fst (intcodeCompile 0 ([1101, 1, 1, 0, 3, 1, 3, 2, 99], "", [111, 222])))
     ]
