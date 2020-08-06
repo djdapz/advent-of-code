@@ -26,5 +26,28 @@ namespace CSharp_2017
 
             Assert.AreEqual(sum, expectedSum);
         }
+
+        [Test]
+        public void ShouldIncludeNumbersHalfWayAroundTheBend()
+        {
+            var nonRepeatingList = new List<int> {1, 2, 1, 2};
+            const int expectedSum = 6;
+
+            var sum = Question1.ReverseCaptchaWithHalfway(nonRepeatingList);
+
+            Assert.AreEqual(sum, expectedSum);
+        }
+
+
+        [Test]
+        public void ShouldIncludeNumbersHalfWayAroundTheBend_1()
+        {
+            var nonRepeatingList = new List<int> {1, 2, 2, 1};
+            const int expectedSum = 0;
+
+            var sum = Question1.ReverseCaptchaWithHalfway(nonRepeatingList);
+
+            Assert.AreEqual(sum, expectedSum);
+        }
     }
 }

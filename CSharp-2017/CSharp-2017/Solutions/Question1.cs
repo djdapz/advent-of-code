@@ -14,5 +14,14 @@ namespace CSharp_2017
                     return t == numbers[nextIndex];
                 })
                 .Sum();
+
+        public static int ReverseCaptchaWithHalfway(List<int> numbers) =>
+            numbers
+                .Where((t, i) =>
+                {
+                    var halfwayIndex = (i + (numbers.Count / 2)) % numbers.Count;
+                    return t == numbers[halfwayIndex];
+                })
+                .Sum();
     }
 }

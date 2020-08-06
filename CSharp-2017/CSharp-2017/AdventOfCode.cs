@@ -2,12 +2,13 @@
 
 namespace CSharp_2017
 {
-    class Program
+    internal static class AdventOfCode
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Console.WriteLine("Question 1:");
             Console.WriteLine(Question1.ReverseCaptcha(Parser.ToIntList(PuzzleInputs.Q1)));
+            Console.WriteLine(Question1.ReverseCaptchaWithHalfway(Parser.ToIntList(PuzzleInputs.Q1)));
         }
     }
 }
