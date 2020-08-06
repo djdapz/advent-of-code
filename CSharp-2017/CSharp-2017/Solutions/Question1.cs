@@ -1,8 +1,7 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace CSharp_2017
+namespace CSharp_2017.Solutions
 {
     public class Question1
     {

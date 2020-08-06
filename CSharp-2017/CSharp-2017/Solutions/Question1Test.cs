@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using NUnit.Framework;
 
-namespace CSharp_2017
+namespace CSharp_2017.Solutions
 {
-    public class Tests
+    public class Question1Test
     {
         [Test]
         public void ShouldCalculateZeroWhenNothingRepeats()

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using NUnit.Framework;
 
-namespace CSharp_2017
+namespace CSharp_2017.Support
 {
     public class ParserTest
     {
@@ -11,9 +11,11 @@ namespace CSharp_2017
             var questionTest = "1234";
             var expectedOutput = new List<int> {1, 2, 3, 4};
 
-            var sum = Parser.ToIntList(questionTest);
+            var sum = IntListParser.FromGlob(questionTest);
 
             Assert.AreEqual(sum, expectedOutput);
         }
+
+     
     }
 }
