@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="09a04dab-de11-4477-8622-6261537a26b5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Sources/swift-2019/day1.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/swift-2019/day1.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/swift-2019Tests/day1Tests.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/swift-2019Tests/day1Tests.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/swift-2019Tests/mainTests.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/swift-2019Tests/mainTests.swift" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="macos_macos_x86_64" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1hvJRahJGEAvUIUcqqnyWT2dF8M" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager" selected="XCTest.All Tests">
+    <configuration name="All Tests" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" nameIsGenerated="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="swift-2019" TARGET_NAME="swift-2019Tests" CONFIG_NAME="Debug" SCHEME_NAME="All Tests" IS_LOCATION_SIMULATION_ALLOWED="true" LOCATION_SCENARIO_ID="com.apple.dt.IDEFoundation.CurrentLocationScenarioIdentifier" LOCATION_SCENARIO_TYPE="1" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in day1Tests.swift" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="swift-2019" TARGET_NAME="swift-2019Tests" CONFIG_NAME="Debug" SCHEME_NAME="All in day1Tests.swift" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_PATTERN="day1Tests" TEST_MODE="PATTERN">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All " type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="swift-2019" TARGET_NAME="swift-2019Tests" CONFIG_NAME="Debug" SCHEME_NAME="All " IS_LOCATION_SIMULATION_ALLOWED="true" LOCATION_SCENARIO_ID="com.apple.dt.IDEFoundation.CurrentLocationScenarioIdentifier" LOCATION_SCENARIO_TYPE="1" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_MODE="PATTERN">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="day1Tests" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="swift-2019" TARGET_NAME="swift-2019Tests" CONFIG_NAME="Debug" SCHEME_NAME="day1Tests" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_CLASS="day1Tests" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mainTests" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="swift-2019" TARGET_NAME="swift-2019Tests" CONFIG_NAME="Debug" SCHEME_NAME="mainTests" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_CLASS="mainTests" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.swift-2019-Package" />
+      <item itemvalue="XCTest.All Tests" />
+      <item itemvalue="XCTest.day1Tests" />
+      <item itemvalue="XCTest.mainTests" />
+      <item itemvalue="XCTest.All in day1Tests.swift" />
+      <item itemvalue="XCTest.All " />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="XCTest.All " />
+        <item itemvalue="XCTest.All in day1Tests.swift" />
+        <item itemvalue="XCTest.mainTests" />
+        <item itemvalue="XCTest.day1Tests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="09a04dab-de11-4477-8622-6261537a26b5" name="Default Changelist" comment="" />
+      <created>1600885625478</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600885625478</updated>
+      <workItem from="1600885626746" duration="848000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="849" y="213" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600886750958">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="849" y="213" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1057/-1680.557.1680.1027@0.23.1920.1057" timestamp="1600886750958" />
+    <state width="1019" height="290" key="GridCell.Tab.0.bottom" timestamp="1600886726655">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1019" height="290" key="GridCell.Tab.0.bottom/0.23.1920.1057/-1680.557.1680.1027@0.23.1920.1057" timestamp="1600886726655" />
+    <state width="1019" height="290" key="GridCell.Tab.0.center" timestamp="1600886726654">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1019" height="290" key="GridCell.Tab.0.center/0.23.1920.1057/-1680.557.1680.1027@0.23.1920.1057" timestamp="1600886726654" />
+    <state width="1019" height="290" key="GridCell.Tab.0.left" timestamp="1600886726654">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1019" height="290" key="GridCell.Tab.0.left/0.23.1920.1057/-1680.557.1680.1027@0.23.1920.1057" timestamp="1600886726654" />
+    <state width="1019" height="290" key="GridCell.Tab.0.right" timestamp="1600886726655">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1019" height="290" key="GridCell.Tab.0.right/0.23.1920.1057/-1680.557.1680.1027@0.23.1920.1057" timestamp="1600886726655" />
+    <state x="1054" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1600885812574">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1054" y="258" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057/-1680.557.1680.1027@0.23.1920.1057" timestamp="1600885812574" />
+  </component>
+</project>
