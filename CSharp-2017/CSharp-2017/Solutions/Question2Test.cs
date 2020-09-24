@@ -1,11 +1,12 @@
 using System.Collections.Generic;
-using NUnit.Framework;
+using Xunit;
+using Assert = NUnit.Framework.Assert;
 
 namespace CSharp_2017.Solutions
 {
     public class Question2Test
     {
-        [Test]
+        [Fact]
         public void ShouldSumTogetherChecksumForEachRow()
         {
             var spreadsheet = @"5	1	9	5

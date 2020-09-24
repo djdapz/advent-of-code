@@ -10,5 +10,11 @@ namespace CSharp_2017.Solutions
         {
             return Spreadsheet.From(spreadsheet).Checksum();
         }
+        
+        
+        public static double SpreadsheetChecksumDivisibility(string spreadsheet)
+        {
+            return Spreadsheet.From(spreadsheet).ChecksumDivisibility();
+        }
     }
 }

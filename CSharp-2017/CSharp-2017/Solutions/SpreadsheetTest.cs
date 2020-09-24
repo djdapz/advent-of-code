@@ -1,12 +1,14 @@
 using System.Collections.Generic;
+using System.Globalization;
+using System.Security;
 using CSharp_2017.Support;
-using NUnit.Framework;
+using Xunit;
 
 namespace CSharp_2017.Solutions
 {
     public class SpreadsheetTest
     {
-        [Test]
+        [Fact]
         public void ShouldParseASpreadsheet()
         {
             var spreadsheetText = @"5	1	9	5
@@ -15,8 +17,33 @@ namespace CSharp_2017.Solutions
 
             var spreadsheet = Spreadsheet.From(spreadsheetText);
 
-            Assert.AreEqual(spreadsheet.rows.Count, 3);
-            Assert.AreEqual(spreadsheet.rows[0], new List<int> {5, 1, 9, 5});
+            Assert.Equal(3, spreadsheet.Rows.Count);
+            // Assert.Equal(spreadsheet.Rows[0], new Spreadsheet.Row(new List<int> {5, 1, 9, 5}));
+        }
+    }
+
+    public class RowTest
+    {
+        [Fact]
+        public void ShouldCalculateDivisibilityChecksum()
+        {
+            var row = new Spreadsheet.Row(new List<int> {5, 9, 2, 8});
+
+            var actual = row.ChecksumDivisibility();
+            var expected = 4;
+
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void ShouldNotCompareTwoOfTheSame()
+        {
+            var row = new Spreadsheet.Row(new List<int> {5, 9, 9, 2, 8});
+
+            var actual = row.ChecksumDivisibility();
+            var expected = 4;
+
+            Assert.Equal(expected, actual);
         }
     }
 }

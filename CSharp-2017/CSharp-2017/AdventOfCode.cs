@@ -13,6 +13,7 @@ namespace CSharp_2017
             Console.WriteLine(Question1.ReverseCaptchaWithHalfway(IntListParser.FromGlob(PuzzleInputs.Q1)));
             Console.WriteLine("Question 2:");
             Console.WriteLine(Question2.SpreadsheetChecksum(PuzzleInputs.Q2));
+            Console.WriteLine(Question2.SpreadsheetChecksumDivisibility(PuzzleInputs.Q2));
         }
     }
 }

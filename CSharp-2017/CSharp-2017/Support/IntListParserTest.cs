@@ -1,11 +1,12 @@
 using System.Collections.Generic;
-using NUnit.Framework;
+using Xunit;
+using Assert = NUnit.Framework.Assert;
 
 namespace CSharp_2017.Support
 {
     public class ParserTest
     {
-        [Test]
+        [Fact]
         public void ShouldParseABasicStringIntoAListOfIntegers()
         {
             var questionTest = "1234";

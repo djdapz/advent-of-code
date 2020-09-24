@@ -1,11 +1,12 @@
 using System.Collections.Generic;
-using NUnit.Framework;
+using Xunit;
+using Assert = NUnit.Framework.Assert;
 
 namespace CSharp_2017.Solutions
 {
     public class Question1Test
     {
-        [Test]
+        [Fact]
         public void ShouldCalculateZeroWhenNothingRepeats()
         {
             var nonRepeatingList = new List<int> {2, 3, 7};
@@ -16,7 +17,7 @@ namespace CSharp_2017.Solutions
             Assert.AreEqual(sum, expectedSum);
         }
 
-        [Test]
+        [Fact]
         public void ShouldCalculateSumWhenNumbersRepeat()
         {
             var nonRepeatingList = new List<int> {1, 1, 2, 2};
@@ -27,7 +28,7 @@ namespace CSharp_2017.Solutions
             Assert.AreEqual(sum, expectedSum);
         }
 
-        [Test]
+        [Fact]
         public void ShouldIncludeNumbersHalfWayAroundTheBend()
         {
             var nonRepeatingList = new List<int> {1, 2, 1, 2};
@@ -39,7 +40,7 @@ namespace CSharp_2017.Solutions
         }
 
 
-        [Test]
+        [Fact]
         public void ShouldIncludeNumbersHalfWayAroundTheBend_1()
         {
             var nonRepeatingList = new List<int> {1, 2, 2, 1};
