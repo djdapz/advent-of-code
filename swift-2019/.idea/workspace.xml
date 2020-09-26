@@ -20,7 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09a04dab-de11-4477-8622-6261537a26b5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sources/swift-2019/IntcodeProgram.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/swift-2019/IntcodeProgram.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/swift-2019/day1.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/swift-2019/day1.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/swift-2019/day2.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/swift-2019/day2.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/swift-2019Tests/mainTests.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/swift-2019Tests/mainTests.swift" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +55,7 @@
       <recent name="$PROJECT_DIR$/Sources/swift-2019" />
     </key>
   </component>
-  <component name="RunManager" selected="XCTest.All Tests">
+  <component name="RunManager" selected="XCTest.mainTests.testAdventWorks">
     <configuration name="All Tests" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" nameIsGenerated="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="swift-2019" TARGET_NAME="swift-2019Tests" CONFIG_NAME="Debug" SCHEME_NAME="All Tests" IS_LOCATION_SIMULATION_ALLOWED="true" LOCATION_SCENARIO_ID="com.apple.dt.IDEFoundation.CurrentLocationScenarioIdentifier" LOCATION_SCENARIO_TYPE="1" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -93,8 +97,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="XCTest.intcodeTests.testExamples" />
         <item itemvalue="XCTest.mainTests.testAdventWorks" />
+        <item itemvalue="XCTest.intcodeTests.testExamples" />
         <item itemvalue="XCTest.intcodeTests.test_multiplication_multiplies_one_word" />
         <item itemvalue="XCTest.intcodeTests" />
         <item itemvalue="XCTest.intcodeTests.test_resultPlacedInMIddle" />
@@ -113,7 +117,7 @@
       <workItem from="1600895851556" duration="3837000" />
       <workItem from="1601041338086" duration="596000" />
       <workItem from="1601045463040" duration="1492000" />
-      <workItem from="1601091717756" duration="3818000" />
+      <workItem from="1601091717756" duration="4580000" />
     </task>
     <task id="LOCAL-00001" summary="swift | day 2 - a">
       <created>1601095092846</created>
@@ -161,46 +165,46 @@
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state x="100" y="123" width="1720" height="977" key="DiffContextDialog/0.23.1920.1177@0.23.1920.1177" timestamp="1601095155155" />
-    <state width="1878" height="329" key="GridCell.Tab.0.bottom" timestamp="1601095501748">
+    <state width="1878" height="329" key="GridCell.Tab.0.bottom" timestamp="1601096355364">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state width="1019" height="290" key="GridCell.Tab.0.bottom/0.23.1920.1057/-1680.557.1680.1027@0.23.1920.1057" timestamp="1600899031683" />
-    <state width="1878" height="329" key="GridCell.Tab.0.bottom/0.23.1920.1177@0.23.1920.1177" timestamp="1601095501748" />
-    <state width="1878" height="329" key="GridCell.Tab.0.center" timestamp="1601095501746">
+    <state width="1878" height="329" key="GridCell.Tab.0.bottom/0.23.1920.1177@0.23.1920.1177" timestamp="1601096355364" />
+    <state width="1878" height="329" key="GridCell.Tab.0.center" timestamp="1601096355363">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state width="1019" height="290" key="GridCell.Tab.0.center/0.23.1920.1057/-1680.557.1680.1027@0.23.1920.1057" timestamp="1600899031682" />
-    <state width="1878" height="329" key="GridCell.Tab.0.center/0.23.1920.1177@0.23.1920.1177" timestamp="1601095501746" />
-    <state width="1878" height="329" key="GridCell.Tab.0.left" timestamp="1601095501746">
+    <state width="1878" height="329" key="GridCell.Tab.0.center/0.23.1920.1177@0.23.1920.1177" timestamp="1601096355363" />
+    <state width="1878" height="329" key="GridCell.Tab.0.left" timestamp="1601096355362">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state width="1019" height="290" key="GridCell.Tab.0.left/0.23.1920.1057/-1680.557.1680.1027@0.23.1920.1057" timestamp="1600899031682" />
-    <state width="1878" height="329" key="GridCell.Tab.0.left/0.23.1920.1177@0.23.1920.1177" timestamp="1601095501746" />
-    <state width="1878" height="329" key="GridCell.Tab.0.right" timestamp="1601095501747">
+    <state width="1878" height="329" key="GridCell.Tab.0.left/0.23.1920.1177@0.23.1920.1177" timestamp="1601096355362" />
+    <state width="1878" height="329" key="GridCell.Tab.0.right" timestamp="1601096355364">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state width="1019" height="290" key="GridCell.Tab.0.right/0.23.1920.1057/-1680.557.1680.1027@0.23.1920.1057" timestamp="1600899031683" />
-    <state width="1878" height="329" key="GridCell.Tab.0.right/0.23.1920.1177@0.23.1920.1177" timestamp="1601095501747" />
-    <state width="1019" height="358" key="GridCell.Tab.1.bottom" timestamp="1600955137186">
+    <state width="1878" height="329" key="GridCell.Tab.0.right/0.23.1920.1177@0.23.1920.1177" timestamp="1601096355364" />
+    <state width="1878" height="406" key="GridCell.Tab.1.bottom" timestamp="1601096341860">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state width="1019" height="358" key="GridCell.Tab.1.bottom/0.23.1920.1057/-1680.557.1680.1027@0.23.1920.1057" timestamp="1600898288357" />
-    <state width="1019" height="358" key="GridCell.Tab.1.bottom/0.23.1920.1177@0.23.1920.1177" timestamp="1600955137186" />
-    <state width="1019" height="358" key="GridCell.Tab.1.center" timestamp="1600955137185">
+    <state width="1878" height="406" key="GridCell.Tab.1.bottom/0.23.1920.1177@0.23.1920.1177" timestamp="1601096341860" />
+    <state width="1878" height="406" key="GridCell.Tab.1.center" timestamp="1601096341859">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state width="1019" height="358" key="GridCell.Tab.1.center/0.23.1920.1057/-1680.557.1680.1027@0.23.1920.1057" timestamp="1600898288356" />
-    <state width="1019" height="358" key="GridCell.Tab.1.center/0.23.1920.1177@0.23.1920.1177" timestamp="1600955137185" />
-    <state width="1019" height="358" key="GridCell.Tab.1.left" timestamp="1600955137185">
+    <state width="1878" height="406" key="GridCell.Tab.1.center/0.23.1920.1177@0.23.1920.1177" timestamp="1601096341859" />
+    <state width="1878" height="406" key="GridCell.Tab.1.left" timestamp="1601096341859">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state width="1019" height="358" key="GridCell.Tab.1.left/0.23.1920.1057/-1680.557.1680.1027@0.23.1920.1057" timestamp="1600898288355" />
-    <state width="1019" height="358" key="GridCell.Tab.1.left/0.23.1920.1177@0.23.1920.1177" timestamp="1600955137185" />
-    <state width="1019" height="358" key="GridCell.Tab.1.right" timestamp="1600955137186">
+    <state width="1878" height="406" key="GridCell.Tab.1.left/0.23.1920.1177@0.23.1920.1177" timestamp="1601096341859" />
+    <state width="1878" height="406" key="GridCell.Tab.1.right" timestamp="1601096341860">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state width="1019" height="358" key="GridCell.Tab.1.right/0.23.1920.1057/-1680.557.1680.1027@0.23.1920.1057" timestamp="1600898288356" />
-    <state width="1019" height="358" key="GridCell.Tab.1.right/0.23.1920.1177@0.23.1920.1177" timestamp="1600955137186" />
+    <state width="1878" height="406" key="GridCell.Tab.1.right/0.23.1920.1177@0.23.1920.1177" timestamp="1601096341860" />
     <state x="208" y="109" key="SettingsEditor" timestamp="1601045529117">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
@@ -213,11 +217,11 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="1096" y="306" width="586" height="490" key="find.popup/0.23.1920.1057/-1680.557.1680.1027@0.23.1920.1057" timestamp="1600888104953" />
-    <state x="1054" y="285" width="670" height="753" key="search.everywhere.popup" timestamp="1601095230073">
+    <state x="1054" y="285" width="670" height="753" key="search.everywhere.popup" timestamp="1601095732217">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state x="1054" y="258" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057/-1680.557.1680.1027@0.23.1920.1057" timestamp="1600895971660" />
-    <state x="1054" y="285" width="670" height="753" key="search.everywhere.popup/0.23.1920.1177@0.23.1920.1177" timestamp="1601095230073" />
+    <state x="1054" y="285" width="670" height="753" key="search.everywhere.popup/0.23.1920.1177@0.23.1920.1177" timestamp="1601095732217" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

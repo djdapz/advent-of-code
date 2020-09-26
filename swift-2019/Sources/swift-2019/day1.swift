@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class Day1{
+struct Day1{
 
     let masses: [Mass]
 

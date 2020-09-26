@@ -78,7 +78,7 @@ private extension IntcodeProgram {
 }
 
 
-private extension Array where Element: Any {
+extension Array where Element: Any {
 
     func insertAt(pivot: Int, element: Element) -> [Element] {
         let prefix = getPrefix(from: pivot)
