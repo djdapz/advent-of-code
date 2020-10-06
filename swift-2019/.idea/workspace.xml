@@ -20,11 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09a04dab-de11-4477-8622-6261537a26b5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Sources/swift-2019/Day.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/swift-2019/Day3.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/swift-2019/Wires.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/swift-2019Tests/wireTests.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/swift-2019/IntcodeProgram.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/swift-2019/IntcodeProgram.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sources/swift-2019/day1.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/swift-2019/day1.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sources/swift-2019/day2.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/swift-2019/day2.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/swift-2019/inputs.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/swift-2019/inputs.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/swift-2019Tests/XCTestManifests.swift" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/swift-2019Tests/mainTests.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/swift-2019Tests/mainTests.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/swift-2019Tests/swift_2019Tests.swift" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +53,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Tests/swift-2019Tests" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Swift" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -55,33 +61,33 @@
       <recent name="$PROJECT_DIR$/Sources/swift-2019" />
     </key>
   </component>
-  <component name="RunManager" selected="XCTest.mainTests.testAdventWorks">
+  <component name="RunManager" selected="XCTest.All Tests">
     <configuration name="All Tests" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" nameIsGenerated="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="swift-2019" TARGET_NAME="swift-2019Tests" CONFIG_NAME="Debug" SCHEME_NAME="All Tests" IS_LOCATION_SIMULATION_ALLOWED="true" LOCATION_SCENARIO_ID="com.apple.dt.IDEFoundation.CurrentLocationScenarioIdentifier" LOCATION_SCENARIO_TYPE="1" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="intcodeTests" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="swift-2019" TARGET_NAME="swift-2019Tests" CONFIG_NAME="Debug" SCHEME_NAME="intcodeTests" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_CLASS="intcodeTests" TEST_MODE="SUITE_TEST">
+    <configuration name="wireTests" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="swift-2019" TARGET_NAME="swift-2019Tests" CONFIG_NAME="Debug" SCHEME_NAME="wireTests" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_CLASS="wireTests" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="intcodeTests.testExamples" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="swift-2019" TARGET_NAME="swift-2019Tests" CONFIG_NAME="Debug" SCHEME_NAME="intcodeTests.testExamples" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_CLASS="intcodeTests" TEST_METHOD="testExamples" TEST_MODE="SUITE_TEST">
+    <configuration name="wireTests.test_regressionsForBestSteps" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="swift-2019" TARGET_NAME="swift-2019Tests" CONFIG_NAME="Debug" SCHEME_NAME="wireTests.test_regressionsForBestSteps" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_CLASS="wireTests" TEST_METHOD="test_regressionsForBestSteps" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="intcodeTests.test_multiplication_multiplies_one_word" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="swift-2019" TARGET_NAME="swift-2019Tests" CONFIG_NAME="Debug" SCHEME_NAME="intcodeTests.test_multiplication_multiplies_one_word" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_CLASS="intcodeTests" TEST_METHOD="test_multiplication_multiplies_one_word" TEST_MODE="SUITE_TEST">
+    <configuration name="wireTests.test_regressionsForBestSteps_3" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="swift-2019" TARGET_NAME="swift-2019Tests" CONFIG_NAME="Debug" SCHEME_NAME="wireTests.test_regressionsForBestSteps_3" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_CLASS="wireTests" TEST_METHOD="test_regressionsForBestSteps_3" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="intcodeTests.test_resultPlacedInMIddle" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="swift-2019" TARGET_NAME="swift-2019Tests" CONFIG_NAME="Debug" SCHEME_NAME="intcodeTests.test_resultPlacedInMIddle" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_CLASS="intcodeTests" TEST_METHOD="test_resultPlacedInMIddle" TEST_MODE="SUITE_TEST">
+    <configuration name="wireTests.test_regrstsionsForBestSteps_2" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="swift-2019" TARGET_NAME="swift-2019Tests" CONFIG_NAME="Debug" SCHEME_NAME="wireTests.test_regrstsionsForBestSteps_2" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_CLASS="wireTests" TEST_METHOD="test_regrstsionsForBestSteps_2" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="mainTests.testAdventWorks" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="swift-2019" TARGET_NAME="swift-2019Tests" CONFIG_NAME="Debug" SCHEME_NAME="mainTests.testAdventWorks" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_CLASS="mainTests" TEST_METHOD="testAdventWorks" TEST_MODE="SUITE_TEST">
+    <configuration name="wireTests.test_stepsRegression_1" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="swift-2019" TARGET_NAME="swift-2019Tests" CONFIG_NAME="Debug" SCHEME_NAME="wireTests.test_stepsRegression_1" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_CLASS="wireTests" TEST_METHOD="test_stepsRegression_1" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -89,19 +95,19 @@
     <list>
       <item itemvalue="Application.swift-2019-Package" />
       <item itemvalue="XCTest.All Tests" />
-      <item itemvalue="XCTest.intcodeTests" />
-      <item itemvalue="XCTest.intcodeTests.test_resultPlacedInMIddle" />
-      <item itemvalue="XCTest.intcodeTests.test_multiplication_multiplies_one_word" />
-      <item itemvalue="XCTest.mainTests.testAdventWorks" />
-      <item itemvalue="XCTest.intcodeTests.testExamples" />
+      <item itemvalue="XCTest.wireTests.test_regrstsionsForBestSteps_2" />
+      <item itemvalue="XCTest.wireTests.test_regressionsForBestSteps_3" />
+      <item itemvalue="XCTest.wireTests.test_regressionsForBestSteps" />
+      <item itemvalue="XCTest.wireTests.test_stepsRegression_1" />
+      <item itemvalue="XCTest.wireTests" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="XCTest.mainTests.testAdventWorks" />
-        <item itemvalue="XCTest.intcodeTests.testExamples" />
-        <item itemvalue="XCTest.intcodeTests.test_multiplication_multiplies_one_word" />
-        <item itemvalue="XCTest.intcodeTests" />
-        <item itemvalue="XCTest.intcodeTests.test_resultPlacedInMIddle" />
+        <item itemvalue="XCTest.wireTests" />
+        <item itemvalue="XCTest.wireTests.test_stepsRegression_1" />
+        <item itemvalue="XCTest.wireTests.test_regressionsForBestSteps" />
+        <item itemvalue="XCTest.wireTests.test_regressionsForBestSteps_3" />
+        <item itemvalue="XCTest.wireTests.test_regrstsionsForBestSteps_2" />
       </list>
     </recent_temporary>
   </component>
@@ -153,75 +159,97 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="849" y="213" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1057/-1680.557.1680.1027@0.23.1920.1057" timestamp="1600886750958" />
+    <state x="994" y="541" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601673480279">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="994" y="541" key="#com.intellij.fileTypes.FileTypeChooser/0.23.2560.1417@0.23.2560.1417" timestamp="1601673480279" />
     <state x="1202" y="274" key="#com.intellij.ide.util.MemberChooser" timestamp="1600890118798">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="1202" y="274" key="#com.intellij.ide.util.MemberChooser/0.23.1920.1057/-1680.557.1680.1027@0.23.1920.1057" timestamp="1600890118798" />
-    <state x="1127" y="305" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600888075536">
-      <screen x="0" y="23" width="1920" height="1057" />
+    <state x="1503" y="401" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601948590769">
+      <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="1127" y="305" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.1057/-1680.557.1680.1027@0.23.1920.1057" timestamp="1600888075536" />
-    <state x="100" y="123" width="1720" height="977" key="DiffContextDialog" timestamp="1601095155155">
-      <screen x="0" y="23" width="1920" height="1177" />
+    <state x="1503" y="401" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1601948590769" />
+    <state x="133" y="143" width="2294" height="1177" key="DiffContextDialog" timestamp="1601596758696">
+      <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="100" y="123" width="1720" height="977" key="DiffContextDialog/0.23.1920.1177@0.23.1920.1177" timestamp="1601095155155" />
-    <state width="1878" height="329" key="GridCell.Tab.0.bottom" timestamp="1601096355364">
-      <screen x="0" y="23" width="1920" height="1177" />
+    <state x="133" y="143" width="2294" height="1177" key="DiffContextDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1601596758696" />
+    <state width="2518" height="476" key="GridCell.Tab.0.bottom" timestamp="1601958461024">
+      <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="1019" height="290" key="GridCell.Tab.0.bottom/0.23.1920.1057/-1680.557.1680.1027@0.23.1920.1057" timestamp="1600899031683" />
     <state width="1878" height="329" key="GridCell.Tab.0.bottom/0.23.1920.1177@0.23.1920.1177" timestamp="1601096355364" />
-    <state width="1878" height="329" key="GridCell.Tab.0.center" timestamp="1601096355363">
-      <screen x="0" y="23" width="1920" height="1177" />
+    <state width="2518" height="476" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1601958461024" />
+    <state width="2518" height="476" key="GridCell.Tab.0.center" timestamp="1601958461024">
+      <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="1019" height="290" key="GridCell.Tab.0.center/0.23.1920.1057/-1680.557.1680.1027@0.23.1920.1057" timestamp="1600899031682" />
     <state width="1878" height="329" key="GridCell.Tab.0.center/0.23.1920.1177@0.23.1920.1177" timestamp="1601096355363" />
-    <state width="1878" height="329" key="GridCell.Tab.0.left" timestamp="1601096355362">
-      <screen x="0" y="23" width="1920" height="1177" />
+    <state width="2518" height="476" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1601958461024" />
+    <state width="2518" height="476" key="GridCell.Tab.0.left" timestamp="1601958461024">
+      <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="1019" height="290" key="GridCell.Tab.0.left/0.23.1920.1057/-1680.557.1680.1027@0.23.1920.1057" timestamp="1600899031682" />
     <state width="1878" height="329" key="GridCell.Tab.0.left/0.23.1920.1177@0.23.1920.1177" timestamp="1601096355362" />
-    <state width="1878" height="329" key="GridCell.Tab.0.right" timestamp="1601096355364">
-      <screen x="0" y="23" width="1920" height="1177" />
+    <state width="2518" height="476" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1601958461024" />
+    <state width="2518" height="476" key="GridCell.Tab.0.right" timestamp="1601958461024">
+      <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="1019" height="290" key="GridCell.Tab.0.right/0.23.1920.1057/-1680.557.1680.1027@0.23.1920.1057" timestamp="1600899031683" />
     <state width="1878" height="329" key="GridCell.Tab.0.right/0.23.1920.1177@0.23.1920.1177" timestamp="1601096355364" />
-    <state width="1878" height="406" key="GridCell.Tab.1.bottom" timestamp="1601096341860">
-      <screen x="0" y="23" width="1920" height="1177" />
+    <state width="2518" height="476" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1601958461024" />
+    <state width="2518" height="502" key="GridCell.Tab.1.bottom" timestamp="1601957092317">
+      <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="1019" height="358" key="GridCell.Tab.1.bottom/0.23.1920.1057/-1680.557.1680.1027@0.23.1920.1057" timestamp="1600898288357" />
     <state width="1878" height="406" key="GridCell.Tab.1.bottom/0.23.1920.1177@0.23.1920.1177" timestamp="1601096341860" />
-    <state width="1878" height="406" key="GridCell.Tab.1.center" timestamp="1601096341859">
-      <screen x="0" y="23" width="1920" height="1177" />
+    <state width="2518" height="502" key="GridCell.Tab.1.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1601957092317" />
+    <state width="2518" height="502" key="GridCell.Tab.1.center" timestamp="1601957092317">
+      <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="1019" height="358" key="GridCell.Tab.1.center/0.23.1920.1057/-1680.557.1680.1027@0.23.1920.1057" timestamp="1600898288356" />
     <state width="1878" height="406" key="GridCell.Tab.1.center/0.23.1920.1177@0.23.1920.1177" timestamp="1601096341859" />
-    <state width="1878" height="406" key="GridCell.Tab.1.left" timestamp="1601096341859">
-      <screen x="0" y="23" width="1920" height="1177" />
+    <state width="2518" height="502" key="GridCell.Tab.1.center/0.23.2560.1417@0.23.2560.1417" timestamp="1601957092317" />
+    <state width="2518" height="502" key="GridCell.Tab.1.left" timestamp="1601957092317">
+      <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="1019" height="358" key="GridCell.Tab.1.left/0.23.1920.1057/-1680.557.1680.1027@0.23.1920.1057" timestamp="1600898288355" />
     <state width="1878" height="406" key="GridCell.Tab.1.left/0.23.1920.1177@0.23.1920.1177" timestamp="1601096341859" />
-    <state width="1878" height="406" key="GridCell.Tab.1.right" timestamp="1601096341860">
-      <screen x="0" y="23" width="1920" height="1177" />
+    <state width="2518" height="502" key="GridCell.Tab.1.left/0.23.2560.1417@0.23.2560.1417" timestamp="1601957092317" />
+    <state width="2518" height="502" key="GridCell.Tab.1.right" timestamp="1601957092317">
+      <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="1019" height="358" key="GridCell.Tab.1.right/0.23.1920.1057/-1680.557.1680.1027@0.23.1920.1057" timestamp="1600898288356" />
     <state width="1878" height="406" key="GridCell.Tab.1.right/0.23.1920.1177@0.23.1920.1177" timestamp="1601096341860" />
-    <state x="208" y="109" key="SettingsEditor" timestamp="1601045529117">
-      <screen x="0" y="23" width="1920" height="1057" />
+    <state width="2518" height="502" key="GridCell.Tab.1.right/0.23.2560.1417@0.23.2560.1417" timestamp="1601957092317" />
+    <state x="277" y="138" key="SettingsEditor" timestamp="1601948025719">
+      <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="208" y="109" key="SettingsEditor/0.23.1920.1057@0.23.1920.1057" timestamp="1601045529117" />
-    <state x="757" y="532" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601092129127">
-      <screen x="0" y="23" width="1920" height="1177" />
+    <state x="277" y="138" key="SettingsEditor/0.23.2560.1417@0.23.2560.1417" timestamp="1601948025719" />
+    <state x="1009" y="636" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601953880126">
+      <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="757" y="532" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1920.1177@0.23.1920.1177" timestamp="1601092129127" />
-    <state x="1096" y="306" width="586" height="490" key="find.popup" timestamp="1600888104953">
-      <screen x="0" y="23" width="1920" height="1057" />
+    <state x="1009" y="636" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.2560.1417@0.23.2560.1417" timestamp="1601953880126" />
+    <state x="1461" y="402" width="964" height="657" key="find.popup" timestamp="1601960657454">
+      <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="1096" y="306" width="586" height="490" key="find.popup/0.23.1920.1057/-1680.557.1680.1027@0.23.1920.1057" timestamp="1600888104953" />
-    <state x="1054" y="285" width="670" height="753" key="search.everywhere.popup" timestamp="1601095732217">
-      <screen x="0" y="23" width="1920" height="1177" />
+    <state x="1461" y="402" width="964" height="657" key="find.popup/0.23.2560.1417@0.23.2560.1417" timestamp="1601960657454" />
+    <state x="945" y="346" key="run.anything.popup" timestamp="1601961206967">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="945" y="346" key="run.anything.popup/0.23.2560.1417@0.23.2560.1417" timestamp="1601961206967" />
+    <state x="1405" y="338" width="894" height="907" key="search.everywhere.popup" timestamp="1601954296322">
+      <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="1054" y="258" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057/-1680.557.1680.1027@0.23.1920.1057" timestamp="1600895971660" />
     <state x="1054" y="285" width="670" height="753" key="search.everywhere.popup/0.23.1920.1177@0.23.1920.1177" timestamp="1601095732217" />
+    <state x="1405" y="338" width="894" height="907" key="search.everywhere.popup/0.23.2560.1417@0.23.2560.1417" timestamp="1601954296322" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -231,7 +259,29 @@
           <line>38</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Sources/swift-2019/Day3.swift</url>
+          <line>9</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Tests/swift-2019Tests/wireTests.swift</url>
+          <line>62</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Tests/swift-2019Tests/wireTests.swift</url>
+          <line>189</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="OCUnitRunConfiguration">
+        <watch expression="verticalSegment.start.x" language="Swift" />
+        <watch expression="$0" language="Swift" />
+        <watch expression="segment.length" language="Swift" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
