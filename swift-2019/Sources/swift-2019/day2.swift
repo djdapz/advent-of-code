@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Day2 {
+struct Day2 : Day {
 
     let program: IntcodeProgram
     let desiredValue: Int
