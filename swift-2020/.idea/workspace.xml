@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="540f6dde-b0f7-4602-b684-b153ccd7cd84" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Sources/swift-2020/Day2.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/swift-2020Tests/PasswordTests.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/swift-2020/inputs.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/swift-2020/inputs.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/swift-2020/swift_2020.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/swift-2020/swift_2020.swift" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="macos_macos_x86_64" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1l8P0Jg9jL5y0Zb5CkvsEVeZEvX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="manualOrder" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="OBJC.PRESERVED_TARGET_SELECTION" value="swift-2020Tests" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Swift" />
+  </component>
+  <component name="RunManager" selected="XCTest.swift_2020Tests">
+    <configuration name="PasswordTests" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="swift-2020" TARGET_NAME="swift-2020Tests" CONFIG_NAME="Debug" SCHEME_NAME="PasswordTests" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_CLASS="PasswordTests" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PasswordTests.testSecondAllowsPasswordWhenSpecialCharacterInFirstSpot" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="swift-2020" TARGET_NAME="swift-2020Tests" CONFIG_NAME="Debug" SCHEME_NAME="PasswordTests.testSecondAllowsPasswordWhenSpecialCharacterInFirstSpot" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_CLASS="PasswordTests" TEST_METHOD="testSecondAllowsPasswordWhenSpecialCharacterInFirstSpot" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PasswordTests.testSecondDisallowsPasswordWhenNoSpecialCharacter" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="swift-2020" TARGET_NAME="swift-2020Tests" CONFIG_NAME="Debug" SCHEME_NAME="PasswordTests.testSecondDisallowsPasswordWhenNoSpecialCharacter" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_CLASS="PasswordTests" TEST_METHOD="testSecondDisallowsPasswordWhenNoSpecialCharacter" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PasswordTests.testSecondInvalidAllowsPasswordWhenNoSpecialCharacter" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="swift-2020" TARGET_NAME="swift-2020Tests" CONFIG_NAME="Debug" SCHEME_NAME="PasswordTests.testSecondInvalidAllowsPasswordWhenNoSpecialCharacter" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_CLASS="PasswordTests" TEST_METHOD="testSecondInvalidAllowsPasswordWhenNoSpecialCharacter" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="swift_2020Tests" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="swift-2020" TARGET_NAME="swift-2020Tests" CONFIG_NAME="Debug" SCHEME_NAME="swift_2020Tests" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_CLASS="swift_2020Tests" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.swift-2020-Package" />
+      <item itemvalue="XCTest.PasswordTests.testSecondInvalidAllowsPasswordWhenNoSpecialCharacter" />
+      <item itemvalue="XCTest.PasswordTests.testSecondDisallowsPasswordWhenNoSpecialCharacter" />
+      <item itemvalue="XCTest.PasswordTests.testSecondAllowsPasswordWhenSpecialCharacterInFirstSpot" />
+      <item itemvalue="XCTest.PasswordTests" />
+      <item itemvalue="XCTest.swift_2020Tests" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="XCTest.swift_2020Tests" />
+        <item itemvalue="XCTest.PasswordTests" />
+        <item itemvalue="XCTest.PasswordTests.testSecondAllowsPasswordWhenSpecialCharacterInFirstSpot" />
+        <item itemvalue="XCTest.PasswordTests.testSecondDisallowsPasswordWhenNoSpecialCharacter" />
+        <item itemvalue="XCTest.PasswordTests.testSecondInvalidAllowsPasswordWhenNoSpecialCharacter" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="540f6dde-b0f7-4602-b684-b153ccd7cd84" name="Default Changelist" comment="" />
+      <created>1606975520753</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606975520753</updated>
+      <workItem from="1606975521894" duration="3274000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="578" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606975907338">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="578" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1606975907338" />
+    <state width="1638" height="280" key="GridCell.Tab.0.bottom" timestamp="1606978218708">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="280" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1606978218708" />
+    <state width="1638" height="280" key="GridCell.Tab.0.center" timestamp="1606978218707">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="280" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1606978218707" />
+    <state width="1638" height="280" key="GridCell.Tab.0.left" timestamp="1606978218707">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="280" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1606978218707" />
+    <state width="1638" height="280" key="GridCell.Tab.0.right" timestamp="1606978218708">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="280" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1606978218708" />
+    <state width="1638" height="346" key="GridCell.Tab.1.bottom" timestamp="1606976623161">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="346" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1606976623161" />
+    <state width="1638" height="346" key="GridCell.Tab.1.center" timestamp="1606976623160">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="346" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1606976623160" />
+    <state width="1638" height="346" key="GridCell.Tab.1.left" timestamp="1606976623160">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="346" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1606976623160" />
+    <state width="1638" height="346" key="GridCell.Tab.1.right" timestamp="1606976623161">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="346" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1606976623161" />
+    <state x="379" y="175" key="SettingsEditor" timestamp="1606977538919">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="379" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1606977538919" />
+    <state x="505" y="248" key="run.anything.popup" timestamp="1606975896706">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="505" y="248" key="run.anything.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1606975896706" />
+    <state x="505" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1606977574147">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="505" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1606977574147" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Sources/swift-2020/Day2.swift</url>
+          <line>38</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
