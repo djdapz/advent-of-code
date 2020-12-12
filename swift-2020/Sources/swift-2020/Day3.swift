@@ -23,6 +23,4 @@ struct Day3 {
 
         return res1 * res2 * res3 * res4 * res5
     }
-
-
 }
