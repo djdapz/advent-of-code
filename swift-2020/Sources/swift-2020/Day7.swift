@@ -4,14 +4,14 @@
 
 import Foundation
 
-struct Day7 {
+struct Day7 : Day {
 
     let bagRules: [String]
     let bagMap: BagMap
 
     init(bagRules: [String]) {
         self.bagRules = bagRules
-        self.bagMap = BagMap(bagRules)
+        bagMap = BagMap(bagRules)
     }
 
     func problem1() -> Int {
@@ -20,8 +20,7 @@ struct Day7 {
 
     func problem2() -> Int {
         bagMap.capacity(for: "shiny gold")
-
     }
 
-
+    private(set) var number: Int = 7
 }

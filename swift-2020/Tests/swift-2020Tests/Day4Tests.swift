@@ -31,7 +31,7 @@ class Day4Tests: XCTestCase {
     }
 
     func test_shouldBeCorrectForDay4(){
-        var inputs = Inputs()
+        let inputs = Inputs()
         let day4 = Day4(input: inputs.day4)
         XCTAssertEqual(day4.problem1(), 182)
     }

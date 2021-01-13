@@ -44,7 +44,12 @@ struct Password {
     }
 }
 
-struct Day2 {
+struct Day2 : Day {
+    var number: Int {
+        get {
+            2
+        }
+    }
 
     let passwords: [Password]
 

@@ -5,7 +5,12 @@
 import Foundation
 
 
-struct Day3 {
+struct Day3 : Day{
+    var number: Int {
+        get {
+            3
+        }
+    }
 
     let map: String
 

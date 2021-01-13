@@ -2511,6 +2511,3073 @@ struct Inputs {
                ecl:brn eyr:2024
                """
 
+    let day5 = """
+               BBBFBFFRLR
+               BFFFFFFRLL
+               BFBBBBFLLL
+               BBFBFFFRRR
+               BBBFBFBRLR
+               FBFFBBBLRL
+               FBFFBFFRRL
+               FFBBFFFRRL
+               BBBFBFBLLL
+               BBBBFFFLLR
+               FBBFFBFRRR
+               BFFFBBBLRR
+               FFBBFFBRLR
+               FFBFFBFRRL
+               BBBBFBFRLL
+               BBBBBFFLRL
+               FFBBBFBRRR
+               FFFBBBFLLR
+               FFBFFBBLRL
+               FBBFBBFLRL
+               FFBBBBFRRR
+               BFBFBFFRLL
+               BBFBFFFLLL
+               FFFBBBFRRL
+               BBFFBFBRLL
+               FBFBFBFLLL
+               BBFFFFBLRR
+               FFBBBFFRRL
+               FFFBFBBLRL
+               FBBFBBBLLL
+               BBFBFFBRLR
+               FBFBFBBRLL
+               FFFBBFBLRL
+               FFBFFBFLRR
+               BBFBBBFRRL
+               BBFBBFBLLR
+               BBFBBBFRLL
+               BFFBBBBRLR
+               FBFBFBBRLR
+               FBBBFFBRRR
+               FBBBFBFLLR
+               FFBFBBFLRL
+               BFBFBFBRLL
+               BFFFBFBLRR
+               FFBBBFBRLR
+               BBFBFFBLRR
+               BFFFFBBLLL
+               BFFFFBFLLR
+               FBFBBBBRLR
+               BBFFBBFLRL
+               BFBFFBBRLR
+               FFFBFBFRLL
+               BFFFBBFRRL
+               BBFBFBFRLL
+               BFBFFFFRRL
+               FFBFBBBRLR
+               FBBFFFFLRR
+               FBFBBFBRLR
+               BBFFBFFLRR
+               BBBFFBFLRR
+               BFFFFFBRLR
+               FBBFFFBRRL
+               BFFFBBFRRR
+               BBBFBFBRLL
+               BFBBFBBRLR
+               BFBFBFBLLL
+               BBBFFFFRLL
+               BFFFFBFRLL
+               FFBBFFBLLL
+               FBFFBBFRRL
+               FFBBFBFRLR
+               FFBFFFFRLR
+               BFBBBFBLLL
+               FBBFFBFRRL
+               FBFBFFFLRR
+               BFFBBBFLRR
+               FBBFBBBRLL
+               FFBFBBFLLR
+               FFFBFFBRLR
+               BBFBBFFRRR
+               BFBBBFFLLL
+               BFBBFBBRRR
+               BBFFFBBLLR
+               BBFBFFBLLR
+               BFFBBFFRRL
+               FFFBBFBRRR
+               BBFBBFFLLR
+               BFFBBBBRLL
+               BFFBBFFRLR
+               FFFBFBFLRL
+               FBFFBBFLLR
+               BFBBFBFRRL
+               BFBFFFBRLL
+               FBBFBFFLRR
+               FFBFBBFLLL
+               BFBBFBBRRL
+               FBBBFFFLRR
+               BBBFBBFRRL
+               BBFBBBFRRR
+               BFFBFFFLRL
+               BFBFBBFRRL
+               FFBBFFFLLR
+               FBFFFFBLLL
+               BFBBBBFRLR
+               FFBFBFBRLL
+               FBFFFBFLRL
+               FFBFBFFLLL
+               FBBBFFBRLL
+               FBBBBBFLLR
+               FFBFBBBLLL
+               BFFBBBBLLL
+               BFFBBBFRLL
+               FBFFFFBLRL
+               BFBFFBFRRR
+               FFBFFFFRLL
+               BBFBBFFRRL
+               BBFBFBBLLL
+               FFBBBBBRRR
+               BBBFFFBLRL
+               FBFBBBFRLL
+               BFBFFFBRRL
+               FFBFBBBRLL
+               FBBBFBFLLL
+               FBFBFFBLRL
+               FBBBFFFLRL
+               FBBBFBBRRL
+               FBBFFBBRRR
+               FFBFFBBRRR
+               FBFFFFFLLL
+               FFBBBFFRLL
+               FBBFFFBRRR
+               BFBBBFBRRR
+               FFBFFBBRRL
+               FFFBFBFLLR
+               FBBFBFBRLL
+               FBFFBFFRLR
+               BFBBFFBLRR
+               FFBFBBBLRR
+               FFBFBBFLRR
+               BFFFBFFLRL
+               BBFFFBBRLL
+               FFFBBFFLRL
+               BBFBBFFLLL
+               BFFBFFBRLR
+               BBBFFBFRRR
+               FBFFBFBRLL
+               FBBBFFBLLR
+               FFFBBFFLRR
+               FFFBBFBLLL
+               FBFBFBBLLR
+               FBBBFBFRLR
+               BFBBBFBLRL
+               FBFBFFBLLL
+               FBFBBFBRRR
+               BFFBBBBRRR
+               BFFFBFBLLR
+               FFFBFBBRRL
+               BBBBFBBLLL
+               FBFFBFBLRR
+               BFFFFFFLLL
+               FFBFBFBRLR
+               FBBBFFFLLR
+               BBBFFFBLRR
+               FBFFFFBRRL
+               FBFFFFBRLR
+               FBFFBBBLRR
+               BBFBFBFRRL
+               BFFFBFBRLL
+               FBFBBFFRRR
+               BFFFFFFRLR
+               BFBBBBBLLR
+               FBBBBFBLRR
+               FBBFBBFRLR
+               BBFBBBFLRR
+               FBFFFBBLRR
+               BBBBFFFRLL
+               BFBFFBBRRR
+               FBFFFBBLLR
+               FFBBBFFRLR
+               FBBFFFBRLL
+               FBBFFBBRRL
+               BFFFFFFLLR
+               BBFBFBBRRL
+               FBFFFBFRRL
+               BBBBFFFLRL
+               FFBFFBBLRR
+               FBFFFFFRLL
+               BFFFFBFRRR
+               FFBFFFBRRR
+               FBFBBFBRRL
+               FFBFBFBLRR
+               BBFBFFFRLR
+               BBFFBBBRRR
+               BBFFFBFLRL
+               FBBBBBFLRL
+               FBBBFFBRLR
+               FBBFBBBLLR
+               FFBFBBFRLR
+               BFFBFBBLRL
+               BBBFBFBLRL
+               BFFBBFBRLR
+               BFFFFFBRRL
+               FBBFFBBLRR
+               BFBBBBFRRL
+               BBBBFFFRLR
+               BFFFFFBLLR
+               BBBBFBFRRR
+               BFFBFBBRLR
+               BFBFBFFLRL
+               BBFFBBBRLR
+               BBFFFBFLLR
+               FFBFFBFLLL
+               BBFFFFFRRR
+               BBFBFFFLLR
+               BFBFFFFLRR
+               FBFBFBBRRL
+               FBFFFFFRLR
+               BBBBFFBLLL
+               BBFFFBBLRR
+               FFBBBBBRLL
+               FBFFFFFLRR
+               BFFFBBFLRL
+               FBBBBFBLLL
+               FBFBBFFLLL
+               BBFFFBBRLR
+               FFFBFFBRRR
+               BBFFBBBRLL
+               BFBFFBBLLR
+               FFFBBBBRRL
+               BFFFFBFLLL
+               FBBFBBBRRR
+               BFBBFBBLLL
+               BFBFBBFLRL
+               FBFFBFFRRR
+               FBBFFFFRLL
+               FBBBFBFRRR
+               BBBFBFFLRR
+               BBFFBBBLRR
+               FFBBFBBRRR
+               BFBBBFBLLR
+               BBFBFFBRLL
+               FFBBFBBRLL
+               FFBBBFFLRL
+               BBFBBBBRRR
+               FFFBFFFLRR
+               BFBBBFBRLL
+               FFBBFBBLLR
+               BFBFBFFLRR
+               BBBBFBBRRL
+               FBBFFBFLLR
+               BFBBBFFRLL
+               BBBFFBBLLL
+               BFBFFBBLRR
+               FBFFBBBRLR
+               FBBFBFBRRL
+               FBFBBBFRRR
+               FBFFFBBRLR
+               BBFFFFFLRR
+               BBBBFFBRLL
+               BFFBFFFRRR
+               FFBFBFFLRR
+               FFFBFBFRLR
+               BFFFBBFRLL
+               FFBFBBBRRR
+               BFFFFBBRLR
+               BBBFFFFRRL
+               FBFBFBFRRR
+               FBBBBFBRLR
+               FBFBBBFRLR
+               BBBBFFFLRR
+               BFFBFFFRLR
+               BFFFBBBLLL
+               BFBBFFBRLR
+               BFBFFBFLLL
+               BFBFBBFRLL
+               BFFBBFBLLL
+               BFBBFFFRLL
+               FFBBFFBLRL
+               BBBBFFBRRL
+               FBBBFFBLRR
+               FFBBBBBLLR
+               FBFFFBFLLR
+               BBFFBFFRRL
+               BFBFBBBLLL
+               FBBBBFBRRL
+               FBFBBBBRRR
+               BBFBBFBRRR
+               FBFBFFFRLL
+               BFBFFBFLRL
+               BFBFFBBLRL
+               FFBFBFFRLR
+               BFBBFBBRLL
+               FBBBBBBRLR
+               BBFBBBBLRL
+               FFBBFBFLLL
+               FFBBFBBLLL
+               FFFBBFBRLR
+               BBBBFBFLLL
+               FBFBFFBLRR
+               FFBBFFFLRL
+               BBFBFFFRLL
+               FBFFFBFRLL
+               BBBFBBFLLL
+               FFBBFFBLRR
+               BBBBFBFLRR
+               FBFFFFFRRL
+               BFBFFBFRLR
+               FBFBFFBRLR
+               FBBFBBFRLL
+               BFFFFFFLRR
+               BBBFFFFLLL
+               FFFBBFFRLR
+               FFBBFFFRLR
+               BBBFFBBRRL
+               FBBFBFBLRL
+               BFFFBBBLRL
+               FBBFBBBRLR
+               BFBFFFBLLL
+               FBFFFBBLRL
+               FBFFBFFRLL
+               BFBFBFBLLR
+               BBFFBFBRLR
+               BBFFFFBRLR
+               FFFFBBBRRR
+               FFBBBBBLLL
+               BBFBBBBRRL
+               BBBBBFFLLR
+               FFFBFFFRLL
+               BFFBBFFLRR
+               BFFBBFFLRL
+               BBBFFBFRLL
+               FFBFBFBLLL
+               BFBBBBBLLL
+               FFBBBBFLRL
+               FBFFBBFLRL
+               BBFFFFBLRL
+               BBBFBBBRLL
+               BFBFFFBLLR
+               BFBFBFBRLR
+               BFBBFFFRRR
+               BFFBFBFLLL
+               FBBFBFBLLR
+               FBFBFBFLRR
+               FFBFFBFLLR
+               FFBFFFBLLL
+               FBFFBFFLRL
+               FFBBFBFLLR
+               BFFFBFFLRR
+               BBFFFBFRLL
+               FBFBBBFLRR
+               FFBBFFFLRR
+               FBBBFBBLLL
+               BFFBFBFRLR
+               FFBFBBBLLR
+               BBBFFBFLLR
+               BFBFFFBLRL
+               BFFBBFFLLL
+               FBFBFFFRRL
+               BFFBBBBLLR
+               FFBBBFFLLR
+               BBFFBBFRRL
+               FFBFFBFLRL
+               BBFFBFBRRL
+               BFBBBFFLRR
+               BFFBFBBRRR
+               FBBFBBBLRL
+               FFBFBFFRRR
+               BBFBFFFLRL
+               BBBFFBBLRR
+               FBBFBFBLRR
+               BFBBBBFLRL
+               FBFFFBBRRL
+               BFFFFBFLRR
+               BBFFBBFRLL
+               BFFBFBBLRR
+               FBBBBFFRLL
+               BFBFFFFLRL
+               FBBBBBBLLL
+               BFBBBBFRLL
+               BFBFFFFLLL
+               FFBBBFBLRL
+               BBFFFFBLLL
+               BFBBFBFLRR
+               FFFFBBBRRL
+               BFFBFBBLLL
+               FFBBFFFRLL
+               BFFFBFBRRR
+               FBBBFBBRRR
+               BBFBBFBLRR
+               BFFBFFBLRL
+               BBFFFBBLRL
+               BFFBBBFRRR
+               FFBFFBBRLR
+               BFFBFBFLLR
+               BFFBBFFRLL
+               FBBFBFBRLR
+               BFFFFFBLRR
+               BFBFFBFRRL
+               BFBBFFBLLL
+               FBFFFFBRRR
+               BBFFBFFLLL
+               FBBBBBBLLR
+               BFFFFFBRRR
+               BFBFBFFRRR
+               BBFFBFFRLR
+               FBBBFFBLLL
+               BFBFBBFLLL
+               BFBFBBFRLR
+               BBFFBFFLLR
+               FBBFFFBLRR
+               FBFFBBFLRR
+               BFFFFBBLLR
+               FFBFBFBLRL
+               FFFBBBFRLL
+               BFFBBFBRRR
+               BFFBBBFRLR
+               BBBBFFFRRR
+               FBBBBFBLRL
+               FBFFFFBLRR
+               BFFFBBBRLL
+               FBFBBFFRLR
+               FFBBBBFLLR
+               FFBFFBFRLR
+               FFBBBBBRRL
+               FBFFFFFLLR
+               BFBBBFFLLR
+               FBFFBBFRLL
+               BBFFFBFRRL
+               BBFFBFFLRL
+               FBFBFFFLLL
+               BBFFBFFRLL
+               FFFBFFBLLL
+               BBFBBFBLRL
+               BBFFBFBLRL
+               BFBFBFBRRL
+               FBBBFBBLRR
+               FBBBFBFLRL
+               FBBBBFFRLR
+               FFBFBFFLLR
+               BFFFBFBRLR
+               FBBFFBBRLR
+               BBFFBBFRRR
+               BBBFFBBRRR
+               FFBFFFBRLR
+               BBBBFFBLRR
+               BBFBFBFLLL
+               BBFFFBBLLL
+               BFBBFFBLRL
+               FBFBFBFRRL
+               BBFBBBFLLR
+               FBBBBBFRRL
+               BFBFBFBLRR
+               FBFBFFFRRR
+               BFBFFBFLLR
+               BBBFFBFRRL
+               BBBFBFFLLL
+               BFFFBFFRRR
+               FFFBBBBLRR
+               BFFBBFBLRR
+               BFFBFBFLRL
+               BBBBFFBLRL
+               FBBFBBFRRR
+               FFFBBBBLLL
+               FBFFFBBRRR
+               FBBBFFFLLL
+               FFBBBBBRLR
+               BFBFFFFRRR
+               FBBFFFFRRR
+               BBBFBFFLRL
+               BFFFBFFRLR
+               BFBFFFBLRR
+               BFBBFBFRLR
+               BBFFFFFRLR
+               BFFFBBFLLL
+               BBBFFFFLRL
+               BBFFBBBLLL
+               FBFFBFBRRL
+               BFBBBBBRLR
+               FBBFFFBLLL
+               FBBBFBFLRR
+               BBFBBBFLLL
+               FFBFFBBLLR
+               BFFFBBFLRR
+               BBBBFFBRRR
+               BBFFFFBRRL
+               FBFFFBFLLL
+               BBFFBBFLLL
+               BFFFFFFRRL
+               FBBFFBBRLL
+               FFBBFBFRRL
+               BBBFFBBRLL
+               BFBFBBFRRR
+               FFBFFFBLRL
+               BFFFFBBRRR
+               FFFBBFBRRL
+               BBBFFBFLRL
+               BFFBBFBLLR
+               FFFBFFBLRL
+               FBBBFBBRLL
+               BFBBFBBLLR
+               FBBFFFFLLR
+               FFBFBFBRRL
+               FBBFFBBLLL
+               BBBBFFFLLL
+               FBBBBBBLRR
+               FFFBBBBRLR
+               FBBBBFFRRL
+               BBFFBBBRRL
+               FBBFFFFRLR
+               FFBFBFFLRL
+               FBFFFBFRRR
+               FBBFBBFLLR
+               FBBBBBFLLL
+               FFBFBFFRLL
+               FFBFFFFLRR
+               FFBBBBFLRR
+               FFFBFBBLLR
+               BBBFBFBLRR
+               FFBBFBBRLR
+               FBFFFFBLLR
+               BBFBFBBRLR
+               FBBFFFFLLL
+               BBBBFBBLLR
+               BFBBBBFRRR
+               BBBFBFFRRR
+               BFFBBBBLRL
+               BBBFBBBRRR
+               FBFFBFFLLL
+               FFBFBFFRRL
+               BBBBFFBRLR
+               BFBBFFFRRL
+               FFBFFFBRLL
+               BBBBFBFLRL
+               FBBBFBBLRL
+               FFBBBFFLLL
+               FFFBFFBLLR
+               BFBBFBBLRR
+               FFBFBBBLRL
+               BFBBFFFLRR
+               FFFBFFFLLR
+               BFBBBBFLLR
+               BFFBFBFRLL
+               BFFBFBBRLL
+               BBFBFFFLRR
+               BBBFBBFLLR
+               FBFBFFFLRL
+               FBFFBFBLLL
+               FFFBFFBLRR
+               BFFFBFFRLL
+               BBFFBBFLLR
+               BBFFBBBLRL
+               FBFBBBBLLL
+               FBBFBBBLRR
+               FBBBBBFLRR
+               FBBBBBBLRL
+               FBFBBFBLLL
+               FFFBFFBRLL
+               FBFBBFBLRR
+               FBBFFBFRLR
+               BBFFFFFRLL
+               FFBBFBBRRL
+               BFBFBBBRLL
+               BBBFFFFLLR
+               FBFFFBFRLR
+               BFFFBFFLLL
+               BBBFFFBRLL
+               FBBBBFBLLR
+               FBBFBFBLLL
+               BBFBFBFLRR
+               BFBFBFBLRL
+               FBBBBBBRRL
+               BFBFFFFRLL
+               BBBFBBBLLL
+               BFBFFFBRLR
+               FFFBBBBRRR
+               FFBFFFBRRL
+               FBFBBBBLRL
+               BBFBBFBRRL
+               BBBFFBBLRL
+               FBFBFBBLLL
+               FBBBBBBRRR
+               FFFBFBBRLR
+               FBFFBFBRRR
+               FFBBFBBLRL
+               BBFBBBBLRR
+               BFFFFFFRRR
+               BBFFBFBLRR
+               FFFBBBFLRR
+               BBFFBBFLRR
+               BFBFBFFRLR
+               FBFBFFBRLL
+               FFBFFFFLLL
+               FBFBFFBLLR
+               BFFFFBBLRR
+               FBBBFFFRRR
+               FFFBFFFRRL
+               FBFBBBFRRL
+               FBBFFFBLRL
+               FBBBFFBRRL
+               BBBFBBFLRR
+               BFBBFBFRRR
+               FFBFFBFRLL
+               BBBFBBBRRL
+               FBBFBFFLRL
+               BBBFBFFRLL
+               FFBBBFBLLL
+               BFFFFFFLRL
+               FFFBFFFLRL
+               FBFBBFFLRL
+               BFFBFBFLRR
+               BBBFFFFRRR
+               FBFBBBFLLL
+               BFFBFBFRRL
+               BFFFFBFRLR
+               BFBBBFFLRL
+               FBBBFBFRRL
+               BFBBFBFLLR
+               BFBFBBBLRR
+               FFFBBBBLLR
+               FBFBBBBLRR
+               BFFBFFFLLR
+               BBFBBFFLRR
+               BBBBFBBRLR
+               FFFBBFBLLR
+               FFFBFBFLLL
+               BBFBBFFLRL
+               BFBBFFBRLL
+               BFBFFFBRRR
+               FFFBFBFLRR
+               FFFBBFFRLL
+               FFBBBBFRLL
+               BFBBBFFRRR
+               FBBFBBFRRL
+               BBFBBBFRLR
+               FBFBFBBLRL
+               FBFBFFFLLR
+               BFFFFBBRLL
+               BFFFBBBRRR
+               FBBFBFBRRR
+               FBFBFBBLRR
+               BFFBFFBLLL
+               FFBFFFBLLR
+               FBBBBBFRLL
+               FFFBBBFRRR
+               FFFBFFBRRL
+               BBFBBBBLLL
+               BBBBFBBLRL
+               BBFFFFBRLL
+               BFFFBBBRRL
+               FBBBFBFRLL
+               BFFBBFFRRR
+               BFFFFFBLRL
+               FBFBBFFLLR
+               BFBBBFBRRL
+               BBFBBFBRLR
+               BBBBFBFLLR
+               FBBBFBBRLR
+               FBFBFBFLRL
+               BBBFFBBRLR
+               BBBBBFFLLL
+               BFFBFBBRRL
+               BBFFBBFRLR
+               BFBBBBBLRR
+               FFBFFBFRRR
+               BFFFBBBLLR
+               BFFFBFBRRL
+               BFFFBFFLLR
+               FBBFBBFLRR
+               BBBFFFBRLR
+               BBBBFBBRRR
+               BFBFBFBRRR
+               BBBFBBBLLR
+               FBBFBFFRLL
+               BBBFBBFRRR
+               FFBFBBFRLL
+               BFFBFFBRLL
+               FBFBBFBLRL
+               BBBFBFBRRR
+               BFFFBBBRLR
+               BFFBFBFRRR
+               FFBFBFBRRR
+               BFBFBBBRLR
+               BBFFBFBLLR
+               FFBFFFFRRR
+               BFBBFFFLLL
+               BFFFFBBLRL
+               FBFFBFFLRR
+               BFFBFFFRLL
+               BBFBFFBRRL
+               FBBFFBFLRL
+               FBBFBFFLLL
+               FBFFFBFLRR
+               FBFBFFBRRR
+               FBBBBFFLLL
+               BFBFBBBRRR
+               BBFBFBFLLR
+               FFBBBFBRRL
+               BBFBFFBLLL
+               FBBBBFFRRR
+               FFFBFBBLRR
+               FFFBBBFRLR
+               BBBFFFBRRL
+               FFBBFBBLRR
+               FFBBFBFRLL
+               BBBFFFBRRR
+               BBFBBFFRLL
+               FBBFFBFLLL
+               FBFBBFFRLL
+               FFBBFBFRRR
+               BBBBFFBLLR
+               FBFFBBFLLL
+               FBFBBFBLLR
+               FFBBFFFRRR
+               BBBFBBFRLL
+               BFFBBFBRLL
+               FBBBBBBRLL
+               FBBFFFBRLR
+               FFBBBBBLRL
+               BFBBFBBLRL
+               BBFBFBFRLR
+               BFBFBBFLRR
+               FFBFBBFRRR
+               FFBFFFFLRL
+               BBFBFFBRRR
+               BBFBFBFLRL
+               FFBFFBBRLL
+               BBFFBFBLLL
+               BBFFBBBLLR
+               FBBFBFFLLR
+               FBBBBFBRLL
+               BBFFFFFLLL
+               BBFBFFFRRL
+               BBFFFBFRRR
+               BBBFBFFLLR
+               FFBBBFBLLR
+               FBFBBBBLLR
+               BBFFFFFRRL
+               FBFBFBFRLR
+               FFBFBBBRRL
+               FFFBBFFRRL
+               FFFBBBFLLL
+               BFBFFFFRLR
+               BFFBBBFRRL
+               BFFFBBFLLR
+               BFFBFFBRRL
+               BBFBBBBRLL
+               BBFBFBBRLL
+               BBFBBBBRLR
+               BFFFBBFRLR
+               FBBFFBBLRL
+               BBBBFBFRRL
+               BFFBFFBRRR
+               FFBBFFBLLR
+               FFBBBBFRLR
+               FBFFBBBLLR
+               FFBBFFBRRL
+               FBFBFFFRLR
+               BFFBFFBLLR
+               FBFFFBBLLL
+               BFBBFFFLRL
+               FFFBBFFRRR
+               BFBBFFFRLR
+               BFBFFBBRLL
+               BBFFFFBRRR
+               FBFFFFFLRL
+               BFFBBBFLRL
+               BFBBBFBLRR
+               FFBFFBBLLL
+               BFBFBBBRRL
+               FBBBFBBLLR
+               BFFFBFFRRL
+               FBBFFBBLLR
+               BBFFFFBLLR
+               BFBBFBFRLL
+               FBFBBBFLRL
+               BFFBFFFLLL
+               BBBBFBBRLL
+               BBBFBBFRLR
+               FBFFBBBRLL
+               FBFBBBFLLR
+               BFBBFFBRRL
+               FBBFFFFLRL
+               BFFBBBBRRL
+               FBFBFBFRLL
+               BFFBBBFLLR
+               FBFBFFBRRL
+               BBFBFBBRRR
+               FFFFBBBRLR
+               BBFFFBFRLR
+               FBBBFFFRLR
+               FBBBBFFLRR
+               BBFFFBFLRR
+               FBFBBFBRLL
+               BBFFFBBRRL
+               FFFBBBBLRL
+               BBFBBFBRLL
+               FBBBFFFRRL
+               BFBFBBBLRL
+               FFFBBBBRLL
+               BBFFFFFLRL
+               BBBBFBBLRR
+               BFBBBBBRRR
+               BBFFBFBRRR
+               BFFFBFBLRL
+               BFBFFBBLLL
+               BBFFFFFLLR
+               BFBBBFBRLR
+               FBFFBFBLRL
+               FFBFBFBLLR
+               FBBFBBBRRL
+               FBFBBBBRRL
+               BFBFBFFLLL
+               FBFFFFFRRR
+               BBFBBBFLRL
+               FFBFFFFRRL
+               BBFBFFBLRL
+               FFBFFFFLLR
+               FBFFBBBLLL
+               BBBBFBFRLR
+               BBBFFBBLLR
+               FFBBBBFLLL
+               FBBBBFBRRR
+               FBBBBBFRLR
+               FFFBBBFLRL
+               BBFFFBFLLL
+               FBFFBFBRLR
+               FFBBFBFLRL
+               FFFBBFFLLR
+               FFFBFFFRLR
+               BFBFFBBRRL
+               BBFFBFFRRR
+               FFFBFBBRRR
+               BFBFBFFLLR
+               FBBBFFBLRL
+               FFBBBBFRRL
+               BBFBFBBLRR
+               FFBBFFBRRR
+               BFBBBBFLRR
+               BFFBBBBLRR
+               FBBBBFFLRL
+               FBBFFFFRRL
+               FFBBFBFLRR
+               FFBBBFBRLL
+               FFFBFBFRRL
+               FFBBFFFLLL
+               FBBFBFFRRL
+               BBFFFBBRRR
+               BBBFFBFRLR
+               BFBFFBFRLL
+               FBBFFFBLLR
+               BFBBBBBRRL
+               BFBBFBFLLL
+               BBBFBFBRRL
+               FBFFFBBRLL
+               FBBFBFFRLR
+               BFFBBBFLLL
+               FFFBFBBRLL
+               BBBBFFFRRL
+               FBFBBFFLRR
+               BFFFFBBRRL
+               BBFBBFFRLR
+               FBFFBFFLLR
+               BBBFFBFLLL
+               BFBBBBBLRL
+               BFFFBFBLLL
+               BFBFBBBLLR
+               BBBFFFFLRR
+               FBBBBBFRRR
+               FBBFBFFRRR
+               BBFBFBFRRR
+               FFFBFFFLLL
+               FBFFBBBRRL
+               BBFBBBBLLR
+               FBFBFBBRRR
+               FFFBFBBLLL
+               FFBBBFFRRR
+               BBBFFFFRLR
+               BFBFFFFLLR
+               FBFFFFBRLL
+               FBBFFBFLRR
+               BFFBFFFRRL
+               BBFBFBBLRL
+               FFFBBFFLLL
+               BFBBFFBRRR
+               FFBBBBBLRR
+               BBBFFFBLLL
+               FFBFFFBLRR
+               FFFBFBFRRR
+               FFFBBFBLRR
+               FBFFBBFRLR
+               BFBBFFFLLR
+               BFFBFFBLRR
+               FBFFBBFRRR
+               FFBBFFBRLL
+               FBFBFBFLLR
+               FBBFBBFLLL
+               BFBBBBBRLL
+               FBFFBFBLLR
+               BFBBFBFLRL
+               BFBBBFFRRL
+               BBBFBFFRRL
+               FFBBBFFLRR
+               FBBBFFFRLL
+               FFFBBFBRLL
+               BFFBBFBRRL
+               BFBFBBFLLR
+               FFBFBBFRRL
+               FBBBBFFLLR
+               FFFBFFFRRR
+               BBBFFFBLLR
+               BBBFBBBLRR
+               BBFBBFBLLL
+               FFBBBFBLRR
+               BFBFFBFLRR
+               BFFBBFBLRL
+               BFBBFFBLLR
+               FBFFBBBRRR
+               BBBFBBFLRL
+               BFBFBFFRRL
+               BBBFBBBLRL
+               FBFBBBBRLL
+               BFFFFBFRRL
+               BFFFFFBRLL
+               BFFFFBFLRL
+               FBBFFBFRLL
+               BBBFBFBLLR
+               BBBFBBBRLR
+               BFFBFFFLRR
+               BFFBFBBLLR
+               FBFBBFFRRL
+               BBFBFBBLLR
+               BFFFFFBLLL
+               BFFBBFFLLR
+               """.textFileToListOfStrings()
+
+    let day6 = """
+               cady
+               ipldcyf
+               xybgcd
+               gcdy
+               dygbc
+
+               rwhvugmspoyzfbnlcxqtdj
+               avqdpntxrclufbjswgzh
+               qbvwgzpfsrjtdxnculh
+               jhrpclwdxgqibfsntzuv
+
+               gxqezucvaowipbsdr
+               zvoqciegxabwudrps
+               gecawpxvdrqzioubs
+
+               vlta
+               tavl
+               latv
+
+               znjwr
+               grzynwjdpe
+               jnrwz
+
+               mldxjabiuckefzrhywogtq
+               hgflyratmezidxowc
+               gwiavxlrstzfchymoed
+               oyedcrlfmawhxvzgit
+
+               kl
+               kql
+               kl
+               lk
+               lk
+
+               anf
+               fan
+               zanf
+               fnae
+               zafn
+
+               bwfxjsmovghz
+               ojibsmhxg
+               mxhgjobs
+               bjgxhosm
+               xbmsjpoheg
+
+               tvujfaqxkpirgbnyde
+               xbmtadenhqwpcjl
+               dcxezoptnlajwqb
+
+               sxcvq
+               rxqckvas
+               idsvlyczqtxo
+               cqeujvxs
+               vacqfpxksg
+
+               ujek
+               eukj
+               kzxejdg
+               ekrjfyw
+
+               rhosjkf
+               ajfhekrs
+               yrdkjshvcfo
+               sryvfjkph
+
+               l
+               p
+               l
+
+               nbrmvjxdy
+               trhcxfjdegby
+               xrbdjoqy
+               ubjydrxmpk
+               rbwjxsdyv
+
+               xygocl
+               lygoxc
+               ygxocl
+               olcgxy
+
+               pai
+               ipyw
+               biuvxdlsrz
+
+               h
+               g
+               yh
+
+               rgib
+               zathbrm
+               rthkbx
+               frbsnpeqyov
+
+               encvxrbdfawzqs
+               sdknfaquybvw
+
+               dtckazwsxrlhjeyi
+               exoahjrikulpztwfc
+               joilqaxewktrchz
+
+               keyspo
+               skyeop
+               okeyps
+               pekaoygs
+
+               lgxwytzvbhauemdir
+               yevalwdbpgzutimrxhq
+               maileyhvrubwxtdzgq
+               tmbjeghxlywzsudvira
+               dievrwylagbtmhuxz
+
+               xnlfbjqdoyp
+               olbrjxypfq
+               jsxylqfpbo
+
+               exwdrgyn
+               rtwldyng
+               mcbkdpqsyaionghfwr
+               nygrdw
+               ndrwvygzj
+
+               rywk
+               lhkewboru
+               pkirwn
+               sgcrwipk
+
+               bkdinatzpvwr
+               vephqsjxrktznbaw
+               wznkprbtvia
+               nligrkupyzwtdavb
+               btziarpkngvw
+
+               us
+               nsue
+               cuso
+
+               xkjgnv
+               ckgvqjnxs
+
+               bagwlk
+               lfvkwg
+
+               vgheapjblkfmztyxd
+               fhtqpdulcabjgemynkz
+               jbohsempzdfiakgylt
+
+               k
+               v
+               kd
+               d
+
+               xdfinmksvbzyagj
+               dsyokf
+               dyshufk
+               pstdwqyfkh
+               odcksrfy
+
+               ktjrhcmxegi
+               hcgiexktrjm
+               jthcegmrxik
+
+               gmk
+               kgm
+               gkm
+
+               sfetmaqgdlzbwxpcvyhoij
+               tynliwkhdjqexpafm
+               maqyjwixfphlentd
+               hmifurwajteyxdlqp
+
+               hkl
+               hlk
+
+               qjkgenvtlrduy
+               mxwcbhvsifpzoa
+
+               lmqnek
+               ikle
+               olek
+
+               btcnlxuh
+               uchlntbx
+               cnbtluxh
+
+               kuwciyjznd
+               dwjyunzkci
+               iuzykjnwdc
+               zdcwjuyikn
+               wujzdcknyi
+
+               kmygjferih
+               gewjmsykcqfrhxiv
+               fjrmkydghei
+               hjykfemgri
+
+               ktldfrcqpvgzisbjnoe
+               ladoibuscgntqekzpfvj
+               vejibocqgztnkpldsf
+
+               fahlzrqjxv
+               rlhjvqx
+               rioltxqjhs
+
+               tzdewcosbi
+               mwtsbezdick
+               iswotzevdcb
+               ecvdszbtiw
+
+               qyuowsetikpar
+               ytwgp
+               ptdxywv
+               wytp
+               txlgypw
+
+               irjbhysqofx
+               ckdvuonfxgtl
+               yfewoarzhjmxs
+
+               widzueoshfvxpy
+               vzuyihefspdxw
+               ayvpfqizxshwude
+
+               dfgztxy
+               uztxf
+               nofctkqv
+
+               ao
+               naolp
+               oa
+               oa
+               oa
+
+               dpwfujoxvnktl
+               vekbhcyjdu
+
+               en
+               n
+               n
+               n
+
+               jquynzapovkgdhc
+               gopazyucqhkdnjv
+               cpohvgkjuanqydz
+               kycduqpghsnozajv
+
+               itawoxecv
+               avxtcwenio
+               xebicyvtuhwog
+
+               iqovjtwyhanelbg
+               lwvjtionhgyqbae
+               evjoquglnwhyaitb
+               ntjilwyoaqvehgb
+
+               sqivjzpmkorlbwh
+               pmjvhkqbrzwosil
+               vkoiqmdbrlhpzwsj
+               mucljwzsvrkhpqiboe
+               vwjmqhobzskpilr
+
+               tprevw
+               prte
+               rhwkpt
+               fmroidptaj
+
+               wablxvpqz
+               byexlwv
+
+               tcqsyohw
+               ohqwcsyt
+               ctyehowsq
+               whcqstoy
+               qtohswcy
+
+               pz
+               pixaz
+               pzd
+               pz
+
+               nwuikyve
+               nyvewkiu
+               iyvkwunez
+               vkniyewu
+               wuivnkye
+
+               eytdnkbazpmwg
+               mgbtacdwkyenp
+               geyptwduabnzmkh
+               teswyamrxbknpjg
+               tkbcywpengma
+
+               mjxavd
+               gyutzrfal
+
+               fvcizraqbesujko
+               uienrftwaylzdc
+
+               uincmblfertod
+               qdoktbjlnvzehrxgspy
+
+               jvcqkryilgpwfntxums
+               xirbvakwlsfjycqn
+               rysiawecnlxkvqfjzhd
+               rvxycqlinhjswkfo
+
+               mdvnkegyacoru
+               wicopyauvghfnredstmk
+               cenomkayrudvgz
+               vnagokzyrdemcu
+               uqynearvkcdomjg
+
+               ly
+               ysl
+
+               vpictsgwzxm
+               trgwsxvzci
+
+               qdkcbwhn
+               ncbrkhdqw
+
+               sixgyadetw
+               vmdiwknxfh
+               dgwxiyura
+               qeuwgizxdp
+               lrpwocdbiajx
+
+               vnwysrfutb
+               fbnrytuvs
+               orbivfdypstlun
+               bvnurtfys
+
+               sgkoh
+               hokgs
+
+               mqouzflbs
+               lmzsyo
+               lmszixyo
+
+               mkzp
+               mzkp
+               umzpk
+               pkzm
+
+               ulpj
+               jpul
+
+               gelws
+               sple
+               tsqekvolbczxan
+
+               grhebl
+               gblreh
+               bgherl
+               behglr
+
+               fevslgjktqazhorycpxw
+               lcmukypbsoxedvf
+               xosyfvpckenli
+
+               jxyiconfuzmbsaevtwhldrp
+               xmefakdwocsrzbnivhtl
+               wgznhsqfvtbcxamleiord
+
+               hdtjrpawu
+               sjraptcdhwu
+               ptrwajdhu
+               twadpjrhu
+               rpaudwthj
+
+               motjpfylnx
+               fnoyjpmlx
+               ofplnxjmqy
+
+               anhjilfkyrmxzvceub
+               eadlxybhfvcjinwzmrkou
+               pxksjvnmylraicghzftbe
+               dkyzimvbcjxraelhnf
+               yivnzebljhxfkrcma
+
+               gut
+               tgu
+               utg
+
+               nzrbtjvdm
+               jdtvbmznr
+               znjrmtvdb
+               dmvnrbztj
+               bdjzntmvyr
+
+               jwszypbxieafrdnch
+               aschejbznfx
+
+               xochndwqpvzmyguflkbtrsaeij
+               xfhqyitrlcnewsjzvdpakgombu
+
+               eks
+               kep
+               ek
+               ek
+               ke
+
+               xulgsdaeicz
+               pntklwzvb
+
+               zqrma
+               cxzaikm
+               atywgdmuvsnl
+
+               lwzxqithm
+               ovgsp
+
+               arozwi
+               aiwqz
+               iwgkbz
+               iucwzdxps
+
+               frbyoen
+               ovyfenc
+               seyhioxwztk
+               enuogly
+               qomye
+
+               rvxnqd
+               vdqrny
+               mrnlqvd
+               szvqrnbdx
+               vdrqoguhain
+
+               xowaq
+               wqovn
+               bmghtco
+               okar
+
+               nflvbdqgrjsko
+               rgbjndlosfvkq
+               ndklgqovrbfxjs
+               svkeqbjflordgn
+
+               m
+               ao
+               wu
+               s
+               a
+
+               wkrfzvohsylcdegiq
+               fhwxcqlsoizk
+               qflzcwjhsoik
+               wiqlhoxcfskz
+               wclhtnspioamzfqk
+
+               ldtackmr
+               pxestymrz
+               yrwtmup
+               gmqvnrjfit
+
+               t
+               t
+               bph
+
+               nywitsj
+               tqvrlnwhgs
+               mtaidusnywxk
+
+               gxcyd
+               cdxgyf
+               kxycg
+
+               il
+               l
+               lb
+
+               guna
+               nufa
+               anuqvrj
+
+               eoulsfcqmnrvjgxiat
+               tlargoxfvisumecjkqn
+               rjgnseatxoivqlcfum
+               suvlciaxrtngqmehofj
+
+               glkcfvztmsqdb
+               sjdowcmxtvlzqbg
+               tpryhgedzcumbasl
+
+               taumpvcels
+               tvsuepcalm
+               pveumsatlc
+               masvuletcp
+
+               z
+               z
+               yz
+               z
+               z
+
+               mp
+               pm
+               mp
+               mp
+               pm
+
+               xwckdmsnh
+               kwsxviun
+
+               iuzmajtxolf
+               awfmvjuoilxzte
+               ztfmixyoqrljua
+
+               sjgeqy
+               yzxnmri
+               ykdmixrv
+
+               cm
+               m
+
+               awnvypxbcdl
+               cnpydlxawb
+               dcpxylbanw
+               xnydlbcwap
+               bdxpncwlay
+
+               uj
+               xhfu
+
+               zrsiauqehwb
+               ceqwsbai
+
+               l
+               l
+               lp
+               l
+               lv
+
+               azuxqnhyecdslbojwf
+               nyxzefuasjbolwqc
+               wlgzqjxvtfpuoebycmnkasi
+
+               ckuziyfdetswr
+               yezwutficsdk
+               sykftuwcezid
+
+               spdvxqwk
+               pdvksx
+               sdpkvx
+
+               v
+               azp
+               c
+               ci
+               c
+
+               gf
+               lv
+               k
+               k
+               lv
+
+               dvnxstyjharkqgfcpzoebml
+               brhaizuseyjpmgotdvkxcfq
+               xomkprgcdfbwjystazeqvh
+
+               rehopfalvz
+               imhjprwqyzeo
+               zstpundkbcgx
+
+               ewilz
+               lziew
+               welzi
+               lzeiw
+
+               qxthsijdgcywpnk
+               dsnptchxqjwy
+
+               ukbjit
+               bjuit
+               uibzjtnxm
+               ibjtu
+               ibpujt
+
+               chokmipvwlfryztenqxu
+               iuxefydlatrphvznokq
+               tdxkivblonrezsqyuhfp
+               qnultkpixrvzfeoyh
+               kutqzydxnvjohriplfe
+
+               ksilczxfgabryuj
+               nqyfczjhdoxsleuagbki
+               bpfcseykgjzaxluih
+               kcsfiubjvtxazgmwyl
+
+               ircxknguzj
+               icznmrugxjk
+               jknciurgzx
+               zckrijnxgu
+               jxgrczknui
+
+               fhslg
+               rleopshnu
+               hsflg
+
+               etsigcxpofakmq
+               aqskpecgitfyxhomn
+               kfxpqgaoceismt
+               qxpmikgaseftco
+
+               wb
+               wb
+               ab
+
+               i
+               szivqg
+               im
+               i
+               i
+
+               jnq
+               j
+
+               sy
+               ys
+               asuy
+               ys
+               vyis
+
+               upvcjtqwergyib
+               bjhn
+               bfdj
+               jb
+               bahj
+
+               yiclqgj
+               qlcjxgiy
+               qgyljic
+               qiyjglc
+               ycqjilg
+
+               uitoacvrg
+               bithcfgyosevr
+               rvocgmitn
+               itcjngovr
+
+               epbwxvdz
+               ldvx
+               dxvn
+               vdx
+               vdx
+
+               jatsqkxuhdrpbecnylvmfzigw
+               lxemqiyfwbskonhptjdzurcagv
+               ifwpcvjzkmhuqbsnyatdrxgel
+
+               w
+               w
+               w
+               w
+               w
+
+               z
+               e
+
+               pmr
+               b
+               ju
+               be
+               eb
+
+               gw
+               gw
+               gw
+
+               dbizovcyxmusfwae
+               gjrhpklqt
+
+               msi
+               s
+               s
+               s
+
+               meykd
+               wyhmb
+               yxm
+               dyxomt
+
+               dxjyuwfelbnsqzc
+               otiaxcwfeqdgnjuz
+               jzxnrcdquvefw
+               czfwmjuqkxden
+
+               svour
+               rvuwso
+               ourbsvj
+
+               ubil
+               u
+               u
+               du
+
+               uqtadhzrnxcvspl
+               mkefnjsoxy
+               msnigx
+
+               tb
+               pbt
+               rbt
+
+               lpdrxvuaqgjzmshwkntoibfy
+               whmlbyrukqjzpagvofcdenxst
+
+               muviezfdk
+               qukvfyeisr
+               ikuyfs
+               tgljkihfwauc
+
+               airkzuthfwsgepj
+               jqcsowhuxratfgkp
+
+               kwqiftygb
+               bqcgk
+               bgcklaq
+               kvaqbg
+               sqbkgl
+
+               aoqnmrfg
+               daqmgnf
+               mfgaqnu
+               wmpahinkgjqbe
+
+               mwreujqsnibvzg
+               mweizqrujbnvsg
+               jnzrbgsvmiqewu
+
+               vztidxa
+               azdtxiv
+
+               hrxmwsuig
+               mhigxsurw
+               usrhxigmw
+
+               cfebnouykgx
+               koxsucqgyraf
+               juktchzofvyipxwgdlm
+
+               hx
+               xh
+               hx
+               hx
+               hx
+
+               mduw
+               wmdnpu
+               mduw
+               dwum
+
+               wutmabgchq
+               uazbkx
+
+               pjbyczfgslqen
+               znekrqpjwsclyigfb
+               jypsgxaqfznlebc
+               bpcfqeltsynzjg
+
+               tsxublnfe
+               lrtfspbn
+
+               izolf
+               iofz
+               xuqfiny
+
+               o
+               lom
+
+               ojzmfxhikdcypueg
+               pvxcfmoyguejkqr
+               spweltkufjvgoymcx
+               mkucjyesbogxp
+               ecmpynakxjguo
+
+               zdouqevfi
+               rnqzpoufv
+               hvumclzqbosywafgx
+               fjutvokzq
+
+               pkvghyjfrdu
+               vfghyjdr
+               lvgjyhbidaftroc
+               hfedvjyqrg
+
+               jxiuzblvkmyegsnofq
+               nlbmquvyzjdpfxgseiwc
+               mjbgehyqkxlvzfntiusr
+
+               aczfpmyuwstqbjhednxlo
+               yecdxblpfmanzwsuojthq
+               bsjxzityancldmquefwhpo
+
+               lvnyfcu
+               vxcylfq
+               tvqkylcu
+               vblscjyf
+               dlcmyrwoapviez
+
+               wberan
+               ouzcxydhn
+
+               bvpzg
+               pvzb
+
+               lbmnpuiyctxrevsdhfkjz
+               enlkmziauvcbftydrpxshj
+               oxnlhmsdzjriuftckeybpv
+
+               t
+               r
+
+               bfhgolnuptvjsxym
+               amlwuokyvbitjfghsnrc
+               yvfgmlehjbxnotsu
+
+               ckqgw
+               qgvkwc
+               wmgckq
+               kgwcq
+               qwkgc
+
+               cnpedr
+               pevnc
+               nbcpt
+
+               grkun
+               kgpnur
+               nugkr
+               rnkgu
+
+               somqp
+               pouqma
+               compqy
+
+               ruqhzxb
+               qbhru
+               qbrhuj
+
+               mtukhzvjlcpbsao
+               luvynbjqerifzwoxgph
+
+               rqjikzu
+               pgbnltefkj
+
+               nomhpazbfcuyktxqiwgl
+               ezymcifpgwxabqnoth
+               jfitzgwocnpqyabmhx
+
+               tapvqkdegyfxhucjinmb
+               ujratdgqmphkfxyivbn
+               dtyxkgqjvbhimfnaup
+
+               notivlm
+               omilvnt
+               ioltnvm
+               vitomnl
+
+               bzipxlfwqocrev
+               ezqnpmioytdbfr
+               zrpfoqubesi
+
+               kmaplbsjvdchxwyn
+               nycxswbhajdpk
+               pnkjuwdyscaxhb
+
+               sabngehtj
+               aetjghs
+               aetxhsogj
+
+               xazifjcsrhqvotnwbuyke
+               sanqejbycdwifrxvhzp
+
+               psqc
+               pmq
+               rjqvygzka
+
+               zx
+               z
+               z
+               zq
+               z
+
+               tcfsxal
+               olcfxas
+               ctxslaf
+               afcxsl
+
+               yofme
+               omfe
+               yfoem
+               umfeozjv
+
+               s
+               s
+               bsk
+
+               ipwujhmlxfqedtgkasvbrozc
+               eacjpdkwqhugtvlbsifrozm
+               hdjqmcalsefbpizokruvtw
+               sqzcmptjwvkfaehnolbrdui
+               zubmdsipaltehvcjkfrwoq
+
+               q
+               w
+
+               mgtouezsxpqakjnl
+               avomlkdet
+               cmitdakloe
+               kyafiltewmo
+               dhmelcbtoawk
+
+               weqysz
+               wvuqybse
+               sqexlw
+
+               grohujnmf
+               jowaptgxryb
+
+               vmankdpz
+               ezaxt
+
+               adkxmvpjgnswzy
+               gxmndzkryjapsvw
+
+               lmoqnvsfaxuhd
+               couflmndvqhsja
+               nrdsoavbhfqumi
+
+               nopql
+               mqlopn
+               lqonp
+               plnoq
+               olqpn
+
+               rndkilzmstjeg
+               imnerzgtlkjs
+               ilkgrtndmzesj
+               jgzmtlrikens
+               oplrmkcgzeisntvj
+
+               wkveobq
+               vbmwyez
+               jtixfdplug
+
+               fkog
+               xgnvprf
+               gwfot
+               fqtg
+               kfgj
+
+               rmkbpqiczyatsue
+               arbkqwtihsnepzuyl
+               itsdgzekyuajopqrbvf
+
+               tsogfdjmiweuplryc
+               entpjmiwkbydcusgq
+               ytwcdugmsikejp
+
+               gtifu
+               fgut
+               maugfqt
+
+               lydezqgconibxhptr
+               rvhpziextcgqdn
+
+               lomz
+               ote
+               horj
+
+               xeljfmtougnbavpdrcqw
+               lxporgjacuebvtsfqdn
+               cxbzydvfqplijngrtuoahk
+               dcbfxjownqtpagvulr
+
+               sdgt
+               gtsd
+               tsdgr
+               dtgs
+               dgst
+
+               odwjlyk
+               yc
+               bgrhvyniq
+               pykje
+               ykflz
+
+               dgsx
+               xsdg
+               dxsg
+               gdsx
+
+               wtp
+               wpiyl
+               qxev
+
+               rtionqlhjx
+               zroknluimtqbxc
+               rtxqhoinl
+
+               yntd
+               ndt
+               ntd
+               dtn
+               mfdqtn
+
+               qbrakwdnmcjifxtogy
+               pygfcekrmxjqod
+               kycfolmdqrgxj
+               qkymfxodjrcg
+               xcmkofrjgdyq
+
+               pwyamsuvxo
+               ymxvapuows
+               zsxmupayowv
+               wsymavxupo
+
+               vwhqylbkdjcorgm
+               gwydlkobqcvjr
+               jqwpboghlvdcak
+               xjbnqwvedzkglo
+
+               oncquyf
+               qnfaowr
+               ncqfo
+
+               tvdqhwca
+               plxmrjeou
+               zfb
+               gsznyie
+
+               a
+               a
+               a
+               a
+
+               esoucni
+               uzfgwcnxaqstbmev
+               cheyisjun
+
+               jnaqvhfpoxcue
+               epncvjuxfbdha
+
+               zji
+               zji
+               ojiz
+               izj
+
+               pdysemnc
+               emsdnycp
+               sadecvmynp
+               mdnpjcsewy
+
+               coexuhlafgsqtb
+               geslfaxutqho
+
+               vknhzpqwifxelbaoy
+               ihgbkjqavroyzswme
+
+               lo
+               omu
+               roscv
+
+               bnus
+               bsun
+               subn
+
+               zolprckqstjga
+               qcsgkztrojw
+               rgkejwqcstomz
+               sgqjbkcroyzt
+               twqgksozjrc
+
+               pwfuqsjl
+               pqwijlzfbush
+               slwpjqfau
+
+               rsnhwkvleyq
+               ynwrvehsklq
+               sqlvnwkreyh
+               qulweyrvhksnboj
+               hvwnelyqcakrs
+
+               pchq
+               pcq
+               pcq
+
+               emibouksdlwzy
+               nzfvuaim
+
+               xmopwqrt
+               umxwteynq
+
+               hvl
+               hv
+
+               kpslmgyoxfnvwdzue
+               gufhxmrjkeovsydilqw
+
+               fntkuxiag
+               txinagfuk
+               kintafuxg
+               xufitgnka
+
+               gsenjvq
+               eqmgjv
+               qbgjuev
+               mjqgev
+               qvejgs
+
+               sdkecjiawgvmltuz
+               bqlmsrpfitcndyz
+
+               txbwf
+               zmpxlvbqoa
+               uhxiseydcnjkg
+
+               tflsahkdqbuz
+               afqhucrkzstdbnl
+               htlaeusgzxdfikqb
+
+               exnkiu
+               xeitkun
+               uexkni
+               kinxeu
+
+               fnkx
+               knf
+               fkin
+               cfnk
+
+               h
+               h
+               h
+
+               hplu
+               lgu
+               wmiq
+
+               aithpkcvxerjlygbos
+               xaisprobejchkyvqg
+               gxskbwcpfyraejhoiv
+               brapkfieyvjgocsxh
+
+               diowj
+               hcbql
+
+               fzgmaib
+               gzfrlipdh
+               vgzjbifcx
+               tjgwzfi
+
+               j
+               xh
+               g
+               t
+               yv
+
+               jokizbras
+               asizobkjr
+
+               zjveuyai
+               yajeivuz
+               juzyeiva
+
+               sxogndybtrkam
+               nyfwkdxa
+
+               ie
+               ei
+               ie
+               ei
+               ei
+
+               oztsejp
+               stzoepj
+
+               cvoutkrjs
+               rstjcakxoule
+               sucomjtrk
+
+               kgsquajhnwydi
+               myqeihnwztd
+               fwnxpyheridq
+               vywnzodihq
+
+               thrqlasxkwvgonmbid
+               irbvqgcmotzkhuxasdlj
+
+               abn
+               abn
+
+               fwuvdbejcmxp
+               pfejuvcmbxwd
+               uvpwfbjcxedm
+               cjvbexdmupwf
+               vbumdfwjpcex
+
+               khe
+               hd
+               dh
+
+               wqksen
+               nksqe
+               xqsenk
+               sqnkex
+
+               qlusg
+               sug
+               usdg
+               gus
+               gus
+
+               jdkbrvsagex
+               ekvrdbgas
+               kgvrbsdae
+               dkbrasgve
+
+               xabhuokifm
+               ubmkhfaxio
+               bmxufoakhi
+               afomihukxb
+
+               elpdrckvwjifyausq
+               skapiruqvcbyjnzoge
+
+               wdcxljfpsevakhgm
+               lvxpahdkwsmecgj
+               mswkvpljadexchg
+               xpgajdskvwlehmc
+
+               uvnfxd
+               ukypde
+               hudp
+               uwdbh
+
+               di
+               id
+               di
+               di
+               di
+
+               vegjlhn
+               uikdompq
+
+               diaq
+               iqa
+               qia
+               iqa
+               qavi
+
+               hjnedvzbrypcwt
+               byncjwzhvmrdxte
+               egpnzyxjdvbwctrh
+               atwrobznehdvcyj
+
+               uy
+               wdu
+               lipqvsu
+               agpjebnu
+               kmrxtfoczhu
+
+               rcdupkmhivbfz
+               dbuhrfpmkicavz
+               dzcigyhvpbfumqk
+
+               gvknrjuzah
+               darevkqfbushz
+               vhzwlkjpuari
+               hvrizalykctu
+
+               msqgzoy
+               qmgiz
+
+               qenaurhfb
+               nqruafhbe
+               ubhfrnqwaze
+               eqranfhbu
+
+               reknf
+               nr
+
+               m
+               m
+               m
+               m
+               m
+
+               qdezurshbioc
+               bdhrocqzusi
+               hsizcqdobru
+               hocsruziqdb
+               chrbiqusdoz
+
+               gdeikqytfabw
+               qrkhapcfl
+
+               zfqpubodgxvime
+               gjeitykxzplbvohqard
+
+               vz
+               q
+               q
+
+               gdpyqiv
+               xmhvtdoaywz
+               ufneysbjlvkc
+
+               tihbra
+               no
+               qmwo
+               o
+               m
+
+               g
+               om
+               wpbdvku
+               or
+
+               k
+               tk
+               uk
+
+               htf
+               kcluo
+               ohlscmjk
+               gyrvazeiqdw
+
+               xc
+               gcx
+               xc
+
+               kfuenwlpmqaxr
+               qukzifgdbnorva
+               qutcshwknrmaf
+               lprqafxkun
+               uanfqrkm
+
+               krwhnfvcgyt
+               dmjqxliv
+               lzvbdspxe
+               vlmuaz
+
+               x
+               x
+               x
+
+               xhlgfrmncpadtovuisbj
+               liaqdnuxmjofbs
+               xejflmsnkbudayoiz
+
+               njvuoamkpsirxg
+               gkvmxrqoiauj
+               vjucgoihdkmaxr
+               exgizudkrmjaovl
+
+               ikp
+               yv
+               ikz
+
+               bwgsoup
+               ugpwsbo
+               wsjnpuogb
+
+               lotn
+               ltkon
+               aoltwxbined
+               tnokycl
+               lnto
+
+               m
+               k
+               k
+
+               ecldgqtxpk
+               qcmpxlhkagetd
+               loxrdknsepvgt
+               gixpfzjlkted
+
+               hwp
+               wh
+               hw
+               whm
+
+               yknocjtxubvdfhwz
+               ursndjpxzo
+
+               scejb
+               jbecl
+               cejb
+               jcbe
+               jbxvec
+
+               ifdc
+               fiudsgjv
+               fumqth
+               pfi
+               rwkfoylzaenb
+
+               znubcxrwh
+               ubvcrzqnwx
+
+               uxym
+               mx
+               mxn
+
+               beumoprjvkt
+               uvrbfmepokj
+               mjkvpouebr
+               bmrvkjuope
+
+               utgaxysljbvfm
+               wpsdfavxogmyju
+               rgemjxycksfvi
+
+               mzeurqxtaoghdbc
+               xuebcdrothzqmga
+               adxtrmbczgqeohu
+
+               nhuwbty
+               tbuhniwy
+               yhtbwnu
+               tuwbyhn
+
+               psfgnrqozcty
+               wjvueck
+               ijdexbclhm
+
+               yxdwj
+               wxd
+               dxw
+
+               sexcrtpdvfquikblhjaym
+               chtlvbsyerxqupdfmjk
+               xlyedbvjpcqhrmutksf
+
+               nvuozspkxqrly
+               uydmx
+
+               kwyuicbzgnt
+               tnyugbicwkz
+               nubswzicgtyk
+               yzwknutbgci
+               zktngiucywb
+
+               rakgqzus
+               sqpg
+
+               mlzrs
+               hlpyi
+
+               r
+               r
+               r
+
+               uwckapi
+               kgaipwcu
+               wcuaipk
+               wapicuk
+
+               ybfnkgludqivhaorsz
+               wblqaofsxkvhr
+               rvlqakhosbwf
+               lsrhaqofkbv
+
+               ajqufyzreptihg
+               csdmvxuknlobr
+
+               bmn
+               bcm
+               bnm
+               bym
+               tbm
+
+               cphtjyqwxfisagmln
+               qhjlzycpsxigotwnfam
+               wiyxfsthnljqpmgac
+               mpfncbgshwyjlaxqidt
+
+               optxzqvgmlacwireyjhkfb
+               xkibgaquwejmdszhytnvrp
+
+               jufbthmwr
+               mrjbtuwfh
+               wmfjutbhr
+               bxrftjhwum
+               jbuhwtfrm
+
+               tzh
+               thz
+
+               f
+               f
+               f
+               f
+               f
+
+               bqkn
+               nqbk
+               qknb
+               bnkq
+               knbq
+
+               ydwexhmqru
+               hdgmjatxqeovuwc
+
+               abtg
+               oabytg
+               xgtbjh
+               gvtabn
+
+               cg
+               cg
+
+               yashgqblr
+               shqlraygb
+
+               bgqo
+               ihn
+
+               ukda
+               dak
+               mkdjczgta
+               akdl
+               dalk
+
+               a
+               a
+               a
+
+               e
+               b
+               e
+
+               kqbai
+               bapko
+               abkiq
+               kba
+               bak
+
+               sj
+               a
+
+               jh
+               jdh
+               fahj
+               hj
+
+               v
+               v
+               h
+               s
+               dr
+
+               xhwj
+               xhjm
+               whjx
+
+               wgh
+               vymgwjoehna
+               hwcg
+
+               ompt
+               luzvjx
+
+               nfkrushty
+               htrcskufyn
+               hkrunysft
+
+               eovbfkcaxdhzijwn
+               mxwkdjbzrvhcnoefai
+               xdbcofenviwzjapkh
+
+               nvyatuqdw
+               wdnvyauqt
+               dvqatunwy
+               twyavuqdn
+               nducyvwtqa
+
+               aijqfus
+               qasuij
+               uqsjia
+               rjuasqi
+               iesuajq
+
+               zjkvduxstlrwqhbn
+               hubvfndlowtzxk
+               nbtuzkdcwavlxph
+               hmnwuktxbdszvjl
+
+               fgezk
+               jndgyplmur
+               akxzg
+
+               xmbdlfr
+               rlwftemjuzxd
+
+               gpyldcbuom
+               giqfrhbmo
+               szxewnkjvat
+
+               tuqomcgajf
+               fqjaomgtuc
+               cjqafgmoutl
+               umatgofjqc
+
+               lsrfvjaw
+               wslvaj
+               slajvw
+               javlews
+
+               vuqeolsca
+               ihvqrul
+               kbodztqlvu
+               uvfpnwqjmy
+
+               pytwl
+               pwlty
+               leptwy
+               aypwlt
+               yowxhtpgl
+
+               bwcaoluzmh
+               gamhuwczsi
+               ulmoahzcw
+               mdhrcvyukewpza
+               wozuamqxch
+
+               f
+               f
+               f
+               f
+               z
+
+               h
+               dh
+               hj
+               ljh
+
+               tviblf
+               wrdsaqvky
+               umgexnohczj
+
+               zjy
+               j
+               ksjow
+               jhgxz
+               jzx
+
+               ct
+               c
+               cht
+               c
+               icov
+
+               vsd
+               wxvsdb
+               vdsz
+               ksvqmcd
+               svidb
+
+               xqzaucwk
+               uadzwkqhcx
+
+               ielspbgca
+               gtislbezcap
+               ebsgkaupic
+               ezgabscpi
+               pagibesc
+
+               crjaozusnw
+               vaxqblkz
+               fmepdtg
+
+               kylpaeoqgtbxvfmjzn
+               oeplfxmgzjqybnkavt
+               epgatylkvmozqnjfbx
+               kqybplxjazgftmeonv
+               jbzyvnqxkegopalmft
+
+               jxvqf
+               mfvo
+
+               f
+               f
+               m
+               f
+
+               txazokpwm
+               axoczpg
+               adoxzp
+
+               vytdpsizuq
+               tiquvwszdpjy
+               xyictdvlkqpgfsuz
+
+               fqabeoinxkv
+               udhkpbcmejy
+
+               fvktomgcdbpjxawl
+               dpsgbxmcvwkolafj
+               bevkwdgjacflpmx
+
+               xonyjrlzfmg
+               gjlyfnorxz
+               noxljrfygz
+               grnlofjzxy
+               zlxjoynrfg
+
+               gwkahb
+               qhkyw
+               gwbhk
+               hkcjpwls
+               azkbwqh
+
+               vpfdmnzj
+               ugcqlatijedmpv
+
+               mcnzq
+               onm
+
+               hnbjvmkgod
+               jdngkhomvb
+               dnbvogjmhk
+               ojkgvhdnmb
+
+               betpuzcnmrihwkdg
+               hwrgduqcznbmxtpoelsfa
+               gzdcwejumbvphnrt
+
+               vapidj
+               ujspa
+               epxlmkf
+               tgurp
+
+               umlvkjpwyi
+               dnwfipmv
+               rivbemxwph
+
+               lwvfbq
+               wlbf
+               alswbuf
+               fwblv
+               lwqfb
+
+               jredugbaknc
+               fndcxsqure
+               cqrudyszenv
+               fuylsvmneidrc
+
+               klxpvdicbe
+               rghplixcedkbv
+
+               o
+               zo
+               oujs
+               o
+
+               lezgicaxjpbfrkvwushdtnqmo
+               cizbdnotawjmxlvushkrgqpef
+
+               lwqsberxcmhuvtjy
+               wzmhxbyjoqlsvuecra
+               lmurdwxicpgfqyhbejvs
+               xhmbjvnutcsiewrqylk
+
+               zpbynqdhlcio
+               dbyhqcozpiln
+               bnipcozqdyhl
+               yondcqlzbhpi
+               cyqdhbpoilgnz
+
+               poygaer
+               by
+               xilybj
+
+               ozqnwilxmtvsghdpabkfrj
+               tohlwrznjimgkdqbpxfvsa
+               qanigmplokbrvstxzfwhdj
+               jxizrtakgopnqshdlmfwvb
+
+               gcq
+               nfrl
+
+               mrsyplb
+               nlb
+               kcloasx
+               leyuxp
+               dtzvfjgiqlh
+
+               rxlm
+               xirs
+               fxrasi
+               iwxr
+               grbqeox
+
+               pe
+               p
+               p
+               p
+               p
+
+               cjx
+               tplnqfx
+
+               cfe
+               ecf
+               nefc
+               sefc
+
+               lnt
+               lnzx
+               iltan
+               mljcy
+
+               rtsnluhmkbvjwqifgoceaz
+               kfmcbsanwhivruztqjgole
+               mkznvcrhsbtjaquloweifg
+               ncbeltkasfzjrwuhqiogmv
+               rgvasjifoctmnwkbeqhluz
+
+               lxtiuyhcqrm
+               mtlcrh
+               mtrxbhflic
+               mhtpecgvrl
+
+               srcfjawukbzinqmxdhy
+               fhixzjrkamwnscpuqgydo
+
+               owjnbisvyl
+               bpisjn
+               tisjnb
+
+               wnzixhqscam
+               naqxzmivwchs
+               qzxnascwmih
+               xqnsahwzicm
+               sqczmxnahiw
+
+               dwtjvfkncqxuh
+               dhgqtnkpuvjcwfx
+               dlkyqchfwexnvutj
+
+               ew
+               wue
+
+               pujbdat
+               radse
+               dwsea
+
+               ean
+               n
+               n
+               n
+               n
+
+               rzmwqiytucvpdnsfbgelh
+               ozgwnxmauybredhsjqvp
+               rxudgmvykhpeqbzswn
+
+               josbygp
+               vopsj
+               adeczmjw
+
+               fxodtyrkvmbg
+               pgwkovxhtyufbdm
+               fbxocpkligytdm
+               znxaemofjgqdksyt
+
+               ijxdhryqml
+               rsjkvmyflz
+               jlmrxyw
+
+               sawmtrejogfxdnhkzi
+               jodmbtzucfwyrpqivg
+
+               apjgcrlztebs
+               rotipxflzgcskjabe
+               bcltgzprjsae
+               vzreltacsjbpg
+
+               o
+               o
+               xo
+               zgoe
+               lo
+
+               koy
+               poyk
+
+               vagrbwxqfjlodi
+               ibdrvaxgfojq
+               qaxfgvodijbr
+
+               ficdmvaluyrpxnqg
+               ufgzriqpcwmdlya
+               akiqyhgorpsetfudjlbc
+
+               chsknb
+               hbszn
+               bzchnsx
+               nvsbh
+               dmysbnh
+
+               gdpuyxihomjscwrq
+               fnjsrcwyqmiloupdhx
+               hfqrjxcyisupwlodm
+
+               qiymdjhkzf
+               dhjkqfmziy
+               iqzmydkhfj
+               kmvizhqdyfj
+               bkzhfiyjmdq
+
+               t
+               tz
+               at
+               t
+
+               avrslnxdkitbycg
+               nbty
+               pbomtynjwu
+               fqybnht
+               othfnbey
+
+               xtrunekjicsm
+               bqofpzaw
+               vahlbywg
+
+               iwdh
+               hwd
+               gmnyjskwd
+
+               ikmlazfnbdorsjqeypuvthcwgx
+               hgjtxplaebnmqzyufcvokiswdr
+               wnckhtdbyufloiqepmjxgsvazr
+               epfzmkcvtbxhulgsiqyndrawjo
+               vyjortmhpxndlaeiqugwszfcbk
+
+               yotxgwldvajb
+               opbhatxwylvjg
+               vjlxbrtkawg
+               bolxvwgtja
+
+               gcwhiafqpe
+               heqwcapgif
+
+               v
+               v
+               v
+               v
+
+               quljvbrwcankdz
+               ulczjenwbqdva
+
+               iuxpgankys
+               aqnyupki
+               pjvikyxaun
+               opilkmnuzya
+               paukiynj
+
+               xghwsyorbezifcjdn
+               aiycwghplobmzd
+               icydztbguohqw
+               oiydgwhzbcvm
+
+               os
+               fbxuzm
+               dy
+
+               rjpyidwgfvqleb
+               eylqriwpbgf
+               piarwefgylbq
+               gfaebpyqilwr
+
+               pjvmiedqkbowl
+               pqimweboljvdk
+               kpjemqdbwiovl
+               lvmjeopbqwdik
+               kmpqvjilweobd
+
+               spzf
+               fsvpa
+               qspof
+               sfp
+               spf
+
+               gey
+               lhnmaeygb
+               gey
+               eyg
+
+               mlnpetjzfcwuhsg
+               miwfcjtlhpegnusz
+               hncpztmsfwgluej
+               mtjuspgcvfwelhzn
+               jphsncfwzulgmte
+
+               xo
+               ox
+
+               lmcrnftgyehbiauopxvq
+               qbglamtefucxihroynvp
+               taemubichnpfgovlqryx
+               arfgqvnetlmicbuhoxyp
+               ergfpvomtxnbchlaquiy
+
+               dpvjzhctgoarwxslq
+               thzvryowlpngksaxcqd
+
+               jgxqdkvcfb
+               xvtkfdcaqbg
+               abqfvgwdxkc
+               skpvqdbnfgxc
+
+               xkcogdlq
+               ogclkx
+               xlkuoagvfbe
+               gwxmlkod
+
+               ilkrwvsm
+
+               dlzhejcxgaounswfbrpyqm
+               juhszbwcqnmfareo
+
+               okjwxhu
+               dnt
+               pxzgny
+               cbs
+
+               widp
+               piwd
+               wpid
+               pdiw
+
+               pblk
+               awkpi
+               pkxr
+               kpfz
+
+               ap
+               p
+               pbyn
+
+               fbzsyicupka
+               zecusykamifqbpt
+               icpauyfksbz
+
+               seumyc
+               c
+               c
+               ulacyj
+               gpixcobt
+
+               xoe
+               r
+               rw
+               imx
+               vgca
+
+               uagdrmf
+               qdrymuaxfg
+               fmruazdg
+
+               adp
+               ap
+               pxa
+               pa
+               sagp
+
+               wtifbkzvuhnomscrxq
+               nvcqhximsubtrfokwz
+               bqznfxwohmkvutirsc
+               ntusvqiwhzcoxfrbkm
+
+               cpbly
+               clpbye
+               ycblp
+
+               wmaxezdjgrocuksbp
+               cuxkdjoea
+               efxuaockjd
+               kceoxldauj
+
+               yfndzthcqvgp
+               anphtqvcfz
+
+               byecawnxd
+               ecyndxawb
+
+               z
+               z
+               z
+               vz
+
+               meypsculfjd
+               cepvdinrls
+
+               hqiu
+               guis
+
+               rxvj
+               xvr
+               xilvr
+               ryjxv
+               yrvx
+
+               co
+               oc
+               co
+               co
+               oc
+
+               gyjtrueqosz
+               achxyfbvqkopetj
+
+               zkrvufeglcywqtx
+               hsekycwptiogul
+               eyhljkcgwtpuo
+               jgncytkblpweou
+
+               nxhayv
+               npqfohbrl
+               kegchuidstwnm
+               nzhlj
+               """
+
     let day7 = """
                dark orange bags contain 3 dark chartreuse bags.
                striped fuchsia bags contain 5 striped lavender bags.

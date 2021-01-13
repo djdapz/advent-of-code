@@ -4,7 +4,12 @@
 
 import Foundation
 
-class Day4 {
+class Day4 : Day{
+    var number: Int {
+        get {
+            4
+        }
+    }
     let passports: [PassportValidator]
 
     init(input: String) {
@@ -18,7 +23,7 @@ class Day4 {
         passports.filter { $0.isPropperlyFormed }.count
     }
 
-    func problem2() -> Any {
+    func problem2() -> Int {
         passports.filter { $0.isValid }.count
     }
 }
