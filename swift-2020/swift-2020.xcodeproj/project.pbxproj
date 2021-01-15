@@ -35,6 +35,9 @@
 		5B0E0B2C6C47C4E42D4306D2 /* Day6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0E0D87DC28369B33E92B79 /* Day6.swift */; };
 		5B0E0D6FC766E7CE14626A2D /* CustomsForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0E0AE1C48136623880908B /* CustomsForm.swift */; };
 		5B0E0F5A87A9C058E9B0D3BF /* Day4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0E076208E25CF1CA1175B6 /* Day4.swift */; };
+		9BBD31F077A8460CB4A1BDD9 /* GameSoftwareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBD39293ECF9BEDDC9A9B0B /* GameSoftwareTests.swift */; };
+		9BBD35CA03DAF7C7AED13A58 /* Day8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBD3DE574E5078EDCCDB470 /* Day8.swift */; };
+		9BBD3C199867CB1327C060DE /* GameSoftware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBD34D562CB799825FA17C6 /* GameSoftware.swift */; };
 		OBJ_31 /* Day1.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Day1.swift */; };
 		OBJ_32 /* Day2.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Day2.swift */; };
 		OBJ_33 /* Day3.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Day3.swift */; };
@@ -55,14 +58,14 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = "swift-2020::swift-2020";
+			remoteGlobalIDString = swift-2020::swift-2020;
 			remoteInfo = "swift-2020";
 		};
 		000B9A3E25AF89A500CE33D7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = "swift-2020::swift-2020Tests";
+			remoteGlobalIDString = swift-2020::swift-2020Tests;
 			remoteInfo = "swift-2020Tests";
 		};
 /* End PBXContainerItemProxy section */
@@ -82,6 +85,9 @@
 		5B0E0D87DC28369B33E92B79 /* Day6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day6.swift; sourceTree = "<group>"; };
 		5B0E0FBD5E5BA8CEE182C3BA /* BoardingPassTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardingPassTests.swift; sourceTree = "<group>"; };
 		5B0E0FC69FC1EBABC2875E4A /* CustomsFormTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomsFormTest.swift; sourceTree = "<group>"; };
+		9BBD34D562CB799825FA17C6 /* GameSoftware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSoftware.swift; sourceTree = "<group>"; };
+		9BBD39293ECF9BEDDC9A9B0B /* GameSoftwareTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSoftwareTests.swift; sourceTree = "<group>"; };
+		9BBD3DE574E5078EDCCDB470 /* Day8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day8.swift; sourceTree = "<group>"; };
 		OBJ_10 /* Day2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day2.swift; sourceTree = "<group>"; };
 		OBJ_11 /* Day3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day3.swift; sourceTree = "<group>"; };
 		OBJ_12 /* TobogganMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TobogganMap.swift; sourceTree = "<group>"; };
@@ -139,6 +145,7 @@
 				5B0E089E851EE7C2C7667F16 /* Day4Tests.swift */,
 				5B0E0FBD5E5BA8CEE182C3BA /* BoardingPassTests.swift */,
 				5B0E0FC69FC1EBABC2875E4A /* CustomsFormTest.swift */,
+				9BBD39293ECF9BEDDC9A9B0B /* GameSoftwareTests.swift */,
 			);
 			name = "swift-2020Tests";
 			path = "Tests/swift-2020Tests";
@@ -153,7 +160,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -162,7 +169,6 @@
 				OBJ_22 /* Products */,
 				OBJ_25 /* README.md */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -177,20 +183,22 @@
 			isa = PBXGroup;
 			children = (
 				000B9A4125AF8A2600CE33D7 /* BagMap.swift */,
-				000B9A4225AF8A2600CE33D7 /* Day7.swift */,
 				OBJ_9 /* Day1.swift */,
 				OBJ_10 /* Day2.swift */,
 				OBJ_11 /* Day3.swift */,
+				5B0E076208E25CF1CA1175B6 /* Day4.swift */,
+				5B0E07C5B00C47F629CDB7B0 /* Day5.swift */,
+				5B0E0D87DC28369B33E92B79 /* Day6.swift */,
+				000B9A4225AF8A2600CE33D7 /* Day7.swift */,
 				OBJ_12 /* TobogganMap.swift */,
 				OBJ_13 /* inputs.swift */,
 				OBJ_14 /* swift_2020.swift */,
 				5B0E056E0C53730A0274AD97 /* PassportValidator.swift */,
-				5B0E076208E25CF1CA1175B6 /* Day4.swift */,
 				5B0E07AF402EE392F1AFF647 /* BoardingPass.swift */,
-				5B0E07C5B00C47F629CDB7B0 /* Day5.swift */,
 				5B0E0B79CBD18971847CFF47 /* Day.swift */,
 				5B0E0AE1C48136623880908B /* CustomsForm.swift */,
-				5B0E0D87DC28369B33E92B79 /* Day6.swift */,
+				9BBD34D562CB799825FA17C6 /* GameSoftware.swift */,
+				9BBD3DE574E5078EDCCDB470 /* Day8.swift */,
 			);
 			name = "swift-2020";
 			path = "Sources/swift-2020";
@@ -262,7 +270,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_22 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -296,6 +304,8 @@
 				5B0E074DA66A5B58690EBF3A /* Day.swift in Sources */,
 				5B0E0D6FC766E7CE14626A2D /* CustomsForm.swift in Sources */,
 				5B0E0B2C6C47C4E42D4306D2 /* Day6.swift in Sources */,
+				9BBD3C199867CB1327C060DE /* GameSoftware.swift in Sources */,
+				9BBD35CA03DAF7C7AED13A58 /* Day8.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +330,7 @@
 				5B0E0175FBF7F478BC6BB101 /* Day4Tests.swift in Sources */,
 				5B0E02E91574471BB1051840 /* BoardingPassTests.swift in Sources */,
 				5B0E087393B4CD40EB1620D5 /* CustomsFormTest.swift in Sources */,
+				9BBD31F077A8460CB4A1BDD9 /* GameSoftwareTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

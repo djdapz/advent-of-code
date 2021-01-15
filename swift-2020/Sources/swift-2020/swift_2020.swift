@@ -13,6 +13,7 @@ struct swift_2020 {
         Day5(inputs: inputs.day5).run()
         Day6(input: inputs.day6).run()
         Day7(bagRules: inputs.day7).run()
+        Day8(program: inputs.day8).run()
     }
 }
 
