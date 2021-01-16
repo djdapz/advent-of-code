@@ -23,15 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="114042c8-370b-4218-83c1-98e6360c9a2d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/swift-2020/Day8.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/swift-2020/GameSoftware.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/swift-2020Tests/GameSoftwareTests.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/swift-2020.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/swift-2020.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/swift-2020.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/swift-2020.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/swift-2020/Day8.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/swift-2020/Day8.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/swift-2020/GameSoftware.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/swift-2020/GameSoftware.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/swift-2020Tests/GameSoftwareTests.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/swift-2020Tests/GameSoftwareTests.swift" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,9 +52,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Sources/swift-2020" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Sources/swift-2020" />
+    </key>
   </component>
   <component name="RunManager" selected="XCTest.swift_2020Tests">
-    <configuration name="GameSoftwareTests.test_shouldIgnoreNoop" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="swift-2020" TARGET_NAME="swift-2020Tests" CONFIG_NAME="Debug" SCHEME_NAME="GameSoftwareTests.test_shouldIgnoreNoop" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_CLASS="GameSoftwareTests" TEST_METHOD="test_shouldIgnoreNoop" TEST_MODE="SUITE_TEST">
+    <configuration name="All in swift_2020Tests.swift" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="swift-2020" TARGET_NAME="swift-2020Tests" CONFIG_NAME="Debug" SCHEME_NAME="All in swift_2020Tests.swift" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_PATTERN="swift_2020Tests" TEST_MODE="PATTERN">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameSoftwareTests" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="swift-2020" TARGET_NAME="swift-2020Tests" CONFIG_NAME="Debug" SCHEME_NAME="GameSoftwareTests" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_CLASS="GameSoftwareTests" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -69,36 +75,31 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameSoftwareTests.test_shouldTerminateOnceAnInstructionIsReachedTwice" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="swift-2020" TARGET_NAME="swift-2020Tests" CONFIG_NAME="Debug" SCHEME_NAME="GameSoftwareTests.test_shouldTerminateOnceAnInstructionIsReachedTwice" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_CLASS="GameSoftwareTests" TEST_METHOD="test_shouldTerminateOnceAnInstructionIsReachedTwice" TEST_MODE="SUITE_TEST">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GameSoftwareTests.test_shouldUseJmpToSkip" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="swift-2020" TARGET_NAME="swift-2020Tests" CONFIG_NAME="Debug" SCHEME_NAME="GameSoftwareTests.test_shouldUseJmpToSkip" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_CLASS="GameSoftwareTests" TEST_METHOD="test_shouldUseJmpToSkip" TEST_MODE="SUITE_TEST">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="swift_2020Tests" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="swift-2020" TARGET_NAME="swift-2020Tests" CONFIG_NAME="Debug" SCHEME_NAME="swift_2020Tests" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_CLASS="swift_2020Tests" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="swift_2020Tests.testExample" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="swift-2020" TARGET_NAME="swift-2020Tests" CONFIG_NAME="Debug" SCHEME_NAME="swift_2020Tests.testExample" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_CLASS="swift_2020Tests" TEST_METHOD="testExample" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.swift-2020-Package" />
-      <item itemvalue="XCTest.GameSoftwareTests.test_shouldRunSequenceOfAdders" />
-      <item itemvalue="XCTest.GameSoftwareTests.test_shouldUseJmpToSkip" />
-      <item itemvalue="XCTest.GameSoftwareTests.test_shouldIgnoreNoop" />
-      <item itemvalue="XCTest.GameSoftwareTests.test_shouldTerminateOnceAnInstructionIsReachedTwice" />
       <item itemvalue="XCTest.swift_2020Tests" />
+      <item itemvalue="XCTest.swift_2020Tests.testExample" />
+      <item itemvalue="XCTest.All in swift_2020Tests.swift" />
+      <item itemvalue="XCTest.GameSoftwareTests.test_shouldRunSequenceOfAdders" />
+      <item itemvalue="XCTest.GameSoftwareTests" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="XCTest.swift_2020Tests" />
-        <item itemvalue="XCTest.GameSoftwareTests.test_shouldTerminateOnceAnInstructionIsReachedTwice" />
-        <item itemvalue="XCTest.GameSoftwareTests.test_shouldIgnoreNoop" />
-        <item itemvalue="XCTest.GameSoftwareTests.test_shouldUseJmpToSkip" />
+        <item itemvalue="XCTest.GameSoftwareTests" />
         <item itemvalue="XCTest.GameSoftwareTests.test_shouldRunSequenceOfAdders" />
+        <item itemvalue="XCTest.All in swift_2020Tests.swift" />
+        <item itemvalue="XCTest.swift_2020Tests.testExample" />
       </list>
     </recent_temporary>
   </component>
@@ -110,7 +111,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610666479772</updated>
-      <workItem from="1610666481937" duration="3859000" />
+      <workItem from="1610666481937" duration="6892000" />
     </task>
     <servers />
   </component>
@@ -129,61 +130,55 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="2518" height="406" key="GridCell.Tab.0.bottom" timestamp="1610686091256">
+    <state width="2518" height="181" key="GridCell.Tab.0.bottom" timestamp="1610840691205">
       <screen x="-2560" y="25" width="2560" height="1415" />
     </state>
-    <state width="2518" height="406" key="GridCell.Tab.0.bottom/-2560.25.2560.1415/0.25.2560.1415@-2560.25.2560.1415" timestamp="1610686091256" />
-    <state width="2518" height="406" key="GridCell.Tab.0.center" timestamp="1610686091255">
+    <state width="2518" height="181" key="GridCell.Tab.0.bottom/-2560.25.2560.1415/0.25.2560.1415@-2560.25.2560.1415" timestamp="1610840691205" />
+    <state width="2518" height="181" key="GridCell.Tab.0.center" timestamp="1610840691204">
       <screen x="-2560" y="25" width="2560" height="1415" />
     </state>
-    <state width="2518" height="406" key="GridCell.Tab.0.center/-2560.25.2560.1415/0.25.2560.1415@-2560.25.2560.1415" timestamp="1610686091255" />
-    <state width="2518" height="406" key="GridCell.Tab.0.left" timestamp="1610686091255">
+    <state width="2518" height="181" key="GridCell.Tab.0.center/-2560.25.2560.1415/0.25.2560.1415@-2560.25.2560.1415" timestamp="1610840691204" />
+    <state width="2518" height="181" key="GridCell.Tab.0.left" timestamp="1610840691204">
       <screen x="-2560" y="25" width="2560" height="1415" />
     </state>
-    <state width="2518" height="406" key="GridCell.Tab.0.left/-2560.25.2560.1415/0.25.2560.1415@-2560.25.2560.1415" timestamp="1610686091255" />
-    <state width="2518" height="406" key="GridCell.Tab.0.right" timestamp="1610686091256">
+    <state width="2518" height="181" key="GridCell.Tab.0.left/-2560.25.2560.1415/0.25.2560.1415@-2560.25.2560.1415" timestamp="1610840691204" />
+    <state width="2518" height="181" key="GridCell.Tab.0.right" timestamp="1610840691205">
       <screen x="-2560" y="25" width="2560" height="1415" />
     </state>
-    <state width="2518" height="406" key="GridCell.Tab.0.right/-2560.25.2560.1415/0.25.2560.1415@-2560.25.2560.1415" timestamp="1610686091256" />
-    <state width="2518" height="498" key="GridCell.Tab.1.bottom" timestamp="1610685397550">
+    <state width="2518" height="181" key="GridCell.Tab.0.right/-2560.25.2560.1415/0.25.2560.1415@-2560.25.2560.1415" timestamp="1610840691205" />
+    <state width="2518" height="498" key="GridCell.Tab.1.bottom" timestamp="1610840167233">
       <screen x="-2560" y="25" width="2560" height="1415" />
     </state>
-    <state width="2518" height="498" key="GridCell.Tab.1.bottom/-2560.25.2560.1415/0.25.2560.1415@-2560.25.2560.1415" timestamp="1610685397550" />
-    <state width="2518" height="498" key="GridCell.Tab.1.center" timestamp="1610685397549">
+    <state width="2518" height="498" key="GridCell.Tab.1.bottom/-2560.25.2560.1415/0.25.2560.1415@-2560.25.2560.1415" timestamp="1610840167233" />
+    <state width="2518" height="498" key="GridCell.Tab.1.center" timestamp="1610840167232">
       <screen x="-2560" y="25" width="2560" height="1415" />
     </state>
-    <state width="2518" height="498" key="GridCell.Tab.1.center/-2560.25.2560.1415/0.25.2560.1415@-2560.25.2560.1415" timestamp="1610685397549" />
-    <state width="2518" height="498" key="GridCell.Tab.1.left" timestamp="1610685397549">
+    <state width="2518" height="498" key="GridCell.Tab.1.center/-2560.25.2560.1415/0.25.2560.1415@-2560.25.2560.1415" timestamp="1610840167232" />
+    <state width="2518" height="498" key="GridCell.Tab.1.left" timestamp="1610840167232">
       <screen x="-2560" y="25" width="2560" height="1415" />
     </state>
-    <state width="2518" height="498" key="GridCell.Tab.1.left/-2560.25.2560.1415/0.25.2560.1415@-2560.25.2560.1415" timestamp="1610685397549" />
-    <state width="2518" height="498" key="GridCell.Tab.1.right" timestamp="1610685397549">
+    <state width="2518" height="498" key="GridCell.Tab.1.left/-2560.25.2560.1415/0.25.2560.1415@-2560.25.2560.1415" timestamp="1610840167232" />
+    <state width="2518" height="498" key="GridCell.Tab.1.right" timestamp="1610840167233">
       <screen x="-2560" y="25" width="2560" height="1415" />
     </state>
-    <state width="2518" height="498" key="GridCell.Tab.1.right/-2560.25.2560.1415/0.25.2560.1415@-2560.25.2560.1415" timestamp="1610685397549" />
+    <state width="2518" height="498" key="GridCell.Tab.1.right/-2560.25.2560.1415/0.25.2560.1415@-2560.25.2560.1415" timestamp="1610840167233" />
+    <state x="-1615" y="349" width="670" height="676" key="search.everywhere.popup" timestamp="1610838556085">
+      <screen x="-2560" y="25" width="2560" height="1415" />
+    </state>
+    <state x="-1615" y="349" width="670" height="676" key="search.everywhere.popup/-2560.25.2560.1415/0.25.2560.1415@-2560.25.2560.1415" timestamp="1610838556085" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Sources/swift-2020/GameSoftware.swift</url>
-          <line>79</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Sources/swift-2020/GameSoftware.swift</url>
-          <line>68</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Sources/swift-2020/GameSoftware.swift</url>
-          <line>70</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Tests/swift-2020Tests/GameSoftwareTests.swift</url>
-          <line>100</line>
+          <line>102</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Sources/swift-2020/Day8.swift</url>
+          <line>60</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

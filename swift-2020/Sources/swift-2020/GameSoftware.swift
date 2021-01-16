@@ -32,6 +32,10 @@ class GameSoftware {
 
     let instructions: [Instruction]
 
+    init(fromInstructions instructions: [Instruction]) {
+        self.instructions = instructions
+    }
+
     init(fromString: String) {
         instructions = fromString
                 .components(separatedBy: .newlines)
@@ -51,17 +55,35 @@ class ProgramState {
     let pointer: Int
     let accumulator: Int
     var executed: [Int: Bool]
+    let terminationReason: TerminationReason
 
-    init(program: GameSoftware, pointer: Int, accumulator: Int, executed: [Int: Bool] = [:]) {
+    init(program: GameSoftware, pointer: Int, accumulator: Int, executed: [Int: Bool] = [:], terminationReason: TerminationReason = .notTerminated) {
         self.program = program
         self.pointer = pointer
         self.accumulator = accumulator
         self.executed = executed
+        self.terminationReason = terminationReason
     }
 
-    public func nextState() -> ProgramState? {
-        guard let instruction = program.instructions[safe: pointer], executed[pointer] == nil else {
-            return nil
+    public func nextState() -> ProgramState {
+        guard let instruction = program.instructions[safe: pointer] else {
+            return ProgramState(
+                    program: program,
+                    pointer: pointer,
+                    accumulator: accumulator,
+                    executed: executed,
+                    terminationReason: .successfulTermination
+            )
+        }
+
+        guard executed[pointer] == nil else {
+            return ProgramState(
+                    program: program,
+                    pointer: pointer,
+                    accumulator: accumulator,
+                    executed: executed,
+                    terminationReason: .infiniteLoopDetected
+            )
         }
 
         executed[pointer] = true
@@ -76,13 +98,19 @@ class ProgramState {
         }
     }
 
-    public func run() -> Int {
-        if let next = nextState() {
-            return next.run()
+    public func run() -> ProgramState {
+        let next = nextState()
+        guard case .notTerminated = next.terminationReason else {
+            return next
         }
-
-        return accumulator
+        return next.run()
     }
+}
+
+enum TerminationReason {
+    case successfulTermination
+    case infiniteLoopDetected
+    case notTerminated
 }
 
 extension Collection {

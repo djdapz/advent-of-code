@@ -14,7 +14,7 @@ class GameSoftwareTests: XCTestCase {
                 program: GameSoftware(fromString: "acc +12"),
                 pointer: 0,
                 accumulator: 1
-        ).nextState()?.accumulator
+        ).nextState().accumulator
         XCTAssertEqual(accumulator, 13)
     }
 
@@ -27,7 +27,7 @@ class GameSoftwareTests: XCTestCase {
                                     """),
                 pointer: 1,
                 accumulator: 1
-        ).nextState()?.accumulator
+        ).nextState().accumulator
         XCTAssertEqual(accumulator, 16)
     }
 
@@ -36,7 +36,7 @@ class GameSoftwareTests: XCTestCase {
                 program: GameSoftware(fromString: "acc -12"),
                 pointer: 0,
                 accumulator: 100
-        ).nextState()?.accumulator
+        ).nextState().accumulator
         XCTAssertEqual(accumulator, 88)
     }
 
@@ -50,9 +50,11 @@ class GameSoftwareTests: XCTestCase {
 
         let programState = ProgramState(program: program, pointer: 0, accumulator: 0)
 
-        let accumulator = programState.run()
+        let endingState: ProgramState = programState.run()
+        let accumulator = endingState.accumulator
 
         XCTAssertEqual(accumulator, 12 + 15 + 9 - 3)
+        XCTAssertEqual(endingState.terminationReason, .successfulTermination)
     }
 
 
@@ -69,7 +71,7 @@ class GameSoftwareTests: XCTestCase {
 
         let programState = ProgramState(program: program, pointer: 0, accumulator: 0)
 
-        let accumulator = programState.run()
+        let accumulator = programState.run().accumulator
 
         XCTAssertEqual(accumulator, 3)
     }
@@ -87,7 +89,7 @@ class GameSoftwareTests: XCTestCase {
 
         let programState = ProgramState(program: program, pointer: 0, accumulator: 0)
 
-        let accumulator = programState.run()
+        let accumulator = programState.run().accumulator
 
         XCTAssertEqual(accumulator, 2)
     }
@@ -109,7 +111,7 @@ class GameSoftwareTests: XCTestCase {
 
         let programState = ProgramState(program: program, pointer: 0, accumulator: 0)
 
-        let accumulator = programState.run()
+        let accumulator = programState.run().accumulator
 
         XCTAssertEqual(accumulator, 4)
     }
