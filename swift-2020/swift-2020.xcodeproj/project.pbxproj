@@ -24,6 +24,9 @@
 		000B9A4325AF8A2600CE33D7 /* BagMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000B9A4125AF8A2600CE33D7 /* BagMap.swift */; };
 		000B9A4425AF8A2600CE33D7 /* Day7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000B9A4225AF8A2600CE33D7 /* Day7.swift */; };
 		000B9A4A25AF8A3300CE33D7 /* BagMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000B9A4925AF8A3300CE33D7 /* BagMapTests.swift */; };
+		2ABCA3CE25DAE62A0031CD7F /* Day9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABCA3CD25DAE62A0031CD7F /* Day9.swift */; };
+		2ABCA3D525DAE6750031CD7F /* XMASReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABCA3D425DAE6750031CD7F /* XMASReader.swift */; };
+		2ABCA3DB25DAE6960031CD7F /* XMASReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABCA3DA25DAE6960031CD7F /* XMASReaderTests.swift */; };
 		5B0E0175FBF7F478BC6BB101 /* Day4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0E089E851EE7C2C7667F16 /* Day4Tests.swift */; };
 		5B0E02E91574471BB1051840 /* BoardingPassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0E0FBD5E5BA8CEE182C3BA /* BoardingPassTests.swift */; };
 		5B0E0510B79398D4B18745B7 /* Day5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0E07C5B00C47F629CDB7B0 /* Day5.swift */; };
@@ -58,14 +61,14 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = swift-2020::swift-2020;
+			remoteGlobalIDString = "swift-2020::swift-2020";
 			remoteInfo = "swift-2020";
 		};
 		000B9A3E25AF89A500CE33D7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = swift-2020::swift-2020Tests;
+			remoteGlobalIDString = "swift-2020::swift-2020Tests";
 			remoteInfo = "swift-2020Tests";
 		};
 /* End PBXContainerItemProxy section */
@@ -74,6 +77,9 @@
 		000B9A4125AF8A2600CE33D7 /* BagMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BagMap.swift; sourceTree = "<group>"; };
 		000B9A4225AF8A2600CE33D7 /* Day7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day7.swift; sourceTree = "<group>"; };
 		000B9A4925AF8A3300CE33D7 /* BagMapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BagMapTests.swift; sourceTree = "<group>"; };
+		2ABCA3CD25DAE62A0031CD7F /* Day9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day9.swift; sourceTree = "<group>"; };
+		2ABCA3D425DAE6750031CD7F /* XMASReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMASReader.swift; sourceTree = "<group>"; };
+		2ABCA3DA25DAE6960031CD7F /* XMASReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMASReaderTests.swift; sourceTree = "<group>"; };
 		5B0E056E0C53730A0274AD97 /* PassportValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassportValidator.swift; sourceTree = "<group>"; };
 		5B0E076208E25CF1CA1175B6 /* Day4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day4.swift; sourceTree = "<group>"; };
 		5B0E07AF402EE392F1AFF647 /* BoardingPass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardingPass.swift; sourceTree = "<group>"; };
@@ -124,6 +130,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2ABCA3D325DAE6330031CD7F /* Days */ = {
+			isa = PBXGroup;
+			children = (
+				5B0E0B79CBD18971847CFF47 /* Day.swift */,
+				OBJ_9 /* Day1.swift */,
+				OBJ_10 /* Day2.swift */,
+				OBJ_11 /* Day3.swift */,
+				5B0E076208E25CF1CA1175B6 /* Day4.swift */,
+				5B0E07C5B00C47F629CDB7B0 /* Day5.swift */,
+				5B0E0D87DC28369B33E92B79 /* Day6.swift */,
+				000B9A4225AF8A2600CE33D7 /* Day7.swift */,
+				9BBD3DE574E5078EDCCDB470 /* Day8.swift */,
+				2ABCA3CD25DAE62A0031CD7F /* Day9.swift */,
+			);
+			path = Days;
+			sourceTree = "<group>";
+		};
 		OBJ_15 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +169,7 @@
 				5B0E0FBD5E5BA8CEE182C3BA /* BoardingPassTests.swift */,
 				5B0E0FC69FC1EBABC2875E4A /* CustomsFormTest.swift */,
 				9BBD39293ECF9BEDDC9A9B0B /* GameSoftwareTests.swift */,
+				2ABCA3DA25DAE6960031CD7F /* XMASReaderTests.swift */,
 			);
 			name = "swift-2020Tests";
 			path = "Tests/swift-2020Tests";
@@ -182,23 +206,16 @@
 		OBJ_8 /* swift-2020 */ = {
 			isa = PBXGroup;
 			children = (
-				000B9A4125AF8A2600CE33D7 /* BagMap.swift */,
-				OBJ_9 /* Day1.swift */,
-				OBJ_10 /* Day2.swift */,
-				OBJ_11 /* Day3.swift */,
-				5B0E076208E25CF1CA1175B6 /* Day4.swift */,
-				5B0E07C5B00C47F629CDB7B0 /* Day5.swift */,
-				5B0E0D87DC28369B33E92B79 /* Day6.swift */,
-				000B9A4225AF8A2600CE33D7 /* Day7.swift */,
-				OBJ_12 /* TobogganMap.swift */,
 				OBJ_13 /* inputs.swift */,
 				OBJ_14 /* swift_2020.swift */,
+				2ABCA3D325DAE6330031CD7F /* Days */,
+				000B9A4125AF8A2600CE33D7 /* BagMap.swift */,
+				OBJ_12 /* TobogganMap.swift */,
 				5B0E056E0C53730A0274AD97 /* PassportValidator.swift */,
 				5B0E07AF402EE392F1AFF647 /* BoardingPass.swift */,
-				5B0E0B79CBD18971847CFF47 /* Day.swift */,
 				5B0E0AE1C48136623880908B /* CustomsForm.swift */,
 				9BBD34D562CB799825FA17C6 /* GameSoftware.swift */,
-				9BBD3DE574E5078EDCCDB470 /* Day8.swift */,
+				2ABCA3D425DAE6750031CD7F /* XMASReader.swift */,
 			);
 			name = "swift-2020";
 			path = "Sources/swift-2020";
@@ -303,7 +320,9 @@
 				5B0E0510B79398D4B18745B7 /* Day5.swift in Sources */,
 				5B0E074DA66A5B58690EBF3A /* Day.swift in Sources */,
 				5B0E0D6FC766E7CE14626A2D /* CustomsForm.swift in Sources */,
+				2ABCA3D525DAE6750031CD7F /* XMASReader.swift in Sources */,
 				5B0E0B2C6C47C4E42D4306D2 /* Day6.swift in Sources */,
+				2ABCA3CE25DAE62A0031CD7F /* Day9.swift in Sources */,
 				9BBD3C199867CB1327C060DE /* GameSoftware.swift in Sources */,
 				9BBD35CA03DAF7C7AED13A58 /* Day8.swift in Sources */,
 			);
@@ -330,6 +349,7 @@
 				5B0E0175FBF7F478BC6BB101 /* Day4Tests.swift in Sources */,
 				5B0E02E91574471BB1051840 /* BoardingPassTests.swift in Sources */,
 				5B0E087393B4CD40EB1620D5 /* CustomsFormTest.swift in Sources */,
+				2ABCA3DB25DAE6960031CD7F /* XMASReaderTests.swift in Sources */,
 				9BBD31F077A8460CB4A1BDD9 /* GameSoftwareTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
