@@ -10,6 +10,7 @@ let package = Package(
         .library(
             name: "swift-2020",
             targets: ["swift-2020"]),
+        .executable(name: "swift-2020-cli", targets: ["swift-2020-cli"])
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -20,7 +21,11 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "swift-2020",
-            dependencies: []),
+            dependencies: [],
+            resources: [.copy("Data")]),
+        .target(
+            name: "swift-2020-cli",
+            dependencies: ["swift-2020"]),
         .testTarget(
             name: "swift-2020Tests",
             dependencies: ["swift-2020"]),

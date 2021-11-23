@@ -1,21 +1,23 @@
 import Foundation
 
-struct swift_2020 {
-    var text = "Hello, World!"
-    var inputs = Inputs()
+public struct swift_2020 {
 
+    public static func run() {
+        let start = Date()
 
-    func run() {
-        Day1(expenses: inputs.day1).run()
-        Day2(strings: inputs.day2).run()
-        Day3(map: inputs.day3).run()
-        Day4(input: inputs.day4).run()
-        Day5(inputs: inputs.day5).run()
-        Day6(input: inputs.day6).run()
-        Day7(bagRules: inputs.day7).run()
-        Day8(program: inputs.day8).run()
-        Day9(xmasCode: inputs.day9).run()
-        Day10(joltages: inputs.day10).run()
+        Day1(expenses: Inputs.day1).run()
+        Day2(strings: Inputs.day2).run()
+        Day3(map: Inputs.day3).run()
+        Day4(input: Inputs.day4).run()
+        Day5(inputs: Inputs.day5).run()
+        Day6(input: Inputs.day6).run()
+        Day7(bagRules: Inputs.day7).run()
+        Day8(program: Inputs.day8).run()
+        Day9(xmasCode: Inputs.day9).run()
+        Day10(joltages: Inputs.day10).run()
+
+        print("")
+        print("Total Time: | \(Date().timeIntervalSince(start)) seconds")
     }
 }
 

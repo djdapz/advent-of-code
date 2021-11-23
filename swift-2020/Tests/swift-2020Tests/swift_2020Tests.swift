@@ -3,7 +3,7 @@ import XCTest
 
 final class swift_2020Tests: XCTestCase {
     func testExample() {
-        swift_2020().run()
+        swift_2020.run()
     }
 
     static var allTests = [

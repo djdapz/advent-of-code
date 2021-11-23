@@ -72,7 +72,7 @@ class BagMapTests: XCTestCase {
             "shiny gold bags contain 3 bright green bags"
         ])
 
-        XCTAssertEqual(map.capacity(for: "light red"), (9 + 6) * 2 + 1)
+        XCTAssertEqual(map.capacity(for: "light red"), 37)
     }
 
     func test_tells_me_how_many_bags_i_hold_for_example() {
