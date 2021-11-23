@@ -23,21 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="114042c8-370b-4218-83c1-98e6360c9a2d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Sources/swift-2020/Days/Day9.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/swift-2020/XMASReader.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/swift-2020Tests/XMASReaderTests.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/swift-2020.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/swift-2020.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/swift-2020/Days/Day10.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/swift-2020/JoltageReader.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/swift-2020Tests/JoltageReaderTests.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/swift-2020/Day.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/swift-2020/Days/Day.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/swift-2020/Day1.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/swift-2020/Days/Day1.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/swift-2020/Day2.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/swift-2020/Days/Day2.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/swift-2020/Day3.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/swift-2020/Days/Day3.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/swift-2020/Day4.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/swift-2020/Days/Day4.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/swift-2020/Day5.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/swift-2020/Days/Day5.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/swift-2020/Day6.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/swift-2020/Days/Day6.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/swift-2020/Day7.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/swift-2020/Days/Day7.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/swift-2020/Day8.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/swift-2020/Days/Day8.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sources/swift-2020/inputs.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/swift-2020/inputs.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sources/swift-2020/swift_2020.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/swift-2020/swift_2020.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/swift-2020.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/swift-2020.xcodeproj/project.pbxproj" afterDir="false" />
@@ -47,7 +36,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="macos_macos_x86_64" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="macos_macos_arm64" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -63,10 +52,13 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="OBJC.PRESERVED_TARGET_SELECTION" value="swift-2020" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Sources/swift-2020" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -75,46 +67,39 @@
     </key>
   </component>
   <component name="RunManager" selected="XCTest.swift_2020Tests">
-    <configuration name="All in XMASReaderTests.swift" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="swift-2020" TARGET_NAME="swift-2020Tests" CONFIG_NAME="Debug" SCHEME_NAME="All in XMASReaderTests.swift" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_PATTERN="XMASReaderTests" TEST_MODE="PATTERN">
+    <configuration name="JoltageReaderTests" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="swift-2020" TARGET_NAME="swift-2020Tests" CONFIG_NAME="Debug" SCHEME_NAME="JoltageReaderTests" IS_LOCATION_SIMULATION_ALLOWED="true" LOCATION_SCENARIO_ID="com.apple.dt.IDEFoundation.CurrentLocationScenarioIdentifier" LOCATION_SCENARIO_TYPE="1" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_CLASS="JoltageReaderTests" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="XMASReaderTests.test_shouldAllowForAMovingPreamble" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="swift-2020" TARGET_NAME="swift-2020Tests" CONFIG_NAME="Debug" SCHEME_NAME="XMASReaderTests.test_shouldAllowForAMovingPreamble" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_CLASS="XMASReaderTests" TEST_METHOD="test_shouldAllowForAMovingPreamble" TEST_MODE="SUITE_TEST">
+    <configuration name="JoltageReaderTests.test_shouldSayDistributionOfDiffs" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="swift-2020" TARGET_NAME="swift-2020Tests" CONFIG_NAME="Debug" SCHEME_NAME="JoltageReaderTests.test_shouldSayDistributionOfDiffs" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_CLASS="JoltageReaderTests" TEST_METHOD="test_shouldSayDistributionOfDiffs" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="XMASReaderTests.test_shouldFindNumbersThatAddToSum" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="swift-2020" TARGET_NAME="swift-2020Tests" CONFIG_NAME="Debug" SCHEME_NAME="XMASReaderTests.test_shouldFindNumbersThatAddToSum" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_CLASS="XMASReaderTests" TEST_METHOD="test_shouldFindNumbersThatAddToSum" TEST_MODE="SUITE_TEST">
+    <configuration name="JoltageReaderTests.test_shouldTellMeHowManyValidIterationsExist" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="swift-2020" TARGET_NAME="swift-2020Tests" CONFIG_NAME="Debug" SCHEME_NAME="JoltageReaderTests.test_shouldTellMeHowManyValidIterationsExist" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_CLASS="JoltageReaderTests" TEST_METHOD="test_shouldTellMeHowManyValidIterationsExist" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="XMASReaderTests.test_shouldNotAllowSumOfTheSameNumber" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="swift-2020" TARGET_NAME="swift-2020Tests" CONFIG_NAME="Debug" SCHEME_NAME="XMASReaderTests.test_shouldNotAllowSumOfTheSameNumber" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_CLASS="XMASReaderTests" TEST_METHOD="test_shouldNotAllowSumOfTheSameNumber" TEST_MODE="SUITE_TEST">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="swift_2020Tests" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="swift-2020" TARGET_NAME="swift-2020Tests" CONFIG_NAME="Debug" SCHEME_NAME="swift_2020Tests" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_CLASS="swift_2020Tests" TEST_MODE="SUITE_TEST">
+    <configuration name="swift_2020Tests" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="swift-2020" TARGET_NAME="swift-2020Tests" CONFIG_NAME="Debug" SCHEME_NAME="swift_2020Tests" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_CLASS="swift_2020Tests" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.swift-2020-Package" />
-      <item itemvalue="XCTest.XMASReaderTests.test_shouldNotAllowSumOfTheSameNumber" />
-      <item itemvalue="XCTest.XMASReaderTests.test_shouldAllowForAMovingPreamble" />
-      <item itemvalue="XCTest.All in XMASReaderTests.swift" />
+      <item itemvalue="XCTest.JoltageReaderTests" />
+      <item itemvalue="XCTest.JoltageReaderTests.test_shouldSayDistributionOfDiffs" />
       <item itemvalue="XCTest.swift_2020Tests" />
-      <item itemvalue="XCTest.XMASReaderTests.test_shouldFindNumbersThatAddToSum" />
+      <item itemvalue="XCTest.JoltageReaderTests.test_shouldTellMeHowManyValidIterationsExist" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="XCTest.swift_2020Tests" />
-        <item itemvalue="XCTest.XMASReaderTests.test_shouldFindNumbersThatAddToSum" />
-        <item itemvalue="XCTest.All in XMASReaderTests.swift" />
-        <item itemvalue="XCTest.XMASReaderTests.test_shouldAllowForAMovingPreamble" />
-        <item itemvalue="XCTest.XMASReaderTests.test_shouldNotAllowSumOfTheSameNumber" />
+        <item itemvalue="XCTest.JoltageReaderTests.test_shouldTellMeHowManyValidIterationsExist" />
+        <item itemvalue="XCTest.JoltageReaderTests.test_shouldSayDistributionOfDiffs" />
+        <item itemvalue="XCTest.JoltageReaderTests" />
       </list>
     </recent_temporary>
   </component>
@@ -128,6 +113,10 @@
       <updated>1610666479772</updated>
       <workItem from="1610666481937" duration="6892000" />
       <workItem from="1613410460220" duration="4327000" />
+      <workItem from="1628612988414" duration="3728000" />
+      <workItem from="1637124677552" duration="25000" />
+      <workItem from="1637124863212" duration="3044000" />
+      <workItem from="1637636920269" duration="1000" />
     </task>
     <servers />
   </component>
@@ -193,6 +182,11 @@
           <url>file://$PROJECT_DIR$/Sources/swift-2020/XMASReader.swift</url>
           <line>22</line>
           <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Sources/swift-2020/JoltageReader.swift</url>
+          <line>24</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
