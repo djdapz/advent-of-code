@@ -4,21 +4,23 @@
 
 import Foundation
 
+
 class Day11: Day {
     let number: Int = 11
 
-    private var reader: JoltageReader
+    private var seatMap: SeatMap
 
-    init(joltages: [Int]) {
-        reader = JoltageReader(joltages: joltages)
+    init(_ seatMap: String) {
+        self.seatMap = SeatMap(layout: seatMap)
     }
 
     func problem1() -> Int {
-        let diffs = reader.differences()
-        return diffs[1] * diffs[3]
+        seatMap.findSteadyState().seats.reduce(0) { (sum, row) in
+            row.filter { $0 == .occupied }.count + sum
+        }
     }
 
     func problem2() -> Int {
-        reader.numberOfValidArrangements()
+        0
     }
 }

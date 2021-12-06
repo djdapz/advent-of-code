@@ -15,6 +15,7 @@ public struct swift_2020 {
         Day8(program: Inputs.day8).run()
         Day9(xmasCode: Inputs.day9).run()
         Day10(joltages: Inputs.day10).run()
+        Day11(Inputs.day11).run()
 
         print("")
         print("Total Time: | \(Date().timeIntervalSince(start)) seconds")

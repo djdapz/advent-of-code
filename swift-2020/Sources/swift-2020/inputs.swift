@@ -20,23 +20,25 @@ extension String {
 struct Inputs {
     static let fileReader = TextFileReader(basePath: "Data")
 
-    static let day1 = fileReader.read(fileName: "day1").map { $0.textFileOfNumbersToList() }.getOrNull()!
+    static var day1 = fileReader.read(fileName: "day1").map { $0.textFileOfNumbersToList() }.getOrNull()!
 
-    static let day2 = fileReader.read(fileName: "day2").map { $0.textFileToListOfStrings() }.getOrNull()!
+    static var day2 = fileReader.read(fileName: "day2").map { $0.textFileToListOfStrings() }.getOrNull()!
 
-    static let day3 = fileReader.read(fileName: "day3").getOrNull()!
+    static var day3 = fileReader.read(fileName: "day3").getOrNull()!
 
-    static let day4 = fileReader.read(fileName: "day4").getOrNull()!
+    static var day4 = fileReader.read(fileName: "day4").getOrNull()!
 
-    static let day5 = fileReader.read(fileName: "day5").getOrNull()!.textFileToListOfStrings()
+    static var day5 = fileReader.read(fileName: "day5").getOrNull()!.textFileToListOfStrings()
 
-    static let day6 = fileReader.read(fileName: "day6").getOrNull()!
+    static var day6 = fileReader.read(fileName: "day6").getOrNull()!
 
-    static let day7 = fileReader.read(fileName: "day7").getOrNull()!.textFileToListOfStrings()
+    static var day7 = fileReader.read(fileName: "day7").getOrNull()!.textFileToListOfStrings()
 
-    static let day8 = fileReader.read(fileName: "day8").getOrNull()!
+    static var day8 = fileReader.read(fileName: "day8").getOrNull()!
 
-    static let day9 = fileReader.read(fileName: "day9").getOrNull()!.textFileOfNumbersToList()
+    static var day9 = fileReader.read(fileName: "day9").getOrNull()!.textFileOfNumbersToList()
 
-    static let day10 = fileReader.read(fileName: "day10").getOrNull()!.textFileOfNumbersToList()
+    static var day10 = fileReader.read(fileName: "day10").getOrNull()!.textFileOfNumbersToList()
+
+    static var day11 = fileReader.read(fileName: "day11").getOrNull()!
 }
