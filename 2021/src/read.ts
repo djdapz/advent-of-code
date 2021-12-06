@@ -3,3 +3,7 @@ export const readNumberList = (input: string): number[] => {
     .map(it => parseInt(it.trim()))
     .filter(it => !isNaN(it));
 };
+
+export const readStringList = (input: string): string[] => {
+  return input.split('\n');
+};

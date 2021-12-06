@@ -1,8 +1,14 @@
-import { input, part1, part2 } from './day1';
-import { readNumberList } from './read';
+import { Day1 } from './day1/day1';
+import { Day2 } from './day2/day2';
+import { printDay } from './Day';
+import { Day3 } from './day3/day3';
 
-console.log('Day1');
-console.log('part1');
-console.log(part1(readNumberList(input)));
-console.log('part2');
-console.log(part2(readNumberList(input)));
+
+const main = () => {
+  printDay(Day1);
+  printDay(Day2);
+  printDay(Day3);
+};
+
+
+main();

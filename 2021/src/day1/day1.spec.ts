@@ -1,5 +1,5 @@
-import {  part1, part2 } from './day1';
-import { readNumberList } from './read';
+import {  Day1 } from './day1';
+import { readNumberList } from '../read';
 
 describe('day1', () => {
   it('should parse input', () => {
@@ -15,7 +15,7 @@ describe('day1', () => {
 
   it('say how many increasess there are', () => {
     const input = [1, 2, 3, 4, 5, 4, 6];
-    const actual = part1(input);
+    const actual = Day1.part1(input);
     expect(actual).toEqual(5);
   });
 
@@ -32,7 +32,7 @@ describe('day1', () => {
       260,
       263];
 
-    const acutal = part2(input)
+    const acutal = Day1.part2(input)
     expect(acutal).toEqual(5)
   });
 });
