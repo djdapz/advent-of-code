@@ -1,4 +1,5 @@
 import {DayConfig} from '../Day';
+import {rangeFrom0} from '../helpers';
 
 type Coordinate = { row: number, col: number, called: boolean }
 
@@ -51,7 +52,7 @@ export class BingoBoard {
         return areAllTrue(topLeftToBottomRight) || areAllTrue(topRightToBottomLeft);
     }
 
-    private getIndeceesOfCalledMatrix = () => [...Array(this.called[0].length).keys()]
+    private getIndeceesOfCalledMatrix = () => rangeFrom0(this.called[0].length)
 
     getScore(lastCalled: number) {
         const sumOfUncalled = [...this.coordinates.entries()]

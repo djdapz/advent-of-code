@@ -1,0 +1,1 @@
+export const rangeFrom0 =  (size: number) => [...Array(size).keys()]
