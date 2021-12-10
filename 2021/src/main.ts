@@ -5,6 +5,8 @@ import {printDay} from './Day';
 import {Day4} from './day4/day4';
 import {Day5} from './day5/day5';
 import {Day6} from './day6/day6';
+import {Day7} from './day7/day7';
+import {Day8} from './day8/day8';
 
 
 const main = () => {
@@ -14,6 +16,8 @@ const main = () => {
     printDay(Day4);
     printDay(Day5);
     printDay(Day6);
+    printDay(Day7);
+    printDay(Day8);
 };
 
 

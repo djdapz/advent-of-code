@@ -1,5 +1,5 @@
 import {  Day1 } from './day1';
-import { readNumberList } from '../read';
+import { readMultilineNumberList } from '../read';
 
 describe('day1', () => {
   it('should parse input', () => {
@@ -9,7 +9,7 @@ describe('day1', () => {
     3
     400`;
     const expected = [1, 2, 3, 400];
-    let actual = readNumberList(input);
+    let actual = readMultilineNumberList(input);
     expect(actual).toEqual(expected);
   });
 

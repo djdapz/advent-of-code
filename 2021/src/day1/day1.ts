@@ -1,5 +1,5 @@
 import { DayConfig } from '../Day';
-import { readNumberList } from '../read';
+import { readMultilineNumberList } from '../read';
 
 function countIncreasingSteps(input: number[]) {
   let counter = 0;
@@ -38,7 +38,7 @@ const listToWindows = (input: number[]): number[] => {
 
 export const Day1: DayConfig<number[]> = {
   dayNumber: 1,
-  parseInput: readNumberList,
+  parseInput: readMultilineNumberList,
   part1,
   part2,
 };
