@@ -1,0 +1,10 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary")
+cc_library(
+    name = "input",
+    srcs = ["input.cpp"],
+    hdrs = ["input.h"],
+    deps = [
+        "@com_google_absl//absl/strings"
+    ],
+    visibility = ["//visibility:public"]
+)
