@@ -1,0 +1,18 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary")
+
+cc_library(
+    name = "day1",
+    srcs = ["day1.cpp"],
+    hdrs = ["day1.h"],
+    visibility = ["//visibility:public"]
+)
+
+cc_test(
+    name = "day1_test",
+    srcs = ["day1_test.cpp"],
+    deps = [":day1",
+            "//parsing",
+            "//input",
+            "@com_google_googletest//:gtest_main"
+            ],
+)

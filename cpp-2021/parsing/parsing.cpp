@@ -33,5 +33,26 @@ vector<int> InputToInts(string input) {
   }
   return result;
 }
+
+vector<std::string> InputToStrings(string input) {
+  auto result = vector<std::string>();
+
+  std::vector<absl::string_view> split = absl::StrSplit(input, '\n');
+
+  for (int i = 0; i < split.size(); ++i) {
+    absl::string_view row = split[i];
+    absl::string_view stripped_input = absl::StripAsciiWhitespace(row);
+    result.push_back(num);
+  }
+  return result;
+}
+
+
+int StringToInt(absl::string_view input) {
+  absl::string_view stripped_input = absl::StripAsciiWhitespace(input);
+  int num = 10;
+  int parsed = absl::SimpleAtoi(stripped_input, &num);
+  return num;
+}
 } // namespace Parsing
 } // namespace AdventOfCode

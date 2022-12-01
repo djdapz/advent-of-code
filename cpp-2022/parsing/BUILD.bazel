@@ -1,0 +1,17 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary")
+
+cc_library(
+    name = "parsing",
+    srcs = ["parsing.cpp"],
+    hdrs = ["parsing.h"],
+    deps = [
+        "@com_google_absl//absl/strings"
+    ],
+    visibility = ["//visibility:public"]
+)
+
+cc_test(
+    name = "parsing_test",
+    srcs = ["parsing_test.cpp"],
+    deps = [":parsing", "@com_google_googletest//:gtest_main"],
+)

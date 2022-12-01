@@ -1,0 +1,6 @@
+bazel-bin
+bazel-cpp-2021
+bazel-out
+bazel-testlogs
+.clwb
+.DS_Store
