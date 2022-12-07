@@ -46,14 +46,17 @@ vector<vector<int>> InputToGroupedInts(const string &input) {
   return result;
 }
 
-std::vector<string_view> InputToStrings(string input) {
-  auto result = std::vector<string_view>();
+std::vector<std::string> InputToStrings(const absl::string_view &input) {
+  auto result = std::vector<std::string>();
 
   std::vector<string_view> split = absl::StrSplit(input, '\n');
 
   for (int i = 0; i < split.size(); ++i) {
     string_view row = split[i];
-    result.push_back(StripAsciiWhitespace(row));
+    std::string stripped{StripAsciiWhitespace(row)};
+    if (stripped.empty())
+      continue;
+    result.push_back(stripped);
   }
   return result;
 }

@@ -8,6 +8,7 @@
 #include "gtest/gtest.h"
 using AdventOfCode::Parsing::InputToGroupedInts;
 using AdventOfCode::Parsing::InputToInts;
+using AdventOfCode::Parsing::InputToStrings;
 
 TEST(ParsingTest, ParsesOneLine) {
   std::string input = R"(
@@ -55,4 +56,20 @@ TEST(ParsingTest, ParsesMultiLineGroupedInts) {
 
   EXPECT_EQ(result[0], expectedGroup1);
   EXPECT_EQ(result[1], expectedGroup2);
+}
+
+TEST(ParsingTest, DropsEmptyStrings) {
+  std::string input = R"(
+ a
+ b
+
+ c
+
+)";
+
+  auto result = InputToStrings(input);
+
+  std::vector<std::string> expected{"a", "b", "c"};
+
+  EXPECT_EQ(result, expected);
 }
