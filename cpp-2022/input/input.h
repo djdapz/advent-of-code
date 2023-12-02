@@ -4779,7 +4779,7 @@ B X
 )";
 }
 
-std::string Day3(){
+std::string Day3() {
   return R"(FqdWDFppHWhmwwzdjvjTRTznjdMv
 ZBJrDVfQcfSRMLjZnjjM
 cBffPfbrbQcgQJggfVQJBPbCwlPtWFDWHFHhpmmGlGmlqmDG
@@ -5080,6 +5080,4827 @@ SWppdTrprThhrGVztcrllrQJZNlBZlrNZB
 TTrNcjGNWDdDPDpPjDPNrbmFPfQSFmfSMCmCfSmSSR
 sshhqshzBVnzHgwCMbCwcfmRFmRMbm
 gHVVnBzJcBgVhtZZtgJhpGrGNpvDpddvprNGrlTJ)";
+}
+
+std::string Day4() {
+  return R"(
+17-99,18-24
+14-91,22-91
+63-76,66-83
+17-57,17-28
+77-88,14-78
+15-92,14-15
+23-23,24-40
+14-42,41-42
+23-74,21-24
+6-94,94-94
+16-18,17-52
+50-96,40-96
+4-67,3-66
+26-81,26-99
+18-93,24-93
+13-18,17-61
+7-46,47-92
+46-91,46-98
+1-73,72-73
+51-86,36-52
+16-16,13-16
+5-35,1-36
+14-99,5-15
+2-32,2-92
+45-86,44-45
+10-96,10-97
+2-89,89-95
+9-95,8-97
+40-78,41-50
+48-66,4-49
+21-24,22-49
+43-92,98-98
+91-92,42-92
+3-95,3-98
+8-11,10-99
+65-75,40-64
+55-83,82-82
+34-50,24-35
+20-62,19-62
+43-74,42-46
+28-32,28-32
+38-52,51-51
+5-75,66-75
+32-46,41-55
+97-97,2-98
+13-34,12-13
+33-93,85-99
+7-80,12-79
+98-98,54-99
+37-38,38-79
+20-79,28-82
+1-1,2-66
+7-68,1-30
+35-35,36-52
+3-46,2-46
+21-62,51-63
+30-30,29-42
+7-64,8-64
+4-94,5-93
+35-60,36-60
+75-76,69-76
+6-80,5-95
+23-50,24-50
+25-92,89-92
+34-56,35-35
+65-84,65-69
+47-76,47-96
+1-3,2-98
+10-55,16-55
+5-89,99-99
+8-74,7-74
+13-82,13-82
+1-99,3-98
+11-17,10-29
+81-98,63-98
+61-71,60-97
+6-92,60-91
+7-96,6-96
+18-81,13-82
+46-61,47-91
+22-91,19-91
+23-23,23-95
+20-20,21-96
+4-69,8-70
+5-22,21-59
+74-80,75-81
+95-95,24-93
+15-85,9-86
+6-7,7-93
+11-28,10-12
+15-27,16-62
+12-24,11-33
+21-22,22-65
+31-73,7-30
+2-80,1-81
+1-92,1-90
+4-38,5-19
+1-40,4-94
+49-70,48-48
+3-91,91-91
+32-99,29-33
+11-52,10-70
+16-95,15-17
+18-18,18-26
+83-99,83-84
+11-94,11-12
+27-80,68-80
+17-96,95-96
+2-83,1-91
+58-66,59-65
+45-45,14-54
+2-3,3-92
+47-47,48-85
+39-39,39-77
+30-31,30-63
+10-11,11-43
+6-86,10-85
+45-57,57-58
+1-5,4-97
+1-27,2-53
+7-90,7-90
+3-28,2-3
+77-79,8-78
+45-48,28-47
+13-73,64-74
+14-97,14-83
+50-51,51-94
+21-86,22-22
+11-49,12-49
+30-68,67-68
+48-50,49-81
+24-96,23-24
+27-44,26-28
+9-80,10-74
+44-74,2-44
+66-73,64-78
+8-82,8-82
+3-85,55-93
+22-65,13-64
+10-19,10-26
+79-83,29-79
+48-56,52-60
+25-93,3-93
+1-99,5-97
+60-81,60-81
+15-26,10-24
+50-78,10-51
+32-75,33-75
+11-21,10-93
+1-71,1-98
+29-65,30-35
+52-90,51-52
+56-95,75-94
+8-9,9-98
+2-53,4-52
+7-65,3-13
+73-83,72-83
+9-18,8-76
+14-38,4-37
+22-57,22-78
+2-99,12-98
+2-43,20-44
+13-88,87-95
+5-61,5-63
+14-68,14-52
+9-89,8-99
+43-99,42-43
+10-39,39-39
+45-60,42-45
+39-40,39-89
+44-97,96-96
+10-96,15-99
+50-90,90-94
+40-90,39-89
+39-39,40-66
+15-96,15-96
+48-59,49-58
+19-58,18-19
+21-92,20-91
+1-89,1-2
+13-91,12-14
+70-80,69-94
+28-92,27-28
+5-95,95-95
+21-22,22-74
+2-58,3-7
+35-51,35-36
+88-89,1-89
+84-86,73-85
+22-63,9-58
+44-93,44-45
+54-81,53-54
+5-91,90-92
+12-29,2-25
+4-97,97-97
+1-90,8-89
+17-37,17-37
+10-89,15-90
+18-19,19-19
+24-44,25-75
+21-77,17-77
+1-99,2-97
+12-91,11-91
+50-64,50-64
+51-97,52-97
+7-45,6-6
+61-62,61-82
+5-8,5-13
+13-35,36-94
+91-91,44-93
+2-78,1-1
+51-52,52-80
+52-74,52-80
+58-63,15-62
+9-78,9-9
+19-93,20-93
+7-18,4-17
+27-73,72-98
+17-89,16-88
+20-83,21-61
+55-55,55-96
+43-88,48-87
+52-62,51-93
+5-27,10-26
+3-62,2-93
+3-95,4-87
+30-96,62-97
+25-26,46-97
+44-82,43-88
+9-30,11-97
+31-32,31-77
+25-26,25-77
+18-55,17-19
+14-91,15-92
+7-76,8-76
+62-63,63-66
+26-99,7-47
+5-79,4-4
+2-97,3-97
+85-86,35-85
+6-90,21-90
+44-90,90-90
+32-89,33-84
+28-88,31-87
+27-45,28-43
+26-52,47-63
+14-53,24-82
+26-76,26-70
+7-90,9-91
+69-69,11-69
+10-82,10-47
+39-68,40-40
+10-94,10-10
+28-78,27-82
+7-95,96-96
+68-83,68-83
+28-51,50-50
+98-99,2-99
+7-65,6-6
+52-54,53-80
+13-78,13-70
+96-96,28-96
+59-60,20-60
+44-78,36-44
+13-15,14-68
+38-71,71-72
+6-92,6-98
+42-77,43-58
+31-61,25-60
+3-97,12-98
+3-36,2-3
+29-69,32-96
+17-69,17-89
+4-96,4-96
+79-99,72-97
+1-99,98-99
+22-95,21-22
+2-97,2-3
+5-96,4-97
+23-24,24-53
+6-96,96-98
+75-76,4-76
+4-67,7-66
+53-91,52-98
+37-37,38-99
+36-94,37-95
+21-79,20-22
+42-82,41-42
+28-54,41-59
+57-97,57-57
+47-93,48-93
+28-96,29-92
+15-73,72-73
+89-90,90-99
+47-49,34-48
+80-82,81-84
+60-80,59-80
+11-12,12-77
+36-96,11-37
+16-95,4-95
+2-98,1-1
+51-86,24-52
+89-94,2-90
+8-9,8-90
+2-98,2-3
+4-4,4-5
+5-98,4-5
+67-81,41-81
+1-84,84-84
+7-95,12-95
+5-5,5-86
+1-84,30-99
+58-88,44-71
+50-98,50-98
+18-61,31-74
+47-48,47-69
+2-41,1-41
+65-98,65-98
+28-62,59-62
+3-38,1-4
+34-43,41-44
+26-91,25-25
+17-57,21-57
+20-21,21-86
+20-82,42-81
+1-61,4-70
+49-91,26-73
+5-78,78-78
+27-98,28-98
+55-59,54-61
+3-94,1-3
+6-40,39-99
+16-75,17-54
+1-96,2-97
+7-7,8-96
+11-98,11-98
+96-98,95-97
+5-85,2-85
+1-98,1-1
+6-11,7-35
+5-54,3-68
+19-96,20-96
+49-85,56-85
+33-58,57-57
+66-79,67-80
+9-99,8-10
+10-86,46-86
+5-14,13-86
+42-96,19-69
+2-83,11-83
+9-29,9-93
+9-80,8-38
+28-28,29-82
+5-73,5-48
+23-54,23-54
+17-96,6-74
+49-76,48-77
+36-59,37-48
+12-96,11-97
+81-98,82-99
+41-41,42-50
+9-9,10-15
+87-91,11-91
+54-63,55-64
+45-46,45-70
+72-82,68-91
+6-94,93-94
+18-64,19-64
+46-64,34-48
+7-62,61-63
+2-95,3-95
+45-45,46-55
+57-65,56-94
+33-95,94-98
+22-88,22-28
+68-89,69-90
+10-24,11-15
+32-98,26-55
+5-83,83-83
+13-79,11-14
+44-46,45-81
+2-94,1-1
+54-64,52-64
+12-21,21-96
+38-39,7-39
+73-96,60-76
+69-94,2-70
+1-5,3-3
+36-79,28-46
+1-8,2-56
+30-31,5-30
+8-89,15-90
+7-93,30-96
+85-87,63-86
+10-10,11-77
+2-5,2-97
+16-96,17-79
+52-68,52-55
+15-91,14-38
+1-62,2-62
+63-98,62-64
+8-76,30-76
+1-3,2-93
+22-92,7-91
+11-44,12-57
+3-4,3-46
+9-9,10-86
+43-58,43-50
+13-67,64-68
+2-3,3-77
+12-97,35-99
+1-99,4-99
+29-56,15-56
+52-98,53-84
+24-80,9-59
+10-10,1-11
+12-49,19-79
+10-15,11-84
+17-71,14-18
+42-89,41-45
+3-97,97-98
+42-42,43-83
+9-74,32-74
+20-21,21-89
+55-55,54-54
+67-78,41-68
+21-22,22-93
+11-66,11-87
+11-11,11-93
+94-94,18-95
+1-99,13-99
+57-89,6-57
+18-19,18-25
+6-15,6-39
+17-96,3-95
+10-77,9-11
+34-94,33-34
+26-60,45-60
+25-25,12-98
+77-78,63-78
+29-29,29-70
+94-99,36-95
+91-91,2-92
+3-25,4-6
+78-88,79-85
+60-80,59-80
+64-93,60-89
+63-78,47-75
+36-85,84-98
+90-90,47-90
+2-39,5-39
+6-90,24-91
+12-96,21-97
+57-98,56-58
+27-76,76-76
+24-80,24-25
+50-90,89-98
+90-99,90-97
+17-44,44-45
+4-77,1-77
+46-90,47-86
+10-86,10-86
+24-80,23-80
+24-24,24-96
+20-22,20-24
+2-77,5-77
+47-61,46-46
+65-67,66-75
+8-18,7-18
+18-19,18-95
+50-85,50-85
+63-82,62-82
+2-62,47-77
+22-38,23-92
+64-90,64-74
+62-77,63-65
+14-15,15-84
+30-51,31-75
+25-38,30-39
+1-84,2-75
+38-81,39-80
+30-83,5-83
+11-91,21-90
+30-90,31-90
+25-93,92-98
+87-93,69-88
+14-51,12-60
+32-32,31-31
+33-89,50-90
+2-96,1-96
+96-99,12-97
+43-44,3-42
+2-94,3-94
+7-10,9-90
+59-65,38-65
+6-17,5-13
+37-83,38-47
+57-72,9-72
+3-4,4-42
+1-93,2-83
+34-63,11-62
+1-92,7-92
+39-39,39-63
+13-98,14-91
+96-96,2-96
+3-94,2-2
+97-97,17-98
+3-94,3-99
+18-95,17-19
+44-54,41-52
+24-29,25-69
+4-8,7-59
+16-93,8-93
+23-53,53-54
+74-98,73-73
+96-99,50-96
+33-99,33-86
+19-34,9-35
+12-30,15-47
+3-85,34-86
+11-23,13-35
+28-45,21-46
+2-99,2-50
+7-83,81-81
+39-65,40-95
+3-69,5-68
+1-94,3-93
+2-89,1-2
+1-58,3-82
+3-88,1-56
+4-21,20-39
+59-64,44-64
+49-81,81-81
+11-97,11-12
+84-84,19-85
+45-46,35-46
+4-20,3-54
+45-95,44-95
+40-40,14-41
+7-61,8-61
+41-86,85-86
+46-46,42-47
+75-75,76-76
+6-99,7-94
+57-94,58-95
+3-83,1-84
+35-35,36-58
+22-63,21-64
+85-85,86-94
+3-50,2-20
+12-78,78-91
+2-95,6-96
+18-62,26-61
+13-90,13-92
+1-17,17-67
+16-18,17-57
+32-85,32-97
+87-89,85-89
+41-62,40-63
+3-68,67-87
+26-93,21-92
+24-78,14-78
+3-51,4-51
+5-27,14-26
+26-74,25-88
+47-89,48-88
+27-97,88-96
+6-6,6-60
+24-37,23-60
+41-84,83-85
+78-80,22-79
+92-93,37-92
+18-79,17-79
+22-72,71-91
+28-39,33-35
+45-90,7-90
+4-98,90-99
+27-99,26-35
+1-99,2-2
+62-66,63-97
+65-94,93-93
+68-79,68-93
+70-70,50-71
+74-90,73-95
+7-96,73-97
+1-34,33-34
+16-93,15-15
+55-59,56-62
+2-24,4-24
+43-44,44-74
+18-97,96-97
+4-45,3-3
+13-99,98-98
+7-32,31-38
+41-44,42-49
+28-96,27-59
+5-53,5-37
+68-86,67-96
+34-63,26-64
+97-98,3-97
+30-74,31-85
+9-93,10-98
+66-93,65-76
+30-78,13-78
+29-48,33-48
+8-8,8-99
+10-78,16-78
+30-51,30-30
+19-48,19-19
+10-53,9-54
+3-91,4-91
+42-47,45-56
+47-87,46-65
+8-17,16-78
+34-75,50-74
+98-99,27-98
+16-40,29-41
+22-25,24-84
+9-83,15-84
+75-76,32-75
+11-11,12-99
+14-98,14-15
+66-66,27-66
+8-21,7-20
+4-88,34-89
+38-88,37-77
+80-81,42-81
+4-31,8-95
+8-10,9-89
+55-95,55-73
+29-87,87-88
+2-2,2-99
+28-92,96-98
+9-17,9-42
+48-95,49-94
+4-27,3-91
+43-68,42-72
+76-94,75-87
+8-9,9-96
+15-15,16-79
+15-68,14-36
+11-64,3-62
+8-78,44-77
+49-60,50-64
+15-87,16-79
+86-87,62-87
+24-60,59-60
+1-99,1-99
+26-82,26-82
+2-95,1-97
+6-92,6-93
+16-59,15-58
+7-87,87-87
+87-97,22-88
+45-46,46-46
+10-90,61-90
+16-68,4-68
+17-18,7-18
+36-90,89-89
+38-52,38-78
+13-92,13-92
+34-34,34-38
+50-51,49-82
+7-98,5-20
+5-72,61-82
+48-49,48-97
+23-54,24-80
+19-95,20-67
+13-64,64-64
+49-92,91-92
+74-84,73-83
+18-35,34-59
+61-91,10-91
+70-89,89-89
+1-47,1-2
+21-68,19-22
+38-76,38-96
+29-79,78-79
+29-88,30-73
+35-88,34-58
+21-21,22-68
+35-63,2-64
+13-56,11-11
+12-96,11-96
+6-14,9-59
+3-61,47-84
+14-33,14-15
+62-69,62-92
+33-59,32-59
+3-90,24-89
+37-98,42-99
+5-66,7-67
+28-46,12-29
+31-73,72-73
+15-75,15-96
+12-17,14-16
+92-93,8-93
+7-79,5-45
+21-32,22-29
+23-26,22-95
+2-80,4-80
+11-95,77-95
+69-98,60-96
+67-84,67-73
+81-91,91-92
+38-86,37-85
+11-11,9-30
+1-28,2-52
+20-72,20-72
+4-57,3-98
+37-40,36-40
+24-81,23-23
+20-90,3-89
+43-45,1-44
+2-77,6-77
+11-99,98-98
+63-90,62-85
+3-95,2-98
+18-21,22-43
+20-77,21-77
+53-81,45-84
+79-87,82-87
+1-87,62-90
+34-73,35-84
+56-86,17-86
+13-88,14-84
+17-83,17-82
+24-98,24-59
+8-99,9-27
+72-88,88-88
+9-93,9-82
+59-69,63-91
+20-26,20-25
+1-89,90-92
+59-97,42-81
+41-79,40-42
+28-76,28-77
+33-84,31-83
+42-74,42-75
+22-98,23-96
+17-30,16-62
+28-33,29-83
+3-97,98-98
+7-38,5-38
+61-69,35-68
+77-77,4-78
+40-44,36-46
+35-86,34-35
+57-93,56-72
+37-86,5-86
+24-76,23-76
+1-13,13-14
+69-97,6-97
+6-7,7-37
+1-24,2-6
+36-99,7-97
+10-25,24-97
+32-90,90-91
+2-99,2-94
+14-92,6-91
+24-45,23-57
+32-55,42-47
+46-85,46-47
+4-76,3-19
+80-80,80-95
+69-70,68-70
+7-96,1-81
+68-99,49-96
+22-98,23-27
+64-96,65-97
+24-51,23-50
+32-33,33-84
+20-98,19-98
+17-19,18-92
+2-98,2-98
+26-73,22-85
+36-89,23-87
+65-86,86-97
+17-76,16-91
+25-48,25-37
+42-92,38-92
+3-90,3-56
+91-98,85-92
+38-54,39-54
+7-97,7-99
+31-95,31-32
+27-94,26-28
+57-85,23-84
+52-54,53-87
+45-62,61-62
+16-17,16-75
+14-97,15-98
+1-83,82-82
+1-93,26-93
+12-97,10-96
+87-87,1-88
+29-92,30-93
+21-23,22-90
+7-78,11-79
+7-97,12-95
+8-96,7-98
+11-79,24-80
+20-35,7-31
+39-46,39-39
+38-89,39-89
+33-60,7-63
+3-59,2-2
+21-34,21-88
+1-78,2-77
+61-71,53-71
+21-53,22-53
+47-97,46-97
+47-48,47-69
+79-82,72-81
+94-96,1-95
+28-29,28-62
+51-98,51-59
+9-58,58-84
+11-74,32-74
+80-80,13-79
+12-98,12-94
+47-96,48-97
+50-97,96-99
+65-66,44-88
+38-71,70-99
+22-65,22-23
+12-56,49-55
+10-10,10-58
+30-43,39-62
+61-94,3-62
+60-87,12-60
+12-96,12-98
+1-29,13-32
+7-8,7-73
+27-74,27-74
+66-74,65-75
+53-73,72-73
+2-3,3-98
+9-18,39-46
+1-59,3-98
+9-39,8-97
+54-54,39-55
+23-73,41-91
+48-89,48-91
+17-40,7-41
+77-89,51-78
+22-80,21-80
+9-57,19-69
+28-61,29-60
+98-98,17-99
+11-83,11-83
+32-60,39-61
+11-62,11-12
+31-94,25-85
+2-13,1-7
+8-95,7-7
+62-70,91-94
+38-98,38-98
+33-94,33-78
+6-70,29-71
+14-95,2-61
+25-25,25-44
+44-70,36-52
+19-19,20-27
+20-75,5-76
+2-94,93-93
+37-40,38-40
+2-97,2-2
+57-78,56-84
+40-88,10-59
+91-96,30-91
+1-1,2-63
+21-83,20-20
+49-91,48-92
+45-58,5-51
+21-21,22-90
+95-97,7-96
+1-2,1-45
+31-70,32-70
+35-36,1-35
+12-95,12-86
+63-97,63-97
+11-34,10-27
+21-81,20-21
+80-83,74-79
+5-99,98-98
+27-38,26-87
+18-43,19-42
+3-91,2-7
+12-77,12-96
+67-76,51-75
+78-82,7-78
+47-95,46-95
+12-84,13-45
+35-65,35-75
+71-71,13-72
+2-99,98-98
+6-82,5-7
+49-50,50-52
+3-98,1-98
+61-61,22-61
+27-42,29-41
+5-21,20-80
+51-82,50-50
+2-11,4-10
+10-83,10-98
+33-33,2-33
+1-2,1-97
+17-96,3-95
+45-77,46-59
+18-58,17-18
+41-94,93-94
+2-97,95-99
+67-82,64-82
+1-94,1-94
+5-23,2-24
+16-20,6-20
+3-6,5-93
+21-35,20-45
+4-94,59-98
+53-86,40-54
+6-8,7-95
+1-97,1-1
+26-46,36-47
+82-82,52-82
+21-38,22-34
+88-94,20-94
+96-97,1-96
+36-48,35-48
+65-65,66-90
+2-97,1-2
+80-97,80-92
+74-87,68-81
+69-82,70-79
+87-96,4-95
+91-91,33-90
+17-73,73-74
+22-22,21-98
+44-63,45-64
+37-55,51-61
+51-56,56-56
+29-83,28-84
+69-70,69-97
+22-24,23-30
+7-7,8-90
+8-32,3-31
+79-79,79-91
+4-98,5-80
+1-99,2-70
+11-52,12-12
+35-88,36-88
+31-92,30-93
+8-34,33-82
+3-97,99-99
+5-86,54-70
+5-98,3-99
+4-93,1-4
+15-92,14-91
+9-94,13-94
+2-98,2-30
+9-95,29-95
+59-94,60-95
+36-95,81-98
+17-95,18-96
+3-26,25-84
+32-99,13-75
+9-44,8-97
+3-96,96-99
+21-21,20-59
+14-56,28-55
+19-35,35-84
+82-83,56-83
+89-89,78-89
+24-64,23-57
+71-71,39-72
+84-91,90-94
+18-98,19-98
+12-70,13-71
+75-95,94-95
+72-79,72-77
+11-90,10-94
+2-98,2-98
+4-86,3-87
+6-97,2-97
+68-97,45-97
+91-92,12-92
+32-59,32-98
+11-91,12-85
+28-84,74-85
+8-99,2-99
+2-69,3-9
+72-97,58-91
+4-33,3-33
+12-63,11-64
+56-56,57-70
+56-62,51-59
+17-70,18-62
+1-94,1-99
+1-78,1-1
+3-97,2-2
+)";
+}
+std::string Day5() {
+  return R"([B]                     [N]     [H]
+[V]         [P] [T]     [V]     [P]
+[W]     [C] [T] [S]     [H]     [N]
+[T]     [J] [Z] [M] [N] [F]     [L]
+[Q]     [W] [N] [J] [T] [Q] [R] [B]
+[N] [B] [Q] [R] [V] [F] [D] [F] [M]
+[H] [W] [S] [J] [P] [W] [L] [P] [S]
+[D] [D] [T] [F] [G] [B] [B] [H] [Z]
+ 1   2   3   4   5   6   7   8   9
+
+move 2 from 8 to 1
+move 4 from 9 to 8
+move 2 from 1 to 6
+move 7 from 4 to 2
+move 10 from 2 to 7
+move 2 from 1 to 6
+move 1 from 9 to 4
+move 1 from 4 to 1
+move 8 from 6 to 4
+move 7 from 1 to 8
+move 6 from 8 to 1
+move 1 from 4 to 1
+move 8 from 7 to 3
+move 2 from 5 to 2
+move 5 from 3 to 2
+move 5 from 2 to 1
+move 1 from 6 to 5
+move 2 from 2 to 6
+move 5 from 8 to 7
+move 12 from 7 to 4
+move 3 from 5 to 4
+move 2 from 6 to 4
+move 9 from 1 to 7
+move 4 from 3 to 7
+move 4 from 3 to 4
+move 3 from 1 to 7
+move 1 from 9 to 1
+move 1 from 1 to 4
+move 2 from 5 to 2
+move 1 from 3 to 7
+move 15 from 7 to 2
+move 4 from 7 to 9
+move 6 from 9 to 2
+move 2 from 8 to 3
+move 3 from 2 to 8
+move 1 from 7 to 6
+move 8 from 2 to 5
+move 2 from 8 to 4
+move 2 from 3 to 8
+move 9 from 5 to 9
+move 7 from 4 to 2
+move 1 from 8 to 6
+move 6 from 9 to 2
+move 3 from 9 to 7
+move 2 from 8 to 4
+move 7 from 2 to 6
+move 7 from 4 to 1
+move 3 from 1 to 8
+move 2 from 1 to 8
+move 4 from 8 to 2
+move 2 from 1 to 5
+move 19 from 2 to 7
+move 8 from 4 to 7
+move 18 from 7 to 1
+move 11 from 7 to 4
+move 15 from 1 to 7
+move 9 from 4 to 3
+move 2 from 3 to 1
+move 9 from 4 to 5
+move 1 from 8 to 1
+move 8 from 6 to 5
+move 3 from 2 to 5
+move 1 from 6 to 7
+move 4 from 4 to 3
+move 8 from 5 to 1
+move 13 from 1 to 6
+move 12 from 7 to 1
+move 12 from 6 to 3
+move 1 from 7 to 6
+move 1 from 7 to 5
+move 1 from 1 to 9
+move 1 from 3 to 1
+move 3 from 1 to 9
+move 12 from 3 to 8
+move 1 from 9 to 3
+move 1 from 6 to 8
+move 5 from 5 to 1
+move 1 from 6 to 2
+move 10 from 8 to 9
+move 13 from 9 to 2
+move 10 from 3 to 4
+move 1 from 8 to 9
+move 2 from 8 to 7
+move 1 from 3 to 1
+move 1 from 5 to 6
+move 13 from 2 to 5
+move 1 from 9 to 2
+move 7 from 1 to 4
+move 2 from 2 to 5
+move 2 from 7 to 8
+move 1 from 6 to 8
+move 10 from 5 to 8
+move 3 from 7 to 2
+move 4 from 1 to 4
+move 12 from 4 to 2
+move 10 from 5 to 3
+move 6 from 2 to 1
+move 2 from 4 to 8
+move 3 from 4 to 8
+move 6 from 1 to 7
+move 1 from 7 to 5
+move 12 from 8 to 2
+move 3 from 4 to 9
+move 1 from 4 to 3
+move 2 from 9 to 6
+move 2 from 6 to 8
+move 1 from 1 to 3
+move 8 from 2 to 6
+move 4 from 1 to 8
+move 12 from 2 to 3
+move 4 from 6 to 8
+move 10 from 8 to 3
+move 14 from 3 to 8
+move 5 from 5 to 8
+move 1 from 7 to 8
+move 5 from 3 to 5
+move 4 from 7 to 2
+move 2 from 6 to 1
+move 4 from 3 to 7
+move 4 from 5 to 1
+move 21 from 8 to 6
+move 7 from 3 to 2
+move 1 from 5 to 1
+move 4 from 8 to 9
+move 16 from 6 to 1
+move 1 from 8 to 4
+move 5 from 9 to 2
+move 7 from 1 to 7
+move 10 from 1 to 3
+move 1 from 4 to 2
+move 6 from 6 to 5
+move 6 from 1 to 4
+move 4 from 7 to 9
+move 1 from 6 to 5
+move 5 from 7 to 6
+move 3 from 6 to 8
+move 1 from 7 to 6
+move 6 from 4 to 8
+move 4 from 8 to 3
+move 4 from 8 to 4
+move 17 from 2 to 1
+move 8 from 3 to 4
+move 5 from 4 to 3
+move 10 from 1 to 5
+move 11 from 3 to 5
+move 1 from 7 to 9
+move 3 from 6 to 4
+move 9 from 4 to 9
+move 7 from 1 to 3
+move 1 from 4 to 8
+move 7 from 5 to 4
+move 18 from 5 to 1
+move 13 from 1 to 6
+move 1 from 1 to 5
+move 1 from 1 to 6
+move 2 from 3 to 1
+move 1 from 3 to 1
+move 5 from 1 to 6
+move 4 from 5 to 8
+move 2 from 4 to 9
+move 1 from 1 to 9
+move 6 from 3 to 8
+move 1 from 4 to 5
+move 10 from 8 to 7
+move 16 from 6 to 7
+move 1 from 5 to 4
+move 1 from 7 to 2
+move 2 from 2 to 6
+move 2 from 8 to 5
+move 5 from 4 to 9
+move 2 from 5 to 9
+move 7 from 9 to 8
+move 2 from 6 to 9
+move 4 from 8 to 9
+move 7 from 9 to 7
+move 13 from 9 to 5
+move 10 from 5 to 1
+move 3 from 8 to 4
+move 5 from 1 to 3
+move 3 from 5 to 6
+move 3 from 9 to 7
+move 1 from 1 to 7
+move 2 from 1 to 3
+move 1 from 6 to 1
+move 4 from 3 to 8
+move 1 from 8 to 9
+move 1 from 8 to 7
+move 1 from 8 to 4
+move 1 from 9 to 7
+move 1 from 8 to 5
+move 2 from 4 to 3
+move 4 from 6 to 3
+move 1 from 5 to 1
+move 1 from 6 to 4
+move 2 from 4 to 5
+move 1 from 4 to 6
+move 1 from 6 to 4
+move 30 from 7 to 3
+move 1 from 5 to 1
+move 6 from 7 to 3
+move 2 from 1 to 7
+move 2 from 1 to 2
+move 2 from 2 to 1
+move 1 from 4 to 9
+move 3 from 1 to 2
+move 1 from 9 to 5
+move 2 from 7 to 1
+move 1 from 7 to 3
+move 1 from 1 to 9
+move 1 from 5 to 8
+move 1 from 1 to 2
+move 1 from 7 to 3
+move 1 from 9 to 4
+move 18 from 3 to 4
+move 1 from 5 to 9
+move 1 from 9 to 6
+move 1 from 2 to 7
+move 1 from 8 to 7
+move 1 from 6 to 3
+move 1 from 7 to 2
+move 14 from 4 to 6
+move 1 from 7 to 6
+move 15 from 6 to 4
+move 20 from 3 to 1
+move 5 from 4 to 9
+move 5 from 4 to 2
+move 15 from 1 to 7
+move 11 from 7 to 9
+move 2 from 7 to 6
+move 1 from 6 to 4
+move 1 from 6 to 3
+move 2 from 7 to 8
+move 10 from 4 to 3
+move 15 from 9 to 3
+move 1 from 9 to 7
+move 29 from 3 to 6
+move 3 from 1 to 6
+move 1 from 8 to 4
+move 2 from 4 to 3
+move 1 from 8 to 9
+move 4 from 6 to 1
+move 20 from 6 to 2
+move 5 from 1 to 9
+move 3 from 6 to 2
+move 4 from 6 to 3
+move 4 from 3 to 1
+move 4 from 1 to 4
+move 3 from 4 to 8
+move 6 from 3 to 4
+move 6 from 2 to 6
+move 1 from 7 to 1
+move 3 from 6 to 8
+move 6 from 9 to 3
+move 1 from 1 to 4
+move 1 from 1 to 7
+move 3 from 4 to 5
+move 2 from 6 to 4
+move 2 from 5 to 6
+move 4 from 8 to 7
+move 1 from 5 to 6
+move 1 from 8 to 4
+move 1 from 8 to 4
+move 2 from 4 to 9
+move 4 from 7 to 8
+move 4 from 4 to 3
+move 1 from 7 to 9
+move 4 from 8 to 6
+move 1 from 3 to 4
+move 1 from 3 to 5
+move 2 from 4 to 7
+move 4 from 6 to 3
+move 2 from 9 to 1
+move 2 from 7 to 4
+move 1 from 5 to 1
+move 1 from 3 to 4
+move 1 from 9 to 3
+move 4 from 4 to 5
+move 2 from 5 to 3
+move 1 from 5 to 7
+move 1 from 5 to 8
+move 2 from 6 to 4
+move 3 from 1 to 3
+move 21 from 3 to 5
+move 3 from 6 to 1
+move 1 from 7 to 1
+move 4 from 2 to 6
+move 1 from 8 to 2
+move 10 from 2 to 4
+move 4 from 1 to 2
+move 1 from 6 to 5
+move 2 from 6 to 9
+move 7 from 4 to 9
+move 1 from 6 to 5
+move 3 from 9 to 4
+move 6 from 2 to 8
+move 3 from 9 to 1
+move 8 from 4 to 3
+move 1 from 9 to 4
+move 21 from 5 to 7
+move 1 from 1 to 3
+move 2 from 9 to 6
+move 14 from 7 to 1
+move 2 from 4 to 1
+move 2 from 8 to 7
+move 1 from 8 to 2
+move 11 from 2 to 9
+move 8 from 9 to 6
+move 4 from 7 to 1
+move 1 from 7 to 4
+move 2 from 3 to 5
+move 1 from 1 to 6
+move 1 from 8 to 2
+move 3 from 7 to 5
+move 6 from 1 to 7
+move 1 from 8 to 7
+move 1 from 4 to 5
+move 4 from 6 to 5
+move 6 from 7 to 6
+move 3 from 9 to 1
+move 1 from 7 to 3
+move 11 from 5 to 1
+move 1 from 5 to 2
+move 9 from 6 to 4
+move 1 from 7 to 3
+move 2 from 6 to 1
+move 1 from 2 to 1
+move 1 from 2 to 6
+move 14 from 1 to 5
+move 1 from 8 to 4
+move 10 from 1 to 5
+move 3 from 5 to 1
+move 8 from 3 to 8
+move 16 from 5 to 7
+move 2 from 1 to 9
+move 3 from 8 to 1
+move 1 from 2 to 4
+move 6 from 7 to 4
+move 3 from 5 to 8
+move 2 from 3 to 6
+move 7 from 1 to 7
+move 14 from 4 to 3
+move 9 from 7 to 8
+move 2 from 4 to 1
+move 9 from 8 to 4
+move 7 from 8 to 2
+move 6 from 1 to 8
+move 1 from 9 to 7
+move 1 from 1 to 6
+move 1 from 9 to 6
+move 1 from 5 to 9
+move 1 from 5 to 3
+move 9 from 4 to 9
+move 3 from 3 to 6
+move 8 from 6 to 3
+move 1 from 2 to 9
+move 8 from 9 to 8
+move 6 from 2 to 9
+move 2 from 6 to 1
+move 7 from 8 to 6
+move 2 from 9 to 6
+move 8 from 7 to 8
+move 1 from 4 to 5
+move 9 from 3 to 5
+move 2 from 1 to 4
+move 1 from 7 to 4
+move 2 from 4 to 3
+move 11 from 8 to 1
+move 1 from 4 to 7
+move 1 from 7 to 8
+move 5 from 1 to 3
+move 4 from 6 to 4
+move 2 from 4 to 8
+move 1 from 4 to 8
+move 7 from 8 to 9
+move 1 from 8 to 9
+move 1 from 8 to 5
+move 18 from 3 to 2
+move 17 from 2 to 7
+move 6 from 5 to 4
+move 1 from 2 to 5
+move 4 from 4 to 6
+move 4 from 6 to 9
+move 15 from 7 to 9
+move 2 from 1 to 6
+move 2 from 7 to 9
+move 28 from 9 to 2
+move 1 from 6 to 7
+move 4 from 6 to 9
+move 3 from 1 to 7
+move 2 from 6 to 3
+move 1 from 4 to 7
+move 8 from 9 to 5
+move 13 from 5 to 3
+move 1 from 5 to 7
+move 3 from 9 to 4
+move 8 from 3 to 7
+move 28 from 2 to 5
+move 1 from 9 to 8
+move 4 from 3 to 4
+move 4 from 7 to 5
+move 2 from 3 to 9
+move 21 from 5 to 4
+move 1 from 5 to 7
+move 1 from 3 to 5
+move 3 from 5 to 7
+move 1 from 1 to 3
+move 3 from 7 to 3
+move 5 from 7 to 6
+move 10 from 4 to 8
+move 6 from 5 to 4
+move 1 from 9 to 3
+move 15 from 4 to 5
+move 10 from 4 to 7
+move 3 from 3 to 7
+move 1 from 3 to 4
+move 1 from 3 to 4
+move 7 from 5 to 1
+move 2 from 4 to 7
+move 1 from 9 to 2
+move 2 from 6 to 9
+move 1 from 5 to 3
+move 1 from 3 to 8
+move 10 from 7 to 9
+move 2 from 8 to 1
+move 9 from 9 to 2
+move 1 from 4 to 3
+move 9 from 8 to 7
+move 1 from 2 to 8
+move 5 from 5 to 4
+move 1 from 3 to 2
+move 5 from 4 to 3
+move 3 from 5 to 9
+move 6 from 7 to 3
+move 1 from 6 to 5
+move 5 from 9 to 7
+move 2 from 5 to 6
+move 3 from 6 to 7
+move 4 from 1 to 4
+move 6 from 2 to 7
+move 17 from 7 to 5
+move 1 from 6 to 1
+move 5 from 3 to 6
+move 10 from 7 to 2
+move 1 from 8 to 4
+move 1 from 9 to 8
+move 3 from 4 to 1
+move 1 from 7 to 4
+move 5 from 5 to 9
+move 2 from 8 to 7
+move 3 from 3 to 7
+move 4 from 2 to 3
+move 3 from 4 to 6
+move 7 from 5 to 8
+move 7 from 2 to 8
+move 4 from 9 to 8
+move 12 from 8 to 3
+move 17 from 3 to 2
+move 1 from 7 to 9
+move 1 from 3 to 9
+move 3 from 9 to 1
+move 2 from 5 to 1
+move 1 from 3 to 5
+move 4 from 5 to 8
+move 6 from 8 to 1
+move 17 from 2 to 3
+move 13 from 3 to 2
+move 1 from 3 to 9
+move 1 from 8 to 4
+move 1 from 4 to 8
+move 1 from 9 to 1
+move 2 from 7 to 2
+move 8 from 6 to 2
+move 2 from 7 to 5
+move 9 from 1 to 3
+move 13 from 2 to 9
+move 6 from 1 to 4
+move 6 from 4 to 5
+move 3 from 8 to 1
+move 2 from 1 to 8
+move 8 from 5 to 7
+move 2 from 3 to 1
+move 9 from 3 to 1
+move 3 from 8 to 2
+move 1 from 1 to 9
+move 1 from 3 to 9
+move 6 from 7 to 3
+move 4 from 2 to 7
+move 14 from 1 to 6
+move 2 from 3 to 9
+move 3 from 3 to 7
+move 6 from 2 to 1
+move 2 from 1 to 2
+move 9 from 6 to 3
+move 11 from 9 to 5
+move 9 from 7 to 6
+move 6 from 6 to 2
+move 1 from 1 to 8
+move 5 from 9 to 4
+move 1 from 8 to 5
+move 9 from 2 to 7
+move 10 from 5 to 8)";
+}
+
+std::string Day6() {
+  return "pfptpztzfznzzznszzfgzgqgbgzgmzggwlwnlngnddjttzwtwmttlrrlqqzczpzhppmjm"
+         "njnfjnjjjprpfpnfpnpznzbbnwbbdsbswwwwszzzcmcttbftffczctztffppcvccbdbhb"
+         "tbcbhbrbnrbrzbztbblvlvqvcqvcvcrcprrmffhfwfjwjrjtttvqqsttcwtthwthhqssb"
+         "bqhhcbhbhqqwsqspqspprbrsrmmvhvvlsvspvpddbvdbdhhgshggfbgbrggzszsnshsvh"
+         "svhhnfnhfnhhbzzthtstdssdsrdsrdrtddsrdrcrgcgdcggdbbtgbgzbzwwnlngggspgg"
+         "spspjjfqflqqttjbbnffszfzjjlwjwhjwjccpllzztrzttdpdbbcnntwnnctnnrrgbrbv"
+         "bccvzvlvnllvrvnnvmmtrmrddjdqdrqrmmvssgllsjsrrwggvcccgwwgddzldzldzdttq"
+         "rrtggdngdgfdgfgzztdtthrttszzgjglldzdhdphppjfjfzfpfsflfggpwwwjdjssqdqm"
+         "dmdpmmvbvfvpfpfwfpwfppbgbwgbbpmpwpzplpjpttnwnlnppcvchhmwwmllwppwspwsp"
+         "swpphhdhfhccwpcplpzzjwjssfrsssgnglnglnglngncgcvvpddrcrjrssznnjllslrlm"
+         "llglpggwhhllzqzssvtsvvbpphpthphdhphnhdhdqdbbmcmqcmcmddtwtqqsbbzddtzdz"
+         "rzmmfccdttlvljlffzczmzrrtzzrbrllfnfmfnnrcnnctcnnncbcrbccwcnwcnnrbnrrp"
+         "nprrtwwvcwchwwcbwwwnpnvvgtvvqmvvhttrnnvjjtwtfwtwrrbpbmbmzmpphwphwwqwg"
+         "wlwclwccjvccsllhhrtrstthvvfjjcvcdcbdcbczcttjbttwtvvvzjzgzwgwjjsnnvrrl"
+         "brrvnvdvhvchvvglvvpssdbsszddsqsspvpbpjjgghvvlwvlvggpjjmcjmmmhjmmrgrsg"
+         "rsggchhcmmqsmsttlslqqmjjbpbrrcnrnbbvqvsvtvftvtmmqzzsnscsffnrnmrmnnszs"
+         "llsrrrzrszsbbchccsrsmshhzrhrrdlrrjfmlrfhvqqvmpbrntgcqqsqvjmtctflbffdd"
+         "fbsjvzsfdwblprszhfvltwtcfsbdlwjgsmlcrvgstjqtrtnqzbmrmgqnscqjdfnbppcdg"
+         "csstwdmdvphsqmrfmzwntjgjjvcdgbhfjqlzglgjdsdlhwwrmfqcfsvhwwfmvprpnmjpp"
+         "vwzjwmddtndspzqjqrpbpnrjfwqfvbtqrgngcbjvhnfbtslcpppbsfhbcmwgpccftwhnb"
+         "vdrzqdtwnrtjcdlnlmhvlzvljwrzgtfjrpgzjvggtpsvcdgtsvhdzvtfbwmnptfmllgcv"
+         "fmmgvpbrgnhcnpwltqmjmltsbpzmfrttsmjqwhncvtqrsmcpsnrqzmwftbltllbhzhdfz"
+         "mfgbvdtgwpvngsffjmwhfhmccfrjgqcqngzlnqvsgrcdzbsmjbmflwvhjldlrdvjrmgvj"
+         "vpcczdhczpbtwphvhqmhcnljbwnzqwmbctffmctlcmhzcnvprdhtzdvgbhlnnjqzcwcsr"
+         "gzjjlszssnplwqjlczvftmnbnmdpbjnctnslhgsjswqjwvprdstvbstlnnwwgvsffwmpr"
+         "jrlfccmtgvqbghvhcngwwtzwbwcdmrfstwhtfghgvzbfgtwjglcllwrhgdzptvrrbdhbs"
+         "cjhmtswshjmrsbpzstwmhrwwwncbbmjnjjlzrpdrzfvstbltszvlhcqbcpgbwtzzslsrl"
+         "jmhmtlcvzdbszvnjhrswrjrmfpsfpplwlrsnrpnjngmhwpwqcmtslhbmlsmjhcgmzznft"
+         "mhvtmzlvmcwnbqtcntqghrqcsztsgzrnmrlvrnhtpmstdflpztmwltvgppttfwhhzzgrf"
+         "fjchswhbljvcjwvvnqnvdvjpsclhwsrtczvjmtcsnwvnwtdllphmrthddfvcjwvggqltm"
+         "hglllmqzjsbjwgdqwzzmjnrmpbqplgzjgzcdqmtsntprdwwjwthcbsghqqspszndgqdml"
+         "zdlzwfcghtbhcqpbpmnfgqzmhtnttvjttvzhllsjvmmcmmppcgssjhnzqwpzdbtmrzsfb"
+         "vgmgbtbwjrzvdlmgjpzltfmcclpltsszpqbllrwbwsnbhhvfwphrcpdvbjhgmgpphrdpc"
+         "mjvfsjzrqldlqthwsztzcgttdnzcsbnszcsvmcspddlmwjttggdmlpqrdrfmwfzpdbnrw"
+         "tmwssvbwtmzhndmhzwtlgdwpbrzghmlbszswqlpzldbvswjgtvjvmtjwdggfsbggbwhpw"
+         "jdmflhmsgtbzrtbvlpqqmpcrbhflnfmwwsvdsgnnznfrqhqgqfgdfzcdqrtdftsntpbcc"
+         "lhncqjjwvszmssswnscwjlpfvdvltgcmqqttnfvbptbbmlrvrwwfbwwbvlrdrfmscqwdv"
+         "djgdrghwfjsttvwngzttzzsmzqnvzdfsvrbrcwtmmjdvnzjzdsnzgtszzcwdphnjmspmd"
+         "srqwgdwlzrgghcchpbltmwnjrbhqhzdqqmbrpggjjwnqfnnsqsfzbwqjsfprvrvfwbqvh"
+         "gpjvqzplnhtqszqrtsvtbptfvzmvjhshbtmqbmqrrwplzphvdvhttlmftdwltqssstzlv"
+         "nslzhnmjdlsbdprbgpjvcdtcfchzqqqcnngbrmntjwfbvcdcfgbcpnvcbbcvhqfzpsmgb"
+         "cvrqvjlqlqnvvzdgphfpgtrpbbwztvqjgdpnpwbffdgqzmqvgblwzmdrhwdprhcqppcgg"
+         "rldhcdztnhspclfcwttnqslnzvvshcwgfztvscvztdrprvnlmfsgcpfdmfjgblnhrbsmj"
+         "rjdzjwvwmlllvscsvfqvhdsdljrqphcvvtcttbwvnwwzwshdcfdqnjszltmddzjgmqgvp"
+         "jzpzssrmfsrgjhvqtlhsfnndnqhpbcnltmdvlhfwqcmwnqbhsfqqwnfnnfjjbsqmcdrrv"
+         "lfztdprnmjfhlvcdbjtczbrpljmpcwvchdwrqbwggjnrlhcdgzfwjzzjgfnbpwbpvswqd"
+         "pcrthwfcffgztrjqntczfcbsrrtrjrwgbbgjshtzvjjlqqtsbgmpsttqjqwgmmbzhshqv"
+         "vrcgbdsqmtqlrgjbnvbrpzdrgqnzstfdcvdnjhcnjblmsqtfvstlptgrczhbgpllpqwfd"
+         "mthgjlltmlnltzpvjvjfgtrzslsptlfplgrgpjsbhbbbwlljfdjnhqcndlprfbwpvddnd"
+         "pnqwqccgbqmwlrffpzjpqclwcrgjgljwzpppwltcwdqdchghfnwbhrjndjsvlqnnmlrjf"
+         "gfpnvgmlhbgnhnztpjzdmltfmjtzclsbspvhfngtjmzwrwmprdfplzzwfrdnbmbgvjlcz"
+         "cdvmpfmtqmzjrpfhjwwzmtnzmptwnhtlbndcpshqrqqrpccqpnvnqqdprvccmdmrsbptd"
+         "hrhlpcptgfsfwphfpvbcrlnbrtgwcpgjclhhvpjhcwcgghlzbmpbswgtzqhmlwdfrrdfv"
+         "nbhlqhvhnfjfndlqgrvhwnnnccvgdfqtwlmbwcpdtgscfpvmbdtcdmmgqrfjvnhngqsdt"
+         "zhlbjwrrcrjfswwrgbhznlwhcjlsfprbqqcqmbdjhgjmmtqmjpldgqvptqcwjmlrjtjwd"
+         "fbbvhpsnmfvdwnrntqzhfgfmrtgwgddpqvvdjqvrdwdwrsbjlbrmrjjbbpjpqgsjdzfjc"
+         "rsnbmtmrstcrztzhgswgghwbfltdsvrcqvvjtmjwznnnwtsmshvbbpzwltrjpmbgsbqwp"
+         "hmwlhgpltsgjmgbdfrlhcbfjnvpvdwzccgdhswtgplcqnsjdwfbhbbpssvfrjbzmcphzj"
+         "dncjgsvrcrplhqpnwdgfvrjqgfshdwrqjdvjmggtnnghqrccgddnzndcgpgpghtvrpwft"
+         "fpttvgwqqcjbvnmqzlshdrdj";
+}
+
+std::string Day7() {
+  return "$ cd /\n"
+         "$ ls\n"
+         "dir bfqzjjct\n"
+         "dir cgcqpjpn\n"
+         "dir frrjh\n"
+         "dir jjl\n"
+         "293559 jztrccm.hvd\n"
+         "dir mqvn\n"
+         "$ cd bfqzjjct\n"
+         "$ ls\n"
+         "dir cgcqpjpn\n"
+         "dir frrjh\n"
+         "dir gzpbchq\n"
+         "12679 lzrgqrgc\n"
+         "dir mzm\n"
+         "dir phslrcw\n"
+         "240839 phslrcw.ljl\n"
+         "dir qftq\n"
+         "dir qlpg\n"
+         "169962 vntqgq.tps\n"
+         "114950 vzq.qvv\n"
+         "$ cd cgcqpjpn\n"
+         "$ ls\n"
+         "305598 hjrv\n"
+         "134990 jlqcf.sjc\n"
+         "dir phslrcw\n"
+         "dir qsdlvr\n"
+         "129733 rznmd.snf\n"
+         "dir sgcg\n"
+         "dir swfsblvv\n"
+         "dir vprjf\n"
+         "dir wchtzbdv\n"
+         "dir wfvj\n"
+         "229649 zdm.rpl\n"
+         "$ cd phslrcw\n"
+         "$ ls\n"
+         "dir jnzjq\n"
+         "dir lfd\n"
+         "79014 lzrgqrgc.sqh\n"
+         "209222 wfnmqrtr.zbq\n"
+         "$ cd jnzjq\n"
+         "$ ls\n"
+         "163133 qsdcrvz.zmn\n"
+         "287008 zdm.rpl\n"
+         "$ cd ..\n"
+         "$ cd lfd\n"
+         "$ ls\n"
+         "4442 cgcqpjpn\n"
+         "61281 jmr\n"
+         "212696 jztrccm.hvd\n"
+         "dir mlt\n"
+         "dir qsdlvr\n"
+         "$ cd mlt\n"
+         "$ ls\n"
+         "183050 zdm.rpl\n"
+         "$ cd ..\n"
+         "$ cd qsdlvr\n"
+         "$ ls\n"
+         "dir nzjfwdt\n"
+         "dir qsdlvr\n"
+         "$ cd nzjfwdt\n"
+         "$ ls\n"
+         "49044 jdqz.bqd\n"
+         "$ cd ..\n"
+         "$ cd qsdlvr\n"
+         "$ ls\n"
+         "13838 fpfmhq.rbp\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd qsdlvr\n"
+         "$ ls\n"
+         "167042 jdqz.bqd\n"
+         "132914 lzrgqrgc\n"
+         "$ cd ..\n"
+         "$ cd sgcg\n"
+         "$ ls\n"
+         "dir bjwzfr\n"
+         "111567 jdqz.bqd\n"
+         "33253 jztrccm.hvd\n"
+         "75760 qsdlvr\n"
+         "$ cd bjwzfr\n"
+         "$ ls\n"
+         "268763 npjd.glz\n"
+         "dir phslrcw\n"
+         "121486 vbfsrwf.mbc\n"
+         "dir vtwtmnvl\n"
+         "$ cd phslrcw\n"
+         "$ ls\n"
+         "114641 cgsrlq\n"
+         "235130 npjd.glz\n"
+         "$ cd ..\n"
+         "$ cd vtwtmnvl\n"
+         "$ ls\n"
+         "7771 hnrpgsn\n"
+         "290862 rtrljz.vbf\n"
+         "220102 rztn.vqq\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd swfsblvv\n"
+         "$ ls\n"
+         "231282 vclmcf.vpq\n"
+         "16727 vjhmb.ftn\n"
+         "$ cd ..\n"
+         "$ cd vprjf\n"
+         "$ ls\n"
+         "dir fppsf\n"
+         "56173 npjd.glz\n"
+         "dir phslrcw\n"
+         "dir pwjdcdff\n"
+         "dir qsdlvr\n"
+         "dir qvh\n"
+         "dir sbmtlz\n"
+         "$ cd fppsf\n"
+         "$ ls\n"
+         "dir hltnf\n"
+         "dir qrmggjs\n"
+         "dir qsdlvr\n"
+         "$ cd hltnf\n"
+         "$ ls\n"
+         "201448 npjd.glz\n"
+         "23616 zdm.rpl\n"
+         "$ cd ..\n"
+         "$ cd qrmggjs\n"
+         "$ ls\n"
+         "dir blhwqwd\n"
+         "dir szf\n"
+         "$ cd blhwqwd\n"
+         "$ ls\n"
+         "142887 vzq.qvv\n"
+         "$ cd ..\n"
+         "$ cd szf\n"
+         "$ ls\n"
+         "225491 tvsf.tpv\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd qsdlvr\n"
+         "$ ls\n"
+         "92209 brmrwznr\n"
+         "dir frrjh\n"
+         "212979 qsdlvr.bwh\n"
+         "dir vpvnb\n"
+         "$ cd frrjh\n"
+         "$ ls\n"
+         "143811 qvwmpj.gnc\n"
+         "$ cd ..\n"
+         "$ cd vpvnb\n"
+         "$ ls\n"
+         "dir wwsw\n"
+         "$ cd wwsw\n"
+         "$ ls\n"
+         "13671 qsdlvr\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd phslrcw\n"
+         "$ ls\n"
+         "dir bpfhc\n"
+         "dir fjvgwbj\n"
+         "127950 hjngrw.rtr\n"
+         "37045 lfpjb.ftz\n"
+         "dir qsn\n"
+         "$ cd bpfhc\n"
+         "$ ls\n"
+         "232351 frrjh.szf\n"
+         "14824 jztrccm.hvd\n"
+         "162270 vzq.qvv\n"
+         "$ cd ..\n"
+         "$ cd fjvgwbj\n"
+         "$ ls\n"
+         "dir cgcqpjpn\n"
+         "4290 jrfsmghw.vqr\n"
+         "dir lqnpdd\n"
+         "$ cd cgcqpjpn\n"
+         "$ ls\n"
+         "208104 btrcq.vpn\n"
+         "149676 bwvp.jlf\n"
+         "76056 gvvrvqdf.zdc\n"
+         "272686 pqhtjpv\n"
+         "dir zjntbw\n"
+         "$ cd zjntbw\n"
+         "$ ls\n"
+         "140092 jdqz.bqd\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd lqnpdd\n"
+         "$ ls\n"
+         "dir brf\n"
+         "197899 jdqz.bqd\n"
+         "dir phslrcw\n"
+         "236823 qcvgnlv.ngn\n"
+         "dir szrfcwtw\n"
+         "88974 vzq.qvv\n"
+         "$ cd brf\n"
+         "$ ls\n"
+         "112059 jdqz.bqd\n"
+         "217412 vzq.qvv\n"
+         "$ cd ..\n"
+         "$ cd phslrcw\n"
+         "$ ls\n"
+         "84285 jnzf\n"
+         "282660 zdm.rpl\n"
+         "$ cd ..\n"
+         "$ cd szrfcwtw\n"
+         "$ ls\n"
+         "84415 gcp\n"
+         "163787 wffb.wbq\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd qsn\n"
+         "$ ls\n"
+         "139676 zdm.rpl\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd pwjdcdff\n"
+         "$ ls\n"
+         "dir cgcqpjpn\n"
+         "54163 lzrgqrgc\n"
+         "dir qsdlvr\n"
+         "51246 qsdlvr.cmq\n"
+         "5082 rvmv.tqj\n"
+         "112712 vzq.qvv\n"
+         "$ cd cgcqpjpn\n"
+         "$ ls\n"
+         "92895 dmf.bsv\n"
+         "dir lhqzc\n"
+         "$ cd lhqzc\n"
+         "$ ls\n"
+         "13443 hwlsmmjn.wpj\n"
+         "232141 tlsn\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd qsdlvr\n"
+         "$ ls\n"
+         "216144 dghbz.lnl\n"
+         "241311 jztrccm.hvd\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd qsdlvr\n"
+         "$ ls\n"
+         "109764 qsdlvr.tbj\n"
+         "$ cd ..\n"
+         "$ cd qvh\n"
+         "$ ls\n"
+         "dir frrjh\n"
+         "51428 hdtmm.zzl\n"
+         "$ cd frrjh\n"
+         "$ ls\n"
+         "271661 brff.mgp\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd sbmtlz\n"
+         "$ ls\n"
+         "277255 jztrccm.hvd\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd wchtzbdv\n"
+         "$ ls\n"
+         "198310 cgcqpjpn\n"
+         "300478 fcfvgpdr.lzv\n"
+         "145860 jdqz.bqd\n"
+         "20145 mggg\n"
+         "$ cd ..\n"
+         "$ cd wfvj\n"
+         "$ ls\n"
+         "270522 phslrcw.mwt\n"
+         "213919 tczvr\n"
+         "19226 zdm.rpl\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd frrjh\n"
+         "$ ls\n"
+         "dir cgcqpjpn\n"
+         "246391 hnc.bzl\n"
+         "dir lzrgqrgc\n"
+         "dir mnrbzwr\n"
+         "239337 npjd.glz\n"
+         "dir qsdlvr\n"
+         "$ cd cgcqpjpn\n"
+         "$ ls\n"
+         "2423 pflhrgjg.gch\n"
+         "$ cd ..\n"
+         "$ cd lzrgqrgc\n"
+         "$ ls\n"
+         "265708 vzq.qvv\n"
+         "107406 zwnjb\n"
+         "$ cd ..\n"
+         "$ cd mnrbzwr\n"
+         "$ ls\n"
+         "287289 jgs.bdb\n"
+         "$ cd ..\n"
+         "$ cd qsdlvr\n"
+         "$ ls\n"
+         "dir qsdlvr\n"
+         "$ cd qsdlvr\n"
+         "$ ls\n"
+         "71204 gnfz\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd gzpbchq\n"
+         "$ ls\n"
+         "dir cmqgph\n"
+         "dir fwf\n"
+         "146975 jztrccm.hvd\n"
+         "284515 lzrgqrgc.qsf\n"
+         "27455 qbsbvscc\n"
+         "$ cd cmqgph\n"
+         "$ ls\n"
+         "177740 zdm.rpl\n"
+         "$ cd ..\n"
+         "$ cd fwf\n"
+         "$ ls\n"
+         "210658 dnmvdgwn.wzt\n"
+         "22013 rqcspw.qmf\n"
+         "244013 zdm.rpl\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd mzm\n"
+         "$ ls\n"
+         "262805 gnfsbdcd.tvp\n"
+         "$ cd ..\n"
+         "$ cd phslrcw\n"
+         "$ ls\n"
+         "74949 wncqjc.tzd\n"
+         "$ cd ..\n"
+         "$ cd qftq\n"
+         "$ ls\n"
+         "dir jrds\n"
+         "$ cd jrds\n"
+         "$ ls\n"
+         "dir dvht\n"
+         "dir qsdlvr\n"
+         "$ cd dvht\n"
+         "$ ls\n"
+         "57354 phslrcw\n"
+         "57174 qsdlvr.ftm\n"
+         "$ cd ..\n"
+         "$ cd qsdlvr\n"
+         "$ ls\n"
+         "132030 fbsmfspp\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd qlpg\n"
+         "$ ls\n"
+         "dir cgcqpjpn\n"
+         "dir frrjh\n"
+         "dir jjsfmg\n"
+         "186178 jmvcvw\n"
+         "dir qgjhlnmf\n"
+         "100234 qltp.vdr\n"
+         "dir tbwt\n"
+         "dir vjjvfbdw\n"
+         "dir wjz\n"
+         "162428 zlbnsg\n"
+         "$ cd cgcqpjpn\n"
+         "$ ls\n"
+         "dir gvmgcftp\n"
+         "dir hsgvgc\n"
+         "dir nps\n"
+         "dir phslrcw\n"
+         "dir scdglb\n"
+         "$ cd gvmgcftp\n"
+         "$ ls\n"
+         "31869 dsddwbbp\n"
+         "dir fbsrjgzj\n"
+         "53280 tzn.fvp\n"
+         "$ cd fbsrjgzj\n"
+         "$ ls\n"
+         "89267 qsdlvr.lhs\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd hsgvgc\n"
+         "$ ls\n"
+         "dir lzrgqrgc\n"
+         "210774 wpspf.vrd\n"
+         "$ cd lzrgqrgc\n"
+         "$ ls\n"
+         "289086 gfhwwslq.tlz\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd nps\n"
+         "$ ls\n"
+         "74713 fnqzcr\n"
+         "dir srjvfq\n"
+         "94736 wbrcn.nng\n"
+         "dir wmddln\n"
+         "dir zsgnrmcc\n"
+         "$ cd srjvfq\n"
+         "$ ls\n"
+         "dir grqft\n"
+         "dir pjnjlf\n"
+         "254618 wmfnmfrc.wng\n"
+         "$ cd grqft\n"
+         "$ ls\n"
+         "3742 zmpzwh.nvz\n"
+         "$ cd ..\n"
+         "$ cd pjnjlf\n"
+         "$ ls\n"
+         "dir mlrsrs\n"
+         "$ cd mlrsrs\n"
+         "$ ls\n"
+         "167149 jztrccm.hvd\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd wmddln\n"
+         "$ ls\n"
+         "222831 cgcqpjpn.dcv\n"
+         "140188 gsvngqp\n"
+         "174466 sfngrqgj.gvz\n"
+         "$ cd ..\n"
+         "$ cd zsgnrmcc\n"
+         "$ ls\n"
+         "143043 vzq.qvv\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd phslrcw\n"
+         "$ ls\n"
+         "dir cdfsrvnc\n"
+         "103523 hzsjc\n"
+         "239089 jvwdjbq\n"
+         "229835 npjd.glz\n"
+         "189778 wwcccwmb.bdp\n"
+         "$ cd cdfsrvnc\n"
+         "$ ls\n"
+         "dir vzsvcnlz\n"
+         "$ cd vzsvcnlz\n"
+         "$ ls\n"
+         "dir wwn\n"
+         "$ cd wwn\n"
+         "$ ls\n"
+         "60279 frngbwm.wwf\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd scdglb\n"
+         "$ ls\n"
+         "176557 vzq.qvv\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd frrjh\n"
+         "$ ls\n"
+         "130811 jdqz.bqd\n"
+         "$ cd ..\n"
+         "$ cd jjsfmg\n"
+         "$ ls\n"
+         "dir nffq\n"
+         "22842 vzt.nwh\n"
+         "$ cd nffq\n"
+         "$ ls\n"
+         "dir wmq\n"
+         "$ cd wmq\n"
+         "$ ls\n"
+         "196322 jztrccm.hvd\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd qgjhlnmf\n"
+         "$ ls\n"
+         "dir jhqqjt\n"
+         "dir phslrcw\n"
+         "246296 pzvmcq\n"
+         "219308 tlhqgtcl.twb\n"
+         "dir vfgb\n"
+         "300258 zdm.rpl\n"
+         "221663 zsqh.dph\n"
+         "$ cd jhqqjt\n"
+         "$ ls\n"
+         "90068 fctpjdlm.ggg\n"
+         "dir frrjh\n"
+         "dir ngmzbqb\n"
+         "dir phslrcw\n"
+         "64341 qsdlvr.pnq\n"
+         "dir vlgpcg\n"
+         "$ cd frrjh\n"
+         "$ ls\n"
+         "49247 qrrhdhld.sjr\n"
+         "$ cd ..\n"
+         "$ cd ngmzbqb\n"
+         "$ ls\n"
+         "247800 cgcqpjpn.wgv\n"
+         "$ cd ..\n"
+         "$ cd phslrcw\n"
+         "$ ls\n"
+         "dir qsdlvr\n"
+         "dir vjrrrm\n"
+         "$ cd qsdlvr\n"
+         "$ ls\n"
+         "255302 ddvc\n"
+         "182817 dzd.trp\n"
+         "$ cd ..\n"
+         "$ cd vjrrrm\n"
+         "$ ls\n"
+         "38983 hjbsqd.pdl\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd vlgpcg\n"
+         "$ ls\n"
+         "dir frrjh\n"
+         "83387 jztrccm.hvd\n"
+         "$ cd frrjh\n"
+         "$ ls\n"
+         "dir rmlc\n"
+         "$ cd rmlc\n"
+         "$ ls\n"
+         "273584 jztrccm.hvd\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd phslrcw\n"
+         "$ ls\n"
+         "96286 jztrccm.hvd\n"
+         "224425 npjd.glz\n"
+         "$ cd ..\n"
+         "$ cd vfgb\n"
+         "$ ls\n"
+         "dir fgl\n"
+         "dir fllsgwjt\n"
+         "dir frrjh\n"
+         "dir qsdlvr\n"
+         "$ cd fgl\n"
+         "$ ls\n"
+         "61972 lzrgqrgc.qrs\n"
+         "$ cd ..\n"
+         "$ cd fllsgwjt\n"
+         "$ ls\n"
+         "dir fqchdcpd\n"
+         "214477 zcr.spz\n"
+         "$ cd fqchdcpd\n"
+         "$ ls\n"
+         "156000 jccqlw.twl\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd frrjh\n"
+         "$ ls\n"
+         "210987 zdm.rpl\n"
+         "$ cd ..\n"
+         "$ cd qsdlvr\n"
+         "$ ls\n"
+         "dir phslrcw\n"
+         "dir znnsfvz\n"
+         "$ cd phslrcw\n"
+         "$ ls\n"
+         "214655 ddw\n"
+         "$ cd ..\n"
+         "$ cd znnsfvz\n"
+         "$ ls\n"
+         "126028 zpq.bgs\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd tbwt\n"
+         "$ ls\n"
+         "dir ltjjhr\n"
+         "$ cd ltjjhr\n"
+         "$ ls\n"
+         "158069 vplwrz.rzp\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd vjjvfbdw\n"
+         "$ ls\n"
+         "277114 fmndb.rth\n"
+         "241524 frrjh\n"
+         "212152 frrjh.dlq\n"
+         "61370 jztrccm.hvd\n"
+         "dir srvqm\n"
+         "237264 znt\n"
+         "$ cd srvqm\n"
+         "$ ls\n"
+         "dir fbzmddc\n"
+         "61958 jdqz.bqd\n"
+         "dir phslrcw\n"
+         "173063 vwvmhwzn.tvg\n"
+         "$ cd fbzmddc\n"
+         "$ ls\n"
+         "dir ccvtbpzw\n"
+         "201647 lzrgqrgc.sjs\n"
+         "192449 rhfgcgz\n"
+         "224557 sbcpcbpd\n"
+         "$ cd ccvtbpzw\n"
+         "$ ls\n"
+         "dir phslrcw\n"
+         "dir prpllzcn\n"
+         "$ cd phslrcw\n"
+         "$ ls\n"
+         "290780 lbl.qmm\n"
+         "$ cd ..\n"
+         "$ cd prpllzcn\n"
+         "$ ls\n"
+         "242024 bhq\n"
+         "118347 frrjh.tsz\n"
+         "dir hcqs\n"
+         "$ cd hcqs\n"
+         "$ ls\n"
+         "104706 csnllvcf\n"
+         "270940 npjd.glz\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd phslrcw\n"
+         "$ ls\n"
+         "244909 czfjsrns.fdm\n"
+         "dir frrjh\n"
+         "68252 lzrgqrgc\n"
+         "146640 npjd.glz\n"
+         "290259 pbzpthgs.bgf\n"
+         "99657 rmfpfmd\n"
+         "dir zllf\n"
+         "$ cd frrjh\n"
+         "$ ls\n"
+         "dir cgcqpjpn\n"
+         "65295 jdqz.bqd\n"
+         "dir phslrcw\n"
+         "$ cd cgcqpjpn\n"
+         "$ ls\n"
+         "dir mwfwrd\n"
+         "$ cd mwfwrd\n"
+         "$ ls\n"
+         "26481 sngtgc\n"
+         "dir zfzddl\n"
+         "$ cd zfzddl\n"
+         "$ ls\n"
+         "47854 fzfdrmbb.ngm\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd phslrcw\n"
+         "$ ls\n"
+         "251021 fwfpd.vrt\n"
+         "230149 fwjznjtz\n"
+         "140480 gbsmhj\n"
+         "112221 lzrgqrgc.gcr\n"
+         "139564 npjd.glz\n"
+         "dir pvmvm\n"
+         "dir tpzr\n"
+         "$ cd pvmvm\n"
+         "$ ls\n"
+         "73785 tnbgmgt.wqg\n"
+         "$ cd ..\n"
+         "$ cd tpzr\n"
+         "$ ls\n"
+         "16759 tmcmp\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd zllf\n"
+         "$ ls\n"
+         "281402 dzrsnzh.smb\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd wjz\n"
+         "$ ls\n"
+         "266826 cgcqpjpn.spr\n"
+         "dir frvbfjj\n"
+         "111126 jdqz.bqd\n"
+         "257951 pbn.gdc\n"
+         "dir vjs\n"
+         "dir zrnvnb\n"
+         "$ cd frvbfjj\n"
+         "$ ls\n"
+         "257181 glfdplrm\n"
+         "$ cd ..\n"
+         "$ cd vjs\n"
+         "$ ls\n"
+         "dir jmpbwhtj\n"
+         "159996 lzrgqrgc.zcb\n"
+         "192135 phw\n"
+         "dir tdfz\n"
+         "dir wtm\n"
+         "$ cd jmpbwhtj\n"
+         "$ ls\n"
+         "dir fln\n"
+         "dir frrjh\n"
+         "dir nrtcmj\n"
+         "$ cd fln\n"
+         "$ ls\n"
+         "284574 frrjh.scb\n"
+         "$ cd ..\n"
+         "$ cd frrjh\n"
+         "$ ls\n"
+         "10020 npjd.glz\n"
+         "295395 vzq.qvv\n"
+         "$ cd ..\n"
+         "$ cd nrtcmj\n"
+         "$ ls\n"
+         "dir htvm\n"
+         "$ cd htvm\n"
+         "$ ls\n"
+         "dir lwh\n"
+         "$ cd lwh\n"
+         "$ ls\n"
+         "162494 npjd.glz\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd tdfz\n"
+         "$ ls\n"
+         "dir gtvlbhhw\n"
+         "dir hvssbj\n"
+         "dir phslrcw\n"
+         "$ cd gtvlbhhw\n"
+         "$ ls\n"
+         "172627 sjvcfz\n"
+         "dir tfnhsrc\n"
+         "76460 vvgcv\n"
+         "$ cd tfnhsrc\n"
+         "$ ls\n"
+         "dir hjrjmrwc\n"
+         "$ cd hjrjmrwc\n"
+         "$ ls\n"
+         "41459 jztrccm.hvd\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd hvssbj\n"
+         "$ ls\n"
+         "64052 phslrcw\n"
+         "$ cd ..\n"
+         "$ cd phslrcw\n"
+         "$ ls\n"
+         "dir wtdpf\n"
+         "dir zctdqwbc\n"
+         "$ cd wtdpf\n"
+         "$ ls\n"
+         "75802 jztrccm.hvd\n"
+         "$ cd ..\n"
+         "$ cd zctdqwbc\n"
+         "$ ls\n"
+         "127648 vqzcf.wbl\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd wtm\n"
+         "$ ls\n"
+         "265433 jztrccm.hvd\n"
+         "20952 mplbrzlp\n"
+         "123701 nwr.tjg\n"
+         "58492 qsdlvr.qzq\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd zrnvnb\n"
+         "$ ls\n"
+         "228205 ghllsc.fqn\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd cgcqpjpn\n"
+         "$ ls\n"
+         "dir cmnsbsqp\n"
+         "dir hzsn\n"
+         "221975 jdqz.bqd\n"
+         "177439 jztrccm.hvd\n"
+         "dir mqjrcw\n"
+         "dir tdp\n"
+         "211065 zdm.rpl\n"
+         "$ cd cmnsbsqp\n"
+         "$ ls\n"
+         "282903 qzlc\n"
+         "$ cd ..\n"
+         "$ cd hzsn\n"
+         "$ ls\n"
+         "221345 wtdnp.grd\n"
+         "$ cd ..\n"
+         "$ cd mqjrcw\n"
+         "$ ls\n"
+         "156244 gznmpr.dlr\n"
+         "45213 hdb.fjb\n"
+         "202993 pdt\n"
+         "dir znvdz\n"
+         "$ cd znvdz\n"
+         "$ ls\n"
+         "183973 jztrccm.hvd\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd tdp\n"
+         "$ ls\n"
+         "68564 nmntwl\n"
+         "259117 vzq.qvv\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd frrjh\n"
+         "$ ls\n"
+         "276034 lzrgqrgc.fgq\n"
+         "dir psqczq\n"
+         "dir qsdlvr\n"
+         "dir snrw\n"
+         "$ cd psqczq\n"
+         "$ ls\n"
+         "158415 jdqz.bqd\n"
+         "127684 lhctqnnz.hgn\n"
+         "123191 phslrcw.prl\n"
+         "dir wrftp\n"
+         "$ cd wrftp\n"
+         "$ ls\n"
+         "234327 qdbbl.czd\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd qsdlvr\n"
+         "$ ls\n"
+         "179591 chbns.sqf\n"
+         "88327 jdqz.bqd\n"
+         "dir mrf\n"
+         "$ cd mrf\n"
+         "$ ls\n"
+         "229849 phslrcw.rdr\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd snrw\n"
+         "$ ls\n"
+         "dir cbvr\n"
+         "dir lbbrtc\n"
+         "134786 lzrgqrgc.vrt\n"
+         "131987 vzq.qvv\n"
+         "$ cd cbvr\n"
+         "$ ls\n"
+         "120330 htmgqj.nbq\n"
+         "162963 lzrgqrgc.rwq\n"
+         "$ cd ..\n"
+         "$ cd lbbrtc\n"
+         "$ ls\n"
+         "dir tnqdj\n"
+         "$ cd tnqdj\n"
+         "$ ls\n"
+         "72261 lhqnwns.nhj\n"
+         "235520 qsdlvr.dtr\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd jjl\n"
+         "$ ls\n"
+         "dir fcfpptw\n"
+         "dir frrjh\n"
+         "dir gmdwgs\n"
+         "221258 jdqz.bqd\n"
+         "dir lzrgqrgc\n"
+         "dir mwnmjjj\n"
+         "297139 smjtpl.zzs\n"
+         "$ cd fcfpptw\n"
+         "$ ls\n"
+         "167264 frrjh\n"
+         "101587 hsmhhc.lvb\n"
+         "$ cd ..\n"
+         "$ cd frrjh\n"
+         "$ ls\n"
+         "268280 jztrccm.hvd\n"
+         "127939 nbqgvd\n"
+         "247875 nmnrsqq\n"
+         "dir phslrcw\n"
+         "dir rmgwbq\n"
+         "288264 znrrdmw\n"
+         "$ cd phslrcw\n"
+         "$ ls\n"
+         "dir cgcqpjpn\n"
+         "dir nbwjw\n"
+         "$ cd cgcqpjpn\n"
+         "$ ls\n"
+         "249503 phslrcw.dmf\n"
+         "$ cd ..\n"
+         "$ cd nbwjw\n"
+         "$ ls\n"
+         "dir phslrcw\n"
+         "$ cd phslrcw\n"
+         "$ ls\n"
+         "193336 sqpgwtgp.fpb\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd rmgwbq\n"
+         "$ ls\n"
+         "90116 jztrccm.hvd\n"
+         "303005 phslrcw\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd gmdwgs\n"
+         "$ ls\n"
+         "dir lzrgqrgc\n"
+         "dir mwrj\n"
+         "dir mzqn\n"
+         "104570 qsqqbfg.njt\n"
+         "dir zmj\n"
+         "$ cd lzrgqrgc\n"
+         "$ ls\n"
+         "dir cmn\n"
+         "dir qsdlvr\n"
+         "dir rtz\n"
+         "$ cd cmn\n"
+         "$ ls\n"
+         "20043 bgm.tvn\n"
+         "41301 hqdl.rnr\n"
+         "32026 tsmmr.bfl\n"
+         "$ cd ..\n"
+         "$ cd qsdlvr\n"
+         "$ ls\n"
+         "dir dcsdmqt\n"
+         "$ cd dcsdmqt\n"
+         "$ ls\n"
+         "107938 zdm.rpl\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd rtz\n"
+         "$ ls\n"
+         "308963 jbwvpjvj.fgn\n"
+         "31573 jdqz.bqd\n"
+         "97775 phslrcw\n"
+         "dir qsdlvr\n"
+         "225929 wwznl.bpd\n"
+         "$ cd qsdlvr\n"
+         "$ ls\n"
+         "52056 bddqnlmg.hjm\n"
+         "236614 qsdlvr.vcz\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd mwrj\n"
+         "$ ls\n"
+         "dir dfsm\n"
+         "dir mtfqs\n"
+         "$ cd dfsm\n"
+         "$ ls\n"
+         "32797 jztrccm.hvd\n"
+         "dir mthjq\n"
+         "241875 vzq.qvv\n"
+         "$ cd mthjq\n"
+         "$ ls\n"
+         "147247 zdm.rpl\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd mtfqs\n"
+         "$ ls\n"
+         "dir crpfs\n"
+         "dir phslrcw\n"
+         "$ cd crpfs\n"
+         "$ ls\n"
+         "24073 jdqz.bqd\n"
+         "269270 jztrccm.hvd\n"
+         "89807 lzrgqrgc.ddj\n"
+         "$ cd ..\n"
+         "$ cd phslrcw\n"
+         "$ ls\n"
+         "124727 cgcqpjpn.zfz\n"
+         "dir gttptlwj\n"
+         "dir phslrcw\n"
+         "dir qsdlvr\n"
+         "$ cd gttptlwj\n"
+         "$ ls\n"
+         "295546 frrjh.tmq\n"
+         "$ cd ..\n"
+         "$ cd phslrcw\n"
+         "$ ls\n"
+         "234122 zdm.rpl\n"
+         "$ cd ..\n"
+         "$ cd qsdlvr\n"
+         "$ ls\n"
+         "131491 zdm.rpl\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd mzqn\n"
+         "$ ls\n"
+         "16352 qjllmbh.jfm\n"
+         "36853 zdm.rpl\n"
+         "$ cd ..\n"
+         "$ cd zmj\n"
+         "$ ls\n"
+         "dir dvrwbrbt\n"
+         "dir frrjh\n"
+         "217060 mftczjfs.zch\n"
+         "dir znhsrsfb\n"
+         "$ cd dvrwbrbt\n"
+         "$ ls\n"
+         "dir lzssrrq\n"
+         "$ cd lzssrrq\n"
+         "$ ls\n"
+         "dir qsdlvr\n"
+         "$ cd qsdlvr\n"
+         "$ ls\n"
+         "108975 npjd.glz\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd frrjh\n"
+         "$ ls\n"
+         "dir phslrcw\n"
+         "dir zjstpvl\n"
+         "$ cd phslrcw\n"
+         "$ ls\n"
+         "244682 pgn.jqm\n"
+         "$ cd ..\n"
+         "$ cd zjstpvl\n"
+         "$ ls\n"
+         "300736 bsw.wzn\n"
+         "102742 jdqz.bqd\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd znhsrsfb\n"
+         "$ ls\n"
+         "121093 qsdlvr\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd lzrgqrgc\n"
+         "$ ls\n"
+         "50942 jdqz.bqd\n"
+         "26201 ljqgqqrr\n"
+         "71462 lrrfvs.ghl\n"
+         "274208 tqhcl.hcl\n"
+         "$ cd ..\n"
+         "$ cd mwnmjjj\n"
+         "$ ls\n"
+         "184865 mzwmp.jbw\n"
+         "68016 thbh.nbg\n"
+         "$ cd ..\n"
+         "$ cd ..\n"
+         "$ cd mqvn\n"
+         "$ ls\n"
+         "287623 spfzctll";
+}
+
+std::string Day8() {
+  return "233314113252402225351463633453424226362041164065666135612411011040522"
+         "031304523540110205035014411044\n"
+         "332122310405013102405106464353665644607664150663467462700534002161131"
+         "361415444052114131045140243410\n"
+         "440000154211143151036643465424430437150326344660672414322263612306613"
+         "505030214413503140154240143331\n"
+         "323343255421523302132452525040120535030306056101323626031642774451731"
+         "442413053643256135313042003043\n"
+         "442005315501104446243554125512523705520741532675611167103501123704102"
+         "401231225310004344454441311331\n"
+         "332130414130356034341366056652625210567702243041400445367704317060210"
+         "626605415512605335350520122311\n"
+         "324030243443122504054434240071266742352112321376000244606511532513331"
+         "523563532353420154204241013554\n"
+         "405514351330112521566052015217062045756373753646835340126272647475527"
+         "567717322610632203041311303430\n"
+         "335344112324634006053114070623702457531233080182014252513623435405053"
+         "472452142020411651513420241150\n"
+         "242041131336116162436425631055271632161034811060125876160151764545471"
+         "725530572712055225156042443422\n"
+         "510115143602101614215644471437202165862138121575207306363288027622104"
+         "656656232657106303540123445433\n"
+         "323023452213641660103641556437400327347513153233743771336775454828804"
+         "123702623477265225140631521412\n"
+         "202414114362551307121033522362685234048874113835556780630765201243481"
+         "547353207660367310163062450444\n"
+         "251210540002101157605104272102100805434031582776285412180762321556517"
+         "203802774651440303062465423305\n"
+         "415154424136606622417173367536300675207863456056626612502574128212038"
+         "664377073051707565151352430241\n"
+         "422343416235314110055766487664127721622002932278537772434781110282275"
+         "624223646255613020563013414324\n"
+         "402501442363526063250415576530161587636599439927185751837499351077528"
+         "874028027725403237453225064102\n"
+         "504234134044257264655215060321538257751387982248126653446534117721070"
+         "521632241341327330746014516212\n"
+         "046421106227215776577005025532583722724216237543578962475762466531136"
+         "887322178170357170305360651141\n"
+         "055031536466374206237511402485882788415741555457619525942245935594343"
+         "888851226034246745555525105303\n"
+         "313316632007533014153074787161584766685843475942726193487858652825242"
+         "238106152063072370317116502432\n"
+         "345426660702445442335226831889943991158617188464619968385935798291964"
+         "336101667488024624136722351004\n"
+         "553433023431367776013442510449498261312593877587925648886725526355324"
+         "173132272087282444404673023212\n"
+         "156321141760325157812461514459436947142926654837377323496455524659313"
+         "115197526460314171035362510231\n"
+         "255120642613302053266486441787818289142646555466227786469549465753577"
+         "142215522110616726724621755043\n"
+         "334560516360223658024601577515767963496326366868843234647892475283342"
+         "192849565184146074327226212463\n"
+         "351153721766750360870230632513718533288747664849867792728752858296473"
+         "818827894546842165222662660316\n"
+         "230546472451664022018817486253724286896847769324654739253839985376855"
+         "756726394310051213741574334634\n"
+         "240604111313412778575138553583993533754688392955365776855668274427545"
+         "426777852711683051850766130035\n"
+         "612053444440242110747524697575138856763564432993786937663252964632522"
+         "297343191877616788702776256531\n"
+         "213210746050611853364362496895533938487867659678984548544999789999252"
+         "968144975244772045683045163143\n"
+         "234313560047266766104657929337338747939999549989343339775674649843878"
+         "538256756297465206356607215721\n"
+         "541330056702266326645419617828852697233569954595594373743435783473477"
+         "458272526351331155042164020032\n"
+         "140412541255011411271525629485342852659763893333568788878686877387434"
+         "739657433158924624635520312150\n"
+         "556450111785818650834747363432795446558935634334688647986889543767825"
+         "728745991426532778554774250041\n"
+         "046374536364502613174368347367376484886386459583593967639436864647827"
+         "484753857757357047128547756242\n"
+         "655764564731052057576529129964629339964949833467658766644456934553679"
+         "432454423318918284774722205121\n"
+         "301454635173026337889714886368752544354576898644765747749593399993443"
+         "244885693658957270520386432731\n"
+         "613651341801476361933539945247365669358764655966668996656667973574449"
+         "468955773393241131553833236721\n"
+         "042712127874888396848539559356923856975699558476695477574879649457344"
+         "544586753161376200083775010372\n"
+         "633571133050088089565169284347688865568347469855686456948898869676734"
+         "992839954519559214335640327013\n"
+         "172043723757200297443165429577876637868564587665756749555668684974876"
+         "324328894776283612126381240111\n"
+         "635125136468188597197264372853466657935845654969889595996546968735445"
+         "775435645812218328362205464515\n"
+         "656713007810654782857485344549587333657698446778779649598947986469666"
+         "454469269555718555500650676011\n"
+         "630073065257712132592797837839439883385447879768997677977956469988597"
+         "434494722784121685628415221204\n"
+         "444604034821608779684622777623558743884886456886957579576977858998653"
+         "784523662941495476424336113773\n"
+         "514217671037186833491983278925346394784797648797698665967689974439553"
+         "895999834522263288078771344552\n"
+         "021015255420302927289942773454777353967589988997567586785896579989679"
+         "678247998851883197521625052130\n"
+         "421020702178063299133439633496746947998454998766655968999899446783547"
+         "887482855713278711117821233107\n"
+         "114364606446783776565749269624677945778789678679777777886755497459955"
+         "637294537453616518784767252223\n"
+         "142046260522656474665234998643755538575585667687579557758887565777974"
+         "637389892415231713727714020545\n"
+         "413262342277803134611736838553467587864496795555768658557598695666533"
+         "579454964336395296454485042443\n"
+         "204517185630034591417397997875956734665779995669788556788867949657786"
+         "895495638811945649547400371307\n"
+         "174033605718865969171853766365888998784497996577888589689477575486489"
+         "599887526816741551681644861060\n"
+         "063224685827512324137576693964389734944878776689697878975777568576888"
+         "374227623832471753857414056670\n"
+         "745313234117087656527378237327965487387495769997565976887546785886477"
+         "554653439376446681216706565573\n"
+         "714221627364867314579127862985967974769475946858556695875745779584938"
+         "862235922341138325687134671324\n"
+         "235137535058112125486715389748736438398876596577887698784464594585565"
+         "475969977691455623226423203660\n"
+         "331457736838274583155152898236648886649484885689575478878859449534476"
+         "546585873369917917603680222744\n"
+         "370056553104404574421729223659546734366977645685779476846478896477486"
+         "329567528693841705350032460301\n"
+         "012046147400171288423168662683944356977758997457588769489878697875636"
+         "833272395415686405718542670511\n"
+         "262552341358752126152124869842937539864957956664896875844667973579966"
+         "523479295826721313375133257021\n"
+         "341335311104544323385654534727568873565755546974875679488749436576963"
+         "238488492321632936002023135437\n"
+         "615306301262148803186235472539894694565945596584665544954959389566469"
+         "239372486931536222011310441436\n"
+         "324234323647385703932647765832954885887394937486885966935453639473679"
+         "586767584874836377576245127406\n"
+         "607164142714103623815198749329787575443985479863553945758558959498828"
+         "382965456286964707151450421625\n"
+         "314465066533633057228986634877635684496949577394987736868947454473842"
+         "782594226393615334352826715141\n"
+         "536475143305424208759752363667664867845838863986454395453978597925332"
+         "488579511898801816403500125341\n"
+         "600436437024871886647399158842535329649445587579746788759559564329954"
+         "295266229924951756877470326446\n"
+         "635061431072367818521728582256787599349759447773957754769437873366692"
+         "627645595542612842717645730302\n"
+         "251607161407032570875153116448595364788888378855675796658956867972396"
+         "653145239427853001770112657603\n"
+         "520241640710420727048842416277438383273627564337797943589249474727857"
+         "339824479251678702445344250203\n"
+         "506023425206020443136017159716969548233444659552973699328436724666925"
+         "167146818911207262175137364612\n"
+         "442525337116108025845215346249313587956988464638548455829596548637338"
+         "122164362510653537202133162600\n"
+         "623261232770026480642481695826472689876524548894353286453262528934387"
+         "623416282466608203617473042451\n"
+         "626053201167043156740764734514534985388485442264596935478566658482829"
+         "581156117030012081322032200121\n"
+         "515113523713157076317332585859135277147225933537378925962628268962323"
+         "487376155347083215167110255554\n"
+         "643536511610472445252441712381625244353195223785935227686229495474181"
+         "892477324203217374633002550026\n"
+         "153316344605375470614626642719443813563119365997536454752526938116346"
+         "697801468177321355021471120515\n"
+         "010334311035603565003056106843521955633914195866275698547136967639217"
+         "264457708135633577350770316135\n"
+         "351656015235033300075252446207592216329119342698142528782475484976514"
+         "664823836254046377242355203231\n"
+         "522341020414273625444887743684716565489521553184979199653378924268741"
+         "480405417451447044277355321421\n"
+         "320440214437322574221247068377611333151334766751972378176217877564457"
+         "826632646430162364212550024162\n"
+         "140006436600523345517508215782380433418514688293966641916347884224234"
+         "845031257747444644402460030420\n"
+         "104146605633362747562251487583451148253612867252927843577181415070521"
+         "748116343064574155031564324255\n"
+         "103130334346503557465533100482078578137542764112232739942722778250542"
+         "504456660050343333220202316205\n"
+         "224104423522010530242024415522604324510310083645671747433145834566115"
+         "676313351317733033620325342051\n"
+         "434330306111002653115073507708580057557878202203186883544117540038650"
+         "412834072007217050442340043025\n"
+         "230451225551565213004055211423448362510382160274334687381264153611307"
+         "161161541343174055136520415131\n"
+         "345102326410332306132112553766214623524786867854606163254728785833674"
+         "760574565046554641232320425233\n"
+         "324453112442152321362461117074604608838002887441621782406511511711643"
+         "754374647452022531051110420525\n"
+         "543002053003201421256545767762532417627081703274583184256503570111365"
+         "335442301734221343521443001212\n"
+         "235415514510600046234062765244344640577612404816608483334516626661775"
+         "011137245042203526504552113144\n"
+         "232104354241603004312140061650307762345454636588020108162255100572653"
+         "572030455333104521444441001334\n"
+         "032504101332516043103535067326435732054073207541115761605146733506251"
+         "652016161600036450050551314041\n"
+         "101112052131531010033161261171241410642510371771443174324170123145060"
+         "261426566620551630411143502140\n"
+         "022233151424524336433611141606565135707143053177553172244617521250201"
+         "055320411606530411451334123003\n"
+         "234144345551514036433010066345436637404726175521270115026425067373731"
+         "004102313350660213212022501014\n"
+         "103403251030225452432315040644602502722124614674434524653306555370426"
+         "625422245263065135410325331421";
+}
+
+std::string Day9() {
+
+  return "D 2\n"
+         "R 1\n"
+         "U 1\n"
+         "L 1\n"
+         "D 2\n"
+         "L 2\n"
+         "R 1\n"
+         "U 1\n"
+         "D 2\n"
+         "U 1\n"
+         "R 1\n"
+         "U 1\n"
+         "D 2\n"
+         "R 2\n"
+         "L 2\n"
+         "U 2\n"
+         "D 1\n"
+         "L 2\n"
+         "R 2\n"
+         "D 2\n"
+         "U 2\n"
+         "R 2\n"
+         "U 1\n"
+         "D 1\n"
+         "L 2\n"
+         "D 2\n"
+         "L 2\n"
+         "U 1\n"
+         "R 2\n"
+         "L 2\n"
+         "D 2\n"
+         "L 1\n"
+         "D 2\n"
+         "L 1\n"
+         "R 2\n"
+         "L 2\n"
+         "U 1\n"
+         "D 2\n"
+         "L 1\n"
+         "U 2\n"
+         "R 1\n"
+         "D 2\n"
+         "L 2\n"
+         "D 1\n"
+         "L 2\n"
+         "U 1\n"
+         "L 1\n"
+         "R 2\n"
+         "U 2\n"
+         "L 2\n"
+         "D 1\n"
+         "L 1\n"
+         "D 1\n"
+         "L 2\n"
+         "R 1\n"
+         "D 2\n"
+         "U 2\n"
+         "D 2\n"
+         "R 1\n"
+         "L 2\n"
+         "R 2\n"
+         "U 1\n"
+         "R 1\n"
+         "L 2\n"
+         "U 2\n"
+         "D 1\n"
+         "U 2\n"
+         "L 1\n"
+         "R 2\n"
+         "D 2\n"
+         "L 2\n"
+         "U 1\n"
+         "L 1\n"
+         "D 2\n"
+         "R 2\n"
+         "U 1\n"
+         "R 2\n"
+         "U 2\n"
+         "D 2\n"
+         "L 1\n"
+         "U 1\n"
+         "D 1\n"
+         "R 1\n"
+         "U 1\n"
+         "D 2\n"
+         "L 1\n"
+         "D 2\n"
+         "U 2\n"
+         "D 1\n"
+         "U 2\n"
+         "L 2\n"
+         "D 2\n"
+         "R 2\n"
+         "D 1\n"
+         "R 2\n"
+         "L 2\n"
+         "U 1\n"
+         "R 1\n"
+         "L 1\n"
+         "U 2\n"
+         "D 2\n"
+         "U 2\n"
+         "L 2\n"
+         "U 2\n"
+         "R 2\n"
+         "L 1\n"
+         "U 1\n"
+         "D 1\n"
+         "L 2\n"
+         "D 2\n"
+         "R 2\n"
+         "U 3\n"
+         "R 3\n"
+         "U 2\n"
+         "L 1\n"
+         "U 1\n"
+         "L 1\n"
+         "U 2\n"
+         "R 2\n"
+         "U 2\n"
+         "D 1\n"
+         "R 3\n"
+         "D 1\n"
+         "L 3\n"
+         "R 2\n"
+         "D 3\n"
+         "U 1\n"
+         "D 2\n"
+         "L 2\n"
+         "D 2\n"
+         "L 1\n"
+         "R 3\n"
+         "D 1\n"
+         "R 1\n"
+         "L 3\n"
+         "R 1\n"
+         "U 2\n"
+         "D 2\n"
+         "L 3\n"
+         "R 1\n"
+         "U 2\n"
+         "L 2\n"
+         "R 3\n"
+         "D 1\n"
+         "U 2\n"
+         "D 2\n"
+         "L 3\n"
+         "D 1\n"
+         "R 3\n"
+         "U 3\n"
+         "R 2\n"
+         "U 3\n"
+         "D 1\n"
+         "U 2\n"
+         "R 2\n"
+         "U 3\n"
+         "R 1\n"
+         "U 2\n"
+         "L 3\n"
+         "D 3\n"
+         "U 1\n"
+         "D 2\n"
+         "U 2\n"
+         "L 2\n"
+         "R 1\n"
+         "L 3\n"
+         "R 1\n"
+         "L 3\n"
+         "U 2\n"
+         "R 1\n"
+         "U 1\n"
+         "L 1\n"
+         "R 2\n"
+         "U 2\n"
+         "D 1\n"
+         "R 3\n"
+         "D 3\n"
+         "L 2\n"
+         "D 2\n"
+         "R 2\n"
+         "L 3\n"
+         "R 1\n"
+         "L 1\n"
+         "R 3\n"
+         "L 3\n"
+         "D 2\n"
+         "U 1\n"
+         "L 2\n"
+         "U 3\n"
+         "R 1\n"
+         "L 1\n"
+         "R 1\n"
+         "L 1\n"
+         "D 1\n"
+         "R 2\n"
+         "D 2\n"
+         "U 1\n"
+         "L 1\n"
+         "D 3\n"
+         "R 2\n"
+         "D 1\n"
+         "L 3\n"
+         "R 3\n"
+         "U 3\n"
+         "D 2\n"
+         "U 1\n"
+         "D 2\n"
+         "R 1\n"
+         "U 1\n"
+         "R 2\n"
+         "D 2\n"
+         "U 1\n"
+         "D 3\n"
+         "R 2\n"
+         "U 3\n"
+         "D 3\n"
+         "R 1\n"
+         "D 1\n"
+         "U 2\n"
+         "D 1\n"
+         "U 2\n"
+         "D 3\n"
+         "U 3\n"
+         "D 2\n"
+         "R 4\n"
+         "D 2\n"
+         "R 1\n"
+         "L 4\n"
+         "U 2\n"
+         "D 1\n"
+         "U 2\n"
+         "R 2\n"
+         "U 1\n"
+         "R 1\n"
+         "U 4\n"
+         "L 4\n"
+         "U 3\n"
+         "L 2\n"
+         "U 3\n"
+         "D 3\n"
+         "R 2\n"
+         "L 2\n"
+         "U 3\n"
+         "D 1\n"
+         "L 3\n"
+         "U 1\n"
+         "L 1\n"
+         "U 2\n"
+         "L 4\n"
+         "R 3\n"
+         "U 3\n"
+         "D 1\n"
+         "L 3\n"
+         "R 4\n"
+         "D 4\n"
+         "L 3\n"
+         "R 4\n"
+         "D 1\n"
+         "R 4\n"
+         "D 1\n"
+         "L 3\n"
+         "D 1\n"
+         "L 1\n"
+         "U 2\n"
+         "D 1\n"
+         "U 4\n"
+         "R 1\n"
+         "D 2\n"
+         "U 2\n"
+         "D 4\n"
+         "U 3\n"
+         "D 2\n"
+         "L 4\n"
+         "R 3\n"
+         "U 3\n"
+         "R 2\n"
+         "D 3\n"
+         "U 4\n"
+         "R 4\n"
+         "L 3\n"
+         "U 2\n"
+         "D 2\n"
+         "U 2\n"
+         "L 1\n"
+         "R 3\n"
+         "D 4\n"
+         "U 1\n"
+         "D 2\n"
+         "U 1\n"
+         "R 2\n"
+         "L 2\n"
+         "R 3\n"
+         "U 4\n"
+         "D 1\n"
+         "L 1\n"
+         "R 1\n"
+         "D 4\n"
+         "L 4\n"
+         "D 4\n"
+         "L 2\n"
+         "R 3\n"
+         "L 1\n"
+         "U 2\n"
+         "L 1\n"
+         "D 3\n"
+         "U 2\n"
+         "R 2\n"
+         "D 1\n"
+         "R 1\n"
+         "U 1\n"
+         "L 2\n"
+         "D 2\n"
+         "U 3\n"
+         "L 3\n"
+         "U 1\n"
+         "L 1\n"
+         "D 1\n"
+         "L 3\n"
+         "R 4\n"
+         "L 2\n"
+         "R 1\n"
+         "U 2\n"
+         "D 4\n"
+         "U 2\n"
+         "L 4\n"
+         "U 4\n"
+         "R 1\n"
+         "D 3\n"
+         "U 2\n"
+         "L 2\n"
+         "D 4\n"
+         "L 2\n"
+         "U 1\n"
+         "D 5\n"
+         "L 5\n"
+         "R 1\n"
+         "D 1\n"
+         "L 4\n"
+         "D 5\n"
+         "R 4\n"
+         "U 2\n"
+         "R 2\n"
+         "L 2\n"
+         "D 3\n"
+         "U 4\n"
+         "L 1\n"
+         "U 1\n"
+         "R 2\n"
+         "L 4\n"
+         "R 3\n"
+         "U 1\n"
+         "D 5\n"
+         "U 4\n"
+         "D 2\n"
+         "R 3\n"
+         "L 1\n"
+         "D 4\n"
+         "L 5\n"
+         "D 1\n"
+         "L 2\n"
+         "U 1\n"
+         "R 2\n"
+         "L 2\n"
+         "R 1\n"
+         "L 2\n"
+         "U 4\n"
+         "D 1\n"
+         "U 5\n"
+         "L 2\n"
+         "R 1\n"
+         "D 5\n"
+         "L 2\n"
+         "D 5\n"
+         "U 5\n"
+         "R 3\n"
+         "L 4\n"
+         "D 2\n"
+         "L 2\n"
+         "D 2\n"
+         "U 5\n"
+         "R 3\n"
+         "U 1\n"
+         "D 3\n"
+         "R 4\n"
+         "U 3\n"
+         "R 2\n"
+         "U 3\n"
+         "D 5\n"
+         "U 4\n"
+         "L 3\n"
+         "R 3\n"
+         "D 3\n"
+         "R 1\n"
+         "L 1\n"
+         "D 4\n"
+         "R 3\n"
+         "D 2\n"
+         "L 2\n"
+         "R 4\n"
+         "L 3\n"
+         "R 2\n"
+         "D 4\n"
+         "L 3\n"
+         "U 1\n"
+         "D 2\n"
+         "L 3\n"
+         "U 4\n"
+         "D 5\n"
+         "U 2\n"
+         "L 2\n"
+         "R 1\n"
+         "D 1\n"
+         "L 3\n"
+         "U 2\n"
+         "R 4\n"
+         "D 4\n"
+         "L 4\n"
+         "U 2\n"
+         "D 1\n"
+         "R 5\n"
+         "L 3\n"
+         "U 3\n"
+         "L 5\n"
+         "R 2\n"
+         "D 1\n"
+         "L 2\n"
+         "D 2\n"
+         "L 2\n"
+         "R 4\n"
+         "L 3\n"
+         "D 3\n"
+         "R 5\n"
+         "L 5\n"
+         "D 3\n"
+         "R 5\n"
+         "L 2\n"
+         "R 1\n"
+         "D 4\n"
+         "L 2\n"
+         "D 1\n"
+         "U 2\n"
+         "D 4\n"
+         "U 5\n"
+         "L 4\n"
+         "D 2\n"
+         "U 2\n"
+         "D 4\n"
+         "U 6\n"
+         "L 3\n"
+         "U 1\n"
+         "D 2\n"
+         "R 1\n"
+         "U 5\n"
+         "D 2\n"
+         "L 4\n"
+         "R 6\n"
+         "U 2\n"
+         "L 2\n"
+         "D 1\n"
+         "R 5\n"
+         "U 2\n"
+         "D 5\n"
+         "R 5\n"
+         "U 4\n"
+         "D 6\n"
+         "U 1\n"
+         "D 2\n"
+         "U 5\n"
+         "D 5\n"
+         "L 6\n"
+         "U 5\n"
+         "D 6\n"
+         "L 4\n"
+         "U 6\n"
+         "R 5\n"
+         "L 6\n"
+         "D 5\n"
+         "L 5\n"
+         "D 6\n"
+         "U 5\n"
+         "L 6\n"
+         "U 5\n"
+         "L 3\n"
+         "R 2\n"
+         "D 1\n"
+         "R 1\n"
+         "L 6\n"
+         "U 5\n"
+         "D 1\n"
+         "R 2\n"
+         "D 2\n"
+         "L 2\n"
+         "D 6\n"
+         "U 6\n"
+         "L 1\n"
+         "R 6\n"
+         "L 3\n"
+         "D 6\n"
+         "R 3\n"
+         "D 2\n"
+         "U 5\n"
+         "D 4\n"
+         "L 2\n"
+         "R 3\n"
+         "D 5\n"
+         "U 1\n"
+         "D 3\n"
+         "R 6\n"
+         "U 4\n"
+         "L 4\n"
+         "U 4\n"
+         "D 1\n"
+         "R 4\n"
+         "U 2\n"
+         "R 6\n"
+         "L 1\n"
+         "D 3\n"
+         "R 3\n"
+         "U 1\n"
+         "L 6\n"
+         "R 4\n"
+         "D 2\n"
+         "U 2\n"
+         "D 6\n"
+         "L 4\n"
+         "R 6\n"
+         "U 3\n"
+         "R 3\n"
+         "D 3\n"
+         "L 1\n"
+         "R 5\n"
+         "U 4\n"
+         "R 6\n"
+         "L 2\n"
+         "R 1\n"
+         "U 1\n"
+         "L 6\n"
+         "D 6\n"
+         "L 3\n"
+         "R 2\n"
+         "D 6\n"
+         "R 6\n"
+         "L 3\n"
+         "U 3\n"
+         "D 1\n"
+         "L 3\n"
+         "D 1\n"
+         "R 4\n"
+         "D 3\n"
+         "U 3\n"
+         "D 2\n"
+         "U 6\n"
+         "D 4\n"
+         "L 4\n"
+         "R 5\n"
+         "D 1\n"
+         "L 7\n"
+         "R 3\n"
+         "L 5\n"
+         "R 3\n"
+         "U 6\n"
+         "L 5\n"
+         "U 3\n"
+         "D 1\n"
+         "L 5\n"
+         "R 4\n"
+         "L 1\n"
+         "U 6\n"
+         "L 1\n"
+         "R 4\n"
+         "D 3\n"
+         "R 7\n"
+         "D 7\n"
+         "R 4\n"
+         "L 4\n"
+         "D 4\n"
+         "L 2\n"
+         "R 1\n"
+         "U 7\n"
+         "L 1\n"
+         "D 7\n"
+         "L 1\n"
+         "D 1\n"
+         "R 5\n"
+         "D 5\n"
+         "U 2\n"
+         "L 6\n"
+         "R 2\n"
+         "U 5\n"
+         "L 7\n"
+         "D 7\n"
+         "L 7\n"
+         "U 1\n"
+         "L 6\n"
+         "D 2\n"
+         "L 6\n"
+         "U 2\n"
+         "R 4\n"
+         "U 7\n"
+         "D 2\n"
+         "L 6\n"
+         "U 7\n"
+         "R 5\n"
+         "U 7\n"
+         "L 7\n"
+         "D 2\n"
+         "R 4\n"
+         "U 6\n"
+         "R 1\n"
+         "D 3\n"
+         "R 2\n"
+         "L 5\n"
+         "R 5\n"
+         "U 3\n"
+         "L 5\n"
+         "U 4\n"
+         "D 4\n"
+         "L 5\n"
+         "R 1\n"
+         "L 4\n"
+         "D 5\n"
+         "U 1\n"
+         "L 4\n"
+         "D 7\n"
+         "R 6\n"
+         "D 7\n"
+         "U 7\n"
+         "D 4\n"
+         "R 1\n"
+         "D 2\n"
+         "L 5\n"
+         "R 4\n"
+         "D 3\n"
+         "U 2\n"
+         "D 4\n"
+         "R 3\n"
+         "L 4\n"
+         "R 4\n"
+         "U 3\n"
+         "D 7\n"
+         "R 2\n"
+         "L 1\n"
+         "D 5\n"
+         "R 3\n"
+         "D 2\n"
+         "L 7\n"
+         "R 3\n"
+         "D 5\n"
+         "R 1\n"
+         "D 2\n"
+         "R 6\n"
+         "L 5\n"
+         "R 7\n"
+         "L 5\n"
+         "U 2\n"
+         "R 3\n"
+         "D 6\n"
+         "L 1\n"
+         "D 4\n"
+         "R 2\n"
+         "U 1\n"
+         "D 1\n"
+         "R 6\n"
+         "D 5\n"
+         "L 3\n"
+         "R 7\n"
+         "L 3\n"
+         "U 5\n"
+         "R 5\n"
+         "U 3\n"
+         "D 8\n"
+         "L 2\n"
+         "U 6\n"
+         "L 8\n"
+         "U 4\n"
+         "D 5\n"
+         "R 7\n"
+         "U 7\n"
+         "L 4\n"
+         "R 3\n"
+         "L 3\n"
+         "D 1\n"
+         "L 6\n"
+         "R 5\n"
+         "L 6\n"
+         "R 6\n"
+         "L 8\n"
+         "D 3\n"
+         "U 2\n"
+         "L 7\n"
+         "R 2\n"
+         "U 8\n"
+         "D 3\n"
+         "L 4\n"
+         "R 3\n"
+         "U 8\n"
+         "R 3\n"
+         "U 6\n"
+         "D 8\n"
+         "R 2\n"
+         "L 8\n"
+         "U 2\n"
+         "R 5\n"
+         "D 1\n"
+         "U 1\n"
+         "D 8\n"
+         "R 4\n"
+         "L 7\n"
+         "D 2\n"
+         "U 3\n"
+         "D 1\n"
+         "R 2\n"
+         "U 1\n"
+         "L 5\n"
+         "U 4\n"
+         "R 5\n"
+         "D 6\n"
+         "L 3\n"
+         "U 1\n"
+         "D 6\n"
+         "U 6\n"
+         "D 6\n"
+         "U 2\n"
+         "L 6\n"
+         "U 6\n"
+         "D 5\n"
+         "L 1\n"
+         "D 7\n"
+         "U 2\n"
+         "D 4\n"
+         "L 5\n"
+         "R 4\n"
+         "D 2\n"
+         "L 6\n"
+         "U 2\n"
+         "R 1\n"
+         "U 4\n"
+         "L 3\n"
+         "D 3\n"
+         "R 6\n"
+         "D 4\n"
+         "R 3\n"
+         "L 2\n"
+         "U 8\n"
+         "R 5\n"
+         "L 2\n"
+         "U 3\n"
+         "R 7\n"
+         "U 7\n"
+         "R 4\n"
+         "U 5\n"
+         "D 1\n"
+         "L 8\n"
+         "R 8\n"
+         "U 3\n"
+         "L 1\n"
+         "U 7\n"
+         "L 7\n"
+         "D 2\n"
+         "L 8\n"
+         "D 7\n"
+         "R 7\n"
+         "L 3\n"
+         "R 4\n"
+         "L 3\n"
+         "R 4\n"
+         "U 6\n"
+         "L 5\n"
+         "R 4\n"
+         "U 7\n"
+         "L 3\n"
+         "D 3\n"
+         "R 2\n"
+         "L 6\n"
+         "U 3\n"
+         "L 1\n"
+         "R 8\n"
+         "L 6\n"
+         "D 7\n"
+         "L 8\n"
+         "R 7\n"
+         "L 6\n"
+         "D 2\n"
+         "U 2\n"
+         "R 3\n"
+         "L 9\n"
+         "R 7\n"
+         "D 1\n"
+         "R 9\n"
+         "L 2\n"
+         "D 5\n"
+         "U 7\n"
+         "D 5\n"
+         "U 4\n"
+         "L 4\n"
+         "D 5\n"
+         "L 6\n"
+         "R 3\n"
+         "U 2\n"
+         "R 6\n"
+         "D 3\n"
+         "U 2\n"
+         "R 1\n"
+         "D 5\n"
+         "U 6\n"
+         "L 8\n"
+         "D 8\n"
+         "U 9\n"
+         "L 2\n"
+         "U 5\n"
+         "L 2\n"
+         "U 3\n"
+         "L 4\n"
+         "U 6\n"
+         "L 3\n"
+         "D 2\n"
+         "R 5\n"
+         "L 3\n"
+         "R 8\n"
+         "D 8\n"
+         "U 8\n"
+         "R 4\n"
+         "U 2\n"
+         "D 3\n"
+         "L 9\n"
+         "U 2\n"
+         "L 4\n"
+         "U 5\n"
+         "R 5\n"
+         "L 7\n"
+         "U 9\n"
+         "L 7\n"
+         "U 5\n"
+         "L 6\n"
+         "U 6\n"
+         "R 5\n"
+         "L 9\n"
+         "U 9\n"
+         "R 3\n"
+         "D 8\n"
+         "U 8\n"
+         "R 9\n"
+         "D 4\n"
+         "U 9\n"
+         "D 9\n"
+         "L 3\n"
+         "R 2\n"
+         "D 3\n"
+         "U 1\n"
+         "R 7\n"
+         "D 5\n"
+         "U 9\n"
+         "D 7\n"
+         "U 3\n"
+         "D 8\n"
+         "L 9\n"
+         "U 1\n"
+         "R 6\n"
+         "L 8\n"
+         "R 2\n"
+         "L 7\n"
+         "D 3\n"
+         "U 4\n"
+         "D 9\n"
+         "L 1\n"
+         "R 4\n"
+         "D 9\n"
+         "U 1\n"
+         "D 1\n"
+         "L 8\n"
+         "U 2\n"
+         "D 8\n"
+         "U 1\n"
+         "L 1\n"
+         "U 2\n"
+         "D 7\n"
+         "L 1\n"
+         "D 2\n"
+         "L 6\n"
+         "U 2\n"
+         "D 8\n"
+         "R 7\n"
+         "L 4\n"
+         "U 5\n"
+         "R 2\n"
+         "U 8\n"
+         "D 6\n"
+         "R 3\n"
+         "D 8\n"
+         "R 4\n"
+         "L 5\n"
+         "U 4\n"
+         "L 1\n"
+         "U 6\n"
+         "L 10\n"
+         "D 7\n"
+         "R 5\n"
+         "D 9\n"
+         "U 6\n"
+         "D 5\n"
+         "L 9\n"
+         "U 2\n"
+         "R 3\n"
+         "U 7\n"
+         "R 7\n"
+         "D 1\n"
+         "R 4\n"
+         "U 10\n"
+         "D 4\n"
+         "R 7\n"
+         "L 7\n"
+         "D 3\n"
+         "R 5\n"
+         "U 5\n"
+         "D 6\n"
+         "U 2\n"
+         "D 2\n"
+         "U 6\n"
+         "D 5\n"
+         "L 6\n"
+         "U 10\n"
+         "D 7\n"
+         "R 6\n"
+         "L 9\n"
+         "R 7\n"
+         "L 7\n"
+         "U 6\n"
+         "D 6\n"
+         "R 8\n"
+         "D 8\n"
+         "R 4\n"
+         "D 4\n"
+         "L 1\n"
+         "R 3\n"
+         "U 5\n"
+         "R 2\n"
+         "L 9\n"
+         "R 8\n"
+         "L 3\n"
+         "U 3\n"
+         "R 6\n"
+         "U 2\n"
+         "L 6\n"
+         "U 4\n"
+         "D 5\n"
+         "R 6\n"
+         "U 5\n"
+         "R 8\n"
+         "U 10\n"
+         "L 5\n"
+         "U 2\n"
+         "R 1\n"
+         "D 9\n"
+         "U 8\n"
+         "D 2\n"
+         "U 9\n"
+         "L 7\n"
+         "R 2\n"
+         "D 10\n"
+         "L 7\n"
+         "D 3\n"
+         "R 4\n"
+         "L 2\n"
+         "U 2\n"
+         "R 7\n"
+         "U 6\n"
+         "D 9\n"
+         "U 8\n"
+         "L 7\n"
+         "D 4\n"
+         "U 4\n"
+         "R 6\n"
+         "U 3\n"
+         "D 9\n"
+         "L 1\n"
+         "U 9\n"
+         "R 9\n"
+         "D 4\n"
+         "L 9\n"
+         "R 6\n"
+         "L 6\n"
+         "U 9\n"
+         "L 10\n"
+         "R 1\n"
+         "L 5\n"
+         "R 1\n"
+         "L 2\n"
+         "D 8\n"
+         "U 2\n"
+         "L 1\n"
+         "R 4\n"
+         "U 9\n"
+         "L 3\n"
+         "D 9\n"
+         "L 6\n"
+         "R 8\n"
+         "U 6\n"
+         "R 8\n"
+         "L 5\n"
+         "D 2\n"
+         "R 5\n"
+         "U 8\n"
+         "R 2\n"
+         "L 9\n"
+         "R 3\n"
+         "U 3\n"
+         "R 8\n"
+         "U 5\n"
+         "D 5\n"
+         "U 8\n"
+         "D 10\n"
+         "R 4\n"
+         "L 5\n"
+         "U 2\n"
+         "L 4\n"
+         "D 2\n"
+         "L 1\n"
+         "D 3\n"
+         "U 8\n"
+         "D 3\n"
+         "U 4\n"
+         "L 6\n"
+         "D 6\n"
+         "U 9\n"
+         "L 5\n"
+         "D 5\n"
+         "U 10\n"
+         "R 9\n"
+         "D 2\n"
+         "U 11\n"
+         "D 4\n"
+         "L 8\n"
+         "D 8\n"
+         "L 4\n"
+         "U 6\n"
+         "D 3\n"
+         "R 9\n"
+         "U 11\n"
+         "L 7\n"
+         "U 7\n"
+         "D 9\n"
+         "U 10\n"
+         "D 9\n"
+         "U 2\n"
+         "R 2\n"
+         "U 7\n"
+         "R 2\n"
+         "U 10\n"
+         "R 7\n"
+         "L 7\n"
+         "U 6\n"
+         "D 10\n"
+         "L 5\n"
+         "U 4\n"
+         "D 4\n"
+         "L 3\n"
+         "D 3\n"
+         "L 2\n"
+         "R 5\n"
+         "D 5\n"
+         "U 10\n"
+         "R 3\n"
+         "U 8\n"
+         "L 10\n"
+         "U 5\n"
+         "R 3\n"
+         "L 9\n"
+         "R 5\n"
+         "D 1\n"
+         "L 8\n"
+         "R 8\n"
+         "D 10\n"
+         "L 6\n"
+         "D 5\n"
+         "L 6\n"
+         "R 7\n"
+         "D 10\n"
+         "U 3\n"
+         "D 9\n"
+         "L 8\n"
+         "D 5\n"
+         "U 10\n"
+         "L 5\n"
+         "U 4\n"
+         "D 7\n"
+         "U 11\n"
+         "L 6\n"
+         "U 6\n"
+         "L 9\n"
+         "R 6\n"
+         "U 8\n"
+         "R 8\n"
+         "L 6\n"
+         "U 8\n"
+         "L 8\n"
+         "U 9\n"
+         "D 4\n"
+         "L 10\n"
+         "D 6\n"
+         "R 5\n"
+         "D 8\n"
+         "L 7\n"
+         "D 6\n"
+         "R 4\n"
+         "D 11\n"
+         "U 5\n"
+         "D 4\n"
+         "R 7\n"
+         "U 11\n"
+         "L 5\n"
+         "U 7\n"
+         "D 7\n"
+         "L 11\n"
+         "R 9\n"
+         "U 1\n"
+         "D 11\n"
+         "R 8\n"
+         "L 4\n"
+         "R 2\n"
+         "D 6\n"
+         "L 4\n"
+         "R 8\n"
+         "D 9\n"
+         "R 11\n"
+         "U 2\n"
+         "L 9\n"
+         "U 6\n"
+         "R 10\n"
+         "L 11\n"
+         "R 9\n"
+         "D 10\n"
+         "U 11\n"
+         "L 6\n"
+         "U 3\n"
+         "L 2\n"
+         "R 11\n"
+         "L 2\n"
+         "D 2\n"
+         "L 5\n"
+         "D 6\n"
+         "U 11\n"
+         "D 10\n"
+         "U 8\n"
+         "L 3\n"
+         "R 9\n"
+         "D 5\n"
+         "R 9\n"
+         "D 6\n"
+         "R 2\n"
+         "U 2\n"
+         "D 11\n"
+         "R 6\n"
+         "U 9\n"
+         "R 12\n"
+         "U 6\n"
+         "L 1\n"
+         "D 2\n"
+         "L 5\n"
+         "D 9\n"
+         "L 5\n"
+         "D 4\n"
+         "U 10\n"
+         "L 12\n"
+         "U 6\n"
+         "R 6\n"
+         "U 4\n"
+         "L 4\n"
+         "U 1\n"
+         "L 4\n"
+         "R 12\n"
+         "L 11\n"
+         "R 3\n"
+         "U 10\n"
+         "L 4\n"
+         "R 11\n"
+         "D 9\n"
+         "L 9\n"
+         "U 11\n"
+         "D 1\n"
+         "L 1\n"
+         "R 3\n"
+         "D 7\n"
+         "U 6\n"
+         "R 4\n"
+         "D 3\n"
+         "L 8\n"
+         "U 5\n"
+         "R 6\n"
+         "L 9\n"
+         "U 4\n"
+         "L 6\n"
+         "D 6\n"
+         "U 6\n"
+         "L 5\n"
+         "R 7\n"
+         "D 10\n"
+         "R 5\n"
+         "U 8\n"
+         "L 5\n"
+         "R 6\n"
+         "U 10\n"
+         "R 2\n"
+         "U 2\n"
+         "R 10\n"
+         "U 12\n"
+         "D 12\n"
+         "L 7\n"
+         "U 3\n"
+         "R 1\n"
+         "L 6\n"
+         "D 6\n"
+         "L 5\n"
+         "D 8\n"
+         "U 8\n"
+         "D 11\n"
+         "L 2\n"
+         "D 10\n"
+         "L 6\n"
+         "R 10\n"
+         "L 9\n"
+         "D 5\n"
+         "R 1\n"
+         "D 7\n"
+         "R 6\n"
+         "U 10\n"
+         "D 8\n"
+         "R 9\n"
+         "D 11\n"
+         "R 8\n"
+         "U 7\n"
+         "R 10\n"
+         "L 1\n"
+         "U 3\n"
+         "R 11\n"
+         "D 11\n"
+         "L 8\n"
+         "D 13\n"
+         "U 6\n"
+         "D 12\n"
+         "U 2\n"
+         "L 2\n"
+         "U 11\n"
+         "D 1\n"
+         "R 3\n"
+         "U 8\n"
+         "R 4\n"
+         "L 3\n"
+         "U 7\n"
+         "D 4\n"
+         "L 3\n"
+         "R 2\n"
+         "L 3\n"
+         "R 6\n"
+         "D 13\n"
+         "L 1\n"
+         "R 8\n"
+         "L 5\n"
+         "R 11\n"
+         "D 7\n"
+         "L 8\n"
+         "D 12\n"
+         "U 12\n"
+         "D 3\n"
+         "L 6\n"
+         "U 1\n"
+         "R 7\n"
+         "U 2\n"
+         "D 9\n"
+         "L 3\n"
+         "U 11\n"
+         "R 2\n"
+         "U 6\n"
+         "D 11\n"
+         "L 10\n"
+         "D 4\n"
+         "U 13\n"
+         "D 1\n"
+         "R 11\n"
+         "L 3\n"
+         "U 2\n"
+         "D 7\n"
+         "R 8\n"
+         "D 10\n"
+         "R 12\n"
+         "D 4\n"
+         "R 1\n"
+         "U 5\n"
+         "R 5\n"
+         "U 2\n"
+         "R 12\n"
+         "D 3\n"
+         "L 8\n"
+         "D 11\n"
+         "U 3\n"
+         "R 1\n"
+         "U 2\n"
+         "R 3\n"
+         "D 5\n"
+         "U 8\n"
+         "D 4\n"
+         "R 6\n"
+         "L 2\n"
+         "R 4\n"
+         "U 6\n"
+         "D 12\n"
+         "L 7\n"
+         "U 2\n"
+         "L 8\n"
+         "U 8\n"
+         "R 13\n"
+         "U 10\n"
+         "L 11\n"
+         "R 1\n"
+         "D 4\n"
+         "R 1\n"
+         "U 5\n"
+         "L 9\n"
+         "D 9\n"
+         "U 11\n"
+         "D 13\n"
+         "U 9\n"
+         "R 2\n"
+         "D 9\n"
+         "U 6\n"
+         "R 1\n"
+         "D 12\n"
+         "R 3\n"
+         "U 1\n"
+         "R 13\n"
+         "U 11\n"
+         "L 6\n"
+         "R 3\n"
+         "D 11\n"
+         "U 13\n"
+         "R 2\n"
+         "U 8\n"
+         "L 11\n"
+         "R 12\n"
+         "D 7\n"
+         "L 11\n"
+         "U 10\n"
+         "D 2\n"
+         "L 9\n"
+         "R 1\n"
+         "L 9\n"
+         "R 10\n"
+         "D 5\n"
+         "U 7\n"
+         "R 6\n"
+         "D 11\n"
+         "U 11\n"
+         "L 7\n"
+         "R 6\n"
+         "L 12\n"
+         "D 12\n"
+         "L 5\n"
+         "R 3\n"
+         "L 12\n"
+         "R 4\n"
+         "L 7\n"
+         "D 4\n"
+         "U 11\n"
+         "R 2\n"
+         "L 9\n"
+         "R 11\n"
+         "D 14\n"
+         "L 7\n"
+         "R 10\n"
+         "U 1\n"
+         "D 2\n"
+         "L 7\n"
+         "D 2\n"
+         "U 12\n"
+         "R 2\n"
+         "D 6\n"
+         "R 12\n"
+         "L 7\n"
+         "D 4\n"
+         "U 13\n"
+         "L 11\n"
+         "D 13\n"
+         "R 11\n"
+         "D 5\n"
+         "U 14\n"
+         "R 1\n"
+         "L 8\n"
+         "U 10\n"
+         "R 3\n"
+         "D 3\n"
+         "L 13\n"
+         "R 6\n"
+         "U 5\n"
+         "D 4\n"
+         "L 12\n"
+         "D 2\n"
+         "R 9\n"
+         "D 1\n"
+         "R 7\n"
+         "D 10\n"
+         "U 14\n"
+         "L 12\n"
+         "R 11\n"
+         "U 6\n"
+         "D 11\n"
+         "L 8\n"
+         "D 2\n"
+         "U 4\n"
+         "L 1\n"
+         "R 14\n"
+         "D 8\n"
+         "U 11\n"
+         "L 13\n"
+         "U 1\n"
+         "D 2\n"
+         "R 14\n"
+         "D 10\n"
+         "R 4\n"
+         "L 1\n"
+         "R 10\n"
+         "U 9\n"
+         "D 8\n"
+         "L 10\n"
+         "R 10\n"
+         "U 6\n"
+         "D 14\n"
+         "L 10\n"
+         "U 13\n"
+         "R 8\n"
+         "L 3\n"
+         "D 6\n"
+         "L 13\n"
+         "D 11\n"
+         "U 14\n"
+         "R 13\n"
+         "U 12\n"
+         "L 2\n"
+         "D 6\n"
+         "U 13\n"
+         "L 13\n"
+         "U 12\n"
+         "D 1\n"
+         "U 10\n"
+         "L 5\n"
+         "U 3\n"
+         "R 4\n"
+         "D 10\n"
+         "L 14\n"
+         "U 8\n"
+         "R 7\n"
+         "U 6\n"
+         "R 13\n"
+         "D 14\n"
+         "L 5\n"
+         "U 6\n"
+         "L 1\n"
+         "D 7\n"
+         "R 2\n"
+         "D 14\n"
+         "U 13\n"
+         "R 3\n"
+         "U 5\n"
+         "R 13\n"
+         "L 2\n"
+         "D 12\n"
+         "U 1\n"
+         "R 11\n"
+         "L 7\n"
+         "U 2\n"
+         "D 11\n"
+         "L 2\n"
+         "R 7\n"
+         "D 7\n"
+         "L 1\n"
+         "U 10\n"
+         "L 12\n"
+         "R 6\n"
+         "L 7\n"
+         "R 4\n"
+         "D 3\n"
+         "R 3\n"
+         "U 15\n"
+         "D 13\n"
+         "U 6\n"
+         "D 6\n"
+         "U 3\n"
+         "R 14\n"
+         "U 10\n"
+         "L 1\n"
+         "R 8\n"
+         "D 7\n"
+         "R 13\n"
+         "D 10\n"
+         "R 9\n"
+         "U 11\n"
+         "D 11\n"
+         "U 4\n"
+         "D 11\n"
+         "U 10\n"
+         "D 3\n"
+         "R 12\n"
+         "U 5\n"
+         "D 1\n"
+         "L 4\n"
+         "R 10\n"
+         "D 11\n"
+         "U 2\n"
+         "D 9\n"
+         "U 12\n"
+         "D 9\n"
+         "R 3\n"
+         "D 6\n"
+         "U 4\n"
+         "L 14\n"
+         "R 15\n"
+         "U 4\n"
+         "D 11\n"
+         "R 13\n"
+         "L 3\n"
+         "U 12\n"
+         "R 5\n"
+         "U 11\n"
+         "L 11\n"
+         "D 6\n"
+         "U 15\n"
+         "R 5\n"
+         "U 5\n"
+         "R 1\n"
+         "D 8\n"
+         "U 4\n"
+         "L 12\n"
+         "D 2\n"
+         "U 9\n"
+         "L 15\n"
+         "D 6\n"
+         "R 12\n"
+         "L 10\n"
+         "D 14\n"
+         "R 14\n"
+         "D 8\n"
+         "L 2\n"
+         "D 11\n"
+         "U 13\n"
+         "L 1\n"
+         "R 8\n"
+         "D 8\n"
+         "L 5\n"
+         "D 14\n"
+         "R 10\n"
+         "U 13\n"
+         "R 10\n"
+         "L 4\n"
+         "R 5\n"
+         "L 6\n"
+         "U 7\n"
+         "R 7\n"
+         "L 5\n"
+         "D 3\n"
+         "L 15\n"
+         "U 10\n"
+         "D 6\n"
+         "L 1\n"
+         "R 15\n"
+         "D 11\n"
+         "U 13\n"
+         "R 12\n"
+         "U 4\n"
+         "D 8\n"
+         "L 4\n"
+         "D 11\n"
+         "R 12\n"
+         "L 5\n"
+         "D 2\n"
+         "U 8\n"
+         "D 8\n"
+         "L 10\n"
+         "U 16\n"
+         "L 15\n"
+         "D 9\n"
+         "U 10\n"
+         "R 16\n"
+         "L 7\n"
+         "R 7\n"
+         "U 9\n"
+         "D 12\n"
+         "L 16\n"
+         "U 12\n"
+         "R 13\n"
+         "U 5\n"
+         "R 5\n"
+         "U 8\n"
+         "D 8\n"
+         "U 15\n"
+         "L 4\n"
+         "R 2\n"
+         "L 2\n"
+         "U 10\n"
+         "D 2\n"
+         "U 6\n"
+         "L 15\n"
+         "R 11\n"
+         "D 2\n"
+         "L 5\n"
+         "R 16\n"
+         "L 13\n"
+         "R 14\n"
+         "U 5\n"
+         "R 2\n"
+         "L 11\n"
+         "U 9\n"
+         "D 4\n"
+         "L 14\n"
+         "U 6\n"
+         "D 6\n"
+         "U 7\n"
+         "D 2\n"
+         "U 5\n"
+         "D 6\n"
+         "U 10\n"
+         "D 5\n"
+         "L 11\n"
+         "R 13\n"
+         "L 9\n"
+         "U 5\n"
+         "R 7\n"
+         "D 13\n"
+         "U 12\n"
+         "L 6\n"
+         "U 14\n"
+         "R 15\n"
+         "L 3\n"
+         "U 4\n"
+         "D 4\n"
+         "U 8\n"
+         "R 1\n"
+         "U 12\n"
+         "L 7\n"
+         "U 2\n"
+         "L 11\n"
+         "R 10\n"
+         "D 6\n"
+         "R 9\n"
+         "L 6\n"
+         "R 2\n"
+         "L 16\n"
+         "U 8\n"
+         "D 16\n"
+         "R 8\n"
+         "U 7\n"
+         "D 7\n"
+         "U 12\n"
+         "D 13\n"
+         "L 14\n"
+         "R 3\n"
+         "U 7\n"
+         "L 14\n"
+         "R 14\n"
+         "U 4\n"
+         "D 15\n"
+         "R 13\n"
+         "D 2\n"
+         "R 9\n"
+         "D 14\n"
+         "U 15\n"
+         "D 8\n"
+         "L 8\n"
+         "R 10\n"
+         "U 4\n"
+         "D 5\n"
+         "L 16\n"
+         "D 17\n"
+         "R 14\n"
+         "U 10\n"
+         "D 15\n"
+         "L 15\n"
+         "R 13\n"
+         "L 17\n"
+         "U 12\n"
+         "R 1\n"
+         "D 8\n"
+         "U 2\n"
+         "R 11\n"
+         "U 8\n"
+         "D 9\n"
+         "R 6\n"
+         "U 10\n"
+         "D 3\n"
+         "L 7\n"
+         "R 4\n"
+         "L 15\n"
+         "U 14\n"
+         "L 9\n"
+         "R 15\n"
+         "U 9\n"
+         "D 5\n"
+         "U 4\n"
+         "D 10\n"
+         "R 13\n"
+         "U 9\n"
+         "D 5\n"
+         "R 12\n"
+         "D 6\n"
+         "U 7\n"
+         "D 8\n"
+         "L 7\n"
+         "U 13\n"
+         "D 5\n"
+         "R 4\n"
+         "L 10\n"
+         "D 16\n"
+         "L 11\n"
+         "R 16\n"
+         "L 16\n"
+         "U 15\n"
+         "D 1\n"
+         "R 3\n"
+         "L 13\n"
+         "D 7\n"
+         "U 1\n"
+         "R 15\n"
+         "U 15\n"
+         "D 2\n"
+         "U 3\n"
+         "L 7\n"
+         "U 4\n"
+         "D 14\n"
+         "L 10\n"
+         "D 8\n"
+         "U 8\n"
+         "D 6\n"
+         "R 16\n"
+         "U 6\n"
+         "D 7\n"
+         "L 13\n"
+         "U 3\n"
+         "L 9\n"
+         "R 10\n"
+         "D 5\n"
+         "R 2\n"
+         "D 16\n"
+         "U 14\n"
+         "R 11\n"
+         "D 10\n"
+         "R 13\n"
+         "U 12\n"
+         "L 4\n"
+         "U 7\n"
+         "L 2\n"
+         "R 5\n"
+         "D 13\n"
+         "U 3\n"
+         "R 3\n"
+         "U 16\n"
+         "L 5\n"
+         "R 13\n"
+         "L 16\n"
+         "D 7\n"
+         "L 4\n"
+         "R 14\n"
+         "U 8\n"
+         "L 9\n"
+         "U 2\n"
+         "L 10\n"
+         "D 9\n"
+         "R 17\n"
+         "U 14\n"
+         "R 2\n"
+         "D 7\n"
+         "U 14\n"
+         "R 3\n"
+         "U 3\n"
+         "L 14\n"
+         "D 16\n"
+         "U 6\n"
+         "L 5\n"
+         "U 2\n"
+         "R 7\n"
+         "L 4\n"
+         "U 3\n"
+         "D 12\n"
+         "L 7\n"
+         "D 15\n"
+         "U 6\n"
+         "L 1\n"
+         "D 5\n"
+         "U 11\n"
+         "L 9\n"
+         "D 15\n"
+         "L 12\n"
+         "R 18\n"
+         "L 4\n"
+         "D 9\n"
+         "U 17\n"
+         "R 1\n"
+         "D 5\n"
+         "L 13\n"
+         "U 16\n"
+         "R 17\n"
+         "U 10\n"
+         "D 5\n"
+         "L 16\n"
+         "D 2\n"
+         "R 10\n"
+         "L 1\n"
+         "U 14\n"
+         "L 16\n"
+         "U 3\n"
+         "D 2\n"
+         "R 5\n"
+         "U 3\n"
+         "R 17\n"
+         "D 17\n"
+         "L 15\n"
+         "U 11\n"
+         "L 16\n"
+         "R 4\n"
+         "L 3\n"
+         "R 7\n"
+         "L 5\n"
+         "R 8\n"
+         "U 15\n"
+         "R 9\n"
+         "U 9\n"
+         "R 18\n"
+         "L 17\n"
+         "R 9\n"
+         "U 18\n"
+         "L 11\n"
+         "U 14\n"
+         "R 7\n"
+         "L 16\n"
+         "R 15\n"
+         "L 1\n"
+         "U 9\n"
+         "L 10\n"
+         "U 9\n"
+         "L 14\n"
+         "U 5\n"
+         "D 1\n"
+         "R 16\n"
+         "D 6\n"
+         "R 1\n"
+         "D 14\n"
+         "R 11\n"
+         "U 10\n"
+         "D 17\n"
+         "L 12\n"
+         "D 5\n"
+         "U 4\n"
+         "L 12\n"
+         "U 1\n"
+         "L 7\n"
+         "R 13\n"
+         "D 2\n"
+         "U 14\n"
+         "D 3\n"
+         "U 6\n"
+         "R 1\n"
+         "U 2\n"
+         "R 11\n"
+         "U 9\n"
+         "D 14\n"
+         "R 9\n"
+         "U 14\n"
+         "R 9\n"
+         "D 14\n"
+         "R 2\n"
+         "D 9\n"
+         "U 8\n"
+         "D 10\n"
+         "U 3\n"
+         "R 8\n"
+         "D 11\n"
+         "R 5\n"
+         "U 4\n"
+         "D 1\n"
+         "U 16\n"
+         "L 17\n"
+         "U 1\n"
+         "R 14\n"
+         "U 10\n"
+         "R 5\n"
+         "U 12\n"
+         "D 4\n"
+         "R 10\n"
+         "D 10\n"
+         "L 5\n"
+         "R 2\n"
+         "L 18\n"
+         "D 3\n"
+         "L 17\n"
+         "D 10\n"
+         "U 4\n"
+         "L 15\n"
+         "U 4\n"
+         "L 9\n"
+         "U 14\n"
+         "R 9\n"
+         "U 16\n"
+         "L 1\n"
+         "R 7\n"
+         "U 10\n"
+         "D 1\n"
+         "U 13\n"
+         "D 15\n"
+         "R 6\n"
+         "U 2\n"
+         "L 17\n"
+         "U 11\n"
+         "L 14\n"
+         "U 12\n"
+         "R 11\n"
+         "U 4\n"
+         "D 11\n"
+         "R 7\n"
+         "D 13\n"
+         "U 16\n"
+         "L 5\n"
+         "U 7\n"
+         "R 4\n"
+         "L 17\n"
+         "D 2\n"
+         "U 18\n"
+         "R 8\n"
+         "U 16\n"
+         "L 15\n"
+         "R 8\n"
+         "L 19\n"
+         "U 17\n"
+         "D 2\n"
+         "U 8\n"
+         "D 9\n"
+         "U 3\n"
+         "L 12\n"
+         "U 16\n"
+         "L 3\n"
+         "R 14\n"
+         "D 16\n"
+         "U 11\n"
+         "D 2\n"
+         "L 16\n"
+         "U 4\n"
+         "L 18\n"
+         "R 15\n"
+         "U 9\n"
+         "L 18\n"
+         "U 11\n"
+         "R 18\n"
+         "L 13\n"
+         "D 8\n"
+         "U 12\n"
+         "D 14\n"
+         "L 12\n"
+         "U 2\n"
+         "D 13\n"
+         "L 12\n"
+         "U 16\n"
+         "R 17\n"
+         "L 14\n"
+         "U 10\n"
+         "R 15\n"
+         "U 19\n"
+         "L 17\n"
+         "R 8\n"
+         "L 17\n"
+         "R 8\n"
+         "U 4\n"
+         "R 8\n"
+         "U 11\n"
+         "L 17\n"
+         "R 8\n"
+         "D 13\n"
+         "U 6\n"
+         "D 7\n"
+         "R 9\n"
+         "L 2\n"
+         "R 4\n"
+         "D 16\n"
+         "L 2\n"
+         "D 10\n"
+         "U 4\n"
+         "L 10\n"
+         "D 14\n"
+         "U 5\n"
+         "D 7\n"
+         "U 4\n"
+         "D 16\n"
+         "U 14\n"
+         "L 4\n"
+         "U 14\n"
+         "L 3\n"
+         "D 16\n"
+         "L 14\n"
+         "U 11\n"
+         "D 3\n"
+         "L 10\n"
+         "U 8\n"
+         "D 6\n"
+         "L 9\n"
+         "D 17\n"
+         "R 16";
 }
 } // namespace Input
 }; // namespace AdventOfCode

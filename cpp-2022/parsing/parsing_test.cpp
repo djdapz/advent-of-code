@@ -7,8 +7,10 @@
 
 #include "gtest/gtest.h"
 using AdventOfCode::Parsing::InputToGroupedInts;
+using AdventOfCode::Parsing::InputToIntListsNoSeparator;
 using AdventOfCode::Parsing::InputToInts;
 using AdventOfCode::Parsing::InputToStrings;
+using AdventOfCode::Parsing::StringToIntsNoSeparator;
 
 TEST(ParsingTest, ParsesOneLine) {
   std::string input = R"(
@@ -70,6 +72,22 @@ TEST(ParsingTest, DropsEmptyStrings) {
   auto result = InputToStrings(input);
 
   std::vector<std::string> expected{"a", "b", "c"};
+
+  EXPECT_EQ(result, expected);
+}
+
+TEST(ParsingTest, IntListNoSepearator) {
+  auto result = StringToIntsNoSeparator("123");
+
+  std::vector<int> expected{1, 2, 3};
+
+  EXPECT_EQ(result, expected);
+}
+
+TEST(ParsingTest, InputToIntListsNoSeparator) {
+  auto result = InputToIntListsNoSeparator("123\n123");
+
+  std::vector<std::vector<int>> expected{{1, 2, 3}, {1, 2, 3}};
 
   EXPECT_EQ(result, expected);
 }

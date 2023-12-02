@@ -1,0 +1,22 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary")
+
+cc_library(
+    name = "Day8",
+    srcs = ["Day8.cpp"],
+    hdrs = ["Day8.h"],
+    visibility = ["//visibility:public"],
+    deps = [
+            "@com_google_absl//absl/container:flat_hash_set",
+            "@boost//:range",
+        ]
+)
+
+cc_test(
+    name = "Day8_test",
+    srcs = ["Day8_test.cpp"],
+    deps = [":Day8",
+            "//parsing",
+            "//input",
+            "@com_google_googletest//:gtest_main"
+        ],
+)

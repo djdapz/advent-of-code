@@ -6,6 +6,12 @@ cc_library(
         "//day1",
         "//day2",
         "//day3:Day3",
+        "//day4:Day4",
+        "//day5:Day5",
+        "//day6:Day6",
+        "//Day7",
+        "//Day8",
+        "//Day9",
         "//input",
         "//parsing"
     ]
