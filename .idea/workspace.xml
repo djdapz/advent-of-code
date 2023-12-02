@@ -2,9 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="025bf017-b74b-4d84-9e1c-50842c20435e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/swift-2020/Sources/swift-2020/BoardingPass.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swift-2020/Tests/swift-2020Tests/BoardingPassTests.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/swift-2020/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/swift-2020/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpp-2022/Day7/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpp-2022/Day7/Day7.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpp-2022/Day7/Day7.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpp-2022/Day7/Day7_test.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpp-2022/Day8/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpp-2022/Day8/Day8.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpp-2022/Day8/Day8.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpp-2022/Day8/Day8_test.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpp-2022/Day9/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpp-2022/Day9/Day9.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpp-2022/Day9/Day9.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpp-2022/Day9/Day9_test.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpp-2022/day4/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpp-2022/day4/Day4.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpp-2022/day4/Day4.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpp-2022/day4/Day4_test.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpp-2022/day5/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpp-2022/day5/Day5.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpp-2022/day5/Day5.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpp-2022/day5/Day5_test.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpp-2022/day6/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpp-2022/day6/Day6.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpp-2022/day6/Day6.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpp-2022/day6/Day6_test.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp-2022/BUILD" beforeDir="false" afterPath="$PROJECT_DIR$/cpp-2022/BUILD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp-2022/WORKSPACE" beforeDir="false" afterPath="$PROJECT_DIR$/cpp-2022/WORKSPACE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp-2022/aoc.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp-2022/aoc.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp-2022/input/input.h" beforeDir="false" afterPath="$PROJECT_DIR$/cpp-2022/input/input.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp-2022/parsing/parsing.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp-2022/parsing/parsing.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp-2022/parsing/parsing.h" beforeDir="false" afterPath="$PROJECT_DIR$/cpp-2022/parsing/parsing.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp-2022/parsing/parsing_test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp-2022/parsing/parsing_test.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +53,15 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
   <component name="ProjectConfigurationFiles">
     <option name="files">
       <list>
@@ -44,14 +78,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
@@ -65,6 +100,7 @@
       <updated>1565720963036</updated>
       <workItem from="1565720964445" duration="47000" />
       <workItem from="1607976785034" duration="129000" />
+      <workItem from="1701525765513" duration="29000" />
     </task>
     <servers />
   </component>
@@ -81,6 +117,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
