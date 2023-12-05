@@ -1,5 +1,6 @@
 package dev.dapuzzo.aoc.day2
 
+import dev.dapuzzo.aoc.findNumberPreceding
 import java.lang.Exception
 
 data class Turn(val red: Int, val green: Int, val blue: Int) {
@@ -40,5 +41,3 @@ class Game(val id: Int, val turns: List<Turn>) {
         }
     }
 }
-
-fun String.findNumberPreceding(key: String): Int? = Regex("\\d+(?= $key)").find(this)?.value?.toInt()

@@ -1,5 +1,6 @@
 package dev.dapuzzo.aoc.day2
 
+import dev.dapuzzo.aoc.findNumberPreceding
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 
@@ -26,11 +27,7 @@ class GameTest {
         assertThat(game.id).isEqualTo(13)
     }
 
-    @Test
-    fun `should find preceding number`() {
-        assertThat("5 green, 4 potato".findNumberPreceding("potato")).isEqualTo(4)
-        assertThat("5 green, 14 orange".findNumberPreceding("orange")).isEqualTo(14)
-    }
+
 
     @Test
     fun `should get max of each color`() {

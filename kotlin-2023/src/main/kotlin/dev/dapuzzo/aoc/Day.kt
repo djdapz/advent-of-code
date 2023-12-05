@@ -15,7 +15,7 @@ abstract class Day(private val number: Int) {
         }
 
         val (part2Result, part2Time) = measureTimedValue {
-            part1()
+            part2()
         }
         println("Day $number")
         println(" Part 1: %8d|%5sms".format(part1Result, part1Time.inWholeMicroseconds))
