@@ -7,9 +7,9 @@ data class Turn(val red: Int, val green: Int, val blue: Int) {
     companion object {
         fun parse(it: String): Turn =
             Turn(
-                it.findNumberPreceding("red") ?: 0,
-                it.findNumberPreceding("green") ?: 0,
-                it.findNumberPreceding("blue") ?: 0,
+                it.findNumberPreceding(" red") ?: 0,
+                it.findNumberPreceding(" green") ?: 0,
+                it.findNumberPreceding(" blue") ?: 0,
             )
     }
 }
