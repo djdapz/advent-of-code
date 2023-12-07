@@ -13,9 +13,7 @@ class Day6(val input: List<String>) : Day(6) {
         return times.zip(distances).map { (timeLimit, distance) ->
             getRangeOfWinnableTimes(timeLimit, distance)
         }
-            .also { println(it) }
             .map { it.second - it.first + 1 }
-            .also { println(it) }
             .fold(1, Math::multiplyExact)
     }
 

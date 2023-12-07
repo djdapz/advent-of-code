@@ -3,7 +3,7 @@ package dev.dapuzzo.aoc.day5
 import dev.dapuzzo.aoc.Day
 import java.util.stream.Collectors
 
-class Day5(input: String) : Day(5) {
+class Day5(input: String) : Day(5, slow = true) {
     val seeds = input.split("\n")[0].split(" ").drop(1).map { it.toLong() }
     val almanac = Almanac.parse(input.split("\n").drop(2).joinToString("\n"))
     val seedRanges = seeds.chunked(2).map { it[0]..(it[0] + it[1]) }

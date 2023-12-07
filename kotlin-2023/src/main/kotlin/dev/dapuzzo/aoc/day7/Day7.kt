@@ -10,7 +10,6 @@ class Day7(input: List<String>) : Day(7) {
                 compareHands(a.first, b.first, HandTypeMode.NORMAL)
             }
             .mapIndexed { index, it -> Triple(it.first, it.second, index + 1) }
-            .also { println(it) }
             .sumOf { it.second * it.third }
     }
 
@@ -25,17 +24,6 @@ class Day7(input: List<String>) : Day(7) {
                     it.second,
                     index + 1
                 )
-            }
-            .also {
-                println(it
-                    .map { it.first }
-                    .filter { it.first.contains('J') }
-                    .map { it.first.toCharArray().sorted().filter { it != 'J' }.joinToString("") to it.second }
-                    .sortedBy { it.first.length }
-                    .map {
-                        "${it.first} - ${it.second} - ${it.first.getCharCounts(HandTypeMode.JOKER)}"
-                    }
-                    .joinToString("\n"))
             }
             .sumOf { it.second * it.third }
     }
@@ -125,6 +113,7 @@ private fun Char.toRank(mode: HandTypeMode): Int {
             HandTypeMode.NORMAL -> 4
             HandTypeMode.JOKER -> 15
         }
+
         this == 'T' -> 5
         else -> {
             15 - this.digitToInt()
