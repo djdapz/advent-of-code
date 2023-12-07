@@ -9,7 +9,6 @@ import dev.dapuzzo.aoc.day7.Day7
 
 fun main(args: Array<String>) {
     val runSlowStuff = false;
-
     Day1(
         FileReader("day1.txt").readAsList()
     ).run()

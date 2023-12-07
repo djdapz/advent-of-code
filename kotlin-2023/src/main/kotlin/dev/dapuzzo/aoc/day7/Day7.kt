@@ -32,9 +32,9 @@ enum class HandType(val rank: Int) {
     HIGH(7)
 }
 
-enum class HandTypeMode(val jPointValue: Int) {
-    NORMAL(jPointValue = 4),
-    JOKER(jPointValue = 15)
+enum class HandTypeMode() {
+    NORMAL,
+    JOKER
 }
 
 class Hand(val cards: String, val mode: HandTypeMode = HandTypeMode.NORMAL) : Comparable<Hand> {
@@ -64,14 +64,20 @@ class Hand(val cards: String, val mode: HandTypeMode = HandTypeMode.NORMAL) : Co
 
 
     fun String.getCharCounts(): Pair<Int, Int> {
-        val realCards: CharArray = when (mode) {
-            HandTypeMode.JOKER -> this.toCharArray().filter { it != 'J' }.toCharArray()
-            HandTypeMode.NORMAL -> this.toCharArray()
+        val realCards: String = when (mode) {
+            HandTypeMode.JOKER -> this.replace("J", "")
+            HandTypeMode.NORMAL -> this
         }
-        var charCounts = realCards.groupBy { it }.map { it.value.count() }.sorted().toMutableList()
+
+        val countMap = realCards.fold(mutableMapOf<Char, Int>()) { map, it ->
+            map.apply { put(it, map[it]?.plus(1) ?: 1) }
+        }
+
+        var charCounts = countMap.map { it.value }.toMutableList()
         if (mode == HandTypeMode.JOKER) {
             if (realCards.isEmpty()) return 5 to 1
-            val jokerCount = 5 - realCards.size
+            val jokerCount = 5 - realCards.length
+            charCounts = charCounts.sorted().toMutableList()
             charCounts[charCounts.lastIndex] += jokerCount
             while (charCounts.sum() > 5) {
                 charCounts[0] -= 1
@@ -80,7 +86,7 @@ class Hand(val cards: String, val mode: HandTypeMode = HandTypeMode.NORMAL) : Co
                 }
             }
         }
-        return charCounts.last() to charCounts.size
+        return charCounts.max() to charCounts.size
     }
 
     override fun compareTo(
@@ -107,7 +113,11 @@ private fun Char.toRank(mode: HandTypeMode): Int {
         this == 'K' -> 2
         this == 'Q' -> 3
         this == 'T' -> 5
-        this == 'J' -> mode.jPointValue
+        this == 'J' -> when (mode) {
+            HandTypeMode.JOKER -> 15
+            HandTypeMode.NORMAL -> 4
+        }
+
         else -> throw Exception("invalid card type $this")
     }
 }

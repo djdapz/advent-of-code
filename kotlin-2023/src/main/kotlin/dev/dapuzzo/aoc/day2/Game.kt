@@ -1,7 +1,6 @@
 package dev.dapuzzo.aoc.day2
 
 import dev.dapuzzo.aoc.findNumberPreceding
-import java.lang.Exception
 
 data class Turn(val red: Int, val green: Int, val blue: Int) {
     companion object {
@@ -28,16 +27,11 @@ class Game(val id: Int, val turns: List<Turn>) {
 
     companion object {
         fun parse(s: String): Game {
-            try {
-                val clauses = s.split(":")
-                val id = clauses[0].toCharArray().filter { char -> char.isDigit() }.joinToString("").toInt()
+            val clauses = s.split(":")
+            val id = clauses[0].toCharArray().filter { char -> char.isDigit() }.joinToString("").toInt()
 
-                val turns = clauses[1].split(";").map { Turn.parse(it) }
-                return Game(id, turns)
-            } catch (e: Exception) {
-                println(s)
-                throw e;
-            }
+            val turns = clauses[1].split(";").map { Turn.parse(it) }
+            return Game(id, turns)
         }
     }
 }
