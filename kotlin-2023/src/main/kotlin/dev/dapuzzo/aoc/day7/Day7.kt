@@ -4,28 +4,21 @@ import dev.dapuzzo.aoc.Day
 
 class Day7(input: List<String>) : Day(7) {
     val hands = input.map { it.split(" ") }.map { it[0] to it[1].toInt() }
+
     override fun part1(): Int {
         return hands
-            .sortedWith { a, b ->
-                compareHands(a.first, b.first, HandTypeMode.NORMAL)
-            }
-            .mapIndexed { index, it -> Triple(it.first, it.second, index + 1) }
-            .sumOf { it.second * it.third }
+            .map { Hand(it.first) to it.second }
+            .sortedBy { it.first }
+            .mapIndexed { index, it -> it.second * (index + 1) }
+            .sum()
     }
 
     override fun part2(): Int {
         return hands
-            .sortedWith { a, b ->
-                compareHands(a.first, b.first, HandTypeMode.JOKER)
-            }
-            .mapIndexed { index, it ->
-                Triple(
-                    it.first to it.first.getHandType(HandTypeMode.JOKER),
-                    it.second,
-                    index + 1
-                )
-            }
-            .sumOf { it.second * it.third }
+            .map { Hand(it.first, HandTypeMode.JOKER) to it.second }
+            .sortedBy { it.first }
+            .mapIndexed { index, it -> it.second * (index + 1) }
+            .sum()
     }
 }
 
@@ -39,84 +32,82 @@ enum class HandType(val rank: Int) {
     HIGH(7)
 }
 
-enum class HandTypeMode {
-    NORMAL,
-    JOKER
+enum class HandTypeMode(val jPointValue: Int) {
+    NORMAL(jPointValue = 4),
+    JOKER(jPointValue = 15)
 }
 
-fun String.getCharCounts(handTypeMode: HandTypeMode): List<Int> {
-    val realCards: List<Char> = when (handTypeMode) {
-        HandTypeMode.JOKER -> this.toCharArray().filter { it != 'J' }
-        HandTypeMode.NORMAL -> this.toCharArray().toList()
-    }
-    val jokerCount = 5 - realCards.count()
-    var charCounts = realCards.groupBy { it }.map { it.value.count() }.sorted().toMutableList()
-    if (jokerCount == 5) {
-        return listOf(5)
-    }
-    charCounts[charCounts.lastIndex] += jokerCount
+class Hand(val cards: String, val mode: HandTypeMode = HandTypeMode.NORMAL) : Comparable<Hand> {
+    val type: HandType = run {
+        val (max, size) = cards.getCharCounts()
+        when (max) {
+            5 -> HandType.FIVE
+            4 -> HandType.FOUR
+            3 ->
+                if (size == 2) {
+                    HandType.FULL
+                } else {
+                    HandType.THREE
+                }
 
-    while (charCounts.sum() > 5) {
-        charCounts[0] -= 1
-        if (charCounts[0] == 0) {
-            charCounts = charCounts.drop(1).toMutableList()
+            2 ->
+                if (size == 3) {
+                    HandType.TWO
+                } else {
+                    HandType.PAIR
+                }
+
+            1 -> HandType.HIGH
+            else -> throw Exception("wut")
         }
     }
-    return charCounts
-}
 
-fun String.getHandType(handType: HandTypeMode = HandTypeMode.JOKER): HandType {
-    val charCounts = getCharCounts(handType)
-    val maxes = charCounts.max()
-    return when (maxes) {
-        5 -> HandType.FIVE
-        4 -> HandType.FOUR
-        3 ->
-            if (charCounts == listOf(2, 3)) {
-                HandType.FULL
-            } else {
-                HandType.THREE
+
+    fun String.getCharCounts(): Pair<Int, Int> {
+        val realCards: CharArray = when (mode) {
+            HandTypeMode.JOKER -> this.toCharArray().filter { it != 'J' }.toCharArray()
+            HandTypeMode.NORMAL -> this.toCharArray()
+        }
+        var charCounts = realCards.groupBy { it }.map { it.value.count() }.sorted().toMutableList()
+        if (mode == HandTypeMode.JOKER) {
+            if (realCards.isEmpty()) return 5 to 1
+            val jokerCount = 5 - realCards.size
+            charCounts[charCounts.lastIndex] += jokerCount
+            while (charCounts.sum() > 5) {
+                charCounts[0] -= 1
+                if (charCounts[0] == 0) {
+                    charCounts = charCounts.drop(1).toMutableList()
+                }
             }
+        }
+        return charCounts.last() to charCounts.size
+    }
 
-        2 ->
-            if (charCounts == listOf(1, 2, 2)) {
-                HandType.TWO
-            } else {
-                HandType.PAIR
-            }
+    override fun compareTo(
+        other: Hand
+    ): Int {
+        val difference = other.type.rank - this.type.rank
+        if (difference != 0) {
+            return difference
+        }
 
-        1 -> HandType.HIGH
-        else -> throw Exception("wut")
+        val firstDifference = this.cards.zip(other.cards).first {
+            it.first != it.second
+        }
+
+        return firstDifference.second.toRank(mode) - firstDifference.first.toRank(mode)
     }
 }
 
-fun compareHands(hand1: String, hand2: String, mode: HandTypeMode = HandTypeMode.NORMAL): Int {
-
-    val difference = hand2.getHandType(mode).rank - hand1.getHandType(mode).rank
-    if (difference != 0) {
-        return difference
-    }
-
-    val firstDifference = hand1.zip(hand2).first {
-        it.first != it.second
-    }
-
-    return firstDifference.second.toRank(mode) - firstDifference.first.toRank(mode)
-}
 
 private fun Char.toRank(mode: HandTypeMode): Int {
     return when {
+        this.isDigit() -> 15 - this.digitToInt()
         this == 'A' -> 1
         this == 'K' -> 2
         this == 'Q' -> 3
-        this == 'J' -> when (mode) {
-            HandTypeMode.NORMAL -> 4
-            HandTypeMode.JOKER -> 15
-        }
-
         this == 'T' -> 5
-        else -> {
-            15 - this.digitToInt()
-        }
+        this == 'J' -> mode.jPointValue
+        else -> throw Exception("invalid card type $this")
     }
 }

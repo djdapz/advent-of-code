@@ -6,80 +6,80 @@ import org.junit.jupiter.api.Test
 class Day7KtTest {
     @Test
     fun `should id hand types`() {
-        assertThat("K21AQ".getHandType()).isEqualTo(HandType.HIGH)
-        assertThat("K21AA".getHandType()).isEqualTo(HandType.PAIR)
-        assertThat("KK1AA".getHandType()).isEqualTo(HandType.TWO)
-        assertThat("AAAAA".getHandType()).isEqualTo(HandType.FIVE)
-        assertThat("AAKAA".getHandType()).isEqualTo(HandType.FOUR)
-        assertThat("AKKAA".getHandType()).isEqualTo(HandType.FULL)
-        assertThat("AK1AA".getHandType()).isEqualTo(HandType.THREE)
+        assertThat(Hand("K21AQ").type).isEqualTo(HandType.HIGH)
+        assertThat(Hand("K21AA").type).isEqualTo(HandType.PAIR)
+        assertThat(Hand("KK1AA").type).isEqualTo(HandType.TWO)
+        assertThat(Hand("AAAAA").type).isEqualTo(HandType.FIVE)
+        assertThat(Hand("AAKAA").type).isEqualTo(HandType.FOUR)
+        assertThat(Hand("AKKAA").type).isEqualTo(HandType.FULL)
+        assertThat(Hand("AK1AA").type).isEqualTo(HandType.THREE)
     }
 
     @Test
     fun `should id hand with a joker`() {
-        assertThat("AAJAA".getHandType(HandTypeMode.JOKER)).isEqualTo(HandType.FIVE)
-        assertThat("AKJAA".getHandType(HandTypeMode.JOKER)).isEqualTo(HandType.FOUR)
-        assertThat("AKJKA".getHandType(HandTypeMode.JOKER)).isEqualTo(HandType.FULL)
-        assertThat("QKJKA".getHandType(HandTypeMode.JOKER)).isEqualTo(HandType.THREE)
-        assertThat("AQKTJ".getHandType(HandTypeMode.JOKER)).isEqualTo(HandType.PAIR)
+        assertThat(Hand("AAJAA", HandTypeMode.JOKER).type).isEqualTo(HandType.FIVE)
+        assertThat(Hand("AKJAA", HandTypeMode.JOKER).type).isEqualTo(HandType.FOUR)
+        assertThat(Hand("AKJKA", HandTypeMode.JOKER).type).isEqualTo(HandType.FULL)
+        assertThat(Hand("QKJKA", HandTypeMode.JOKER).type).isEqualTo(HandType.THREE)
+        assertThat(Hand("AQKTJ", HandTypeMode.JOKER).type).isEqualTo(HandType.PAIR)
 
 
-        assertThat("AJJAA".getHandType(HandTypeMode.JOKER)).isEqualTo(HandType.FIVE)
-        assertThat("AJJJA".getHandType(HandTypeMode.JOKER)).isEqualTo(HandType.FIVE)
+        assertThat(Hand("AJJAA", HandTypeMode.JOKER).type).isEqualTo(HandType.FIVE)
+        assertThat(Hand("AJJJA", HandTypeMode.JOKER).type).isEqualTo(HandType.FIVE)
     }
 
     @Test
     fun `should id hand with joker REGRESSION TESTING`() {
-        assertThat("TTJ9J".getHandType(HandTypeMode.JOKER)).isEqualTo(HandType.FOUR)
-        assertThat("523JJ".getHandType(HandTypeMode.JOKER)).isEqualTo(HandType.THREE)
-        assertThat("JJJJJ".getHandType(HandTypeMode.JOKER)).isEqualTo(HandType.FIVE)
+        assertThat(Hand("TTJ9J", HandTypeMode.JOKER).type).isEqualTo(HandType.FOUR)
+        assertThat(Hand("523JJ", HandTypeMode.JOKER).type).isEqualTo(HandType.THREE)
+        assertThat(Hand("JJJJJ", HandTypeMode.JOKER).type).isEqualTo(HandType.FIVE)
     }
 
     @Test
     fun `should return positive value when first hand is bigger`() {
-        assertThat(compareHands("AAAAA", "KK1AA")).isGreaterThan(0)
+        assertThat(Hand("AAAAA")).isGreaterThan(Hand("KK1AA"))
     }
 
     @Test
     fun `should return negative value when second hand is bigger`() {
-        assertThat(compareHands("AKJQ2", "KK1AA")).isLessThan(0)
+        assertThat(Hand("AKJQ2")).isLessThan(Hand("KK1AA"))
     }
 
     @Test
     fun `should return positive value when first hand winds on a tie`() {
-        assertThat(compareHands("AAAAK", "AAAA9")).isGreaterThan(0)
-        assertThat(compareHands("AAAAT", "AAAA9")).isGreaterThan(0)
+        assertThat(Hand("AAAAK")).isGreaterThan(Hand("AAAA9"))
+        assertThat(Hand("AAAAT")).isGreaterThan(Hand("AAAA9"))
 
-        assertThat(compareHands("AAAAK", "AAAAQ")).isGreaterThan(0)
-        assertThat(compareHands("AAAAQ", "AAAAJ")).isGreaterThan(0)
-        assertThat(compareHands("AAAAJ", "AAAAT")).isGreaterThan(0)
-        assertThat(compareHands("AAAAT", "AAAA9")).isGreaterThan(0)
-        assertThat(compareHands("AAAA9", "AAAA8")).isGreaterThan(0)
-        assertThat(compareHands("AAAA8", "AAAA7")).isGreaterThan(0)
-        assertThat(compareHands("AAAA7", "AAAA6")).isGreaterThan(0)
-        assertThat(compareHands("AAAA6", "AAAA5")).isGreaterThan(0)
-        assertThat(compareHands("AAAA5", "AAAA4")).isGreaterThan(0)
-        assertThat(compareHands("AAAA4", "AAAA3")).isGreaterThan(0)
-        assertThat(compareHands("AAAA3", "AAAA2")).isGreaterThan(0)
-        assertThat(compareHands("AAAA2", "AAAA1")).isGreaterThan(0)
+        assertThat(Hand("AAAAK")).isGreaterThan(Hand("AAAAQ"))
+        assertThat(Hand("AAAAQ")).isGreaterThan(Hand("AAAAJ"))
+        assertThat(Hand("AAAAJ")).isGreaterThan(Hand("AAAAT"))
+        assertThat(Hand("AAAAT")).isGreaterThan(Hand("AAAA9"))
+        assertThat(Hand("AAAA9")).isGreaterThan(Hand("AAAA8"))
+        assertThat(Hand("AAAA8")).isGreaterThan(Hand("AAAA7"))
+        assertThat(Hand("AAAA7")).isGreaterThan(Hand("AAAA6"))
+        assertThat(Hand("AAAA6")).isGreaterThan(Hand("AAAA5"))
+        assertThat(Hand("AAAA5")).isGreaterThan(Hand("AAAA4"))
+        assertThat(Hand("AAAA4")).isGreaterThan(Hand("AAAA3"))
+        assertThat(Hand("AAAA3")).isGreaterThan(Hand("AAAA2"))
+        assertThat(Hand("AAAA2")).isGreaterThan(Hand("AAAA1"))
     }
 
 
     @Test
     fun `should return positive value when first hand winds on a tie = JOKER MODE`() {
-        assertThat(compareHands("A1AA1", "AJA11", HandTypeMode.JOKER)).isGreaterThan(0)
+        assertThat(Hand("A1AA1", HandTypeMode.JOKER)).isGreaterThan(Hand("AJA11", HandTypeMode.JOKER))
 
-        assertThat(compareHands("AAAAK", "AAAAQ", HandTypeMode.JOKER)).isGreaterThan(0)
-        assertThat(compareHands("AAAAQ", "AAAAT", HandTypeMode.JOKER)).isGreaterThan(0)
-        assertThat(compareHands("AAAAT", "AAAA9", HandTypeMode.JOKER)).isGreaterThan(0)
-        assertThat(compareHands("AAAA9", "AAAA8", HandTypeMode.JOKER)).isGreaterThan(0)
-        assertThat(compareHands("AAAA8", "AAAA7", HandTypeMode.JOKER)).isGreaterThan(0)
-        assertThat(compareHands("AAAA7", "AAAA6", HandTypeMode.JOKER)).isGreaterThan(0)
-        assertThat(compareHands("AAAA6", "AAAA5", HandTypeMode.JOKER)).isGreaterThan(0)
-        assertThat(compareHands("AAAA5", "AAAA4", HandTypeMode.JOKER)).isGreaterThan(0)
-        assertThat(compareHands("AAAA4", "AAAA3", HandTypeMode.JOKER)).isGreaterThan(0)
-        assertThat(compareHands("AAAA3", "AAAA2", HandTypeMode.JOKER)).isGreaterThan(0)
-        assertThat(compareHands("AAAA2", "AAAA1", HandTypeMode.JOKER)).isGreaterThan(0)
+        assertThat(Hand("AAAAK", HandTypeMode.JOKER)).isGreaterThan(Hand("AAAAQ", HandTypeMode.JOKER))
+        assertThat(Hand("AAAAQ", HandTypeMode.JOKER)).isGreaterThan(Hand("AAAAT", HandTypeMode.JOKER))
+        assertThat(Hand("AAAAT", HandTypeMode.JOKER)).isGreaterThan(Hand("AAAA9", HandTypeMode.JOKER))
+        assertThat(Hand("AAAA9", HandTypeMode.JOKER)).isGreaterThan(Hand("AAAA8", HandTypeMode.JOKER))
+        assertThat(Hand("AAAA8", HandTypeMode.JOKER)).isGreaterThan(Hand("AAAA7", HandTypeMode.JOKER))
+        assertThat(Hand("AAAA7", HandTypeMode.JOKER)).isGreaterThan(Hand("AAAA6", HandTypeMode.JOKER))
+        assertThat(Hand("AAAA6", HandTypeMode.JOKER)).isGreaterThan(Hand("AAAA5", HandTypeMode.JOKER))
+        assertThat(Hand("AAAA5", HandTypeMode.JOKER)).isGreaterThan(Hand("AAAA4", HandTypeMode.JOKER))
+        assertThat(Hand("AAAA4", HandTypeMode.JOKER)).isGreaterThan(Hand("AAAA3", HandTypeMode.JOKER))
+        assertThat(Hand("AAAA3", HandTypeMode.JOKER)).isGreaterThan(Hand("AAAA2", HandTypeMode.JOKER))
+        assertThat(Hand("AAAA2", HandTypeMode.JOKER)).isGreaterThan(Hand("AAAA1", HandTypeMode.JOKER))
     }
 }
 

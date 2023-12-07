@@ -23,8 +23,7 @@ abstract class Day(private val number: Int, private val slow: Boolean = false) {
         val (part2Result, part2Time) = measureTimedValue {
             part2()
         }
-        println("Day %2d |  Part 1: %8d | %5sms".format(number, part1Result, part1Time.inWholeMicroseconds))
-        println("       |  Part 2: %8d | %5sms".format(part2Result, part2Time.inWholeMicroseconds))
-
+        println("Day %2d |  Part 1: %8d | %5sμs".format(number, part1Result, part1Time.inWholeMicroseconds))
+        println("       |  Part 2: %8d | %5sμs".format(part2Result, part2Time.inWholeMicroseconds))
     }
 }

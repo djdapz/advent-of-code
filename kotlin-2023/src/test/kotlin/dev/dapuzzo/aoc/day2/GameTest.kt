@@ -1,6 +1,5 @@
 package dev.dapuzzo.aoc.day2
 
-import dev.dapuzzo.aoc.findNumberPreceding
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 
