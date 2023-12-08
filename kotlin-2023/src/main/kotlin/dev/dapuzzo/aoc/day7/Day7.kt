@@ -2,7 +2,7 @@ package dev.dapuzzo.aoc.day7
 
 import dev.dapuzzo.aoc.Day
 
-class Day7(input: List<String>) : Day(7) {
+class Day7(input: List<String>) : Day<Int>(7) {
     val hands = input.map { it.split(" ") }.map { it[0] to it[1].toInt() }
 
     override fun part1(): Int {

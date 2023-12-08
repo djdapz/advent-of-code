@@ -2,7 +2,7 @@ package dev.dapuzzo.aoc.day1
 
 import dev.dapuzzo.aoc.Day
 
-class Day1(val callibrationValues: List<String>) : Day(1) {
+class Day1(val callibrationValues: List<String>) : Day<Int>(1) {
     override fun part1() =
         callibrationValues.sumOf {
             it.calculateCalibrationValue()

@@ -2,7 +2,7 @@ package dev.dapuzzo.aoc.day3
 
 import dev.dapuzzo.aoc.Day
 
-class Day3(val input: List<String>) : Day(3) {
+class Day3(val input: List<String>) : Day<Int>(3) {
     override fun part1(): Int {
         return input.getAllNumbers().filter {
             input.isValidNumber(it)
@@ -59,13 +59,13 @@ private fun List<String>.extractNumber(coordinate: Coordinate): Int? {
     for (index in coordinate.col + 1..this.first().lastIndex) {
         if (this.safeGet(coordinate.copy(col = index))?.isDigit() != true) {
             endIndex = index - 1
-            break;
+            break
         }
     }
     for (index in (coordinate.col - 1) downTo 0) {
         if (this.safeGet(coordinate.copy(col = index))?.isDigit() != true) {
             startIndex = index + 1
-            break;
+            break
         }
     }
     return this[coordinate.row].substring(startIndex, endIndex + 1).toInt()
@@ -76,7 +76,7 @@ private fun List<String>.getAll(targetChar: Char): List<Coordinate> = this.flatM
         if (char == targetChar) {
             return@mapIndexed Coordinate(rowNum, colNum)
         }
-        return@mapIndexed null;
+        return@mapIndexed null
     }
 }.filterNotNull()
 
@@ -104,7 +104,7 @@ fun List<String>.getAllNumbers(): List<NextNumber> {
                     return@mapIndexed NextNumber(number, rowNum, startIndex, colNum - 1).also { reset() }
                 }
             }
-            return@mapIndexed null;
+            return@mapIndexed null
         }
     }.filterNotNull()
 }

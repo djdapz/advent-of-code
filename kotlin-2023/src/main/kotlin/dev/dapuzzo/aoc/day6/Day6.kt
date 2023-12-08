@@ -3,9 +3,8 @@ package dev.dapuzzo.aoc.day6
 import dev.dapuzzo.aoc.Day
 import kotlin.math.ceil
 import kotlin.math.floor
-import kotlin.math.round
 
-class Day6(val input: List<String>) : Day(6) {
+class Day6(val input: List<String>) : Day<Int>(6) {
     val times = input[0].split(":")[1].trim().split(" ").filter { it.isNotEmpty() }.map { it.toDouble() }
     val distances = input[1].split(":")[1].trim().split(" ").filter { it.isNotEmpty() }.map { it.toDouble() }
 

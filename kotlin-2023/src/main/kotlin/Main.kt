@@ -6,9 +6,10 @@ import dev.dapuzzo.aoc.day4.Day4
 import dev.dapuzzo.aoc.day5.Day5
 import dev.dapuzzo.aoc.day6.Day6
 import dev.dapuzzo.aoc.day7.Day7
+import dev.dapuzzo.aoc.day8.Day8
 
-fun main(args: Array<String>) {
-    val runSlowStuff = false;
+fun main() {
+    val runSlowStuff = false
     Day1(
         FileReader("day1.txt").readAsList()
     ).run()
@@ -29,5 +30,8 @@ fun main(args: Array<String>) {
     ).run()
     Day7(
         FileReader("day7.txt").readAsList()
+    ).run()
+    Day8(
+        FileReader("day8.txt").readAsList()
     ).run()
 }

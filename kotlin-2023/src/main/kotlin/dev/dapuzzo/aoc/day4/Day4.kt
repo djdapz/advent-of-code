@@ -4,7 +4,7 @@ import dev.dapuzzo.aoc.Day
 import dev.dapuzzo.aoc.findNumberPreceding
 import kotlin.math.pow
 
-class Day4(input: List<String>) : Day(4) {
+class Day4(input: List<String>) : Day<Int>(4) {
     private val cards: List<ScratchCard> = input.map { ScratchCard.parse(it) }
     override fun part1(): Int =
         cards.sumOf { it.score }
@@ -25,11 +25,11 @@ class Day4(input: List<String>) : Day(4) {
     }
 }
 
-infix fun Int.`^`(exponent: Int): Int = toDouble().pow(exponent).toInt()
+infix fun Int.toThePowerOf(exponent: Int): Int = toDouble().pow(exponent).toInt()
 
 data class ScratchCard(val id: Int, val winningNumbers: Set<Int>, val myNumbers: Set<Int>) {
     val score: Int by lazy {
-        winningNumbersCount.run { 2 `^` this - 1 }
+        winningNumbersCount.run { 2 toThePowerOf this - 1 }
     }
 
     val winningNumbersCount: Int by lazy {
